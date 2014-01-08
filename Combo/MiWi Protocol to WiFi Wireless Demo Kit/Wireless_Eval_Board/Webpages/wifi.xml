@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<wifi_response>
+    <ssid>~ssid~</ssid>
+    <scancount>~bssCount~</scancount>
+<scanlist>
+~aplist~
+</scanlist>
+</wifi_response>

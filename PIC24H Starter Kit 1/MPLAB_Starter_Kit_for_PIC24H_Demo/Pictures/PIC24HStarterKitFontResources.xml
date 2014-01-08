@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Graphics_Resource_Converter>
+<Configuration>
+<major>3</major>
+<minor>28</minor>
+<compiler>C30/XC16</compiler>
+<format>CArray</format>
+<graphics_module>false</graphics_module>
+<bitmap_padding_type>padding</bitmap_padding_type>
+<graphics_model>16 bpp</graphics_model>
+</Configuration>
+<Font_Files>
+<Font_File_Resource>
+<label>GOLFontDefault</label>
+<path>../../../Microchip/Graphics/Fonts/gentium/Gentium8.fnt</path>
+<first_character>28</first_character>
+<last_character>127</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+</Font_Files>
+</Graphics_Resource_Converter>

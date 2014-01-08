@@ -1,0 +1,137 @@
+;Adapted from Jan Axelson's (of Lakeview Research: www.lvr.com) winusbdemo.inf file.  
+;Which in turn was adapted from the example INF in the Microsoft document:
+;"How to Use WinUSB to Communicate with a USB Device"
+
+[Version]
+Signature = "$Windows NT$"
+Class = CustomUSBDevices
+ClassGuid= {a503e2d3-a031-49dc-b684-c99085dbfe92}
+
+Provider = %MFGNAME%
+DriverVer=01/11/2013,1.0.0.3
+CatalogFile="zena adapter 2.4ghz mrf24j40.cat"		;CAT file needs to be present, valid, and contain 
+							;correct signature for installation on some OSes
+;------------------------------------------------------------------------------
+; ========== Manufacturer/Models sections ===========
+;------------------------------------------------------------------------------
+[Manufacturer]
+%MFGNAME% = MyDevice_WinUSB,NTx86,NTamd64
+
+;------------------------------------------------------------------------------
+;  Vendor and Product ID Definitions
+;------------------------------------------------------------------------------
+; When developing your custom USB device, the VID and PID used in the PC side
+; application program and the firmware on the microcontroller must match.
+; Modify the below lines to use your VID and PID.  Use the format as shown below.
+; Note: One INF file can be used for multiple devices with different VID and PIDs.
+; For each supported device, append ",USB\VID_xxxx&PID_yyyy" to the end of the line.
+; There is a maximum number of devices that can be supported per line however.
+; If you append a large number of VID/PIDs to the end of the line, and get a:
+; "The data area passed to a system call is too small." error when trying to install
+; the INF, try removing some of the VIDs/PIDs.
+;------------------------------------------------------------------------------
+[MyDevice_WinUSB.NTx86]
+%DESCRIPTION% =USB_Install, USB\VID_04d8&PID_0E00
+
+[MyDevice_WinUSB.NTamd64]
+%DESCRIPTION% =USB_Install, USB\VID_04d8&PID_0E00
+
+;=========================================================================================
+;ClassInstall32 and ClassInstall_AddReg sections used to make new device manager category.
+;=========================================================================================
+[ClassInstall32]
+AddReg=ClassInstall_AddReg
+
+[ClassInstall_AddReg]
+HKR,,,,%DEVICEMANAGERCATEGORY%
+HKR,,Icon,,"-20"
+
+
+
+; =================== Installation ===================
+
+[USB_Install]
+Include=winusb.inf
+Needs=WINUSB.NT
+
+[USB_Install.Services]
+Include=winusb.inf
+AddService=WinUSB,0x00000002,WinUSB_ServiceInstall
+
+[WinUSB_ServiceInstall]
+DisplayName     = %WinUSB_SvcDesc%
+ServiceType     = 1
+StartType       = 3
+ErrorControl    = 1
+ServiceBinary   = %12%\WinUSB.sys
+
+[USB_Install.Wdf]
+KmdfService=WINUSB, WinUsb_Install
+UmdfServiceOrder=WINUSB
+
+[WinUSB_Install]
+KmdfLibraryVersion=1.9
+
+[USB_Install.HW]
+AddReg=Dev_AddReg
+
+[Dev_AddReg]
+HKR,,DeviceInterfaceGUIDs,0x10000,"{58D07210-27C1-11DD-BD0B-0800200C9a66}"
+;When editing the GUID (the big hex number with dashes inside the squiggly 
+;braces), make sure to write the intended PC application to use the same GUID.
+;Otherwise the application won't be able to find the USB device properly.
+
+[USB_Install.CoInstallers]
+AddReg=CoInstallers_AddReg
+CopyFiles=CoInstallers_CopyFiles
+
+[CoInstallers_AddReg]
+HKR,,CoInstallers32,0x00010000,"winusbcoinstaller2.dll","WUDFUpdate_01009.dll","WdfCoInstaller01009.dll,WdfCoInstaller"
+
+[CoInstallers_CopyFiles]
+WinUSBCoInstaller2.dll
+WdfCoInstaller01009.dll
+WUDFUpdate_01009.dll
+
+[DestinationDirs]
+CoInstallers_CopyFiles=11
+
+; ================= Source Media Section =====================
+
+[SourceDisksNames.x86]
+1 = %DISK_NAME%,,,\i386
+
+[SourceDisksNames.amd64]
+2 = %DISK_NAME%,,,\amd64
+
+[SourceDisksFiles.x86]
+WinUSBCoInstaller2.dll=1
+WdfCoInstaller01009.dll=1
+WUDFUpdate_01009.dll=1
+
+[SourceDisksFiles.amd64]
+WinUSBCoInstaller2.dll=2
+WdfCoInstaller01009.dll=2
+WUDFUpdate_01009.dll=2
+
+; Copy Files section
+;------------------------------------------------------------------------------
+[_CopyFiles_sys]
+winusb.sys
+
+;************************************************* *****************************
+; Destination Directories
+;------------------------------------------------------------------------------
+[DestinationDirs]
+DefaultDestDir = 12 ; %SystemRoot%\system32\drivers
+_CopyFiles_sys = 12
+
+; =================== Strings ===================
+
+[Strings]
+MFGNAME="Microchip Technology, Inc."
+DESCRIPTION="ZENA Adapter 2.4GHz MRF24J40"
+WinUSB_SvcDesc="WinUSB Device"
+DISK_NAME="WinUSB Device Install Disk"
+DEVICEMANAGERCATEGORY="Custom USB Devices"
+

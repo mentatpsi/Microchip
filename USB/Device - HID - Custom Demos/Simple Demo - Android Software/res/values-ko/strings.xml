@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weblink">www.microchip.com/usb</string>
+    
+    <string name="app_name">USB 디바이스 데모</string>
+    <string name="app_title">USB 디바이스 데모</string>
+ 
+    <string name="no_device_attached">연결되지 않았음</string>
+    <string name="device_attached">연결되었음</string>
+    <string name="attach_device">이 데모와 함께 실행할 수 있는 장치를 연결해 주십시오. 이 데모는 마이크로칩 어플리케이션 라이브러리 USB 프레임워크에서 제공하는 다음과 같은 데모와 함께 작동하도록 설계되었습니다.(www.microchip.com/usb):\r\n   LibUSB Demo\r\n   WinUSB Demo\r\n   MCHPUSB Demo\r\n   Custom HID Demo</string>
+ 
+    <string name="toggle_leds_button">토글 LEDs</string>
+    <string name="toggle_leds_description">연결된 보드의 LED를 토글하려면 아래 버튼을 누르십시오</string>
+    
+    <string name="button_status_description">아래의 상자가 연결된 보드의 푸시 버튼 상태를 나타냅니다.</string>
+    <string name="button_pressed">버튼 Pressed</string>
+    <string name="button_not_pressed">버튼 Not pressed</string>
+    
+    <string name="pot_status_description">아래의 바는 포텐셔메터의 회전비율을 나타냅니다.</string>
+</resources>

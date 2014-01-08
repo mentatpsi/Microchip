@@ -1,0 +1,42 @@
+~inc:header.inc~
+<div id="content">
+
+<h1>SNMP Community Configuration</h1>
+<p>Read/Write Community String configuration for SNMPv2c Agent.</p>
+<div class="result fail" style="display:~snmp_en~">
+STACK_USE_SNMP_SERVER is undefined.  SNMP is unavailable.
+</div>
+
+<p>Configure multiple community names if you want the SNMP agent 
+to respond to the NMS/SNMP manager with different read and write 
+community names. If less than three communities are needed, leave 
+extra fields blank to disable them.</p>
+
+
+<form method="post" action="/snmp/snmpconfig.htm" name="config">
+<fieldset>
+
+<div><label>Read Comm1 :</label>
+<input type="text" name="rcm0" value="~read_comm(0)~" /></div>
+<div><label>Read Comm2 :</label>
+<input type="text" name="rcm1" value="~read_comm(1)~" /></div>
+<div><label>Read Comm3 :</label>
+<input type="text" name="rcm2" value="~read_comm(2)~" /></div>
+
+
+<div><label>Write Comm1:</label>
+<input type="text" name="wcm0" value="~write_comm(0)~" /></div>
+<div><label>Write Comm2:</label>
+<input type="text" name="wcm1" value="~write_comm(1)~" /></div>
+<div><label>Write Comm3:</label>
+<input type="text" name="wcm2" value="~write_comm(2)~" /></div>
+
+<div>&nbsp;</div>
+<div><input type="submit" class="sm" value="Save Config" /></div>
+
+</fieldset>
+</form>
+</div>
+
+</script>
+~inc:footer.inc~

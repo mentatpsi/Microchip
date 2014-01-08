@@ -1,0 +1,56 @@
+About this configuration:
+
+ -  Debugging communications enabled. Configuration values may be edited at run time
+    using the mTouch GUI or by implementing the mComm protocol. Data can be viewed in
+    real-time by using the mTouch GUI.
+        
+    * EEPROM is being used to store configuration values.
+    * mComm UART two-way communications enabled
+        See: mComm_config.h
+        
+        
+ -  Number of Sensors   :: 2
+        See: mTouch_config.h
+ 
+
+            RA0 - Vcap
+
+            #define MTOUCH_SENSOR0              AN12    -- used
+            #define MTOUCH_SENSOR1              AN10    -- used
+            #define MTOUCH_SENSOR2              AN8    
+            #define MTOUCH_SENSOR3              AN9  
+            #define MTOUCH_SENSOR4              AN11
+            #define MTOUCH_SENSOR5              AN13
+            #define MTOUCH_SENSOR6              AN4     // Labeled '7' on the board
+
+            #define LED0  LATC0
+            #define LED1  LATA6
+            #define LED2  LATA7
+            #define LED3  LATE2
+            #define LED4  LATE1
+            #define LED5  LATE0
+            #define LED6  LATA3
+            #define LED7  LATA2
+            #define LED8  LATA1
+            #define LED9  LATB7     // ICSPDAT
+            #define LED10 LATB6     // ICSPCLK
+            #define LED11 LATC7     // RX
+            #define LED12 LATC6     // TX
+            #define LED13 LATC5
+            #define LED14 LATC2
+            #define LED15 LATC1
+            
+            ANSELA  = 0b00000000;
+            ANSELB  = 0b00000000;
+            ANSELD  = 0b00000000;
+            ANSELE  = 0b00000000;
+            LATA    = 0b11001110;
+            LATB    = 0b11000000;
+            LATC    = 0b11100111;
+            LATD    = 0b00000000;
+            LATE    = 0b00000111;
+            TRISA   = 0b00000000;
+            TRISB   = 0b00000000;
+            TRISC   = 0b00000000;
+            TRISD   = 0b00000000;
+            TRISE   = 0b00000000;

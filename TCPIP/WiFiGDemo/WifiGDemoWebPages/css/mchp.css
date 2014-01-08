@@ -1,0 +1,229 @@
+body {
+	font-family: Verdana, Arial, sans-serif;
+	background: #5b5b5b;
+	float-size:10px;
+}
+
+#container {
+	width: 760px;
+	margin:0 auto;
+	background: #fff;
+	border: #fff 10px solid;
+}
+
+#logo_banner {
+	width: auto;
+	background: #fff;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 15px;
+	padding-left: 5px;
+}
+
+
+#title {
+	width: auto;
+	background: #c00;
+	padding: 4px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 15px;
+	height: 16px;
+}
+
+#title .text {
+	float: right;
+	width: 570px;
+	text-align: right;
+}
+
+#main_content {
+	width: 760px;
+}
+
+#menu {
+	float: left;
+	width: 150px;
+	padding-right: 5px;
+}
+
+#menu a {
+	width: 145px;
+	display: block;
+	background: #c00;
+	color: white;
+	padding: 5px;
+	font-weight: bold;
+	border-bottom: 2px solid #fff;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	background: #d33;
+}
+
+#content {
+	width: 590px;
+	float: right;
+	padding-left:10px;
+	padding-right: 5px;
+}
+
+#content a {
+	color: #c00;
+	text-decoration: none;
+}
+
+#content a:hover {
+	color: #d33;
+	text-decoration: underline;
+}
+
+#content h1 {
+	margin-top: 0px;
+}
+
+#footer {
+	clear: both;
+	width: auto;
+	font-size: 0.8em;
+	color: #666;
+	text-align: center;
+	margin: 10px 50px 0 50px;
+	padding-top: 10px;
+	border-top: 1px dotted #666;
+}
+
+
+
+#page td {
+	font-size: 10pt;
+}
+
+
+#status {
+	width: 175px;
+	float: right;
+	padding: 10px;
+	margin: 10px;
+	border: 1px dotted #666;
+	font-weight: bold;
+}
+
+#status p {
+	padding: 5px 0 5px 10px;
+	text-indent: -10px;
+	margin: 0;
+}
+
+#status .leds {
+	font-size: 14pt;
+}
+
+#status .leds a {
+	color: #ddd;
+	cursor: pointer;
+}
+
+#status .leds a:hover {
+	color: #ddd;
+	text-decoration: none;
+}
+
+.examplebox {
+	margin:10px 40px 10px 40px;
+	padding: 8px;
+	border: 1px dotted #333;
+	text-align:center;
+	background:#ddd;
+}
+
+.code {
+	font-family: Courier New, Courier, fixed-width, fixed;
+}
+
+.exercise {
+	background: #fe9;
+	padding: 5px;
+	margin-left: 10px;
+	border-left: 2px solid #eb3;
+}
+
+.error {
+	margin-left: 10px;
+	padding: 10px;
+	background: #fdd;
+	border-left: 2px solid #900;
+}
+
+#content h6 {
+	border-top: 1px dashed #333;
+	margin: 15px;
+	padding: 0px;
+	height: 1px;
+}
+
+.examplebox td {
+	text-align:left;
+	padding-right: 15px;
+}
+
+fieldset {
+	margin:10px 40px 10px 40px;
+	padding: 8px;
+	border: 1px dotted #333;
+	background:#ddd;
+}
+
+fieldset div {
+	padding: 2px 0px 2px 150px;
+}
+
+fieldset div label {
+	margin-left: -140px;
+	padding-top: 2px;
+	width: 135px;
+	font-weight: bold;
+	position: absolute;
+}
+
+fieldset input {
+	width: 250px;
+}
+
+fieldset input.sm {
+	width: auto;
+}
+
+fieldset textarea {
+	width: 250px;
+}
+
+scan_label{
+width:100px;
+    float:left;
+}
+
+.result {
+	margin: 10px 40px 10px 40px;
+	padding: 8px;
+	border: 1px solid #333;
+	text-align: center;
+	font-weight: bold;
+	background: #eee;
+}
+
+.ok {
+	border-color: #6b6;
+	background: #efe;
+}
+
+.fail {
+	border-color: #b66;
+	background: #fee;
+}
+
+.unk {
+	border-color: #cc6;
+	background: #ffd;
+}

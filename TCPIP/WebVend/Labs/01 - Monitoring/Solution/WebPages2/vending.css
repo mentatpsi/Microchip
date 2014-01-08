@@ -1,0 +1,128 @@
+body {
+	font-family: Verdana, Arial, sans-serif;
+	background: #aaa;
+	margin: 0px auto;
+	padding: 0 0 20px 0;
+}
+
+.page {
+	background: #fff;
+	width: 23em;
+	margin: 0px auto;
+}
+
+#title {
+	background: #fff;
+	padding-top: 0.2em;
+	font-weight: bold;
+	font-size: 1.5em;
+	font-variant: small-caps;
+	color: #000;
+	margin-bottom: 0.7em;
+	border-bottom: 1px solid #888;
+}
+
+#title .right {
+	float: right;
+	width: 14em;
+	text-align: right;
+	padding-top: 0.3em;
+}
+
+#content {
+	width: 42em;
+	border: 0.5em solid #888;
+	margin: 0px auto;
+	font-size: 0.8em;
+	padding: 1em 1em 0 1em;
+	background: #fff;
+}
+
+#content a {
+	color: #c00;
+	text-decoration: none;
+}
+
+#content a:hover {
+	color: #d33;
+	text-decoration: underline;
+}
+
+#footer {
+	font-size: 0.65em;
+	color: #ddd;
+	text-align: center;
+	padding-top: 1em;
+}
+
+#location {
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: center;
+}
+
+#bargraph {
+	width: 31em;
+	margin: 0px auto;
+}
+
+.bar-in-ok {
+	background: #0c0;
+	padding: 0.2em;
+}
+
+.bar-in-low {
+	background: #c00;
+	padding: 0.2em;
+}
+
+.bar-out {
+	color: #fff;
+	margin-top: 0px;
+	font-weight: bold;
+	font-size: 0.9em;
+	padding: 1px;
+	border: 1px solid #000;
+}
+
+.productname {
+	margin: 10px 0 0 0;
+}
+
+fieldset {
+	border: 1px solid #999;
+	margin: 0px auto;
+	padding: 0 1.2em 1em 1.2em;
+	width: 25em;
+	margin-top: 10px;
+}
+
+#version {
+	float: left;
+	width: 20em;
+	color: #999;
+	font-size: 0.8em;
+	margin: 1em 0 0 -0.9em;
+}
+
+#builddate {
+	float: right;
+	width: 20em;
+	color: #999;
+	font-size: 0.8em;
+	text-align: right;
+	margin: 1em -0.9em 0 0;	
+}
+
+.spacer {
+	clear: both;
+	height: 1px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+input {
+	border: 1px solid #333;
+	padding: 0.15em;
+	font-size: 1em;
+}

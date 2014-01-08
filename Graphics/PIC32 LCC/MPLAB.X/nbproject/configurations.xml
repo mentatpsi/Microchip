@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="Board Support Package"
+                     displayName="Board Support Package"
+                     projectFiles="true">
+        <itemPath>../../../Board Support Package/SST25VF016.h</itemPath>
+        <itemPath>../../../Board Support Package/TouchScreenResistive.h</itemPath>
+        <itemPath>../../../Board Support Package/drv_spi.h</itemPath>
+        <itemPath>../../../Board Support Package/TouchScreen.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Common" displayName="Common" projectFiles="true">
+        <itemPath>../../../Microchip/Include/GenericTypeDefs.h</itemPath>
+        <itemPath>../../../Microchip/Include/TimeDelay.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Display Driver"
+                     displayName="Display Driver"
+                     projectFiles="true">
+        <itemPath>../../../Microchip/Include/Graphics/gfxtcon.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/DisplayDriver.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/mchpGfxLCC.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Graphics" displayName="Graphics" projectFiles="true">
+        <itemPath>../../../Microchip/Include/Graphics/Button.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/GOL.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/Graphics.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/Primitive.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/StaticText.h</itemPath>
+      </logicalFolder>
+      <itemPath>../GraphicsConfig.h</itemPath>
+      <itemPath>../HardwareProfile.h</itemPath>
+      <itemPath>../AlphaBlendScreen.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="Board Support Package"
+                     displayName="Board Support Package"
+                     projectFiles="true">
+        <itemPath>../../../Board Support Package/SST25VF016.c</itemPath>
+        <itemPath>../../../Board Support Package/TouchScreenResistive.c</itemPath>
+        <itemPath>../../../Board Support Package/drv_spi.c</itemPath>
+        <itemPath>../../../Board Support Package/MCHP25LC256.c</itemPath>
+        <itemPath>../../../Board Support Package/TouchScreen.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Common" displayName="Common" projectFiles="true">
+        <itemPath>../../../Microchip/Common/TimeDelay.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Display Driver"
+                     displayName="Display Driver"
+                     projectFiles="true">
+        <itemPath>../../../Microchip/Graphics/Drivers/TCON_SSD1289.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/Drivers/mchpGfxLCC.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Graphics" displayName="Graphics" projectFiles="true">
+        <itemPath>../../../Microchip/Graphics/Button.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/GOLFontDefault.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/Primitive.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/GOL.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/StaticText.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/GOLSchemeDefault.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="JPEG" displayName="JPEG" projectFiles="true">
+        <itemPath>../InternalResources.c</itemPath>
+        <itemPath>../JPEGImage.c</itemPath>
+        <itemPath>../../../Microchip/Image Decoders/ImageDecoder.c</itemPath>
+        <itemPath>../../../Microchip/Image Decoders/jidctint.c</itemPath>
+        <itemPath>../../../Microchip/Image Decoders/JpegDecoder.c</itemPath>
+      </logicalFolder>
+      <itemPath>../MainDemo.c</itemPath>
+      <itemPath>../AlphaBlendScreen.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="OtherFiles" displayName="Other Files" projectFiles="false">
+      <itemPath>../Getting Started - Loading a precompiled demo.htm</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="default" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX795F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>SKDEPIC32PlatformTool</platformTool>
+        <languageToolchain>XC32</languageToolchain>
+        <languageToolchainVersion>1.00</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <C32>
+        <property key="additional-warnings" value="false"/>
+        <property key="enable-app-io" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="extra-include-directories"
+                  value="..\;..\..\..\Microchip\Include;..\..\..\Board Support Package"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="strict-ansi" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="use-indirect-calls" value="false"/>
+      </C32>
+      <C32-AS>
+        <property key="assembler-symbols" value=""/>
+        <property key="enable-symbols" value="true"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=""/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="false-conditionals" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-file" value=""/>
+        <property key="list-section-info" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warning-level" value=""/>
+      </C32-AS>
+      <C32-LD>
+        <property key="enable-check-sections" value="false"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="heap-size" value="4000"/>
+        <property key="input-libraries" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="no-startup-files" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="stack-size" value=""/>
+        <property key="symbol-stripping" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="warn-section-align" value="false"/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <SKDEPIC32PlatformTool>
+        <property key="whatToProgram" value="all"/>
+      </SKDEPIC32PlatformTool>
+      <XC32>
+      </XC32>
+    </conf>
+  </confs>
+</configurationDescriptor>

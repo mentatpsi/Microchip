@@ -1,0 +1,1 @@
+Please note that unless otherwise specified these files are not able to be bootloaded with either the HID bootloader or the MSD Host bootloader.  These files are designed specifically to be programmed using the MPLAB File->Import option.

@@ -1,0 +1,6 @@
+GIMP Palette
+Name: Screen_1BPP_Palette
+Columns: 16
+#
+  0   0   0	Index 0
+255 215  24	Index 1

@@ -1,0 +1,660 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 12 (filtered)">
+<title>Getting Started: Running the “Graphics PIC24F_DA” demo</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Arial","sans-serif";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:24.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-link:"Document Map Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	background:navy;
+	font-size:10.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.DocumentMapChar
+	{mso-style-name:"Document Map Char";
+	mso-style-link:"Document Map";
+	font-family:"Tahoma","sans-serif";}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-link:"Plain Text";
+	font-family:"Courier New";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+p.msolistparagraph0, li.msolistparagraph0, div.msolistparagraph0
+	{mso-style-name:msolistparagraph;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.msolistparagraphCxSpFirst, li.msolistparagraphCxSpFirst, div.msolistparagraphCxSpFirst
+	{mso-style-name:msolistparagraphCxSpFirst;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.msolistparagraphCxSpMiddle, li.msolistparagraphCxSpMiddle, div.msolistparagraphCxSpMiddle
+	{mso-style-name:msolistparagraphCxSpMiddle;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.msolistparagraphCxSpLast, li.msolistparagraphCxSpLast, div.msolistparagraphCxSpLast
+	{mso-style-name:msolistparagraphCxSpLast;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.element10, li.element10, div.element10
+	{mso-style-name:element10;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 65.95pt 1.0in 65.95pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=MsoPlainText align=center style='text-align:center'><a
+name="_Toc194573682"><b><u><span style='font-size:16.0pt;font-family:"Arial","sans-serif"'>Getting
+Started: Running the “RCCGPU-IPU Demo”</span></u></b></a></p>
+
+<p class=MsoPlainText><span style='font-size:16.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<h2><a name="_Required_Hardware"></a><a href="#required_hardware">Required
+Hardware</a><a name="_Toc276094095"></a></h2>
+
+<h2><a href="#required_hardware">Configuring the Hardware</a><a
+name="_Toc276094096"></a></h2>
+
+<h2><a href="Getting%20Started%20-%20Calibrating%20the%20Touch%20Screen.htm">Calibrating
+the Touch Screen</a><a name="_Toc276094005"></a></h2>
+
+<h2><a name="_Setting_up_the"></a><a href="#external_mem">Setting up the
+External Memory Programming Mode</a> </h2>
+
+<h2><a href="Getting%20Started%20-%20Demo%20Compatibility%20Matrix.htm">Demo
+Compatibility Matrix</a></h2>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><a name="_Toc276094098"></a><a name="running_the_demo"></a><span
+class=Heading2Char><span style='font-size:14.0pt'>Running the Demo</span></span><span
+style='font-family:"Arial","sans-serif"'>:</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>PIC24FJ256DA210’s built in graphics
+controller features accelerated rendering modules: Rectangle Copy Graphics
+Processing Unit (RCCGPU), Inflate Processing Unit (IPU) and Character
+Processing Unit (CHRGPU). The use of these features can accelerate rendering
+where the CPU’s job is to start the operation and let the hardware do the
+rendering. This results in minimal CPU time to do rendering and CPU can tasked
+to perform other application operations. </span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>In this demo, the RCCGPU and IPU modules are
+utilized. The RCCGPU is used to render images to the display buffer while the
+IPU is used to decompress images to the display buffer.</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif"'>For proper demo execution, the</span> <b><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'>ExternalResource-RCCGPU-IPU.hex</span></b><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif"'> file in
+&quot;Resources” folder must be programmed into external parallel flash memory
+installed on the selected hardware. Please refer to the <a
+href="Getting%20Started%20-%20Programming%20Memory%20on%20Graphics%20PICtail%20Daughter%20and%20Demo%20Boards.htm">Getting
+Started - Programming Memory on Graphics PICtail Daughter and Demo Boards.htm</a>
+and the instructions below to program the parallel flash memory.</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'>&nbsp;</p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>The
+demo runs with six icons shown on the main menu. The first three icons will
+launch a “Fish Finder Demo” while the last three icons will launch the
+“Animation Demo”. The Animation Demo is showing 4 images sequentially to mimic
+animation of a gear turning. These four images are compressed for IPU
+decompression block in the PIC24FJ256DA210. The Fish Finder Demo shows off the
+rectangle copy block of the device. To return to the main menu, simply tap on
+the “Exit” button on the bottom of the screen when inside the two sub-demos.</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>The
+icons are stored as images in the external memory. The images that are
+compressed are stored in the internal memory.</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>The
+“Resources” folder also contains the xml project used to generate the images
+stored in the internal flash and external memory. Open the following files in
+&quot;Graphics Resource Converter&quot; utility to see which files are loaded
+from internal flash or external memory.</span></p>
+
+<p class=MsoPlainText style='margin-left:75.0pt;text-indent:-21.0pt'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Arial","sans-serif"'>ExternalResourceRCCGPU-IPU.xml
+– resources placed in parallel flash.</span></p>
+
+<p class=MsoPlainText style='margin-left:75.0pt;text-indent:-21.0pt'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Arial","sans-serif"'>InternalResourceRCCGPU-IPU.xml
+– resources placed in internal flash.</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>The
+table below shows the hardware set up for the selected Development Boards
+attached to different Display Boards:</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal><a name="required_hardware"></a><span class=Heading2Char><span
+style='font-size:14.0pt'>Required Hardware/Configuring the Hardware</span></span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=670
+ style='width:502.8pt;border-collapse:collapse'>
+ <tr>
+  <td width=257 style='width:192.9pt;border:solid black 1.0pt;border-right:
+  solid windowtext 1.0pt;background:#365F91;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif";color:white'>Selected
+  Development Boards</span></b></p>
+  </td>
+  <td width=282 style='width:211.15pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
+  background:#365F91;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif";color:white'>Graphics
+  PICtail Board</span></b></p>
+  </td>
+  <td width=132 style='width:98.75pt;border-top:solid black 1.0pt;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#365F91;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif";color:white'>3.2&#8243;
+  QVGA Truly TFT Display Board (<a
+  href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=1406&amp;dDocName=en548292">AC164127-4</a>)</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=257 style='width:192.9pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>&nbsp;</span></p>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM240312">PIC24FJ256DA210
+  Development Board</a> (DM240312)</span></p>
+  </td>
+  <td width=282 style='width:211.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>none</span></p>
+  </td>
+  <td width=132 style='width:98.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>(see note 1)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=670 colspan=3 valign=top style='width:502.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Note:
+  </span></p>
+  <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+  8.0pt;font-family:"Verdana","sans-serif"'>1.</span><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'>When using PIC24FJ256DA210 Development
+  Board set the jumpers to:</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP8 – open (color
+  depth is 16BPP, byte access is not performed)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP9 – set to 1-2
+  (use Y- signal)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP10 – set to 1-2
+  (use X+ signal)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP11 – set to 2-3
+  (enable PMA17 for the SRAM and parallel flash)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP12 – don’t care</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP23 – set to 1-2
+  (use Parallel Flash)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP13 – don’t care
+  (or set to default RG8-S1)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP14 – don’t care
+  (or set to default RE9-S2)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP15 – don’t care
+  (or set to default RB5-POT(RB5))&nbsp;</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP16 – don’t care
+  (or set to default USART_TX-TX)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP17 – don’t care
+  (or set to default USART_RX-RX)</span></p>
+  <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+  8.0pt;font-family:"Verdana","sans-serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoPlainText>&nbsp;<span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=486
+ style='width:364.5pt;margin-left:-.4pt;border-collapse:collapse'>
+ <tr style='height:12.75pt'>
+  <td width=486 nowrap colspan=4 valign=bottom style='width:364.5pt;border:
+  solid windowtext 1.0pt;background:white;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Legend:</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=42 nowrap valign=bottom style='width:31.5pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  </td>
+  <td width=180 nowrap style='width:135.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Supported
+  out of the box</span></p>
+  </td>
+  <td width=42 valign=bottom style='width:31.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in;height:12.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#9746;</span></p>
+  </td>
+  <td width=222 style='width:166.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in;height:12.75pt'>
+  <p class=MsoNormal style='margin-left:.1in'><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>Hardware compatible, will need firmware
+  modification</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=42 nowrap valign=bottom style='width:31.5pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#9745;</span></p>
+  </td>
+  <td width=180 nowrap style='width:135.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Supported,
+  see limitations</span></p>
+  </td>
+  <td width=42 valign=bottom style='width:31.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in;height:12.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10007;</span></p>
+  </td>
+  <td width=222 style='width:166.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in;height:12.75pt'>
+  <p class=MsoNormal style='margin-left:.1in'><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>Not supported, hardware not compatible</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal><a name="external_mem"></a><span class=Heading2Char><span
+style='font-size:14.0pt'>Setting up the External Memory Programming Mode</span></span></p>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+demo uses USB Device Mode when programming the external memory. &nbsp;Programming
+the SPI or parallel flash will be through the J2 USB Device port of the
+development board. </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>The
+firmware requirements to enable the external memory programming are explained <a
+href="Getting%20Started%20-%20Programming%20External%20Memory.htm">here</a>.</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>To
+program the external memory:</span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>1.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Hold down MCLR and S2 switches on the
+board</span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>2.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Release MCLR while holding down S2. This
+will place the board on programming mode. The display will show the user
+prompted <b>Programming External Memory Message</b>. </span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>3.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Send the hex data from the External
+Memory Programmer utility.</span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>4.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>After the programming, the firmware
+will automatically reset. If there was an error in the programming the screen
+will show the invalid data <b>Programming External Memory Message</b>.</span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'>&nbsp;</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:.5in;border-collapse:collapse'>
+ <tr style='height:29.6pt'>
+  <td width=485 colspan=2 style='width:364.1pt;border:solid black 1.0pt;
+  background:#548DD4;padding:0in 5.4pt 0in 5.4pt;height:29.6pt'>
+  <p class=MsoPlainText><b><span style='font-size:8.0pt;font-family:"Verdana","sans-serif";
+  color:white'>Programming External Memory Messages</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:.2in'>
+  <td width=143 style='width:107.6pt;border:solid black 1.0pt;border-top:none;
+  padding:0in 5.4pt 0in 5.4pt;height:.2in'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>User
+  Prompted</span></p>
+  </td>
+  <td width=342 style='width:256.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
+  height:.2in'>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>&nbsp;</span></p>
+  <p class=MsoPlainText><b><span style='font-family:"Arial","sans-serif";
+  color:blue'>Program External Data</span></b></p>
+  <p class=MsoPlainText style='margin-left:1.0in'><b><span style='font-family:
+  "Arial","sans-serif";color:blue'>&nbsp;</span></b></p>
+  <p class=MsoPlainText><b><span style='font-family:"Arial","sans-serif";
+  color:blue'>Press S2 then </span></b></p>
+  <p class=MsoPlainText><b><span style='font-family:"Arial","sans-serif";
+  color:blue'>send data using </span></b></p>
+  <p class=MsoPlainText><b><span style='font-family:"Arial","sans-serif";
+  color:blue'>“External Memory </span></b></p>
+  <p class=MsoPlainText><b><span style='font-family:"Arial","sans-serif";
+  color:blue'>Programmer” utility.</span></b></p>
+  <p class=MsoPlainText><b><span style='font-family:"Arial","sans-serif";
+  color:blue'>via USB… </span></b><span style='font-family:"Arial","sans-serif";
+  color:blue'>(for USB based projects)</span></p>
+  <p class=MsoPlainText><b><span style='font-family:"Arial","sans-serif";
+  color:blue'>&nbsp;</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:.2in'>
+  <td width=143 style='width:107.6pt;border:solid black 1.0pt;border-top:none;
+  background:#C6D9F1;padding:0in 5.4pt 0in 5.4pt;height:.2in'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Invalid
+  Data Prompted</span></p>
+  </td>
+  <td width=342 style='width:256.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #C6D9F1;padding:0in 5.4pt 0in 5.4pt;height:.2in'>
+  <p class=MsoPlainText style='margin-left:1.0in'><b><span style='font-family:
+  "Arial","sans-serif";color:blue'>&nbsp;</span></b></p>
+  <p class=MsoPlainText><b><span style='font-family:"Arial","sans-serif";
+  color:blue'>External data invalid</span></b></p>
+  <p class=MsoPlainText style='margin-left:1.0in'><b><span style='font-family:
+  "Arial","sans-serif";color:blue'>&nbsp;</span></b></p>
+  <p class=MsoPlainText><b><span style='font-family:"Arial","sans-serif";
+  color:blue'>Press S2 then </span></b></p>
+  <p class=MsoPlainText><b><span style='font-family:"Arial","sans-serif";
+  color:blue'>send data using </span></b></p>
+  <p class=MsoPlainText><b><span style='font-family:"Arial","sans-serif";
+  color:blue'>&nbsp;“External Memory </span></b></p>
+  <p class=MsoPlainText><b><span style='font-family:"Arial","sans-serif";
+  color:blue'>Programmer” utility.</span></b></p>
+  <p class=MsoPlainText><b><span style='font-family:"Arial","sans-serif";
+  color:blue'>via USB… </span></b><span style='font-family:"Arial","sans-serif";
+  color:blue'>(for USB based projects)</span></p>
+  <p class=MsoPlainText><b><span style='font-family:"Arial","sans-serif";
+  color:blue'>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal><b>Trademarks:</b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif";color:black'>The Microchip name and logo, the
+Microchip logo, MPLAB, and PIC are registered trademarks of Microchip
+Technology Incorporated in the U.S.A. and other countries.</span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif";color:black'>PICDEM and PICTail are trademarks
+of Microchip Technology Incorporated in the U.S.A. and other countries.</span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif";color:black'>SD is a trademark of the SD
+Association in the U.S.A and other countries</span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif";color:black'>Microsoft, Windows, Excel, and
+Windows Vista are either registered trademarks or trademarks of Microsoft
+Corporation in the United States and/or other countries.</span></i></p>
+
+</div>
+
+</body>
+
+</html>

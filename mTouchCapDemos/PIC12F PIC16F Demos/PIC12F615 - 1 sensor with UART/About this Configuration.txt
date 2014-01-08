@@ -1,0 +1,9 @@
+About this configuration:
+
+ -  One-way software-implemented UART is enabled on RA5/GP5 at 38400bps.
+    
+ -  Number of Sensors   ::  1
+ 
+ -  Sensors             ::  GP0
+ 
+ -  Output LEDs         ::  GP3

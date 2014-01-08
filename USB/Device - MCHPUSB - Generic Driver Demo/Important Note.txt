@@ -1,0 +1,10 @@
+The Generic Driver Demo firmware relies the the custom (vendor) class 
+Microchip USB driver: mchpusb.sys (or mchpusb64.sys on 64 bit platforms).
+
+After programming a device with the generic driver demo firmware, the Found 
+New Hardware Wizard should appear.  When the wizard appears, point it to the
+driver which is located in the following directory:
+
+<install directory>\USB Tools\MCHPUSB Custom Driver\MCHPUSB Driver\Release
+
+

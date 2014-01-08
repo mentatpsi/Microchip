@@ -1,0 +1,103 @@
+[HEADER]
+magic_cookie={66E99B07-E706-4689-9E80-9B2582898A13}
+file_version=1.0
+device=PIC24FJ128GB106
+[PATH_INFO]
+BuildDirPolicy=BuildDirIsProjectDir
+dir_src=
+dir_bin=
+dir_tmp=Objects
+dir_sin=
+dir_inc=.;..\..\..\Microchip\Include;..\Configurations\PIC24F_mTouch_Eval_Board;..\..\..\Microchip\Include\mTouchCap\PIC18F PIC24F PIC24H dsPIC Library
+dir_lib=
+dir_lkr=
+[CAT_FILTERS]
+filter_src=*.s;*.c
+filter_inc=*.h;*.inc
+filter_obj=*.o
+filter_lib=*.a
+filter_lkr=*.gld
+[CAT_SUBFOLDERS]
+subfolder_src=mTouch
+subfolder_inc=mTouch
+subfolder_obj=
+subfolder_lib=
+subfolder_lkr=
+[FILE_SUBFOLDERS]
+file_000=mTouch
+file_001=mTouch
+file_002=.
+file_003=mTouch
+file_004=.
+file_005=mTouch
+file_006=mTouch
+file_007=mTouch
+file_008=.
+file_009=.
+file_010=.
+file_011=.
+file_012=mTouch
+file_013=.
+[GENERATED_FILES]
+file_000=no
+file_001=no
+file_002=no
+file_003=no
+file_004=no
+file_005=no
+file_006=no
+file_007=no
+file_008=no
+file_009=no
+file_010=no
+file_011=no
+file_012=no
+file_013=no
+[OTHER_FILES]
+file_000=no
+file_001=no
+file_002=no
+file_003=no
+file_004=no
+file_005=no
+file_006=no
+file_007=no
+file_008=no
+file_009=no
+file_010=no
+file_011=no
+file_012=no
+file_013=yes
+[FILE_INFO]
+file_000=..\..\..\Microchip\mTouchCap\PIC18F PIC24F PIC24H dsPIC Library\mTouchAcquistion.c
+file_001=..\..\..\Microchip\mTouchCap\PIC18F PIC24F PIC24H dsPIC Library\mTouchSensor.c
+file_002=..\Configurations\PIC24F_mTouch_Eval_Board\system.c
+file_003=..\..\..\Microchip\mTouchCap\PIC18F PIC24F PIC24H dsPIC Library\mTouchDebug.c
+file_004=Proximity Demo Main.c
+file_005=..\..\..\Microchip\Include\mTouchCap\PIC18F PIC24F PIC24H dsPIC Library\mTouch.h
+file_006=..\..\..\Microchip\Include\mTouchCap\PIC18F PIC24F PIC24H dsPIC Library\mTouchAcquisitionMCU16.h
+file_007=..\..\..\Microchip\Include\mTouchCap\PIC18F PIC24F PIC24H dsPIC Library\mTouchSensor.h
+file_008=..\..\..\Microchip\Include\Compiler.h
+file_009=..\..\..\Microchip\Include\GenericTypeDefs.h
+file_010=..\Configurations\PIC24F_mTouch_Eval_Board\system.h
+file_011=mTouchConfig.h
+file_012=..\..\..\Microchip\Include\mTouchCap\PIC18F PIC24F PIC24H dsPIC Library\mTouchDebug.h
+file_013=ReadMe.txt
+[SUITE_INFO]
+suite_guid={9BCCB495-CD65-480A-BA76-63D8E78B117F}
+suite_state=
+[TOOL_SETTINGS]
+TS{8493B2ED-D539-4951-86C9-24D5331F0393}=
+TS{F9CE474D-6A6C-401D-A11E-BEE01B244D79}=-g -Wall -Os -fno-ivopts
+TS{F9CE474D-6A6C-401D-A11E-BEE01B244D79}_alt=yes
+TS{21A8AA9B-E75C-40B6-B3AE-9CBC16FF2EF9}=-o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)" -Map="$(BINDIR_)$(TARGETBASE).map" --report-mem
+TS{45B3B6E0-6DAF-4E40-8D20-CFB1B620134D}=
+[INSTRUMENTED_TRACE]
+enable=0
+transport=0
+format=0
+[CUSTOM_BUILD]
+Pre-Build=
+Pre-BuildEnabled=1
+Post-Build=
+Post-BuildEnabled=1

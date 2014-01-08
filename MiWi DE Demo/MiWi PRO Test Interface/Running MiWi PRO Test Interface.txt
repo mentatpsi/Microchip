@@ -1,0 +1,36 @@
+MiWi PRO Test Interface
+
+A new project, "MiWi PRO Test Interface" has been added to this beta release of MiWi DE. This new project, driven by testing menus on hyper terminal, is the main interface for Microchip developer to verify the functionalities of MiWi PRO protocol stack. Users, on the other hand, may benefit in evaluating the capability of MiWi PRO protocol stack with this existing interface.
+
+Majority of the testing is done on Coordinators, which have routing capability. Project "MiWi PRO Test Interface" is configured to use only MiWi PRO protocol with Coordinator capability. For testing, user needs to change the EUI address defined file "ConfigApp.h" for each nodes. When powering up, the node will first try to find a possible Coordinator to join. If no Coordinator is found, it will start a new network and act as a PAN Cooridnator; otherwise, it will join the network. As described in MiWi PRO application note, it is highly recommended to introduce an interval longer than 30 seconds between each Coordinator joining the network. 
+
+By pressing "Enter" key on the PC keyboard, a menu system can be brought up on the hyper terminal that is connected to the RS232 port on the standard demo boards. The hyper terminal settings are the same as other MiWi DE demos: 19200 baud rate, 8 bit data, none parity, 1 bit stop and no flow control. The root menu looks like following:
+
+------------------------------------------------------------------------------------
+| 							|
+|    1:  Enable/Disable Join					|
+|    2:  Show Family Tree					|
+|    3:  Show Routing Table					|
+|    4:  Send Message					|
+|    5:  Set Family Tree					|
+|    6:  Set Routing Table					|
+|    7:  Set Neighbor Routing Table				|
+|    8:  Start Frequency Agility				|
+|    9:  Socket						|
+|    z:  Dump Connection					|
+|							|
+------------------------------------------------------------------------------------
+
+With option 1, user can enable/disable a node to accept new connections. When multiple Coordinators allow join, they all will respond to an active scan. The joining device, usually tries to join the first one to respond. As the result, the new device may join the network at random points and user has no control over network topology. By enable/disable join, user can effectively configure only one Coordinator to enable join, thus control where the next Coordinator to join the network, ultimately control the network topology.
+
+Option 2 and 3 allow the tester to see the family tree information as well as the routing table, including neighbor routing table information. Those information are essential for routing. User can check those two options and verify if the routing is as planned by the routing mechanism according to available routing information.
+
+Option 4 may be used by the user to send a message by different ways. This option triggers data transmission to verify routing capabilities.
+
+Option 5, 6 and 7 may be used by the tester to modify the family tree and routing table. By manually setting the family tree as well as routing information, user can stage the node in a particular network condition and verify its routing capabilities under such condition. These interfaces are heavily used by the developers. Tester needs to be very sure of the meaning of the his/her modifcations, otherwise, the node may not be able to send any message due to invalid routing information.
+
+Option 8 may be used by the tester to initiate frequency agility functionalities. Only the PAN Coordinator can use this option. All other Coordinators will discard this option.
+
+Option 9 may be used to establish a socket connection (or indirect connection in MiApp's term). When two nodes on the network choose option 9 at the same time (within 3 seconds by default setting), a socket should be established and node information should be exchanged and inserted into connection table respectively. The peer information can be verified by option Z.
+
+Option Z may be used to dump connection table contents. 

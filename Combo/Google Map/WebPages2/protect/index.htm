@@ -1,0 +1,31 @@
+~inc:header.inc~
+<div id="content">
+
+<h1>Login Successful</h1>
+
+<p>You have successfully logged in to the web server.  This authentication 
+is valid until you close your browser.</p>
+
+<p>Credentials are verified in your own custom callback function called 
+<code>HTTPAuthenticate</code>.  In here, you can determine if the supplied
+user name and password are valid for access to the requested page.  You can 
+add multiple users and restrict different users to different pages.</p>
+
+<p class="exercise"><b>Exercise:</b> Change the user name and password in
+<code>HTTPAuthenticate</code> to one of your choosing.  (The callback is 
+located in <code>CustomHTTPApp.c</code>.)</p>
+
+<div class="examplebox">
+When you finish, refresh this page to test your new user name and password 
+combination.
+</div>
+
+</div>
+
+<script type="text/javascript">
+<!--
+document.getElementById('hello').innerHTML = "~hellomsg~";
+//-->
+</script>
+
+~inc:footer.inc~

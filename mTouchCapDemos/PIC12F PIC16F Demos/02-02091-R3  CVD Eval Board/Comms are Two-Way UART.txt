@@ -1,0 +1,1 @@
+Two-way communications are implemented by the mTouch GUI.

@@ -1,0 +1,36 @@
+Wifi G Demo
+
+
+Demo Version: 1.03
+MLA v5 June-2013  
+
+- No changes to Wi-Fi G Demo Board features.
+- Since there are changes to multiple WiFi-related files to Demo/WiFi Console/EZConfig projects
+  and Wi-Fi G Demo Board shares a lot of these common WiFi source files, revision 
+  change to keep track of June 2013 release.
+
+
+---------------------------------------------------------------------------------
+
+Demo Version: 1.02
+MLA v5 March-2013  
+
+Features
+-       WiFi G Demo Boards will be programmed with this Demo Version 1.02
+-	Unit starts up in SoftAP on power up. Use http://mchpboard.local or http://192.168.1.3
+-	Scan before starting up as softAP and click web browser button to select <Display scan results>
+-	Redirection 
+-	Holding reset while power up invokes self-test
+-	Unit DHCP’s address (at least 1) for RF module FW version 0x3107
+
+Known issues
+- Unable to connect to iPhone in softAP mode using iOS6.0.1 or earlier iOS6. Need to upgrade to iOS6.1
+
+
+Tested devices
+- laptop with wireless adaptor (win7 professional)
+- iphone 5 (iOS6.1 and iOS6.1.2)
+- samsung galaxy tab 7.0 (android 4.0.3)
+- samsung galaxy tab 7.0 (android 4.1.1)
+
+

@@ -1,0 +1,31 @@
+~inc:header.inc~
+<div id="content">
+
+<h1>File Uploads</h1>
+
+<p>The HTTP server can accept file uploads via POST.  This can be used for 
+many applications such as allowing users to upload configuration settings files.
+Each application must implement its own file processor.  This example 
+calculates the MD5 hash of any file.</p>
+
+<form action="upload.htm" method="post" enctype="multipart/form-data">
+<div class="examplebox">
+~uploadedmd5~
+<p style="margin-bottom: 2px"><b>File: </b>&nbsp;
+<input type="file" name="md5file" size="30" /> &nbsp;
+<input type="submit" value="Get MD5" />
+</p>
+</div>
+</form>
+
+<p>This is an advanced feature.  For more information, please refer to the 
+implementation in <code>CustomHTTPApp.c</code> for comments and explaination.</p>
+
+</div>
+
+<script type="text/javascript">
+<!--
+document.getElementById('hello').innerHTML = "~hellomsg~";
+-->
+</script>
+~inc:footer.inc~

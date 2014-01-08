@@ -1,0 +1,1021 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<link rel=File-List href="TCPIP%20Stack%20Performance_files/filelist.xml">
+<link rel=Edit-Time-Data href="TCPIP%20Stack%20Performance_files/editdata.mso">
+<link rel=OLE-Object-Data href="TCPIP%20Stack%20Performance_files/oledata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Howard Henry Schlunder</o:Author>
+  <o:LastAuthor> </o:LastAuthor>
+  <o:Created>2009-04-01T14:28:14Z</o:Created>
+  <o:LastSaved>2011-07-07T20:57:34Z</o:LastSaved>
+  <o:Company>Microchip Technology Inc</o:Company>
+  <o:Version>11.6568</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:TargetScreenSize>1024x768</o:TargetScreenSize>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+.font6
+	{color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+.font7
+	{color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+.font9
+	{color:black;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	text-align:left;}
+.xl25
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+.xl26
+	{mso-style-parent:style0;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+.xl27
+	{mso-style-parent:style0;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:left;}
+.xl28
+	{mso-style-parent:style0;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#CCFFCC;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl29
+	{mso-style-parent:style0;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	background:silver;
+	mso-pattern:auto none;}
+.xl30
+	{mso-style-parent:style0;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:silver;
+	mso-pattern:auto none;}
+.xl31
+	{mso-style-parent:style0;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:silver;
+	mso-pattern:auto none;}
+.xl32
+	{mso-style-parent:style0;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:right;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:silver;
+	mso-pattern:auto none;}
+.xl33
+	{mso-style-parent:style0;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;}
+.xl34
+	{mso-style-parent:style0;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;}
+.xl35
+	{mso-style-parent:style0;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;}
+.xl36
+	{mso-style-parent:style0;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:right;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;}
+.xl37
+	{mso-style-parent:style0;
+	color:black;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;}
+.xl38
+	{mso-style-parent:style0;
+	color:black;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;}
+.xl39
+	{mso-style-parent:style0;
+	color:black;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;}
+.xl40
+	{mso-style-parent:style0;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;}
+.xl41
+	{mso-style-parent:style0;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:right;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:auto none;}
+.xl42
+	{mso-style-parent:style0;
+	color:black;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	background:silver;
+	mso-pattern:auto none;}
+.xl43
+	{mso-style-parent:style0;
+	color:black;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:silver;
+	mso-pattern:auto none;}
+.xl44
+	{mso-style-parent:style0;
+	color:black;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:silver;
+	mso-pattern:auto none;}
+.xl45
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;
+	background:#99CCFF;
+	mso-pattern:auto none;}
+.xl46
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid black;
+	border-left:1.0pt solid windowtext;
+	background:#99CCFF;
+	mso-pattern:auto none;}
+.xl47
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;
+	background:#99CCFF;
+	mso-pattern:auto none;}
+.xl48
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid black;
+	border-left:1.0pt solid windowtext;
+	background:#99CCFF;
+	mso-pattern:auto none;}
+.xl49
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;
+	background:#99CCFF;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl50
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid black;
+	border-left:1.0pt solid windowtext;
+	background:#99CCFF;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl51
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#CCFFCC;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl52
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	background:#CCFFCC;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl53
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid black;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#CCFFCC;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl54
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid black;
+	background:#CCFFCC;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl55
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#CCFFCC;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl56
+	{mso-style-parent:style0;
+	text-align:left;
+	white-space:normal;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>600</x:HorizontalResolution>
+      <x:VerticalResolution>600</x:VerticalResolution>
+     </x:Print>
+     <x:CodeName>Sheet1</x:CodeName>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>8</x:ActiveRow>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+    <x:PublishObjects>
+     <x:PublishObject>
+      <x:Id>24211</x:Id>
+      <x:DivID>TCPIP Stack Performance Matrix (2)_24211</x:DivID>
+      <x:SourceType>SourceSheet</x:SourceType>
+      <x:HtmlType>HtmlStatic</x:HtmlType>
+      <x:Location
+       HRef="C:\Work\Microchip Solutions Support Files\Distribution 5.00\DOM\Other External Documentation\TCPIP Stack Performance Matrix.htm"/>
+     </x:PublishObject>
+    </x:PublishObjects>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>11640</x:WindowHeight>
+  <x:WindowWidth>15480</x:WindowWidth>
+  <x:WindowTopX>1320</x:WindowTopX>
+  <x:WindowTopY>915</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+
+<body link=blue vlink=purple>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=1402 style='border-collapse:
+ collapse;table-layout:fixed;width:1052pt'>
+ <col width=158 style='mso-width-source:userset;mso-width-alt:5778;width:119pt'>
+ <col class=xl24 width=39 style='mso-width-source:userset;mso-width-alt:1426;
+ width:29pt'>
+ <col width=119 style='mso-width-source:userset;mso-width-alt:4352;width:89pt'>
+ <col width=135 style='mso-width-source:userset;mso-width-alt:4937;width:101pt'>
+ <col width=59 style='mso-width-source:userset;mso-width-alt:2157;width:44pt'>
+ <col width=64 span=2 style='width:48pt'>
+ <col width=53 style='mso-width-source:userset;mso-width-alt:1938;width:40pt'>
+ <col width=59 style='mso-width-source:userset;mso-width-alt:2157;width:44pt'>
+ <col width=64 span=2 style='width:48pt'>
+ <col width=53 style='mso-width-source:userset;mso-width-alt:1938;width:40pt'>
+ <col width=65 style='mso-width-source:userset;mso-width-alt:2377;width:49pt'>
+ <col width=88 style='mso-width-source:userset;mso-width-alt:3218;width:66pt'>
+ <col width=318 style='mso-width-source:userset;mso-width-alt:11629;width:239pt'>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 colspan=2 width=197 style='height:12.75pt;
+  mso-ignore:colspan;width:148pt'>Stack and Compiler Versions</td>
+  <td width=119 style='width:89pt'></td>
+  <td width=135 style='width:101pt'></td>
+  <td width=59 style='width:44pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=53 style='width:40pt'></td>
+  <td width=59 style='width:44pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=53 style='width:40pt'></td>
+  <td width=65 style='width:49pt'></td>
+  <td width=88 style='width:66pt'></td>
+  <td width=318 style='width:239pt'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>TCP/IP Stack v5.36.2</td>
+  <td class=xl24></td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl26 colspan=3 style='height:12.75pt;mso-ignore:colspan'>MPLAB
+  C Compiler for PIC18 MCUs (C18) v3.38</td>
+  <td colspan=12 class=xl26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl26 colspan=4 style='height:12.75pt;mso-ignore:colspan'>MPLAB
+  C Compiler for PIC24 MCUs and dsPIC DSCs (C30) v3.25</td>
+  <td colspan=11 class=xl26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl26 colspan=3 style='height:12.75pt;mso-ignore:colspan'>MPLAB
+  C Compiler for PIC32 MCUs (C32) v1.12</td>
+  <td colspan=12 class=xl26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=15 class=xl26 style='height:12.75pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl26 colspan=14 style='height:12.75pt;mso-ignore:colspan'>Wired
+  test setup: Connect the board under test directly to a computer using a
+  crossover cable.<span style='mso-spacerun:yes'>  </span>Follow the TCPIP
+  Stack Help file's instructions for the TCP/UDP Performance Test.</td>
+  <td class=xl26></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl26 colspan=15 style='height:12.75pt;mso-ignore:colspan'>Wireless
+  test setup: Connect the PC to a router with a Category 5 cable.<span
+  style='mso-spacerun:yes'>  </span>Connect the demo board to the router
+  wirelessly<span style='mso-spacerun:yes'>  </span>Follow the TCPIP Stack Help
+  file's instructions for the TCP/UDP Performance Test.</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl26 style='height:13.5pt'></td>
+  <td class=xl27></td>
+  <td colspan=13 class=xl26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=57 style='mso-height-source:userset;height:42.75pt'>
+  <td rowspan=2 height=109 class=xl45 style='border-bottom:1.0pt solid black;
+  height:81.75pt'>Microcontroller</td>
+  <td rowspan=2 class=xl47 style='border-bottom:1.0pt solid black'>MIPS</td>
+  <td rowspan=2 class=xl49 width=119 style='border-bottom:1.0pt solid black;
+  width:89pt'>Network<br>
+    Controller</td>
+  <td rowspan=2 class=xl45 style='border-bottom:1.0pt solid black'>Interface</td>
+  <td colspan=4 class=xl52 width=240 style='border-right:1.0pt solid black;
+  border-left:none;width:180pt'>LAN Transmit Throughput <font class="font6">(Kbytes/sec)</font></td>
+  <td colspan=4 class=xl54 width=240 style='border-right:1.0pt solid black;
+  border-left:none;width:180pt'>Internet Transmit Throughput at 100ms ping
+  <br>
+    <font class="font6">(estimated Kbytes/sec)</font><font class="font7"><sup>(1)</sup></font></td>
+  <td rowspan=2 class=xl45 style='border-bottom:1.0pt solid black'>Compiler</td>
+  <td rowspan=2 class=xl45 style='border-bottom:1.0pt solid black'>Optimization</td>
+  <td rowspan=2 class=xl49 width=318 style='border-bottom:1.0pt solid black;
+  width:239pt'>Test Boards</td>
+ </tr>
+ <tr height=52 style='height:39.0pt'>
+  <td height=52 class=xl28 width=59 style='height:39.0pt;width:44pt'>TCP with
+  200 byte TX FIFO</td>
+  <td class=xl28 width=64 style='width:48pt'>TCP with 2000 byte TX FIFO</td>
+  <td class=xl28 width=64 style='width:48pt'>TCP with 8000 byte TX FIFO</td>
+  <td class=xl28 width=53 style='width:40pt'>UDP</td>
+  <td class=xl28 width=59 style='width:44pt'>TCP with <br>
+    200 byte <br>
+    TX FIFO</td>
+  <td class=xl28 width=64 style='width:48pt'>TCP with <br>
+    2000 byte <br>
+    TX FIFO</td>
+  <td class=xl28 width=64 style='width:48pt'>TCP with <br>
+    8000 byte <br>
+    TX FIFO</td>
+  <td class=xl28 width=53 style='width:40pt'>UDP</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl29 style='height:13.5pt'>PIC18F97J60</td>
+  <td class=xl30 x:num>10.4</td>
+  <td class=xl31>Internal 10BaseT</td>
+  <td class=xl31>-</td>
+  <td class=xl32 x:num="33.9">34</td>
+  <td class=xl32 x:num="75.8">76</td>
+  <td class=xl32>N/A</td>
+  <td class=xl32 x:num>113</td>
+  <td class=xl32 x:num
+  x:fmla="=IF(E12&gt;0.2/0.1, IF(ISNUMBER(E12),0.2/0.1,E12),E12)">2</td>
+  <td class=xl32 x:num x:fmla="=IF(F12&gt;2/0.1, IF(ISNUMBER(F12),2/0.1,F12),F12)">20</td>
+  <td class=xl32 x:fmla="=IF(G12&gt;8/0.1, IF(ISNUMBER(G12),8/0.1,G12),G12)">N/A</td>
+  <td class=xl32 x:num x:fmla="=H12">113</td>
+  <td class=xl31>C18</td>
+  <td class=xl31>Debug</td>
+  <td class=xl31>PICDEM.net 2</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl33 style='height:13.5pt'>PIC18F8722</td>
+  <td class=xl34 x:num>10</td>
+  <td class=xl35>ENC28J60</td>
+  <td class=xl35>SPI, 10 MHz</td>
+  <td class=xl36 x:num="20.5">21</td>
+  <td class=xl36 x:num="45.2">45</td>
+  <td class=xl36>N/A</td>
+  <td class=xl36 x:num>63</td>
+  <td class=xl36 x:num
+  x:fmla="=IF(E13&gt;0.2/0.1, IF(ISNUMBER(E13),0.2/0.1,E13),E13)">2</td>
+  <td class=xl36 x:num x:fmla="=IF(F13&gt;2/0.1, IF(ISNUMBER(F13),2/0.1,F13),F13)">20</td>
+  <td class=xl36 x:fmla="=IF(G13&gt;8/0.1, IF(ISNUMBER(G13),8/0.1,G13),G13)">N/A</td>
+  <td class=xl36 x:num x:fmla="=H13">63</td>
+  <td class=xl35>C18</td>
+  <td class=xl35>Debug</td>
+  <td class=xl35>PIC18 Explorer, Ethernet PICtail</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl33 style='height:13.5pt'>PIC24FJ128GA010</td>
+  <td class=xl34 x:num>16</td>
+  <td class=xl35>ENC28J60</td>
+  <td class=xl35>SPI, 8 MHz</td>
+  <td class=xl36 x:num="55.5">56</td>
+  <td class=xl36 x:num="136.1">136</td>
+  <td class=xl36>N/A</td>
+  <td class=xl36 x:num>203</td>
+  <td class=xl36 x:num
+  x:fmla="=IF(E14&gt;0.2/0.1, IF(ISNUMBER(E14),0.2/0.1,E14),E14)">2</td>
+  <td class=xl36 x:num x:fmla="=IF(F14&gt;2/0.1, IF(ISNUMBER(F14),2/0.1,F14),F14)">20</td>
+  <td class=xl36 x:fmla="=IF(G14&gt;8/0.1, IF(ISNUMBER(G14),8/0.1,G14),G14)">N/A</td>
+  <td class=xl36 x:num x:fmla="=H14">203</td>
+  <td class=xl35>C30</td>
+  <td class=xl35>s (min size)</td>
+  <td class=xl35>Explorer 16, Ethernet PICtail Plus</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl37 style='height:15.0pt'>dsPIC33FJ256GP710<font
+  class="font9"><sup>(2)</sup></font></td>
+  <td class=xl38 x:num>40</td>
+  <td class=xl39>ENC28J60</td>
+  <td class=xl39>SPI, 8 MHz</td>
+  <td class=xl40 align=right x:num="74.8">75</td>
+  <td class=xl40 align=right x:num="199.5">200</td>
+  <td class=xl36>N/A</td>
+  <td class=xl40 align=right x:num>258</td>
+  <td class=xl36 x:num
+  x:fmla="=IF(E15&gt;0.2/0.1, IF(ISNUMBER(E15),0.2/0.1,E15),E15)">2</td>
+  <td class=xl36 x:num x:fmla="=IF(F15&gt;2/0.1, IF(ISNUMBER(F15),2/0.1,F15),F15)">20</td>
+  <td class=xl36 x:fmla="=IF(G15&gt;8/0.1, IF(ISNUMBER(G15),8/0.1,G15),G15)">N/A</td>
+  <td class=xl40 align=right x:num x:fmla="=H15">258</td>
+  <td class=xl35>C30</td>
+  <td class=xl35>s (min size)</td>
+  <td class=xl35>Explorer 16, Ethernet PICtail Plus</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl37 style='height:13.5pt'>PIC32MX360F512L</td>
+  <td class=xl38 x:num>80</td>
+  <td class=xl39>ENC28J60</td>
+  <td class=xl39>SPI, 20 MHz</td>
+  <td class=xl41 x:num="109.6">110</td>
+  <td class=xl36 x:num="347.4">347</td>
+  <td class=xl36>N/A</td>
+  <td class=xl36 x:num>461</td>
+  <td class=xl36 x:num
+  x:fmla="=IF(E16&gt;0.2/0.1, IF(ISNUMBER(E16),0.2/0.1,E16),E16)">2</td>
+  <td class=xl36 x:num x:fmla="=IF(F16&gt;2/0.1, IF(ISNUMBER(F16),2/0.1,F16),F16)">20</td>
+  <td class=xl36 x:fmla="=IF(G16&gt;8/0.1, IF(ISNUMBER(G16),8/0.1,G16),G16)">N/A</td>
+  <td class=xl36 x:num x:fmla="=H16">461</td>
+  <td class=xl35>C32</td>
+  <td class=xl35>s (min size)</td>
+  <td class=xl35>Explorer 16, Ethernet PICtail Plus</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl37 style='height:13.5pt'>PIC32MX795F512L</td>
+  <td class=xl38 x:num>80</td>
+  <td class=xl39>ENC28J60</td>
+  <td class=xl39>SPI, 20 MHz</td>
+  <td class=xl41 x:num="115.2">115</td>
+  <td class=xl36 x:num="363.2">363</td>
+  <td class=xl36>N/A</td>
+  <td class=xl36 x:num>456</td>
+  <td class=xl36 x:num
+  x:fmla="=IF(E17&gt;0.2/0.1, IF(ISNUMBER(E17),0.2/0.1,E17),E17)">2</td>
+  <td class=xl36 x:num x:fmla="=IF(F17&gt;2/0.1, IF(ISNUMBER(F17),2/0.1,F17),F17)">20</td>
+  <td class=xl36 x:fmla="=IF(G17&gt;8/0.1, IF(ISNUMBER(G17),8/0.1,G17),G17)">N/A</td>
+  <td class=xl36 x:num x:fmla="=H17">456</td>
+  <td class=xl35>C32</td>
+  <td class=xl35>s (min size)</td>
+  <td class=xl35>Explorer 16, Ethernet PICtail Plus</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl29 style='height:15.0pt'>PIC18F8722</td>
+  <td class=xl30 x:num>10</td>
+  <td class=xl31>ENC624J600<font class="font7"><sup>(3)</sup></font></td>
+  <td class=xl31>SPI, 10 MHz</td>
+  <td class=xl32 x:num="27.7">28</td>
+  <td class=xl32 x:num="76.3">76</td>
+  <td class=xl32 x:num="79.9">80</td>
+  <td class=xl32 x:num>114</td>
+  <td class=xl32 x:num
+  x:fmla="=IF(E18&gt;0.2/0.1, IF(ISNUMBER(E18),0.2/0.1,E18),E18)">2</td>
+  <td class=xl32 x:num x:fmla="=IF(F18&gt;2/0.1, IF(ISNUMBER(F18),2/0.1,F18),F18)">20</td>
+  <td class=xl32 x:num="79.9"
+  x:fmla="=IF(G18&gt;8/0.1, IF(ISNUMBER(G18),8/0.1,G18),G18)">80</td>
+  <td class=xl32 x:num x:fmla="=H18">114</td>
+  <td class=xl31>C18</td>
+  <td class=xl31>Debug</td>
+  <td class=xl31>PIC18 Explorer, Fast 100Mbps Ethernet PICtail Plus</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl29 style='height:15.0pt'>PIC24FJ128GA010</td>
+  <td class=xl30 x:num>16</td>
+  <td class=xl31>ENC624J600<font class="font7"><sup>(3)</sup></font></td>
+  <td class=xl31>SPI, 8 MHz</td>
+  <td class=xl32 x:num="57.2">57</td>
+  <td class=xl32 x:num="168.4">168</td>
+  <td class=xl32 x:num="183.4">183</td>
+  <td class=xl32 x:num>362</td>
+  <td class=xl32 x:num
+  x:fmla="=IF(E19&gt;0.2/0.1, IF(ISNUMBER(E19),0.2/0.1,E19),E19)">2</td>
+  <td class=xl32 x:num x:fmla="=IF(F19&gt;2/0.1, IF(ISNUMBER(F19),2/0.1,F19),F19)">20</td>
+  <td class=xl32 x:num x:fmla="=IF(G19&gt;8/0.1, IF(ISNUMBER(G19),8/0.1,G19),G19)">80</td>
+  <td class=xl32 x:num x:fmla="=H19">362</td>
+  <td class=xl31>C30</td>
+  <td class=xl31>s (min size)</td>
+  <td class=xl31>Explorer 16, Fast 100Mbps Ethernet PICtail Plus</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl42 style='height:15.0pt'>dsPIC33FJ256GP710<font
+  class="font9"><sup>(2)</sup></font></td>
+  <td class=xl30 x:num>40</td>
+  <td class=xl31>ENC624J600<font class="font7"><sup>(3)</sup></font></td>
+  <td class=xl31>SPI, 8 MHz</td>
+  <td class=xl32 x:num="93.7">94</td>
+  <td class=xl32 x:num="290.9">291</td>
+  <td class=xl32 x:num="320.8">321</td>
+  <td class=xl32 x:num="553.6">554</td>
+  <td class=xl32 x:num
+  x:fmla="=IF(E20&gt;0.2/0.1, IF(ISNUMBER(E20),0.2/0.1,E20),E20)">2</td>
+  <td class=xl32 x:num x:fmla="=IF(F20&gt;2/0.1, IF(ISNUMBER(F20),2/0.1,F20),F20)">20</td>
+  <td class=xl32 x:num x:fmla="=IF(G20&gt;8/0.1, IF(ISNUMBER(G20),8/0.1,G20),G20)">80</td>
+  <td class=xl32 x:num="553.6" x:fmla="=H20">554</td>
+  <td class=xl31>C30</td>
+  <td class=xl31>s (min size)</td>
+  <td class=xl31>Explorer 16, Fast 100Mbps Ethernet PICtail Plus</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl42 style='height:15.0pt'>PIC32MX360F512L</td>
+  <td class=xl30 x:num>80</td>
+  <td class=xl31>ENC624J600<font class="font7"><sup>(3)</sup></font></td>
+  <td class=xl31>SPI, 13.33 MHz</td>
+  <td class=xl32 x:num="142.1">142</td>
+  <td class=xl32 x:num="374.1">374</td>
+  <td class=xl32 x:num="421.2">421</td>
+  <td class=xl32 x:num>692</td>
+  <td class=xl32 x:num
+  x:fmla="=IF(E21&gt;0.2/0.1, IF(ISNUMBER(E21),0.2/0.1,E21),E21)">2</td>
+  <td class=xl32 x:num x:fmla="=IF(F21&gt;2/0.1, IF(ISNUMBER(F21),2/0.1,F21),F21)">20</td>
+  <td class=xl32 x:num x:fmla="=IF(G21&gt;8/0.1, IF(ISNUMBER(G21),8/0.1,G21),G21)">80</td>
+  <td class=xl32 x:num x:fmla="=H21">692</td>
+  <td class=xl31>C32</td>
+  <td class=xl31>s (min size)</td>
+  <td class=xl31>Explorer 16, Fast 100Mbps Ethernet PICtail Plus</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl42 style='height:15.0pt'>PIC32MX795F512L</td>
+  <td class=xl30 x:num>80</td>
+  <td class=xl31>ENC624J600<font class="font7"><sup>(3)</sup></font></td>
+  <td class=xl31>SPI, 13.33 MHz</td>
+  <td class=xl32 x:num="154.4">154</td>
+  <td class=xl32 x:num="411.6">412</td>
+  <td class=xl32 x:num="468.8">469</td>
+  <td class=xl32 x:num>784</td>
+  <td class=xl32 x:num
+  x:fmla="=IF(E22&gt;0.2/0.1, IF(ISNUMBER(E22),0.2/0.1,E22),E22)">2</td>
+  <td class=xl32 x:num x:fmla="=IF(F22&gt;2/0.1, IF(ISNUMBER(F22),2/0.1,F22),F22)">20</td>
+  <td class=xl32 x:num x:fmla="=IF(G22&gt;8/0.1, IF(ISNUMBER(G22),8/0.1,G22),G22)">80</td>
+  <td class=xl32 x:num x:fmla="=H22">784</td>
+  <td class=xl31>C32</td>
+  <td class=xl31>s (min size)</td>
+  <td class=xl31>Explorer 16, Fast 100Mbps Ethernet PICtail Plus</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl33 style='height:15.0pt'>PIC24FJ128GA010</td>
+  <td class=xl34 x:num>16</td>
+  <td class=xl35>ENC624J600<font class="font7"><sup>(3)</sup></font></td>
+  <td class=xl35>PSP Mode 5, PMP</td>
+  <td class=xl36 x:num="101.1">101</td>
+  <td class=xl36 x:num="321.1">321</td>
+  <td class=xl36 x:num="362.8">363</td>
+  <td class=xl36 x:num>1028</td>
+  <td class=xl36 x:num
+  x:fmla="=IF(E23&gt;0.2/0.1, IF(ISNUMBER(E23),0.2/0.1,E23),E23)">2</td>
+  <td class=xl36 x:num x:fmla="=IF(F23&gt;2/0.1, IF(ISNUMBER(F23),2/0.1,F23),F23)">20</td>
+  <td class=xl36 x:num x:fmla="=IF(G23&gt;8/0.1, IF(ISNUMBER(G23),8/0.1,G23),G23)">80</td>
+  <td class=xl36 x:num x:fmla="=H23">1028</td>
+  <td class=xl35>C30</td>
+  <td class=xl35>s (min size)</td>
+  <td class=xl35>Explorer 16, Fast 100Mbps Ethernet PICtail Plus</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl37 style='height:15.0pt'>dsPIC33FJ256GP710<font
+  class="font9"><sup>(2)</sup></font></td>
+  <td class=xl38 x:num>40</td>
+  <td class=xl35>ENC624J600<font class="font7"><sup>(3)</sup></font></td>
+  <td class=xl35>PSP Mode 5, Bitbang</td>
+  <td class=xl36 x:num="201.6">202</td>
+  <td class=xl36 x:num>711</td>
+  <td class=xl36 x:num="867.7">868</td>
+  <td class=xl36 x:num>2038</td>
+  <td class=xl36 x:num
+  x:fmla="=IF(E24&gt;0.2/0.1, IF(ISNUMBER(E24),0.2/0.1,E24),E24)">2</td>
+  <td class=xl36 x:num x:fmla="=IF(F24&gt;2/0.1, IF(ISNUMBER(F24),2/0.1,F24),F24)">20</td>
+  <td class=xl36 x:num x:fmla="=IF(G24&gt;8/0.1, IF(ISNUMBER(G24),8/0.1,G24),G24)">80</td>
+  <td class=xl36 x:num x:fmla="=H24">2038</td>
+  <td class=xl35>C30</td>
+  <td class=xl35>s (min size)</td>
+  <td class=xl35>Explorer 16, Fast 100Mbps Ethernet PICtail Plus</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl33 style='height:15.0pt'>PIC32MX360F512L</td>
+  <td class=xl38 x:num>80</td>
+  <td class=xl35>ENC624J600<font class="font7"><sup>(3)</sup></font></td>
+  <td class=xl35>PSP Mode 5, PMP</td>
+  <td class=xl36 x:num="200.3">200</td>
+  <td class=xl36 x:num="832.8">833</td>
+  <td class=xl36 x:num>1027</td>
+  <td class=xl36 x:num>2071</td>
+  <td class=xl36 x:num
+  x:fmla="=IF(E25&gt;0.2/0.1, IF(ISNUMBER(E25),0.2/0.1,E25),E25)">2</td>
+  <td class=xl36 x:num x:fmla="=IF(F25&gt;2/0.1, IF(ISNUMBER(F25),2/0.1,F25),F25)">20</td>
+  <td class=xl36 x:num x:fmla="=IF(G25&gt;8/0.1, IF(ISNUMBER(G25),8/0.1,G25),G25)">80</td>
+  <td class=xl36 x:num x:fmla="=H25">2071</td>
+  <td class=xl35>C32</td>
+  <td class=xl35>s (min size)</td>
+  <td class=xl35>Explorer 16, Fast 100Mbps Ethernet PICtail Plus</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl42 style='height:15.0pt'>PIC32MX795F512L<font
+  class="font9"><sup>(3)</sup></font></td>
+  <td class=xl43 x:num>80</td>
+  <td class=xl31>Internal 100BaseTX</td>
+  <td class=xl44>-</td>
+  <td class=xl32 x:num="393.2">393</td>
+  <td class=xl32 x:num>1635</td>
+  <td class=xl32 x:num>2543</td>
+  <td class=xl32 x:num>8449</td>
+  <td class=xl32 x:num
+  x:fmla="=IF(E26&gt;0.2/0.1, IF(ISNUMBER(E26),0.2/0.1,E26),E26)">2</td>
+  <td class=xl32 x:num x:fmla="=IF(F26&gt;2/0.1, IF(ISNUMBER(F26),2/0.1,F26),F26)">20</td>
+  <td class=xl32 x:num x:fmla="=IF(G26&gt;8/0.1, IF(ISNUMBER(G26),8/0.1,G26),G26)">80</td>
+  <td class=xl32 x:num x:fmla="=H26">8449</td>
+  <td class=xl31>C32</td>
+  <td class=xl31>s (min size)</td>
+  <td class=xl31>PIC32 Ethernet Starter Kit</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl33 style='height:13.5pt'>PIC18F97J60</td>
+  <td class=xl34 x:num>10.4</td>
+  <td class=xl35>MRF24WB0M</td>
+  <td class=xl35>SPI, 10.4 MHz</td>
+  <td class=xl36 x:num="5.4">5</td>
+  <td class=xl36 x:num="22.8">23</td>
+  <td class=xl36 x:num="30.3">30</td>
+  <td class=xl36 x:num="39.7">40</td>
+  <td class=xl36 x:num
+  x:fmla="=IF(E27&gt;0.2/0.1, IF(ISNUMBER(E27),0.2/0.1,E27),E27)">2</td>
+  <td class=xl36 x:num x:fmla="=IF(F27&gt;2/0.1, IF(ISNUMBER(F27),2/0.1,F27),F27)">20</td>
+  <td class=xl36 x:num="30.3"
+  x:fmla="=IF(G27&gt;8/0.1, IF(ISNUMBER(G27),8/0.1,G27),G27)">30</td>
+  <td class=xl36 x:num="39.7" x:fmla="=H27">40</td>
+  <td class=xl35>C18</td>
+  <td class=xl35>Debug</td>
+  <td class=xl35>PICDEM.net 2, MRF24WB0MA Wi-Fi PICtail Plus</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl33 style='height:13.5pt'>PIC24FJ256GB110</td>
+  <td class=xl34 x:num>16</td>
+  <td class=xl35>MRF24WB0M</td>
+  <td class=xl35>SPI, 8 MHz</td>
+  <td class=xl36 x:num="7.8">8</td>
+  <td class=xl36 x:num="42.6">43</td>
+  <td class=xl36 x:num="63.1">63</td>
+  <td class=xl36 x:num="47.7">48</td>
+  <td class=xl36 x:num
+  x:fmla="=IF(E28&gt;0.2/0.1, IF(ISNUMBER(E28),0.2/0.1,E28),E28)">2</td>
+  <td class=xl36 x:num x:fmla="=IF(F28&gt;2/0.1, IF(ISNUMBER(F28),2/0.1,F28),F28)">20</td>
+  <td class=xl36 x:num="63.1"
+  x:fmla="=IF(G28&gt;8/0.1, IF(ISNUMBER(G28),8/0.1,G28),G28)">63</td>
+  <td class=xl36 x:num="47.7" x:fmla="=H28">48</td>
+  <td class=xl35>C30</td>
+  <td class=xl35>s (min size)</td>
+  <td class=xl35>Explorer 16, MRF24WB0MA Wi-Fi PICtail Plus</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl37 style='height:15.0pt'>dsPIC33FJ256GP710<font
+  class="font9"><sup>(2)</sup></font></td>
+  <td class=xl38 x:num>40</td>
+  <td class=xl35>MRF24WB0M</td>
+  <td class=xl39>SPI, 8 MHz</td>
+  <td class=xl36 x:num="7.8">8</td>
+  <td class=xl36 x:num="44.7">45</td>
+  <td class=xl36 x:num="74.2">74</td>
+  <td class=xl36 x:num="47.5">48</td>
+  <td class=xl36 x:num
+  x:fmla="=IF(E29&gt;0.2/0.1, IF(ISNUMBER(E29),0.2/0.1,E29),E29)">2</td>
+  <td class=xl36 x:num x:fmla="=IF(F29&gt;2/0.1, IF(ISNUMBER(F29),2/0.1,F29),F29)">20</td>
+  <td class=xl36 x:num="74.2"
+  x:fmla="=IF(G29&gt;8/0.1, IF(ISNUMBER(G29),8/0.1,G29),G29)">74</td>
+  <td class=xl36 x:num="47.5" x:fmla="=H29">48</td>
+  <td class=xl35>C30</td>
+  <td class=xl35>s (min size)</td>
+  <td class=xl35>Explorer 16, MRF24WB0MA Wi-Fi PICtail Plus</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl37 style='height:13.5pt'>PIC32MX360F512L</td>
+  <td class=xl38 x:num>80</td>
+  <td class=xl35>MRF24WB0M</td>
+  <td class=xl39>SPI, 20 MHz</td>
+  <td class=xl36 x:num="8.8">9</td>
+  <td class=xl36 x:num="51.1">51</td>
+  <td class=xl36 x:num="82.8">83</td>
+  <td class=xl36 x:num="47.7">48</td>
+  <td class=xl36 x:num
+  x:fmla="=IF(E30&gt;0.2/0.1, IF(ISNUMBER(E30),0.2/0.1,E30),E30)">2</td>
+  <td class=xl36 x:num x:fmla="=IF(F30&gt;2/0.1, IF(ISNUMBER(F30),2/0.1,F30),F30)">20</td>
+  <td class=xl36 x:num x:fmla="=IF(G30&gt;8/0.1, IF(ISNUMBER(G30),8/0.1,G30),G30)">80</td>
+  <td class=xl36 x:num="47.7" x:fmla="=H30">48</td>
+  <td class=xl35>C32</td>
+  <td class=xl35>s (min size)</td>
+  <td class=xl35>Explorer 16, MRF24WB0MA Wi-Fi PICtail Plus</td>
+ </tr>
+ <tr height=18 style='height:13.5pt'>
+  <td height=18 class=xl37 style='height:13.5pt'>PIC32MX795F512L</td>
+  <td class=xl38 x:num>80</td>
+  <td class=xl35>MRF24WB0M</td>
+  <td class=xl39>SPI, 20 MHz</td>
+  <td class=xl36 x:num="8.8">9</td>
+  <td class=xl36 x:num="53.2">53</td>
+  <td class=xl36 x:num="83.9">84</td>
+  <td class=xl36 x:num="43.6">44</td>
+  <td class=xl36 x:num
+  x:fmla="=IF(E31&gt;0.2/0.1, IF(ISNUMBER(E31),0.2/0.1,E31),E31)">2</td>
+  <td class=xl36 x:num x:fmla="=IF(F31&gt;2/0.1, IF(ISNUMBER(F31),2/0.1,F31),F31)">20</td>
+  <td class=xl36 x:num x:fmla="=IF(G31&gt;8/0.1, IF(ISNUMBER(G31),8/0.1,G31),G31)">80</td>
+  <td class=xl36 x:num="43.6" x:fmla="=H31">44</td>
+  <td class=xl35>C32</td>
+  <td class=xl35>s (min size)</td>
+  <td class=xl35>Explorer 16, MRF24WB0MA Wi-Fi PICtail Plus</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl24></td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=56 style='mso-height-source:userset;height:42.0pt'>
+  <td colspan=8 height=56 class=xl56 width=691 style='height:42.0pt;width:518pt'>1.
+  Internet throughput with acknowledged protocols, such as TCP, are capped by
+  the formula (Buffer Size)/(Ping Time).<span style='mso-spacerun:yes'> 
+  </span>Assuming round trip acknowledgement latency cannot be controlled,
+  bigger buffers must be used to increase throughput.<span
+  style='mso-spacerun:yes'>  </span>Internet performance is derived from LAN
+  throughput and is not measured.</td>
+  <td colspan=7 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td colspan=8 height=36 class=xl56 width=691 style='height:27.0pt;width:518pt'>2.
+  Stack performance with a dsPIC33F is identical to a PIC24H device at the same
+  processor clock.<span style='mso-spacerun:yes'>  </span>No DSP features are
+  used by the TCP/IP stack.</td>
+  <td colspan=7 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td colspan=8 height=36 class=xl56 width=691 style='height:27.0pt;width:518pt'>3.
+  ENC624J600 and PIC32MX7XX/6XX Internal 100BaseTX Ethernet measurements are
+  done in 100Mbps, full duplex mode.</td>
+  <td colspan=7 style='mso-ignore:colspan'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=158 style='width:119pt'></td>
+  <td width=39 style='width:29pt'></td>
+  <td width=119 style='width:89pt'></td>
+  <td width=135 style='width:101pt'></td>
+  <td width=59 style='width:44pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=53 style='width:40pt'></td>
+  <td width=59 style='width:44pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=53 style='width:40pt'></td>
+  <td width=65 style='width:49pt'></td>
+  <td width=88 style='width:66pt'></td>
+  <td width=318 style='width:239pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

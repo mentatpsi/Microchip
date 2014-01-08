@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="Common" displayName="Common" projectFiles="true">
+        <itemPath>../../../Microchip/Include/TimeDelay.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Graphics" displayName="Graphics" projectFiles="true">
+        <itemPath>../../../Microchip/Include/Graphics/Template.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/Button.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/DisplayDriver.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/EditBox.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/GOL.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/Graphics.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/Grid.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/ListBox.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/Picture.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/Primitive.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/RoundDial.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/ScanCodes.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/Slider.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/StaticText.h</itemPath>
+        <itemPath>../../../Microchip/Include/Graphics/DisplayDriverInterface.h</itemPath>
+      </logicalFolder>
+      <itemPath>../h/Utility.h</itemPath>
+      <itemPath>../h/Accelerometer.h</itemPath>
+      <itemPath>../h/AccGraph.h</itemPath>
+      <itemPath>../h/ExtSensor.h</itemPath>
+      <itemPath>../h/G711.h</itemPath>
+      <itemPath>../h/Games.h</itemPath>
+      <itemPath>../h/GraphicsConfig.h</itemPath>
+      <itemPath>../h/HardwareProfile.h</itemPath>
+      <itemPath>../h/Main.h</itemPath>
+      <itemPath>../h/Orientation.h</itemPath>
+      <itemPath>../h/p24HJ128GP504.h</itemPath>
+      <itemPath>../h/SK_PIC24H.h</itemPath>
+      <itemPath>../h/Speaker.h</itemPath>
+      <itemPath>../h/Timers.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LibraryFiles"
+                   displayName="Library Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+      <itemPath>../gld/p24HJ128GP504.gld</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ObjectFiles"
+                   displayName="Object Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="Common" displayName="Common" projectFiles="true">
+        <itemPath>../../../Microchip/Common/TimeDelay.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Graphics" displayName="Graphics" projectFiles="true">
+        <itemPath>../../../Microchip/Graphics/Template.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/Button.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/EditBox.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/GOL.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/Grid.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/ListBox.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/Picture.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/Primitive.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/RoundDial.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/Slider.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/StaticText.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/Drivers/SH1101A_SSD1303.c</itemPath>
+        <itemPath>../../../Microchip/Graphics/GOLSchemeDefault.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Sounds" displayName="Sounds" projectFiles="true">
+        <itemPath>../src/Sounds/G711_Welcome.s</itemPath>
+        <itemPath>../src/Sounds/G711_Game.s</itemPath>
+        <itemPath>../src/Sounds/G711_Landscape.s</itemPath>
+        <itemPath>../src/Sounds/G711_Over.s</itemPath>
+        <itemPath>../src/Sounds/G711_Plane.s</itemPath>
+        <itemPath>../src/Sounds/G711_Portrait.s</itemPath>
+        <itemPath>../src/Sounds/G711_Select.s</itemPath>
+        <itemPath>../src/Sounds/G711_SnakeEat.s</itemPath>
+        <itemPath>../src/Sounds/G711_SnakeMove.s</itemPath>
+        <itemPath>../src/Sounds/G711_Start.s</itemPath>
+      </logicalFolder>
+      <itemPath>../src/G711.s</itemPath>
+      <itemPath>../src/Utility.s</itemPath>
+      <itemPath>../src/Accelerometer.c</itemPath>
+      <itemPath>../src/AccGraph.c</itemPath>
+      <itemPath>../src/ExtSensor.c</itemPath>
+      <itemPath>../src/Games.c</itemPath>
+      <itemPath>../src/Gentium8.c</itemPath>
+      <itemPath>../src/Main.c</itemPath>
+      <itemPath>../src/Orientation.c</itemPath>
+      <itemPath>../src/Pictures.c</itemPath>
+      <itemPath>../src/SK_PIC24H.c</itemPath>
+      <itemPath>../src/Speaker.c</itemPath>
+      <itemPath>../src/Timers.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="PIC24H_GP504_SK" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC24HJ128GP504</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>ICD3PlatformTool</platformTool>
+        <languageToolchain>XC16</languageToolchain>
+        <languageToolchainVersion>1.00</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <item path="../../../Microchip/Common/TimeDelay.c"
+            ex="false"
+            overriding="false">
+        <C30>
+          <property key="code-model" value="large-code"/>
+          <property key="const-model" value="default"/>
+          <property key="data-model" value="large-data"/>
+          <property key="enable-all-warnings" value="false"/>
+          <property key="enable-ansi-std" value="false"/>
+          <property key="enable-ansi-warnings" value="false"/>
+          <property key="enable-fatal-warnings" value="false"/>
+          <property key="enable-large-arrays" value="false"/>
+          <property key="enable-omit-frame-pointer" value="false"/>
+          <property key="enable-procedural-abstraction" value="false"/>
+          <property key="enable-short-double" value="false"/>
+          <property key="enable-symbols" value="true"/>
+          <property key="enable-unroll-loops" value="false"/>
+          <property key="extra-include-directories"
+                    value="../h;../../../Microchip/Include;../../../Microchip/Include/Graphics;"/>
+          <property key="isolate-each-function" value="false"/>
+          <property key="optimization-level" value="0"/>
+          <property key="post-instruction-scheduling" value="default"/>
+          <property key="pre-instruction-scheduling" value="default"/>
+          <property key="preprocessor-macros" value=""/>
+          <property key="scalar-model" value="large-scalar"/>
+        </C30>
+        <C30-AS>
+          <property key="assembler-symbols" value=""/>
+          <property key="expand-macros" value="false"/>
+          <property key="extra-include-directories-for-assembler" value="..;"/>
+          <property key="extra-include-directories-for-preprocessor" value=""/>
+          <property key="false-conditionals" value="false"/>
+          <property key="keep-locals" value="false"/>
+          <property key="list-assembly" value="false"/>
+          <property key="list-file" value=""/>
+          <property key="list-section-info" value="false"/>
+          <property key="list-source" value="false"/>
+          <property key="list-symbols" value="false"/>
+          <property key="omit-debug-dirs" value="false"/>
+          <property key="omit-forms" value="false"/>
+          <property key="preprocessor-macros" value=""/>
+          <property key="relax" value="false"/>
+          <property key="warning-level" value="emit-warnings"/>
+          <appendMe value="-g "/>
+        </C30-AS>
+        <C30-LD>
+          <property key="boot-eeprom" value="no_eeprom"/>
+          <property key="boot-flash" value="no_flash"/>
+          <property key="boot-ram" value="no_ram"/>
+          <property key="boot-write-protect" value="no_write_protect"/>
+          <property key="enable-check-sections" value="false"/>
+          <property key="enable-data-init" value="true"/>
+          <property key="enable-default-isr" value="true"/>
+          <property key="enable-handles" value="true"/>
+          <property key="enable-pack-data" value="true"/>
+          <property key="extra-lib-directories" value="../gld;"/>
+          <property key="general-code-protect" value="no_code_protect"/>
+          <property key="general-write-protect" value="no_write_protect"/>
+          <property key="generate-cross-reference-file" value="false"/>
+          <property key="heap-size" value=""/>
+          <property key="input-libraries" value=""/>
+          <property key="linker-symbols" value=""/>
+          <property key="map-file" value="&quot;${DISTDIR}/MPLAB.X.${IMAGE_TYPE}.map&quot;"/>
+          <property key="preprocessor-macros" value=""/>
+          <property key="remove-unused-sections" value="false"/>
+          <property key="report-memory-usage" value="true"/>
+          <property key="secure-eeprom" value="no_eeprom"/>
+          <property key="secure-flash" value="no_flash"/>
+          <property key="secure-ram" value="no_ram"/>
+          <property key="secure-write-protect" value="no_write_protect"/>
+          <property key="stack-size" value=""/>
+          <property key="symbol-stripping" value=""/>
+          <property key="trace-symbols" value=""/>
+          <property key="warn-section-align" value="false"/>
+        </C30-LD>
+        <C30Global>
+          <property key="fast-math" value="false"/>
+          <property key="legacy-libc" value="false"/>
+          <property key="output-file-format" value="elf"/>
+        </C30Global>
+      </item>
+      <C30>
+        <property key="code-model" value="large-code"/>
+        <property key="const-model" value="default"/>
+        <property key="data-model" value="large-data"/>
+        <property key="enable-all-warnings" value="false"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="enable-large-arrays" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="extra-include-directories"
+                  value="../h;../../../Microchip/Include;../../../Microchip/Include/Graphics"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="oXC16gcc-align-arr" value="false"/>
+        <property key="oXC16gcc-cnsts-mauxflash" value="false"/>
+        <property key="oXC16gcc-data-sects" value="false"/>
+        <property key="oXC16gcc-errata" value=""/>
+        <property key="oXC16gcc-fillupper" value=""/>
+        <property key="oXC16gcc-large-aggregate" value="false"/>
+        <property key="oXC16gcc-mauxflash" value="false"/>
+        <property key="oXC16gcc-mpa-lvl" value=""/>
+        <property key="oXC16gcc-name-text-sec" value=""/>
+        <property key="oXC16gcc-near-chars" value="false"/>
+        <property key="oXC16gcc-no-isr-warn" value="false"/>
+        <property key="oXC16gcc-sfr-warn" value="false"/>
+        <property key="oXC16gcc-smar-io-lvl" value="1"/>
+        <property key="oXC16gcc-smart-io-fmt" value=""/>
+        <property key="optimization-level" value="s"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="scalar-model" value="large-scalar"/>
+        <appendMe value="-fno-ivopts"/>
+      </C30>
+      <C30-AS>
+        <property key="assembler-symbols" value=""/>
+        <property key="expand-macros" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=".."/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="false-conditionals" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-file" value=""/>
+        <property key="list-section-info" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="relax" value="false"/>
+        <property key="warning-level" value="emit-warnings"/>
+        <appendMe value="-g "/>
+      </C30-AS>
+      <C30-LD>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="extra-lib-directories" value="../gld"/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="heap-size" value="1024"/>
+        <property key="input-libraries" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="map-file" value="&quot;${DISTDIR}/MPLAB.X.${IMAGE_TYPE}.map&quot;"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="report-memory-usage" value="true"/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="stack-size" value="1024"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="warn-section-align" value="false"/>
+      </C30-LD>
+      <C30Global>
+        <property key="fast-math" value="false"/>
+        <property key="generic-16-bit" value="false"/>
+        <property key="legacy-libc" value="false"/>
+        <property key="oXC16glb-macros" value=""/>
+        <property key="output-file-format" value="elf"/>
+      </C30Global>
+      <ICD3PlatformTool>
+        <property key="tracecontrol.disablemacros" value="true"/>
+        <property key="tracecontrol.medium" value="0"/>
+        <property key="tracecontrol.select" value="0"/>
+      </ICD3PlatformTool>
+    </conf>
+  </confs>
+</configurationDescriptor>

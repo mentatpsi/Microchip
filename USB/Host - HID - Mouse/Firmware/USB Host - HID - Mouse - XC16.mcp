@@ -1,0 +1,139 @@
+[HEADER]
+magic_cookie={66E99B07-E706-4689-9E80-9B2582898A13}
+file_version=1.0
+device=PIC24FJ256GB110
+[PATH_INFO]
+BuildDirPolicy=BuildDirIsProjectDir
+dir_src=
+dir_bin=
+dir_tmp=
+dir_sin=
+dir_inc=.;..\..\..\Microchip\Include
+dir_lib=
+dir_lkr=
+[CAT_FILTERS]
+filter_src=*.s;*.c
+filter_inc=*.h;*.inc
+filter_obj=*.o
+filter_lib=*.a
+filter_lkr=*.gld
+[CAT_SUBFOLDERS]
+subfolder_src=Common;USB Stack
+subfolder_inc=Common;USB Stack
+subfolder_obj=
+subfolder_lib=
+subfolder_lkr=
+[FILE_SUBFOLDERS]
+file_000=Common
+file_001=USB Stack
+file_002=USB Stack
+file_003=USB Stack
+file_004=.
+file_005=USB Stack
+file_006=.
+file_007=Common
+file_008=Common
+file_009=Common
+file_010=.
+file_011=.
+file_012=USB Stack
+file_013=USB Stack
+file_014=USB Stack
+file_015=USB Stack
+file_016=USB Stack
+file_017=USB Stack
+file_018=USB Stack
+file_019=USB Stack
+file_020=Common
+file_021=.
+file_022=.
+[GENERATED_FILES]
+file_000=no
+file_001=no
+file_002=no
+file_003=no
+file_004=no
+file_005=no
+file_006=no
+file_007=no
+file_008=no
+file_009=no
+file_010=no
+file_011=no
+file_012=no
+file_013=no
+file_014=no
+file_015=no
+file_016=no
+file_017=no
+file_018=no
+file_019=no
+file_020=no
+file_021=no
+file_022=no
+[OTHER_FILES]
+file_000=no
+file_001=no
+file_002=no
+file_003=no
+file_004=no
+file_005=no
+file_006=no
+file_007=no
+file_008=no
+file_009=no
+file_010=no
+file_011=no
+file_012=no
+file_013=no
+file_014=no
+file_015=no
+file_016=no
+file_017=no
+file_018=no
+file_019=no
+file_020=no
+file_021=yes
+file_022=yes
+[FILE_INFO]
+file_000=..\..\..\Microchip\Common\uart2.c
+file_001=..\..\..\Microchip\USB\HID Host Driver\usb_host_hid_parser.c
+file_002=..\..\..\Microchip\USB\HID Host Driver\usb_host_hid.c
+file_003=..\..\..\Microchip\USB\usb_host.c
+file_004=usb_config.c
+file_005=Mouse_demo.c
+file_006=lcd_demo.c
+file_007=..\..\..\Microchip\Include\uart2.h
+file_008=..\..\..\Microchip\Include\Compiler.h
+file_009=..\..\..\Microchip\Include\GenericTypeDefs.h
+file_010=lcd_demo.h
+file_011=HardwareProfile.h
+file_012=..\..\..\Microchip\Include\USB\usb_host_hid_parser.h
+file_013=..\..\..\Microchip\Include\USB\usb.h
+file_014=..\..\..\Microchip\Include\USB\usb_ch9.h
+file_015=..\..\..\Microchip\Include\USB\usb_common.h
+file_016=..\..\..\Microchip\Include\USB\usb_hal.h
+file_017=..\..\..\Microchip\Include\USB\usb_hal_pic24.h
+file_018=..\..\..\Microchip\Include\USB\usb_host.h
+file_019=..\..\..\Microchip\Include\USB\usb_host_hid.h
+file_020=usb_config.h
+file_021=..\..\..\Microchip\Help\MCHPFSUSB Library Help.chm
+file_022=..\..\..\Microchip\Help\MCHPFSUSB Library Help.pdf
+[SUITE_INFO]
+suite_guid={9BCCB495-CD65-480A-BA76-63D8E78B117F}
+suite_state=
+[TOOL_SETTINGS]
+TS{8493B2ED-D539-4951-86C9-24D5331F0393}=-g
+TS{F9CE474D-6A6C-401D-A11E-BEE01B244D79}=-g -Wall -fno-ivopts
+TS{F9CE474D-6A6C-401D-A11E-BEE01B244D79}_alt=yes
+TS{21A8AA9B-E75C-40B6-B3AE-9CBC16FF2EF9}=--heap=1024 -Map="$(BINDIR_)$(TARGETBASE).map" --report-mem -o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)"
+TS{45B3B6E0-6DAF-4E40-8D20-CFB1B620134D}=
+[INSTRUMENTED_TRACE]
+enable=0
+transport=0
+format=0
+[CUSTOM_BUILD]
+Pre-Build=
+Pre-BuildEnabled=1
+Post-Build=
+Post-BuildEnabled=1

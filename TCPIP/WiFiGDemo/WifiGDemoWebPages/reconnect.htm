@@ -1,0 +1,289 @@
+<html xml:lang="en">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=Generator content="Microsoft Word 12 (filtered)">
+<title>WiFi-G Demo Board</title>
+<link rel=Stylesheet type="text/css" media=all href="css/mchp.css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:24.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:7.5pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-style:italic;}
+p.examplebox, li.examplebox, div.examplebox
+	{mso-style-name:examplebox;
+	margin-top:7.5pt;
+	margin-right:30.0pt;
+	margin-bottom:7.5pt;
+	margin-left:30.0pt;
+	text-align:center;
+	background:#DDDDDD;
+	border:none;
+	padding:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.code, li.code, div.code
+	{mso-style-name:code;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;}
+p.exercise, li.exercise, div.exercise
+	{mso-style-name:exercise;
+	margin-right:0in;
+	margin-left:7.5pt;
+	background:#FFEE99;
+	border:none;
+	padding:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.error, li.error, div.error
+	{mso-style-name:error;
+	margin-right:0in;
+	margin-left:7.5pt;
+	background:#FFDDDD;
+	border:none;
+	padding:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.result, li.result, div.result
+	{mso-style-name:result;
+	margin-top:7.5pt;
+	margin-right:30.0pt;
+	margin-bottom:7.5pt;
+	margin-left:30.0pt;
+	text-align:center;
+	background:#EEEEEE;
+	border:none;
+	padding:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+p.ok, li.ok, div.ok
+	{mso-style-name:ok;
+	margin-right:0in;
+	margin-left:0in;
+	background:#EEFFEE;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.fail, li.fail, div.fail
+	{mso-style-name:fail;
+	margin-right:0in;
+	margin-left:0in;
+	background:#FFEEEE;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.unk, li.unk, div.unk
+	{mso-style-name:unk;
+	margin-right:0in;
+	margin-left:0in;
+	background:#FFFFDD;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.text, li.text, div.text
+	{mso-style-name:text;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.leds, li.leds, div.leds
+	{mso-style-name:leds;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.text1, li.text1, div.text1
+	{mso-style-name:text1;
+	margin-right:0in;
+	margin-left:0in;
+	text-align:right;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.leds1, li.leds1, div.leds1
+	{mso-style-name:leds1;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:-7.5pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+<script  src="javascript/mchp.js" type="text/javascript">
+</script>
+</head>
+
+<body bgcolor="#5B5B5B" lang=EN-US link=blue vlink=purple
+onload="newAJAXCommand('status.xml');">
+
+<div class=WordSection1>
+
+<div style='border:solid white 6.0pt;padding:0in 0in 0in 0in' id=container>
+
+<div id="logo_banner">
+
+<p class=MsoNormal style='background:white'><span style='font-family:"Verdana","sans-serif"'><img
+width=152 height=42 src="images/mchp.gif" alt=Microchip></span></p>
+
+</div>
+
+<div style='margin-bottom:11.25pt' id=title>
+
+<p class=MsoNormal align=right style='text-align:right;background:#CC0000'><b><span
+lang=EN style='font-family:"Verdana","sans-serif";color:white'>WiFi-G Demo
+Application</span></b></p>
+
+</div>
+
+<div id="main_content">
+
+<div id=menu>
+
+<p class=MsoNormal style='background:white'><span lang=EN style='font-family:
+"Verdana","sans-serif"'><a href="/index.htm"><b><span style='color:white;
+background:#CC0000;text-decoration:none'>Welcome!</span></b></a> <a
+href="/mrf24wg0ma.htm"><b><span style='color:white;background:#CC0000;
+text-decoration:none'>MRF24WG0MA</span></b></a> <a href="/configure.htm"><b><span
+style='color:white;background:#CC0000;text-decoration:none'>Configure Network</span></b></a>
+</span></p>
+
+</div>
+
+<div id=content>
+
+<h2 style='background:white'><span lang=EN style='font-family:"Verdana","sans-serif"'>Reconnection
+in Progress</span></h2>
+
+<p style='background:white'><span lang=EN style='font-family:"Verdana","sans-serif"'>A
+connection to another network is now underway! You will need to connect this
+laptop/PC/portable device to the new network (&quot;~nextSSID~&quot;) to regain
+access to this demo.</span></p>
+
+<p style='background:white'><span lang=EN style='font-family:"Verdana","sans-serif"'>As
+a reminder, this is the network you were on:</span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='background:white'><b><span lang=EN
+     style='font-family:"Verdana","sans-serif"'>SSID:</span></b><span lang=EN
+     style='font-family:"Verdana","sans-serif"'> &quot;~prevSSID~&quot;</span></li>
+ <li class=MsoNormal style='background:white'><b><span lang=EN
+     style='font-family:"Verdana","sans-serif"'>WLAN type:</span></b><span
+     lang=EN style='font-family:"Verdana","sans-serif"'> ~prevWLAN~</span></li>
+</ul>
+
+<p style='background:white'><span lang=EN style='font-family:"Verdana","sans-serif"'>This
+is the network that you will be going to:</span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='background:white'><b><span lang=EN
+     style='font-family:"Verdana","sans-serif"'>SSID:</span></b><span lang=EN
+     style='font-family:"Verdana","sans-serif"'> &quot;~nextSSID~&quot;</span></li>
+ <li class=MsoNormal style='background:white'><b><span lang=EN
+     style='font-family:"Verdana","sans-serif"'>WLAN type:</span></b><span
+     lang=EN style='font-family:"Verdana","sans-serif"'> ~nextWLAN~</span></li>
+</ul>
+
+</div>
+
+</div>
+
+<!--content--><!--main_content-->
+
+<div style='border:none;border-top:dotted #666666 1.0pt;padding:8.0pt 0in 0in 0in;
+margin-left:37.5pt;margin-top:7.5pt;margin-right:37.5pt' id=footer>
+
+<p class=MsoNormal align=center style='text-align:center;background:white'><span
+lang=EN style='font-size:9.5pt;font-family:"Verdana","sans-serif";color:#666666'>Copyright
+&copy; 2013 Microchip Technology, Inc.</span></p>
+
+</div>
+
+</div>
+
+</div>
+
+<!--container-->
+</body>
+
+</html>

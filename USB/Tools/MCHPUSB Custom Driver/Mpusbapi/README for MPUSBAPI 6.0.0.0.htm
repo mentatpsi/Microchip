@@ -1,0 +1,307 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>Microchip Technology, Inc</title>
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h2
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=Section1>
+
+<p class=MsoNormal>Microchip Technology, Inc.</p>
+
+<p class=MsoNormal>19 October 2010</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>What is MPUSBAPI.DLL?</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>MPUSBAPI is a Dynamic Link Library (DLL) useful when writing
+PC application software that needs to communicate with custom/vendor class USB
+devices.  The MPUSBAPI.DLL exposes a variety of high level Application
+Programming Interface (API) functions that the PC application software
+developer can call, in order to perform basic tasks, such as reading and
+writing data with the target USB device.  </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>In order for a PC application to communicate with a USB
+device, the PC application software must first “find and connect” to the USB
+device.  USB is a plug and play serial communication bus technology, and there
+can be many USB devices simultaneously attached to a host PC.  Before the PC application
+can begin communicating with a specific USB device of interest, the PC
+application software must first search the machine to find  a matching USB
+device with the proper identifiers (such as the USB Vendor ID (VID) and Product
+ID (PID) numbers, which are intended to be unique for all different USB device
+product lines).</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The process of searching the machine and finding a specific
+USB device (with matching VID/PID) can be somewhat complicated.  On a Microsoft
+Windows based PC, it is possible to find specific USB devices using operating
+system provided Win32 API function calls.  However, doing so requires many
+function calls, a moderate amount of programming expertise, and a moderate
+amount of human time investment learning the process.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Fortunately, the process can be simplified by using a
+dynamic link library, such as MPUSBAPI.DLL.  The MPUSBAPI.DLL contains all of
+the code needed to call the Win32 API function calls needed to find and connect
+to a USB device.  The complexity of finding the USB device can be hidden behind
+a high level API function.  Therefore, the PC application developer can simply
+call one function (ex: MPUSBOpen(), provided by MPUSBAPI.DLL) to find and
+connect to his/her USB device, without needing to learn and repeatedly call several
+Win32 API functions.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The MPUSBAPI.DLL also provides other high level API
+functions which make other interfacing tasks (such as reading/writing USB
+packets to an endpoint on the device) easy.   All versions of MPUSBAPI.DLL
+provide the following API functions.  Some versions also support some
+additional API functions as well.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal><span style='font-family:"Courier New"'>MPUSBGetDeviceCount()   //Returns
+     the number of matching USB devices connected to the machine</span></li>
+ <li class=MsoNormal><span style='font-family:"Courier New"'>MPUSBOpen()             //Used
+     to find and connect to a USB device</span></li>
+ <li class=MsoNormal><span style='font-family:"Courier New"'>MPUSBClose()            //Used
+     to “disconnect” from a USB device</span></li>
+ <li class=MsoNormal><span style='font-family:"Courier New"'>MPUSBRead()             //Used
+     for reading IN data packets from a “bulk” endpoint on the USB device</span></li>
+ <li class=MsoNormal><span style='font-family:"Courier New"'>MPUSBReadInt()          //Used
+     for reading IN data packets from an “interrupt” endpoint on the USB device</span></li>
+ <li class=MsoNormal><span style='font-family:"Courier New"'>MPUSBWrite()            //Used
+     for sending OUT data packets to an endpoint on the USB device</span></li>
+ <li class=MsoNormal><span style='font-family:"Courier New"'>MPUSBGetDLLVersion()    //Returns
+     the MPUSBAPI.DLL version number</span></li>
+</ol>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>For a full list of supported API functions, please see the
+mpusbapi header file and MPUSBAPI.DLL source code comments.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Although the MPUSBAPI.DLL was written in Borland C++ Builder
+6.0, it is possible to use the MPUSBAPI.DLL in many other programming
+languages/development environments, either directly or by creating simple
+wrapper classes.  Some example PC application projects and source code using the
+MPUSBAPI.DLL are provided in the MCHPFSUSB Framework.  The source code for the
+MPUSBAPI.DLL file is also provided in the MCHPFSUSB Framework.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>What is MPUSBAPI.DLL v6.0.0.0, and how does it differ from MPUSBAPI.DLL
+v1.x.x.x?</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The original MPUSBAPI.DLL file version 1.0.0.0 was created
+by Microchip, and was released as part of the MCHFPSUSB Framework v1.0 in
+November of 2004.  The original MPUSBAPI.DLL version 1.x.x.x files are intended
+to be used in conjunction with the Microchip general purpose, custom/vendor
+class driver (mchpusb.sys or mchpusb64.sys for 64-bit OSes).  The MPUSBAPI.DLL
+cannot be used to interface with other USB devices of other USB device classes,
+such as HID, MSD, CDC, etc.  In order to use the API functions provided by
+MPUSBAPI.DLL, the USB device firmware must be designed for the custom/vendor
+class (which is potentially the simplest of all USB classes).  Upon plugging in
+the USB device with the custom/vendor class firmware, the driver package that
+must be installed for the device must be the Microchip custom class driver
+(mchpusb.sys or mchpusb64.sys for 64-bit OSes), in order to use the
+MPUSBAPI.DLL v1.x.x.x.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Operating system vendors, such as Microsoft, typically
+provide several built in USB drivers that get distributed with their operating
+systems.  These drivers are useful for common types of USB devices, such as HID
+class keyboards and mice, MSD class USB memory drives, etc.  Back in November
+of 2004, Windows based operating systems did not provide any drivers suitable
+for general purpose read/write interfacing with a vendor/custom class USB
+device.  Therefore, Microchip developed and released the mchpusb.sys custom USB
+driver to help satisfy this industry need.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Since then, Microsoft has also recognized the usefulness of
+a general purpose USB device driver, necessary for supporting custom/vendor
+class USB devices.  Therefore, Microsoft has created and released the “WinUSB”
+device driver (winusb.sys) along with a DLL file (winusb.dll) for providing
+high level API access to the USB device.  The WinUSB driver and API were
+originally released in the Windows Driver Kit (WDK) version 6001, approximately
+coinciding with the release of Windows Vista operating system.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The WinUSB driver (winusb.sys) and API DLL (winusb.dll) may
+be used on Windows XP SP2 and later operating systems, and are very similar in
+functionality and purpose as the Microchip general purpose USB driver
+(mchpusb.sys/mchpusb64.sys) and API DLL (MPUSBAPI.DLL).  However, the WinUSB
+driver and API is newer and support more advanced functionality than the Microchip
+general purpose driver and API.  The API functions available when using WinUSB
+are powerful, and come with complete documentation.  If developing a new USB
+application, which will be based on the custom/vendor device class, it is
+suggested by the present author to consider using the WinUSB driver and API. 
+Example firmware and PC application software projects showing how to implement
+a complete USB device based on the WinUSB driver and API are provided in the
+MCHPFSUSB Framework.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Due to the similarities in the functionality and purpose of
+WinUSB (compared to the Microchip custom driver and API), it is relatively easy
+to migrate existing USB designs based on the Microchip custom driver and
+MPUSBAPI.DLL, to use the WinUSB driver and API (winusb.dll) instead.  In
+practice, it is normally not required to make any changes to the USB
+microcontroller firmware to migrate a design, between these drivers/APIs.  In
+most cases, only the PC application and the driver package distributed to the
+end consumer have to be modified.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The winusb.dll API functions are very similar to those
+provided by MPUSBAPI.DLL, but the functions are not identical in name and in
+input/output parameters.  It is possible however, to create a “wrapper” DLL,
+which exposes identical API function names and parameters as the MPUSBAPI.DLL
+(v1.x.x.x), but internally converts the requests into WinUSB requests.  It is
+therefore possible to make a newer mpusbapi.dll, which incorporates both the
+code needed to interface with the mchpusb driver, or the WinUSB driver (through
+the use of “wrapper” functions that call winusb.dll API functions).  The
+MPUSBAPI.DLL, file version 6.0.0.0 implements this capability.  During
+application runtime, the DLL determines which driver package is installed for
+the USB device (either mchpusb or WinUSB), and calls the appropriate lower
+level functions to interface with the device, while still maintaining almost
+identical top level API functionality and support.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>By using the MPUSBAPI.DLL v6.0.0.0, it is possible in most
+cases to seamlessly migrate between using the Microchip custom driver, and
+WinUSB, usually with no modifications whatsoever to either the PC application
+software, or the microcontroller firmware.  Most applications can be migrated
+from [mchpusb+mpusbapi.dll (based on mchpusb)] to [WinUSB+mpusbapi.dll (based on
+WinUSB)] with the following steps:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal>Delete all old copies of mpusbapi.dll (v1.x.x.x) from the
+     target PC.&nbsp; Most likely, these instances will be located in the same
+     directory as the [application name].exe program that uses the mpusbapi.dll
+     file. </li>
+ <li class=MsoNormal>Copy the new mpusbapi.dll file (v6.0.0.0) to where the old
+     mpusbapi.dll file used to reside (most likely the same directory as the executable
+     that uses the DLL).</li>
+ <li class=MsoNormal>Completely uninstall and remove all traces of the old
+     mchpusb.sys based driver package.&nbsp; See the “[MCHPFSUSB Framework
+     Install Location]\USB Tools\Super Device Manager\Readme Driver
+     Removal.doc” for instructions on how to do this.  Failure to completely
+     remove the old driver package may result in the operating system automatically
+     re-installing the same (old driver package) upon re-attaching the
+     hardware.  Cached driver package copies may still exist on the system, and
+     if Windows finds more than one driver that appears to be compatible with
+     the device (correct VID/PID match between microcontroller firmware and
+     .inf file), then it will use a “ranking” method to determine which driver
+     to actually install.  </li>
+ <li class=MsoNormal>Modify a pre-existing WinUSB based driver package (such as
+     “[MCHPFSUSB Framework Install Location]\USB Device - WinUSB - High
+     Bandwidth Demo\Driver and INF\MCHPWinUSBDevice_v2.inf”) to include the
+     proper VID/PID combinations intended to be supported. </li>
+ <li class=MsoNormal>Plug in the hardware and install the WinUSB driver package
+     for the hardware using the above modified .inf file (in step 3). </li>
+ <li class=MsoNormal>Verify that the WinUSB driver was correctly installed for
+     the device.  Check the “Driver Details…” menu in the device manager
+     properties page for the USB device.  WinUSB.sys should be listed, if the
+     correct driver is associated with the device.</li>
+ <li class=MsoNormal>Run the [application name].exe and thoroughly verify that
+     all of the USB functionality still works normally. </li>
+</ol>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>Where can I learn more about WinUSB?</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Please see:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><a
+href="http://www.microsoft.com/whdc/connect/usb/winusb_howto.mspx">http://www.microsoft.com/whdc/connect/usb/winusb_howto.mspx</a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The WinUSB redistributables are currently distributed as
+part of the Windows Driver Kit (WDK).  The WDK documentation also contains
+sections relevant to using WinUSB, including the full API documentation for the
+functions provided by the winusb.dll.  </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

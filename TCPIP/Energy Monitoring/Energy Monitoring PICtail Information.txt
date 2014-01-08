@@ -1,0 +1,14 @@
+Google, Inc. has deprecated Google PowerMeter and expressed its intent to remove access to it on 
+September 16, 2011.  
+
+Because of this development, Microchip Technology has removed the Google PowerMeter demo projects
+from the Microchip Application Libraries distribution.  To obtain Microchip's Google PowerMeter
+reference implementation, please download the archived Microchip Application Libraries installation
+from June, 2011 from www.microchip.com/mal.
+
+This Energy Monitoring demo has been modified to remove its Google PowerMeter upload features.
+However, the energy measurements made by the PICtail can still be viewed on the demo board-hosted
+web page.
+
+The PC GUI for the Energy Monitoring PICtail can be obtained from:
+http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en550456

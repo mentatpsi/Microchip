@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >   
+    
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:gravity="left"
+	    android:id="@+id/title"
+	    android:background="@color/device_attached"
+	   	/>
+   	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/layout_toggle_led"
+	    >      
+	
+		<TextView  
+		    android:text="@string/toggle_leds_description"
+		    android:layout_width="wrap_content"             
+			android:layout_height="wrap_content"           
+		    />
+		    
+		<Button
+			android:layout_height="wrap_content"     
+	     	android:layout_width="wrap_content"     
+	     	android:text="@string/toggle_leds_button"
+	     	android:onClick="toggleLEDsOnClick"
+	     	/>
+	</LinearLayout>
+	
+
+	    
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/layout_button_status"
+	    >    
+	    
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    	android:orientation="vertical"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="5px"
+	    	android:background="@color/spacer"
+	    	>
+		</LinearLayout>  
+		    
+		<TextView  
+			android:text="@string/button_status_description"
+			android:layout_width="wrap_content"             
+			android:layout_height="wrap_content"         
+			/>
+			
+		<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+	    	>
+			<TextView  
+				android:id="@+id/button_status"
+			    android:text="@string/button_not_pressed"
+			    android:layout_width="wrap_content"             
+				android:layout_height="wrap_content"  
+				android:background="@color/button_not_pressed"            
+			    />
+		</LinearLayout>
+		    
+
+	</LinearLayout>
+    
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/layout_potentiometer_status"
+	    >    
+	    
+		<LinearLayout android:layout_height="5px" android:layout_width="fill_parent" android:background="@color/spacer" android:orientation="vertical"></LinearLayout>
+		<TextView android:layout_width="wrap_content" android:text="@string/pot_status_description" android:layout_height="wrap_content"></TextView>
+		<ProgressBar 	style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:id="@+id/potentiometer_status" android:max="100" android:layout_height="wrap_content"></ProgressBar>
+		
+
+	</LinearLayout>
+	
+
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/layout_MCP2200"
+	    >    
+
+       	<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+	    	>
+			<TextView
+			    android:id="@+id/baud_rate_text"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/baud_rate" />
+		
+       		<Spinner
+       		    android:id="@+id/baud_rate_select"
+       		    android:layout_width="wrap_content"
+       		    android:layout_height="wrap_content"
+       		    android:drawSelectorOnTop="true"
+       		    android:layout_weight="1"
+				/>
+			
+   		</LinearLayout>
+        		    
+		<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+	    	>
+			
+			<Button
+				android:layout_height="wrap_content"     
+		     	android:layout_width="wrap_content"     
+		     	android:text="@string/button_send"
+		     	android:onClick="sendStringOnClick"
+		     	android:layout_gravity="right"
+		     	/>
+			
+			<EditText
+			    android:layout_height="wrap_content"
+			    android:layout_width ="fill_parent"
+			    android:id="@+id/entry" 
+			    />
+		</LinearLayout>
+		
+		
+		<LinearLayout android:layout_height="5px" android:layout_width="fill_parent" android:background="@color/spacer" android:orientation="vertical"></LinearLayout>
+		
+		<TextView
+		    android:id="@+id/basic_text_view"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="" />
+
+	</LinearLayout>
+	
+		
+	<!-- Microchip Logo and link.  MUST BE LAST!!  This item fills the remaining of the vertical space -->
+	<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center_horizontal|bottom"
+	    >
+        
+	    <ImageView
+		    android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:maxWidth="200px"
+		  	android:adjustViewBounds="true"
+		    android:src="@drawable/microchip_logo_horizontal"
+	    />
+	    <TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/weblink"
+		    android:gravity="center"
+	    />
+    </LinearLayout>
+</LinearLayout>

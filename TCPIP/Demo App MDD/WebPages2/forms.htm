@@ -1,0 +1,57 @@
+~inc:header.inc~
+<div id="content">
+
+<h1>Form Processing</h1>
+
+<p>Your application will likely need to accept data from the user.  Forms allow
+you to do just that.  Forms can be submitted in one of two methods (<i>GET</i> and 
+<i>POST</i>), and this server supports both.</p>
+
+<h6></h6>
+
+<p>The <b>GET</b> method appends the data to the end of the URI.  You'll see this 
+data following the question mark (?) in your browser's address bar.  For Microchip's 
+embedded server, this data is limited to around 80 bytes.  However, this sort of 
+submission is generally easier to process. Data sent via GET is automatically 
+decoded, and stored in the array <code>curHTTP.data</code>.  Your application will
+handle the data in the <code>HTTPExecuteGet</code> callback.  The functions 
+<code>HTTPGetArg</code> and <code>HTTPGetROMArg</code> provide an easy 
+method to retrieve submitted values for processing.</p>
+
+<p>As an example, this GET form controls several LEDs on the demo board:</p>
+
+<form method="get" action="forms.htm">
+<div class="examplebox">
+<b>4:</b> <select name="led4"><option value="1" ~ledSelected(4,TRUE)~>On</option><option value="0" ~ledSelected(4,FALSE)~>Off</option></select>&nbsp; 
+<b>3:</b> <select name="led3"><option value="1" ~ledSelected(3,TRUE)~>On</option><option value="0" ~ledSelected(3,FALSE)~>Off</option></select>&nbsp; 
+<b>2:</b> <select name="led2"><option value="1" ~ledSelected(2,TRUE)~>On</option><option value="0" ~ledSelected(2,FALSE)~>Off</option></select>&nbsp; 
+<b>1:</b> <select name="led1"><option value="1" ~ledSelected(1,TRUE)~>On</option><option value="0" ~ledSelected(1,FALSE)~>Off</option></select>&nbsp; 
+<br /><input type="submit" value="Save" style="margin-top:5px;">
+</div>
+</form>
+
+<p class="exercise"><b>Exercise:</b> Modify this form to support LED 5.</p>
+
+<h6></h6>
+
+<p>The <b>POST</b> method submits the data after the request headers are 
+sent.  This allows the data to be virtually unlimited in length, as long as your 
+application can process it in chunks.  However, your application must manage 
+the receipt of data, so it is generally more complicated.</p>
+
+<p>As an example, this POST form sets the text shown on the LCD display:</p>
+
+<form method="post" action="forms.htm">
+<div class="examplebox">
+<b>LCD:</b> <input type="text" name="lcd" maxlength="32"> &nbsp; <input type="submit" value="Save">
+</div>
+</form>
+
+</div>
+
+<script type="text/javascript">
+<!--
+document.getElementById('hello').innerHTML = "~hellomsg~";
+-->
+</script>
+~inc:footer.inc~

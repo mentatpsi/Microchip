@@ -1,0 +1,1608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="Common" displayName="Common" projectFiles="true">
+        <itemPath>../../../Microchip/Include/Compiler.h</itemPath>
+        <itemPath>../../../Microchip/Include/GenericTypeDefs.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="HW Config" projectFiles="true">
+        <itemPath>../Configs/HWP DA210_BRD_MRF24W.h</itemPath>
+        <itemPath>../Configs/HWP EX16_MRF24W XC16.h</itemPath>
+        <itemPath>../Configs/HWP EX16_MRF24W XC32.h</itemPath>
+        <itemPath>../Configs/HWP PICDN2_MRF24W.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="TCP Config" projectFiles="true">
+        <itemPath>../Configs/TCPIP MRF24W DA210_BRD.h</itemPath>
+        <itemPath>../Configs/TCPIP MRF24W.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="TCPIP Stack" displayName="TCPIP Stack" projectFiles="true">
+        <itemPath>../../../Microchip/Include/TCPIP Stack/ARCFOUR.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/ARP.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/Announce.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/AutoIP.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/BerkeleyAPI.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/BigInt.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/DHCP.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/DNS.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/Delay.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/DynDNS.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/ENC28J60.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/ENCX24J600.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/FTP.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/HTTP2.h</itemPath>
+        <itemPath>../HardwareProfile.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/Hashes.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/Helpers.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/ICMP.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/IP.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/LCDBlocking.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/MAC.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/MPFS2.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/NBNS.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/RSA.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/Random.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/Reboot.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/SMTP.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/SNMP.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/SNTP.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/SPIFlash.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/SPIRAM.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/SSL.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/StackTsk.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/TCP.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/TCPIP.h</itemPath>
+        <itemPath>../TCPIPConfig.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/TCPPerformanceTest.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/TFTPc.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/Telnet.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/Tick.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/UART.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/UART2TCPBridge.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/UDP.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/UDPPerformanceTest.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/WFApi.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/WFConsole.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/WFConsoleIfconfig.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/WFConsoleIwconfig.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/WFConsoleIwpriv.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/WFConsoleMsgHandler.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/WFConsoleMsgs.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/WFDriverPrv.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/WFMac.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/WFMgmtMsg.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/WFRaw.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/XEEPROM.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/ZeroconfHelper.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/ZeroconfLinkLocal.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/ZeroconfMulticastDNS.h</itemPath>
+        <itemPath>../../../Microchip/Include/TCPIP Stack/regdef.h</itemPath>
+      </logicalFolder>
+      <itemPath>../IperfApp.h</itemPath>
+      <itemPath>../MainDemo.h</itemPath>
+      <itemPath>../WF_Config.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LibraryFiles"
+                   displayName="Library Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+      <itemPath>../18f97j60_g.lkr</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ObjectFiles"
+                   displayName="Object Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="ModuleFlash" projectFiles="true">
+        <itemPath>../ModuleFlash/AutoUpdate_UartXMODEM_Roadrunner.c</itemPath>
+        <itemPath>../ModuleFlash/SPI_MemAccess.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="TCPIP Stack" displayName="TCPIP Stack" projectFiles="true">
+        <itemPath>../../../Microchip/TCPIP Stack/ARCFOUR.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/ARP.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/Announce.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/AutoIP.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/BerkeleyAPI.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/BigInt.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/BigInt_helper.S</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/BigInt_helper_PIC32.S</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/DHCP.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/DHCPs.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/DNS.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/Delay.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/DynDNS.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/ENC28J60.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/ENCX24J600.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/FTP.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/HTTP2.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/Hashes.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/Helpers.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/ICMP.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/IP.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/LCDBlocking.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/MPFS2.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/NBNS.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/RSA.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/Random.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/Reboot.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/SMTP.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/SNMP.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/SNTP.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/SPIEEPROM.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/SPIFlash.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/SPIRAM.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/SSL.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/StackTsk.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/TCP.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/TCPPerformanceTest.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/TFTPc.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/Telnet.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/Tick.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/UART.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/UART2TCPBridge.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/UDP.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/UDPPerformanceTest.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/ZeroconfHelper.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/ZeroconfLinkLocal.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/ZeroconfMulticastDNS.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/DNSs.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Wi-Fi" displayName="Wi-Fi" projectFiles="true">
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFConnectionAlgorithm.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFConnectionManager.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFConnectionProfile.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFConsole.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFConsoleIfconfig.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFConsoleIwconfig.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFConsoleIwpriv.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFConsoleMsgHandler.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFConsoleMsgs.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFDataTxRx.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFDriverCom.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFDriverRaw.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFEventHandler.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFInit.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFMac.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFMgmtMsg.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFParamMsg.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFPowerSave.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFScan.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFTxPower.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WF_Eint.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WF_Spi.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFDebugStrings.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFEasyConfig.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFDriverCom_24G.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFDriverRaw_24G.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFMac_24G.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFMgmtMsg_24G.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WFParamMsg_24G.c</itemPath>
+        <itemPath>../../../Microchip/TCPIP Stack/WiFi/WF_pbkdf2.c</itemPath>
+      </logicalFolder>
+      <itemPath>../IperfApp.c</itemPath>
+      <itemPath>../MainDemo.c</itemPath>
+      <itemPath>../PingDemo.c</itemPath>
+      <itemPath>../UARTConfig.c</itemPath>
+      <itemPath>../WF_Config.c</itemPath>
+      <itemPath>../GenericTCPClient.c</itemPath>
+      <itemPath>../GenericTCPServer.c</itemPath>
+      <itemPath>../AutoUpdate_common_24G.c</itemPath>
+      <itemPath>../AutoUpdate_TCPClient_24G.c</itemPath>
+      <itemPath>../AutoUpdate_Uart_24G.c</itemPath>
+      <itemPath>../FTPClientDemo.c</itemPath>
+      <itemPath>../CloudTCPClient.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="XC16-DA210_BRD_MRF24WB" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC24FJ256DA210</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>ICD3PlatformTool</platformTool>
+        <languageToolchain>XC16</languageToolchain>
+        <languageToolchainVersion>1.10</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <item path="../../../Microchip/TCPIP Stack/BigInt_helper_PIC32.S"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFDriverCom.c"
+            ex="false"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFDriverCom_24G.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFDriverRaw_24G.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFMac_24G.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFMgmtMsg_24G.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFParamMsg_24G.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../18f97j60_g.lkr" ex="true" overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../Configs/HWP EX16_MRF24W XC16.h" ex="true" overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../Configs/HWP EX16_MRF24W XC32.h" ex="true" overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../Configs/HWP PICDN2_MRF24W.h" ex="true" overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../Configs/TCPIP MRF24W.h" ex="true" overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <C30>
+        <property key="code-model" value="large-code"/>
+        <property key="const-model" value="default"/>
+        <property key="data-model" value="default"/>
+        <property key="enable-all-warnings" value="true"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="enable-large-arrays" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="extra-include-directories"
+                  value="..;../../Microchip/Include;../../../Microchip/Include;../../../Microchip/Include/TCPIP Stack;../Configs"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="oXC16gcc-align-arr" value="false"/>
+        <property key="oXC16gcc-cnsts-mauxflash" value="false"/>
+        <property key="oXC16gcc-data-sects" value="false"/>
+        <property key="oXC16gcc-errata" value=""/>
+        <property key="oXC16gcc-fillupper" value=""/>
+        <property key="oXC16gcc-large-aggregate" value="false"/>
+        <property key="oXC16gcc-mauxflash" value="false"/>
+        <property key="oXC16gcc-mpa-lvl" value=""/>
+        <property key="oXC16gcc-name-text-sec" value=""/>
+        <property key="oXC16gcc-near-chars" value="false"/>
+        <property key="oXC16gcc-no-isr-warn" value="false"/>
+        <property key="oXC16gcc-sfr-warn" value="false"/>
+        <property key="oXC16gcc-smar-io-lvl" value="1"/>
+        <property key="oXC16gcc-smart-io-fmt" value=""/>
+        <property key="optimization-level" value="0"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value="CFG_INCLUDE_DA210_BRD_MRF24WB"/>
+        <property key="scalar-model" value="default"/>
+        <appendMe value="-fno-ivopts"/>
+      </C30>
+      <C30-AS>
+        <property key="assembler-symbols" value="CFG_INCLUDE_DA210_BRD_MRF24WB=1"/>
+        <property key="expand-macros" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=".."/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="false-conditionals" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-section-info" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="oXC16asm-extra-opts" value=""/>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="relax" value="false"/>
+        <property key="warning-level" value="emit-warnings"/>
+      </C30-AS>
+      <C30-LD>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="enable-check-sections" value="true"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="heap-size" value="0"/>
+        <property key="input-libraries" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="oXC16ld-extra-opts" value=""/>
+        <property key="oXC16ld-fill-upper" value="0"/>
+        <property key="oXC16ld-force-link" value="false"/>
+        <property key="oXC16ld-no-smart-io" value="false"/>
+        <property key="oXC16ld-nostdlib" value="false"/>
+        <property key="oXC16ld-stackguard" value="16"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="stack-size" value=""/>
+        <property key="symbol-stripping" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="warn-section-align" value="false"/>
+      </C30-LD>
+      <C30Global>
+        <property key="fast-math" value="false"/>
+        <property key="generic-16-bit" value="false"/>
+        <property key="legacy-libc" value="false"/>
+        <property key="oXC16glb-macros" value=""/>
+        <property key="output-file-format" value="elf"/>
+      </C30Global>
+      <ICD3PlatformTool>
+      </ICD3PlatformTool>
+    </conf>
+    <conf name="XC16-DA210_BRD_MRF24WG" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC24FJ256DA210</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>ICD3PlatformTool</platformTool>
+        <languageToolchain>XC16</languageToolchain>
+        <languageToolchainVersion>1.10</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <item path="../../../Microchip/TCPIP Stack/BigInt_helper_PIC32.S"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFDriverCom.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFDriverRaw.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFMac.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFMgmtMsg.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFParamMsg.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../18f97j60_g.lkr" ex="true" overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <C30>
+        <property key="code-model" value="large-code"/>
+        <property key="const-model" value="default"/>
+        <property key="data-model" value="default"/>
+        <property key="enable-all-warnings" value="true"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="enable-large-arrays" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="extra-include-directories"
+                  value="..;../../Microchip/Include;../../../Microchip/Include;../../../Microchip/Include/TCPIP Stack;../Configs"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="oXC16gcc-align-arr" value="false"/>
+        <property key="oXC16gcc-cnsts-mauxflash" value="false"/>
+        <property key="oXC16gcc-data-sects" value="false"/>
+        <property key="oXC16gcc-errata" value=""/>
+        <property key="oXC16gcc-fillupper" value=""/>
+        <property key="oXC16gcc-large-aggregate" value="false"/>
+        <property key="oXC16gcc-mauxflash" value="false"/>
+        <property key="oXC16gcc-mpa-lvl" value=""/>
+        <property key="oXC16gcc-name-text-sec" value=""/>
+        <property key="oXC16gcc-near-chars" value="false"/>
+        <property key="oXC16gcc-no-isr-warn" value="false"/>
+        <property key="oXC16gcc-sfr-warn" value="false"/>
+        <property key="oXC16gcc-smar-io-lvl" value="1"/>
+        <property key="oXC16gcc-smart-io-fmt" value=""/>
+        <property key="optimization-level" value="0"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value="CFG_INCLUDE_DA210_BRD_MRF24WG"/>
+        <property key="scalar-model" value="default"/>
+        <appendMe value="-fno-ivopts"/>
+      </C30>
+      <C30-AS>
+        <property key="assembler-symbols" value="CFG_INCLUDE_DA210_BRD_MRF24WG=1"/>
+        <property key="expand-macros" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=".."/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="false-conditionals" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-section-info" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="oXC16asm-extra-opts" value=""/>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="relax" value="false"/>
+        <property key="warning-level" value="emit-warnings"/>
+      </C30-AS>
+      <C30-LD>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="enable-check-sections" value="true"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="heap-size" value="0"/>
+        <property key="input-libraries" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="stack-size" value=""/>
+        <property key="symbol-stripping" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="warn-section-align" value="false"/>
+      </C30-LD>
+      <C30Global>
+        <property key="fast-math" value="false"/>
+        <property key="generic-16-bit" value="false"/>
+        <property key="legacy-libc" value="false"/>
+        <property key="oXC16glb-macros" value=""/>
+        <property key="output-file-format" value="elf"/>
+      </C30Global>
+      <ICD3PlatformTool>
+      </ICD3PlatformTool>
+    </conf>
+    <conf name="XC16-EX16_MRF24WB" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC24FJ128GA010</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>ICD3PlatformTool</platformTool>
+        <languageToolchain>XC16</languageToolchain>
+        <languageToolchainVersion>1.10</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <item path="../../../Microchip/TCPIP Stack/BigInt_helper_PIC32.S"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFDriverCom.c"
+            ex="false"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFDriverCom_24G.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFDriverRaw_24G.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFMac_24G.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFMgmtMsg_24G.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFParamMsg_24G.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../18f97j60_g.lkr" ex="true" overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../Configs/HWP DA210_BRD_MRF24W.h" ex="true" overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../Configs/HWP EX16_MRF24W XC32.h" ex="true" overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../Configs/HWP PICDN2_MRF24W.h" ex="true" overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../Configs/TCPIP MRF24W DA210_BRD.h" ex="true" overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <C30>
+        <property key="code-model" value="large-code"/>
+        <property key="const-model" value="default"/>
+        <property key="data-model" value="default"/>
+        <property key="enable-all-warnings" value="true"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="enable-large-arrays" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="extra-include-directories"
+                  value="..;../../Microchip/Include;../../../Microchip/Include;../../../Microchip/Include/TCPIP Stack;../Configs"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="oXC16gcc-align-arr" value="false"/>
+        <property key="oXC16gcc-cnsts-mauxflash" value="false"/>
+        <property key="oXC16gcc-data-sects" value="false"/>
+        <property key="oXC16gcc-errata" value=""/>
+        <property key="oXC16gcc-fillupper" value=""/>
+        <property key="oXC16gcc-large-aggregate" value="false"/>
+        <property key="oXC16gcc-mauxflash" value="false"/>
+        <property key="oXC16gcc-mpa-lvl" value=""/>
+        <property key="oXC16gcc-name-text-sec" value=""/>
+        <property key="oXC16gcc-near-chars" value="false"/>
+        <property key="oXC16gcc-no-isr-warn" value="false"/>
+        <property key="oXC16gcc-sfr-warn" value="false"/>
+        <property key="oXC16gcc-smar-io-lvl" value="1"/>
+        <property key="oXC16gcc-smart-io-fmt" value=""/>
+        <property key="optimization-level" value="0"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value="CFG_INCLUDE_EX16_MRF24WB"/>
+        <property key="scalar-model" value="default"/>
+        <appendMe value="-fno-ivopts"/>
+      </C30>
+      <C30-AS>
+        <property key="assembler-symbols" value="CFG_INCLUDE_EX16_MRF24WB=1"/>
+        <property key="expand-macros" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=".."/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="false-conditionals" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-section-info" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="oXC16asm-extra-opts" value=""/>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="relax" value="false"/>
+        <property key="warning-level" value="emit-warnings"/>
+      </C30-AS>
+      <C30-LD>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="enable-check-sections" value="true"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="heap-size" value="0"/>
+        <property key="input-libraries" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="stack-size" value=""/>
+        <property key="symbol-stripping" value="keep-all"/>
+        <property key="trace-symbols" value=""/>
+        <property key="warn-section-align" value="false"/>
+      </C30-LD>
+      <C30Global>
+        <property key="fast-math" value="false"/>
+        <property key="generic-16-bit" value="false"/>
+        <property key="legacy-libc" value="false"/>
+        <property key="oXC16glb-macros" value=""/>
+        <property key="output-file-format" value="elf"/>
+      </C30Global>
+      <ICD3PlatformTool>
+      </ICD3PlatformTool>
+    </conf>
+    <conf name="XC16-EX16_MRF24WG" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC24FJ128GA010</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>ICD3PlatformTool</platformTool>
+        <languageToolchain>XC16</languageToolchain>
+        <languageToolchainVersion>1.10</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <item path="../../../Microchip/TCPIP Stack/BigInt_helper_PIC32.S"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFDriverCom.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFDriverRaw.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFMac.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFMgmtMsg.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFParamMsg.c"
+            ex="true"
+            overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <item path="../18f97j60_g.lkr" ex="true" overriding="false">
+        <C30>
+        </C30>
+        <C30-AS>
+        </C30-AS>
+        <C30-LD>
+        </C30-LD>
+        <C30Global>
+        </C30Global>
+      </item>
+      <C30>
+        <property key="code-model" value="large-code"/>
+        <property key="const-model" value="default"/>
+        <property key="data-model" value="default"/>
+        <property key="enable-all-warnings" value="true"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="enable-large-arrays" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="extra-include-directories"
+                  value="..;../../Microchip/Include;../../../Microchip/Include;../../../Microchip/Include/TCPIP Stack;../Configs"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="oXC16gcc-align-arr" value="false"/>
+        <property key="oXC16gcc-cnsts-mauxflash" value="false"/>
+        <property key="oXC16gcc-data-sects" value="false"/>
+        <property key="oXC16gcc-errata" value=""/>
+        <property key="oXC16gcc-fillupper" value=""/>
+        <property key="oXC16gcc-large-aggregate" value="false"/>
+        <property key="oXC16gcc-mauxflash" value="false"/>
+        <property key="oXC16gcc-mpa-lvl" value=""/>
+        <property key="oXC16gcc-name-text-sec" value=""/>
+        <property key="oXC16gcc-near-chars" value="false"/>
+        <property key="oXC16gcc-no-isr-warn" value="false"/>
+        <property key="oXC16gcc-sfr-warn" value="false"/>
+        <property key="oXC16gcc-smar-io-lvl" value="1"/>
+        <property key="oXC16gcc-smart-io-fmt" value=""/>
+        <property key="optimization-level" value="0"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value="CFG_INCLUDE_EX16_MRF24WG"/>
+        <property key="scalar-model" value="default"/>
+        <appendMe value="-fno-ivopts"/>
+      </C30>
+      <C30-AS>
+        <property key="assembler-symbols" value="CFG_INCLUDE_EX16_MRF24WG=1"/>
+        <property key="expand-macros" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=".."/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="false-conditionals" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-section-info" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="oXC16asm-extra-opts" value=""/>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="relax" value="false"/>
+        <property key="warning-level" value="emit-warnings"/>
+      </C30-AS>
+      <C30-LD>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="enable-check-sections" value="true"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="heap-size" value="0"/>
+        <property key="input-libraries" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="stack-size" value=""/>
+        <property key="symbol-stripping" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="warn-section-align" value="false"/>
+      </C30-LD>
+      <C30Global>
+        <property key="fast-math" value="false"/>
+        <property key="generic-16-bit" value="false"/>
+        <property key="legacy-libc" value="false"/>
+        <property key="oXC16glb-macros" value=""/>
+        <property key="output-file-format" value="elf"/>
+      </C30Global>
+      <ICD3PlatformTool>
+      </ICD3PlatformTool>
+    </conf>
+    <conf name="XC32-EX16_MRF24WB" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX795F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>XC32</languageToolchain>
+        <languageToolchainVersion>1.10</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <item path="../../../Microchip/TCPIP Stack/BigInt_helper.S"
+            ex="true"
+            overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFDriverCom.c"
+            ex="false"
+            overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFDriverCom_24G.c"
+            ex="true"
+            overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFDriverRaw_24G.c"
+            ex="true"
+            overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFMac_24G.c"
+            ex="true"
+            overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFMgmtMsg_24G.c"
+            ex="true"
+            overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFParamMsg_24G.c"
+            ex="true"
+            overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../18f97j60_g.lkr" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../Configs/HWP DA210_BRD_MRF24W.h" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../Configs/HWP EX16_MRF24W XC16.h" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../Configs/HWP PICDN2_MRF24W.h" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../Configs/TCPIP MRF24W DA210_BRD.h" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <C32>
+        <property key="additional-warnings" value="true"/>
+        <property key="enable-app-io" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="extra-include-directories"
+                  value="..;../../Microchip/Include;../../../Microchip/Include;../../../Microchip/Include/TCPIP Stack;../Configs"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value="CFG_INCLUDE_EX16_MRF24WB"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="use-cci" value="false"/>
+        <property key="use-indirect-calls" value="false"/>
+      </C32>
+      <C32-AS>
+        <property key="assembler-symbols" value=""/>
+        <property key="enable-symbols" value="true"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=".."/>
+        <property key="extra-include-directories-for-preprocessor"
+                  value="..;../../Microchip/Include;../../../Microchip/Include;../../../Microchip/Include/TCPIP Stack;../Configs"/>
+        <property key="false-conditionals" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-file" value=""/>
+        <property key="list-section-info" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="preprocessor-macros" value="CFG_INCLUDE_EX16_MRF24WB"/>
+        <property key="warning-level" value=""/>
+      </C32-AS>
+      <C32-LD>
+        <property key="enable-check-sections" value="false"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="extra-lib-directories" value=".."/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="heap-size" value=""/>
+        <property key="input-libraries" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="map-file" value="&quot;$(BINDIR_)$(TARGETBASE).map&quot;"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="stack-size" value=""/>
+        <property key="symbol-stripping" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="warn-section-align" value="false"/>
+      </C32-LD>
+      <C32CPP>
+      </C32CPP>
+      <C32Global>
+        <property key="legacy-libc" value="false"/>
+      </C32Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="XC32-EX16_MRF24WG" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX795F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>XC32</languageToolchain>
+        <languageToolchainVersion>1.10</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <item path="../../../Microchip/TCPIP Stack/BigInt_helper.S"
+            ex="true"
+            overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFDriverCom.c"
+            ex="true"
+            overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFDriverRaw.c"
+            ex="true"
+            overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFMac.c"
+            ex="true"
+            overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFMgmtMsg.c"
+            ex="true"
+            overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../../../Microchip/TCPIP Stack/WiFi/WFParamMsg.c"
+            ex="true"
+            overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../18f97j60_g.lkr" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <C32>
+        <property key="additional-warnings" value="true"/>
+        <property key="enable-app-io" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="extra-include-directories"
+                  value="..;../../Microchip/Include;../../../Microchip/Include;../../../Microchip/Include/TCPIP Stack;../Configs"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value="CFG_INCLUDE_EX16_MRF24WG"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="use-cci" value="false"/>
+        <property key="use-indirect-calls" value="false"/>
+      </C32>
+      <C32-AS>
+        <property key="assembler-symbols" value=""/>
+        <property key="enable-symbols" value="true"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=".."/>
+        <property key="extra-include-directories-for-preprocessor"
+                  value="..;../../Microchip/Include;../../../Microchip/Include;../../../Microchip/Include/TCPIP Stack;../Configs"/>
+        <property key="false-conditionals" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-file" value=""/>
+        <property key="list-section-info" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="preprocessor-macros" value="CFG_INCLUDE_EX16_MRF24WG"/>
+        <property key="warning-level" value=""/>
+      </C32-AS>
+      <C32-LD>
+        <property key="enable-check-sections" value="false"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="heap-size" value=""/>
+        <property key="input-libraries" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="no-startup-files" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="stack-size" value=""/>
+        <property key="symbol-stripping" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="warn-section-align" value="false"/>
+      </C32-LD>
+      <C32CPP>
+      </C32CPP>
+      <C32Global>
+      </C32Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+  </confs>
+</configurationDescriptor>

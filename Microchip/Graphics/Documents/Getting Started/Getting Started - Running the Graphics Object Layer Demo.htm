@@ -1,0 +1,1563 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 12 (filtered)">
+<title>Getting Started: Running the “Graphics Object Layer” demo</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Arial","sans-serif";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:24.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-link:"Document Map Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	background:navy;
+	font-size:10.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.DocumentMapChar
+	{mso-style-name:"Document Map Char";
+	mso-style-link:"Document Map";
+	font-family:"Tahoma","sans-serif";}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-link:"Plain Text";
+	font-family:"Courier New";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+p.element10, li.element10, div.element10
+	{mso-style-name:element10;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 65.95pt 1.0in 65.95pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=MsoPlainText align=center style='text-align:center'><a
+name="_Toc194573682"><b><u><span style='font-size:16.0pt;font-family:"Arial","sans-serif"'>Getting
+Started: Running the “Graphics Object Layer” demo</span></u></b></a></p>
+
+<h2><a href="#required_hardware">Required Hardware</a><a name="_Toc276094112"></a></h2>
+
+<h2><a href="#configuring_the_software">Configuring the Software</a></h2>
+
+<h2><a href="#required_hardware">Configuring the Hardware</a><a
+name="_Toc276094113"></a></h2>
+
+<h2><a href="Getting%20Started%20-%20Calibrating%20the%20Touch%20Screen.htm">Calibrating
+the Touch Screen</a><a name="_Toc275264589"></a><a name="_Toc276094114"></a></h2>
+
+<h2><a href="Getting%20Started%20-%20Demo%20Compatibility%20Matrix.htm">Demo
+Compatibility Matrix</a></h2>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><a name="_Toc276094116"></a><a name="running_the_demo"></a><span
+class=Heading2Char><span style='font-size:14.0pt'>Running the Demo</span></span><span
+style='font-family:"Arial","sans-serif"'>:</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>The
+demo projects are created to run on supported Microchip Demo Boards and
+development hardware. Pre-generated hex files are available on the
+&quot;Precompiled <a
+href="mk:@MSITStore:C:\Microchip%20Solutions%20v2010-08-04\Microchip\Help\Graphics%20Library%20Help.chm::/Demos.html"><span
+style='color:windowtext;text-decoration:none'>Hex</span></a>&quot;
+sub-directory found in the demo directory. These hex files are generated using
+the alternative hardware profiles found in the sub-directory named
+&quot;Configs&quot;. Use the &quot;Demo Compatibility Guide&quot; when running
+pre-generated hex files appropriate for your hardware.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>The
+Graphics Object Layer (GOL) demo exhibits the basic functionalities of the GOL
+Objects. It is composed of multiple screens showing how the different GOL
+Objects can be utilized with a touch screen, demonstrates how to bind some
+objects and use GOL Messages to pass parameters from one object to
+another.&nbsp; The demo has two language modes: Chinese and English modes. When
+selection is done, the strings used in the demo are mapped to the language
+selected. Both modes use the same fonts to save memory space. The default font
+file GOLFontDefault.c located in the Microchip/Graphics/ directory is NOT used
+in this demo. Instead, the file named ChineseFonts.c is used. This font file
+contains the <a
+href="mk:@MSITStore:C:\Microchip%20Solutions%20v2010-08-04\Microchip\Help\Graphics%20Library%20Help.chm::/GOLFontDefault.html"><span
+style='color:windowtext;text-decoration:none'>GOLFontDefault</span></a> and
+another named GOLSmallFont. Both fonts are reduced fonts generated using
+character filters defined in the application directory named
+FontFilter.&nbsp;The font tables include only the standard ASCII set (32-127)
+and the Chinese characters that are used in the demo.&nbsp;The summary of the
+strings used for the two modes are placed in the ChineseFontsfontref.h file. </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>All
+font tables used in the demo are generated using the &quot;Graphics Resource
+Converter&quot; (grc.jar) utility. Please refer to the utility documentation
+for details.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>The
+demo starts with the Microchip Start Screen and using the touch screen you can
+navigate through all the screens showing the different GOL Objects that can be
+used in the library.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>Side Buttons Support&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>An
+additional feature of the library is the support for keyboard. Four Explorer 16
+buttons (S3, S4, S5 and S6) are used to control the demo. The key assignments
+are enumerated below:</span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>S3 - Enter Key </span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>S4 - Down Key </span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>S5 - Up Key </span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>S6 - This moves the focus on the
+screen. </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>You
+can perform actions on the objects using these buttons. You can actually navigate
+through all the demo screen using buttons S5 and S6. Where S6 toggles the
+object selection and S5 performs the action on the object. S3 and S4 buttons in
+this demo works only for the slider. Pressing the S3 or S4 buttons will
+decrement or increment the slider thumb’s position.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>Demo Limitations&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>Compiler
+optimization level must be set to &quot;1&quot;, &quot;2&quot;, or
+&quot;s&quot; for PIC24FJ128GA010, dsPIC33FJ128GP804 and PIC24HJ128GP504. For
+evaluation copies of the compilers that have expired, a purchase of the valid
+license will be needed to to set the optimization levels to &quot;1&quot;,
+&quot;2&quot; or &quot;s&quot;. </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>For
+PIC32 Starter Kits: </span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>No potentiometer present. The plotting
+demo with external source will not work. </span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>No available button to perform focus
+control. </span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Secondary oscillator when not
+populated will not update the date and time demo that is based on the RTCC
+module. </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>Demo Procedure</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>1)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Connect the necessary hardware and
+program with the correct pre-generated hex.</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>2)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>When running the demo for the very
+first time, you’ll get touch screen calibration menu. Please refer to <a
+href="Getting%20Started%20-%20Calibrating%20the%20Touch%20Screen.htm">Screen
+Calibration</a> for details.</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>3)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>&nbsp;After you exit the calibration
+menu or immediately after power up the Start Screen will be shown. Touch the
+screen to continue.</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>4)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>&nbsp;The screens showing GOL objects
+will appear. Navigate through the demo using the Next (») and Back («) buttons
+on the sides. </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in;page-break-after:avoid'><img
+border=0 width=441 height=431 src="images/GOL_demo.JPG"></p>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><a
+name="_Toc195786561"></a><a name="_Toc195786411"></a><a name="_Toc195786501"></a><span
+style='font-family:"Arial","sans-serif"'>5)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Notice the time and date is displayed
+on the upper right corner of the screen. To set the date and time press on the
+date and time group box. Note that only the touch screen interface is enabled
+when setting time and date. To exit just press the exit button. Time and date
+set will be reflected in the time and date group box. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>6)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>To jump from one screen to another
+press on the Microchip logo on the upper left corner. A pull down menu will
+appear on the screen. Releasing your press will remove the pull down menu. To
+jump to a screen, drag your stylus or finger while pressing to the desired
+screen title. Once the title is selected, release your finger or stylus. The
+screen chosen will be displayed. To cancel selection, simply drag your finger
+or stylus outside the drop down menu and release. You will return to the
+current screen. The pull down menu has two lists. The first list has one item
+named “MORE” at the bottom. Selecting this without releasing your press will
+bring up the second list. The second list also has a “BACK” item that gives you
+ability to return to the first list. </span></p>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>Microchip Start Screen&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+screen shows the start of the demo. Tap the screen to proceed.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>Before
+describing the other screens of the demo, the navigation buttons are defined:</span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Back («) button – This button, located
+on the left side, directs the user to the previous screen. Before the previous
+screen is shown, all objects in the current screen is destroyed and removed
+from memory. The previous screen is created from scratch and displayed,
+replacing the current screen. </span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Next (») button – This button, located
+on the right side, directs the user to the next screen. Before the next screen
+is shown, all objects in the current screen is destroyed and removed from
+memory. The next screen is created from scratch and displayed, replacing the
+current screen. </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>Buttons&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+screen is composed of a Window with 7 buttons drawn on its client area. Going
+from top to down and left to right direction, each button’s actions are
+described below:</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>1)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 1st Button shows the basic
+functionality of the object. Appearance of the object changes from Pressed to
+Un-pressed when pressed or released. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>2)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 2nd Button shows a gradient bitmap
+drawn over the button’s face. Text “HOME” is drawn over the bitmap. When both
+bitmap and text are drawn over the face of the button, the text will always be
+on top of the bitmap. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>3)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 3rd Button shows that multiple
+bitmaps can be displayed in the face of the button with text. For every state a
+different bitmap can be rendered. Text shown is also moved to the upper left
+corner of the button’s face. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>4)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 4th Button is configured to toggle
+mode. Every press will toggle the button from press to release or release to
+press. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>5)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 5th and 6th Buttons (colored green
+and red respectively) is configured to complement each other. When one is
+pressed, the other will be in the released state. This emulates an exclusive or
+property just like in ON/OFF switches. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>6)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 7th Button is disabled. All touch
+screen and button actions are ignored by this object. </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>Note
+that the object that you operate on is selected as the current focused object.
+This can be verified by a dotted rectangle is drawn on the face of the object.
+When this rectangle is drawn on or around the object the state of this object
+is set to Focused and when removed the state is Unfocused. Not all objects have
+this feature.</span>&nbsp;</p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>Checkboxes&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+screen is composed of a Window with 3 check boxes drawn on its client area and
+a rounded button (“HOME”). Each object actions are described below:</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>1)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 1st Check Box changes the location
+of the text in the button to align left. Notice again the dotted rectangle
+drawn around the checkbox when the object is selected and removed when the object
+is not selected. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>2)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 2nd Check Box changes the text
+alignment to bottom. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>3)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 3rd Check Box is disabled. All
+touch screen and button actions are ignored by this object. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>4)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The Button is implemented using
+multi-line strings and operates in default settings. </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>Radio Buttons&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+screen is composed of a Window with 2 groups of radio buttons its client area.
+In a radio button group only one radio button can be selected at a time. Group
+boxes (Group1 &amp; Group2) defines the two groups.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>Group
+1 actions are described below:</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>1)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 1st Radio Button (Rb1) has its
+state set to active and initially checked. This is also the head object of the
+group. The filled circle drawn indicates that it is checked. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>2)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 2nd Radio Button (Rb2) set to
+active state. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>3)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 3rd Radio Button (Rb3) set to
+active state. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>4)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 4th Radio Button is disabled. This
+object cannot be selected and ignores all touch screen and button actions. </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>Group
+2 functions similarly to Group 1 but in this group the language selection of
+the whole demo is controlled by the two radio buttons. English is the default
+setting. To change to Chinese language, select the Chinese radio button.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>Static Text</span></b><span style='font-family:"Arial","sans-serif"'>
+and <b>Group Box</b>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+screen is composed of a Window with a Group Box, Static Text and one group of
+Radio Buttons drawn on its client area. The Static Text is drawn inside the
+Group Box. Each object actions are described below:</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>1)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The Radio Buttons are used to select
+the text alignment of the Group Box Title and the Static Text. </span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>L – Selects left alignment. </span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>C – Selects center alignment. </span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>R – Selects right alignment </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>2)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The Group Box title “Group Box”
+alignment is controlled by the radio buttons. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>3)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The Static Text is drawn with a frame.
+The text “Microchip Graphics Library Static Text and Group Box Test.” alignment
+is also controlled by the radio buttons. </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>Slider&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+screen is composed of a Window with a Group Box and three sliders drawn on its
+client area. Each object actions are described below:</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>1)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The Group Box is drawn without a
+title. The small black square drawn inside the Group Box can be moved by the
+touch screen. Touching any point within the Group Box moves the black square in
+that position. At the same time the 2 active sliders are updated reflecting the
+horizontal and vertical position of the black square on the Group Box. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>2)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 1st Slider is disabled. All touch
+screen and key actions on this object are ignored. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>3)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 2nd Slider thumb position can be
+moved by touching the screen or pressing S3 and S4 buttons. This also controls
+the horizontal position of the black square in the Group box. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>4)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 3rd Slider thumb position can be
+moved by touching the screen or pressing S3 and S4 buttons. This also controls
+the vertical position of the black square in the Group box. </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>Progress Bar&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+screen is composed of a Window with a Progress Bar and a Button drawn on its
+client area. The Progress Bar incrementally sweeps the progress from 0% to 100%
+and vice versa. The Progress </span><a
+href="mk:@MSITStore:C:\Microchip%20Solutions%20v2010-08-04\Microchip\Help\Graphics%20Library%20Help.chm::/Bar@SHORT@SHORT@SHORT@SHORT.html"><span
+style='font-family:"Arial","sans-serif";color:windowtext;text-decoration:none'>Bar</span></a><span
+style='font-family:"Arial","sans-serif"'> does not process touch screen or
+button actions. The Button, configured in toggle mode, can change the speed of
+the Progress Bar animation.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>List Box&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+screen is composed of the following:</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>1)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Window – Contains all the objects. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>2)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>List Box – Contains 7 items. Only 5
+items can be displayed at a time. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>3)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Two Check Boxes – These selects the
+modes. </span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Single – This enables the single item
+selection when checked. When unchecked, multiple items can be selected. </span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Center – controls the alignment of the
+text in the List Box. When checked, alignment is centered, otherwise left
+aligned. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>4)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Two Group Boxes – These are added to
+label the Check Boxes. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>5)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Scroll Bar – This enables scrolling
+the List Box. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>6)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Two Buttons (with Up and Down arrows)
+– These objects are added to function together with the Scroll </span><a
+href="mk:@MSITStore:C:\Microchip%20Solutions%20v2010-08-04\Microchip\Help\Graphics%20Library%20Help.chm::/Bar@SHORT@SHORT@SHORT@SHORT.html"><span
+style='font-family:"Arial","sans-serif";color:windowtext;text-decoration:none'>Bar</span></a><span
+style='font-family:"Arial","sans-serif"'>. Aside from the ability to drag the
+Scroll </span><a
+href="mk:@MSITStore:C:\Microchip%20Solutions%20v2010-08-04\Microchip\Help\Graphics%20Library%20Help.chm::/Bar@SHORT@SHORT@SHORT@SHORT.html"><span
+style='font-family:"Arial","sans-serif";color:windowtext;text-decoration:none'>Bar</span></a><span
+style='font-family:"Arial","sans-serif"'>, the Buttons also allows up and down
+movement of the Scroll Bar. </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>Edit Box&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+screen is composed of a Window with an Edit Box and 16 Buttons. This screen
+emulates the telephone functionality. The buttons marked with number 0-9, “*”
+and “#” serves as inputs for a phone number. Every time one of these buttons is
+pressed, the number or character is displayed in the Edit Box. The Button with
+? symbol is the back space key. Pressing this deletes the last character
+displayed. The Button with the “Green” phone receiver icon and “Red” phone icon
+serves as the “Call” and “End Call” keys. Pressing the “Call” key will show the
+text “Calling…” in the Edit Box. Pressing the “End Call” key will erase text in
+the Edit Box. The Button “Hld” is the “Hold Call” key.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>Meters&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+screen is composed of a Window with Two Meters (METER1 and METER2), two Digital
+Meters and two Buttons configured to toggle mode. METER1 is drawn with an ARC
+drawn over the scales. METER2 is drawn without the ARC.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>METER1
+animates by increasing the values of the meters and decreasing the values of
+the meter. The first button (with alternating “accel” and decelerating “dclrt”
+text alternately displayed when pressed or released) controls this
+movement.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>METER2
+is manually animated by pressing the second button. METER1 animation can be
+also altered by pressing and releasing the first button.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>Values
+of the Meters are also shown. The colors of the values changes from GREEN, to
+YELLOW and to RED. These colors define the Normal, Critical and Danger colors.
+The colors used can be modified.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>The
+Digital Meters shows the digital equivalent of the meter values.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>Dial&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+screen is composed of a Window with a Dial and a Meter. Dial and Meter are
+configured to have a range of 0-700. The Meter shows the current value of the
+Dial. Turning the Dial (using the touch screen) in a clockwise direction will
+increment the value of the Dial. Turning it in a counter clockwise direction
+will decrement the value.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>Also
+the demo lights up the LED in the Explorer 16 board when the Dial is
+turned.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>Picture Control&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+screen is composed of a Window with Picture, a slider and two check boxes drawn
+on its client area. Each object actions are described below:</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>1)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The Picture object is drawn with a
+frame. The bitmap is displayed with scaling (x1 or x2) controlled by one
+checkbox. Bitmap shown is also changed to emulate animation. There are actually
+8 frames used to emulate animation. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>2)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 1st Check Box names “Scale”
+controls the scale of the Picture. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>3)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The 2nd Check Box named “Animate”
+controls the animation of the Picture. </span></p>
+
+<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>4)</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>The slider controls the speed of the
+animation. This object will only be enabled when the “Animate” control is set.
+Notice that the slider toggles from active to inactive state when “Animate”
+control is toggled. The speed changes from slowest when slider thumb is in the
+right most position and fastest when the thumb is in the left most position.
+Animation speed is controlled by inserting delays between the frames. </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>Custom Control&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+screen is composed of a Window, three Radio Buttons and a custom object created
+and displayed in its client area. The custom object shows an animation of a UP
+and DOWN arrow bitmap and a green bar drawn on a blue background. The green bar
+emulates a fluid level. The level can be modified by touching the screen. The
+level can also be controlled by pressing the Radio Buttons. “Heavy Load” sets
+the level to high, “Normal Load” sets the level to medium and “Light Load” sets
+the level to low. Changing the level using the touch screen automatically sets
+the Radio Button selection. The custom object does not process button
+actions.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>Signature&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+screen is composed of a Window with a Panel drawn on its client area. The Panel
+encloses an area that functions as a paper that the user can write to. This is
+similar to point of sale devices where signatures of customers can be recorded
+digitally and stored.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>Plotting&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+screen is composed of a Window with a Panel drawn on its client area. The Panel
+encloses an area that graphs the value of the Potentiometer (R6) in the
+Explorer 16 Board in real time. Turning the potentiometer will displays the new
+value of R6 in the Panel.&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><b><span style='font-family:
+"Arial","sans-serif"'>ECG&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+screen is composed of a Window with a Panel drawn on its client area. The Panel
+encloses an area where samples of a signal can be displayed. The demo emulates
+an ECG sampled data in Scan Mode. The data is not coming from an external
+source but rather from a pre-stored data in memory.</span></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>The
+“Resources” folder also contains the xml project used to generate the images
+stored in the internal flash memory. Open the file in &quot;Graphics Resource
+Converter&quot; utility to see which files are loaded from internal flash
+memory.</span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-family:"Arial","sans-serif"'>InternalResourceObjectLayer.xml</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="configuring_the_software"></a>Configuring the Software </h2>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>To
+run the demo in the supported Development Board combination, set the proper
+hardware profile in the project HardwareProfile.h file: </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>To run the demo on selected
+Development Boards using QVGA display use:</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in'><span style='font-family:"Arial","sans-serif"'>#include
+&quot;Configs/HWP_XXX_QVGAv1.h”</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>To run the demo on selected
+Development Boards using WQVGA display use:</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in'><span style='font-family:"Arial","sans-serif"'>#include
+&quot;Configs/HWP_XXX_WQVGAv1.h”</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>To run the demo on Multimedia
+Expansion Board use:</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in'><span style='font-family:"Arial","sans-serif"'>#include
+&quot;Configs/HWP_MEB_XXX.h”</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.25in;text-indent:.25in'><span
+style='font-family:"Arial","sans-serif"'>Where: XXX represents any of the
+selected Development Boards. </span></p>
+
+<p class=MsoPlainText style='margin-left:.25in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.25in;text-indent:.25in'><span
+style='font-family:"Arial","sans-serif"'>The hardware profile file name refers
+to the combination of Development Boards that are used to run the demo. Refer
+to the abbreviations summary (<a href="../../../Help/Abbreviations.htm">link</a>)
+for details. </span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>The
+table below shows the hardware set up for the selected Development Boards
+attached to different Display Boards:</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal><a name="required_hardware"></a><span class=Heading2Char><span
+style='font-size:14.0pt'>Required Hardware/Configuring the Hardware</span></span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=931
+ style='width:698.55pt;border-collapse:collapse'>
+ <tr>
+  <td width=257 style='width:193.1pt;border:solid black 1.0pt;border-right:
+  solid windowtext 1.0pt;background:#365F91;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif";color:white'>Selected
+  Development Boards</span></b></p>
+  </td>
+  <td width=282 style='width:211.3pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
+  background:#365F91;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif";color:white'>Graphics
+  PICtail Board</span></b></p>
+  </td>
+  <td width=131 style='width:98.55pt;border-top:solid black 1.0pt;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#365F91;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif";color:white'>3.2&#8243;
+  QVGA Truly TFT Display Board (<a
+  href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=1406&amp;dDocName=en548292">AC164127-4</a>)</span></b></p>
+  </td>
+  <td width=130 style='width:97.8pt;border:solid black 1.0pt;border-left:none;
+  background:#365F91;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif";color:white'>4.3&#8243;
+  WQVGA Powertip TFT Display Board (<a
+  href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=1406&amp;dDocName=en548293">AC164127-6</a>)</span></b></p>
+  </td>
+  <td width=130 style='width:97.8pt;border:solid black 1.0pt;border-left:none;
+  background:#365F91;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif";color:white'>5.7&#8243;
+  VGA Truly TFT Display Board (<a
+  href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=1406&amp;dDocName=en554208">AC164127-8</a>)</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=257 style='width:193.1pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>&nbsp;</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM240312"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC24FJ256DA210
+  Development Board</span></a><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>
+  (DM240312)</span></p>
+  </td>
+  <td width=282 rowspan=2 style='width:211.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>None</span></p>
+  </td>
+  <td width=131 style='width:98.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>(see note 1)</span></p>
+  </td>
+  <td width=130 style='width:97.8pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>(see note 1)</span></p>
+  </td>
+  <td width=130 style='width:97.8pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#9746;</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>(see note 5)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=257 style='width:193.1pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#C6D9F1;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>&nbsp;</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM320005"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Multimedia
+  Expansion Board</span></a><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>
+  (DM320005)</span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>+
+  </span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM320003-2"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC32 USB Starter
+  Kit II</span></a><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>
+  (DM320003-2)</span></p>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM320004"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC32 Ethernet
+  Starter Kit</span></a><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>
+  (DM320004)</span></p>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM320001"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC32 Starter Kit</span></a><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'> (DM320001)</span></p>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM330012"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>dsPIC33E USB
+  Starter Kit</span></a><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>
+  (DM330012)</span></p>
+  </td>
+  <td width=131 style='width:98.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#C6D9F1;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#9745;</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>(see notes 2, 7)</span></p>
+  </td>
+  <td width=130 style='width:97.8pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #C6D9F1;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10007;</span></p>
+  </td>
+  <td width=130 style='width:97.8pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #C6D9F1;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10007;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=257 style='width:193.1pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>&nbsp;</span></p>
+  <p class=MsoNormal><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM240001"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Explorer 16</span></a><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'> (DM240001) </span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>+
+  </span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=MA240011"><span
+  lang=DE style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC24FJ128GA010
+  Plug-In-Module (PIM)</span></a><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>
+  </span><span lang=DE style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>(MA240011)</span></p>
+  <p class=MsoPlainText><span lang=DE style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=MA240011"><span
+  lang=DE style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC24FJ256GA110
+  Plug-In-Module (PIM)</span></a><span lang=DE style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'> (MA240015)</span></p>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=MA240014"><span
+  lang=DE style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC24FJ256GB110
+  Plug-In-Module (PIM)</span></a><span lang=DE style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'> (MA240014)</span></p>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=MA240021"><span
+  lang=DE style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC24FJ256GB210
+  Plug-In-Module (PIM)</span></a><span lang=DE style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'> (MA240021)</span></p>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=MA240016"><span
+  lang=DE style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC24HJ128GP504
+  Graphics Plug-In-Module (PIM)</span></a><span lang=DE style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'> (MA240016-2)</span></p>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=MA330019"><span
+  lang=DE style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>dsPIC33FJ128GP804
+  Graphics Plug-In-Module (PIM)</span></a><span lang=DE style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'> (MA330019-2)</span></p>
+  <p class=MsoPlainText><span lang=DE style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=MA320001"><span
+  lang=DE style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC32MX
+  100P QFP TO 100P Plug-In-Module (PIM)</span></a><span lang=DE
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'> (MA320001)</span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoNormal><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=MA320002"><span
+  lang=DE style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC32MX
+  USB Plug-In-Module (PIM)</span></a><span lang=DE style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'> (MA320002)</span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=MA320003"><span
+  lang=DE>PIC32MX CAN-USB Plug-In-Module (PIM)</span></a></span><span lang=DE
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'> (MA320003)</span></p>
+  </td>
+  <td width=282 rowspan=4 style='width:211.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
+  background:white;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=AC164127-5"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Graphics LCD
+  Controller PICtail™ Plus SSD1926 Board</span></a><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'> (AC164127-5) (see note 3)</span></p>
+  </td>
+  <td width=131 style='width:98.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  </td>
+  <td width=130 style='width:97.8pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  </td>
+  <td width=130 style='width:97.8pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  white;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10007;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=257 style='width:193.1pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#B8CCE4;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>&nbsp;</span></p>
+  <p class=MsoNormal><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM240001"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Explorer 16</span></a><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'> (DM240001) </span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>+
+  </span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=MA330025-1"><span
+  lang=DE style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>dsPIC33EP512MU810
+  Plug-In-Module(PIM)</span></a><span lang=DE style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'> (MA330024-1)</span></p>
+  </td>
+  <td width=131 style='width:98.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#B8CCE4;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  </td>
+  <td width=130 style='width:97.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
+  background:#B8CCE4;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  </td>
+  <td width=130 style='width:97.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
+  background:#B8CCE4;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10007;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=257 style='width:193.1pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>&nbsp;</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM320003-2"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC32 USB Starter
+  Kit II</span></a><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>
+  (DM320003-2)</span></p>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM320004"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC32 Ethernet
+  Starter Kit</span></a><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>
+  (DM320004)</span></p>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM320001"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC32 Starter Kit</span></a><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'> (DM320001)</span></p>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM330012">MPLAB
+  Starter Kit for dsPIC33E DSCs</a> (DM330012)</span></p>
+  </td>
+  <td width=131 style='width:98.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>(see note 7) </span></p>
+  </td>
+  <td width=130 style='width:97.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  </td>
+  <td width=130 style='width:97.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
+  background:white;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10007;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=257 style='width:193.1pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#B8CCE4;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoPlainText>&nbsp;</p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM330012"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>dsPIC33E USB
+  Starter Kit</span></a><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>
+  (DM330012)</span></p>
+  </td>
+  <td width=131 style='width:98.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#B8CCE4;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  </td>
+  <td width=130 style='width:97.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
+  background:#B8CCE4;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  </td>
+  <td width=130 style='width:97.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
+  background:#B8CCE4;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10007;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=257 style='width:193.1pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>&nbsp;</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM320001"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC32 Starter Kit</span></a><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'> (DM320001)</span></p>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM320003-2"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC32 USB Starter
+  Kit II</span></a><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>
+  (DM320003-2)</span></p>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM320004"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC32 Ethernet
+  Starter Kit</span></a><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>
+  (DM320004)</span></p>
+  </td>
+  <td width=282 style='width:211.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
+  background:white;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>&nbsp;</span></p>
+  <p class=MsoNormal><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=AC164144"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Low Cost
+  Controllerless (LCC) Graphics PICtail™ Plus&nbsp; Board</span></a><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'> (AC164144) (see
+  note 4)</span></p>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=131 style='width:98.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  </td>
+  <td width=130 style='width:97.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  </td>
+  <td width=130 style='width:97.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
+  background:white;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=931 colspan=5 valign=top style='width:698.55pt;border-top:none;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Note:
+  </span></p>
+  <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+  8.0pt;font-family:"Verdana","sans-serif"'>1.</span><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'>When using PIC24FJ256DA210 Development
+  Board set the jumpers to:</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP8 – don’t care
+  (color depth is 16BPP, byte access is not performed)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP9 – set to 1-2
+  (use Y- signal)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP10 – set to 1-2
+  (use X+ signal)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP11, JP12 – don’t
+  care</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP23 – set to 2-3
+  (use SPI Flash)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP13 – set to
+  RG8-S1 (use S1 switch)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP14 – set to
+  RE9-S2 (use S2 switch)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP15 – set to
+  RB5-POT(RB5) (use potentiometer)</span></p>
+  <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+  8.0pt;font-family:"Verdana","sans-serif"'>2.</span><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'>The </span><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM320005"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Multimedia Expansion
+  Board</span></a><span style='font-size:8.0pt;font-family:"Verdana","sans-serif";
+  color:black'> and the 3.2&#8243; QVGA Truly TFT Display Board (AC164127-4)
+  uses the same TFT display.</span></p>
+  <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+  8.0pt;font-family:"Verdana","sans-serif"'>3.</span><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'>When using </span><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=AC164127-5"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Graphics LCD
+  Controller PICtail™ Plus SSD1926 Board</span></a><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'> set the jumpers to:</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP1 – open </span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP2 – depending on
+  the PMP interface setting </span></p>
+  <p class=MsoListParagraph style='margin-left:1.5in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>- set to 1-2 (for
+  8-bit PMP)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.5in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>- set to 2-3 (for
+  16-bit PMP)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP3 – set to 1-2
+  (use RD1)</span></p>
+  <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+  8.0pt;font-family:"Verdana","sans-serif"'>4.</span><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'>Set all the </span><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=AC164144"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Low Cost
+  Controllerless (LCC) Graphics PICtail™ Plus&nbsp; Board</span></a><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'> jumpers to 2-3
+  (External 16-bit)</span></p>
+  <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+  8.0pt;font-family:"Verdana","sans-serif"'>5.</span><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'>To run this demo on <span
+  style='color:black'>the 5.7&#8243; VGA Truly TFT Display Board (AC164127-8)</span>
+  with the PIC24FJ256DA210 Development Board at 16 bpp color depth, the refresh
+  rate of the display must be set to 32 Hz instead of 60 Hz. </span></p>
+  <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+  8.0pt;font-family:"Verdana","sans-serif"'>6.</span><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'>The demo is not limited to the selected
+  display boards used here. Other display boards can be used with the
+  appropriate hardware profiles.</span></p>
+  <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+  8.0pt;font-family:"Verdana","sans-serif"'>7.</span><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'>When using Starter Kits, there are
+  portions of the demos that will not work:</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Starter Kits
+  secondary oscillator is not populated out of the box, any RTCC function(s)
+  will not work. To make the RTCC portion of the demo work, a 32 Khz crystal must
+  be added. </span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Plotting Demo that
+  draws the potentiometer reading on the screen will always show a flat line
+  since there is no potentiometer on the board.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=931 colspan=5 valign=top style='width:698.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoPlainText>&nbsp;<span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=486
+ style='width:364.5pt;margin-left:-.4pt;border-collapse:collapse'>
+ <tr style='height:12.75pt'>
+  <td width=486 nowrap colspan=4 valign=bottom style='width:364.5pt;border:
+  solid windowtext 1.0pt;background:white;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Legend:</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=42 nowrap valign=bottom style='width:31.5pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  </td>
+  <td width=180 nowrap style='width:135.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Supported
+  out of the box</span></p>
+  </td>
+  <td width=42 valign=bottom style='width:31.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in;height:12.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#9746;</span></p>
+  </td>
+  <td width=222 style='width:166.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in;height:12.75pt'>
+  <p class=MsoNormal style='margin-left:.1in'><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>Hardware compatible, will need firmware
+  modification</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=42 nowrap valign=bottom style='width:31.5pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#9745;</span></p>
+  </td>
+  <td width=180 nowrap style='width:135.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Supported,
+  see limitations</span></p>
+  </td>
+  <td width=42 valign=bottom style='width:31.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in;height:12.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10007;</span></p>
+  </td>
+  <td width=222 style='width:166.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in;height:12.75pt'>
+  <p class=MsoNormal style='margin-left:.1in'><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>Not supported, hardware not compatible</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>Trademarks:</b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif";color:black'>The Microchip name and logo, the
+Microchip logo, MPLAB, and PIC are registered trademarks of Microchip Technology
+Incorporated in the U.S.A. and other countries.</span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif";color:black'>PICDEM and PICTail are trademarks
+of Microchip Technology Incorporated in the U.S.A. and other countries.</span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif";color:black'>SD is a trademark of the SD
+Association in the U.S.A and other countries</span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif";color:black'>Microsoft, Windows, Excel, and
+Windows Vista are either registered trademarks or trademarks of Microsoft
+Corporation in the United States and/or other countries.</span></i></p>
+
+</div>
+
+</body>
+
+</html>

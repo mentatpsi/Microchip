@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Graphics_Resource_Converter>
+<Configuration>
+<major>3</major>
+<minor>11</minor>
+<compiler>C30</compiler>
+<format>CArray</format>
+<graphics_module>true</graphics_module>
+<graphics_model>16 bpp</graphics_model>
+</Configuration>
+<Bitmaps>
+<Bitmap_Resource>
+<label>MenuButton</label>
+<path>MenuButton.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>MenuButtonPressed</label>
+<path>MenuButtonPressed.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>Engine1</label>
+<path>Engine1.bmp</path>
+<compression>IPU</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>Engine2</label>
+<path>Engine2.bmp</path>
+<compression>IPU</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>Engine3</label>
+<path>Engine3.bmp</path>
+<compression>IPU</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>Engine4</label>
+<path>Engine4.bmp</path>
+<compression>IPU</compression>
+</Bitmap_Resource>
+</Bitmaps>
+<Font_Files>
+<Font_File_Resource>
+<label>GOLSmallFont</label>
+<path>../../../../Microchip/Graphics/Fonts/gentium/Gentium.ttf</path>
+<name>Gentium</name>
+<size>12</size>
+<height>15</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>126</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>GOLMediumFont</label>
+<path>../../../../Microchip/Graphics/Fonts/gentium/Gentium.ttf</path>
+<name>Gentium</name>
+<size>16</size>
+<height>19</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>126</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>VeraMono_28</label>
+<path>../../../../Microchip/Graphics/Fonts/vera/VeraMono.ttf</path>
+<name>Bitstream Vera Sans Mono</name>
+<size>28</size>
+<height>33</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>46</first_character>
+<last_character>57</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>VeraMono_17</label>
+<path>../../../../Microchip/Graphics/Fonts/vera/VeraMono.ttf</path>
+<name>Bitstream Vera Sans Mono</name>
+<size>17</size>
+<height>20</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>46</first_character>
+<last_character>57</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+</Font_Files>
+</Graphics_Resource_Converter>

@@ -1,0 +1,106 @@
+; Installation file for Microchip's Custom USB Driver
+; Copyright (C) 2007 by Microchip Technology, Inc.
+; All rights reserved
+
+[Version]
+Signature=$Windows NT$
+Class=CustomUSBDevices
+ClassGuid={a503e2d3-a031-49dc-b684-c99085dbfe92}
+
+Provider=%MFGNAME%
+CatalogFile=%MFGFILENAME%.cat
+DriverVer=12/19/2007,1.0.0.6
+
+[Manufacturer]
+%MFGNAME%=DeviceList,ntamd64
+
+[DestinationDirs]
+DefaultDestDir=12
+
+[SourceDisksNames]
+1=%INSTDISK%,,,
+
+[ClassInstall32]
+AddReg=ClassInstall_AddReg
+
+[ClassInstall_AddReg]
+HKR,,,,%DEVICEMANAGERCATEGORY%
+HKR,,Icon,,"-20"
+
+
+;------------------------------------------------------------------------------
+;  Windows 2000/XP/Vista 32 Section
+;------------------------------------------------------------------------------
+[DriverInstall]
+CopyFiles=DriverCopyFiles
+
+[DriverCopyFiles]
+%MFGFILENAME%.sys,,,2
+
+[DriverInstall.Services]
+AddService=MCHPUSB,2,DriverService
+
+[DriverService]
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%12%\%MFGFILENAME%.sys
+
+
+;------------------------------------------------------------------------------
+;  Windows XP/Vista 64 Section
+;------------------------------------------------------------------------------
+[DriverInstall64]
+CopyFiles=DriverCopyFiles64
+
+[DriverCopyFiles64]
+%MFGFILENAME%64.sys,,,2
+
+[DriverInstall64.Services]
+AddService=MCHPUSB,2,DriverService64
+
+[DriverService64]
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%12%\%MFGFILENAME%64.sys
+
+
+;------------------------------------------------------------------------------
+;  Vendor and Product ID Definitions
+;------------------------------------------------------------------------------
+; When developing your custom USB device, the VID and PID used in the PC side
+; application program and the firmware on the microcontroller must match.
+; Modify the below line to use your VID and PID.  Use the format as shown below.
+; Note: One INF file can be used for multiple devices with different VID and PIDs.
+; For each supported device, append ",USB\VID_xxxx&PID_yyyy" to the end of the line.
+;------------------------------------------------------------------------------
+[DeviceList]
+%DESCRIPTION%=DriverInstall, USB\VID_04D8&PID_000B, USB\VID_04D8&PID_000C, USB\VID_04D8&PID_01F0 USB\VID_04D8&PID_01F1, USB\VID_04D8&PID_01F2, USB\VID_04D8&PID_01F3, USB\VID_04D8&PID_01F4, USB\VID_04D8&PID_01F5, USB\VID_04D8&PID_01F6
+ 
+[DeviceList.ntamd64]
+%DESCRIPTION%=DriverInstall64, USB\VID_04D8&PID_000B, USB\VID_04D8&PID_000C, USB\VID_04D8&PID_01F0 USB\VID_04D8&PID_01F1, USB\VID_04D8&PID_01F2, USB\VID_04D8&PID_01F3, USB\VID_04D8&PID_01F4, USB\VID_04D8&PID_01F5, USB\VID_04D8&PID_01F6 
+
+
+;------------------------------------------------------------------------------
+;  String Definitions
+;------------------------------------------------------------------------------
+;Modify these strings to customize your device
+;------------------------------------------------------------------------------
+[Strings]
+DEVICEMANAGERCATEGORY="Custom USB Devices"
+MFGFILENAME="mchpusb"
+MFGNAME="Microchip Technology, Inc."
+INSTDISK="Microchip Technology, Inc. Installation Disc"
+DESCRIPTION="Microchip Custom USB Device"
+
+
+;------------------------------------------------------------------------------
+;  Source Files
+;------------------------------------------------------------------------------
+;The source file name prefixes need to be the same name as the string MFGFILENAME
+;above
+;------------------------------------------------------------------------------
+[SourceDisksFiles]
+mchpusb.sys=1
+mchpusb64.sys=1

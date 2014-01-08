@@ -1,0 +1,244 @@
+* This is a MIB description for Microchip TCP/IP Stack.
+* Anyline starting without '$' is a comment.
+* Line starting with $ is a command and first word after $ must be
+* a valid command string.
+*
+* Use mib2bib to compile this file and generate binary BIB file.
+*
+* v1.0 supports following commands
+*       $DeclareVar(<oidName>, <dataType>, <oidType>, <access>,  <oidString>)
+*
+* Software License Agreement
+*
+* Copyright (C) 2012 Microchip Technology Inc.  All rights reserved.
+*
+* Microchip licenses to you the right to use, modify, copy, and
+* distribute the Software when used with a Microchip microcontroller or
+* digital signal controller product which is integrated into Licensee's product.
+*
+* You should refer to the license agreement accompanying this
+* Software for additional information regarding your rights and
+* obligations.
+*
+* THE SOFTWARE AND DOCUMENTATION ARE PROVIDED "AS IS" WITHOUT
+* WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT
+* LIMITATION, ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A
+* PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT SHALL
+* MICROCHIP BE LIABLE FOR ANY INCIDENTAL, SPECIAL, INDIRECT OR
+* CONSEQUENTIAL DAMAGES, LOST PROFITS OR LOST DATA, COST OF
+* PROCUREMENT OF SUBSTITUTE GOODS, TECHNOLOGY OR SERVICES, ANY CLAIMS
+* BY THIRD PARTIES (INCLUDING BUT NOT LIMITED TO ANY DEFENSE
+* THEREOF), ANY CLAIMS FOR INDEMNITY OR CONTRIBUTION, OR OTHER
+* SIMILAR COSTS, WHETHER ASSERTED ON THE BASIS OF CONTRACT, TORT
+* (INCLUDING NEGLIGENCE), BREACH OF WARRANTY, OR OTHERWISE
+*
+* 
+* Author                      Date                Comment
+* ==========================================================================
+* Nilesh Rajbharti            5/21/03             Initial (v1.0)
+* Howard Schlunder            9/12/06             Testing with 3.75
+* Amit Shirbhate	      3/10/09		  Snmp Version v2c Updates		 
+* 
+
+
+DeclareVar(<NodeName>, <NodeDataType>, <NodeType>, <NodeAccess>, <NodeOID>)
+
+
+****************************************************************************
+*    MIB-2 SYSTEM MIB
+****************************************************************************
+$DeclareVar(SYS_NAME, ASCII_STRING, SINGLE, READONLY, 43.6.1.2.1.1.5)
+$StaticVar(SYS_NAME, Microchip)
+
+$DeclareVar(SYS_DESCR, ASCII_STRING, SINGLE, READONLY, 43.6.1.2.1.1.1)
+$StaticVar(SYS_DESCR, PIC)
+
+$DeclareVar(SYS_CONTACT, ASCII_STRING, SINGLE, READONLY, 43.6.1.2.1.1.4)
+$StaticVar(SYS_CONTACT, admin)
+
+$DeclareVar(SYS_LOCATION, ASCII_STRING, SINGLE, READONLY, 43.6.1.2.1.1.6)
+$StaticVar(SYS_LOCATION, office)
+
+$DeclareVar(SYS_SERVICES, BYTE, SINGLE, READONLY, 43.6.1.2.1.1.7)
+$StaticVar(SYS_SERVICES, 7)
+
+$DeclareVar(SYS_UP_TIME, TIME_TICKS, SINGLE, READONLY, 43.6.1.2.1.1.3)
+$DynamicVar(SYS_UP_TIME, 250)
+
+$DeclareVar(MICROCHIP, OID, SINGLE, READONLY,   43.6.1.2.1.1.2)
+$StaticVar(MICROCHIP, 43.6.1.4.1.17095.1) 
+
+$AgentID(MICROCHIP, 255)
+*Agent ID declaration is must if the agent is required to send trap notifications. 
+*Application should use this Agent ID while generating traps.
+
+****************************************************************************
+*    END OF MIB-2 SYSTEM MIB
+****************************************************************************
+
+    
+****************************************************************************
+*    MICROCHIP - MICROCHIP  MIB
+****************************************************************************
+
+----------------------------------------------------------------------------
+-    microchip.product
+----------------------------------------------------------------------------
+$DeclareVar(PRODUCT_NAME, ASCII_STRING, SINGLE, READONLY, 43.6.1.4.1.17095.1.1.1)
+$StaticVar(PRODUCT_NAME, SNMPv3Agent)
+
+$DeclareVar(PRODUCT_VERSION, ASCII_STRING, SINGLE, READONLY, 43.6.1.4.1.17095.1.1.2)
+$StaticVar(PRODUCT_VERSION, v5.42)
+
+$DeclareVar(VERSION_DATE, ASCII_STRING, SINGLE, READONLY, 43.6.1.4.1.17095.1.1.3)
+$StaticVar(VERSION_DATE, Oct 23)
+
+
+----------------------------------------------------------------------------
+-    microchip.setup
+----------------------------------------------------------------------------
+TRAP RECEIVER is table with following format:
+    TRAP_RECEIVER_ID is index.
+
+ -----------------------------------------------------------------------------
+ TRAP_RECEIVER_ID  |    TRAP_ENABLED  |  TRAP_RECEIVER_IP  |      TRAP_COMMUNITY      
+ -----------------------------------------------------------------------------
+    0..3           |     OFF(0)/ON(0) |  X.X.X.X           |     ASCII_STRING(0..7)
+ ------------------------------------------------------------------------------
+
+$DeclareVar(TRAP_RECEIVER_ID, BYTE, SEQUENCE, READWRITE, 43.6.1.4.1.17095.1.2.1.1.1)
+$DynamicVar(TRAP_RECEIVER_ID, 1)
+$SequenceVar(TRAP_RECEIVER_ID, TRAP_RECEIVER_ID)
+
+$DeclareVar(TRAP_RECEIVER_ENABLED, BYTE, SEQUENCE, READWRITE, 43.6.1.4.1.17095.1.2.1.1.2)
+$DynamicVar(TRAP_RECEIVER_ENABLED, 2)
+$SequenceVar(TRAP_RECEIVER_ENABLED, TRAP_RECEIVER_ID)
+
+$DeclareVar(TRAP_RECEIVER_IP, IP_ADDRESS, SEQUENCE, READWRITE, 43.6.1.4.1.17095.1.2.1.1.3)
+$DynamicVar(TRAP_RECEIVER_IP, 3)
+$SequenceVar(TRAP_RECEIVER_IP, TRAP_RECEIVER_ID)
+
+$DeclareVar(TRAP_COMMUNITY, ASCII_STRING, SEQUENCE, READWRITE, 43.6.1.4.1.17095.1.2.1.1.4)
+$DynamicVar(TRAP_COMMUNITY, 4)
+$SequenceVar(TRAP_COMMUNITY, TRAP_RECEIVER_ID)
+
+
+----------------------------------------------------------------------------
+-    microchip.control
+----------------------------------------------------------------------------
+microchip.control.ledD5
+$DeclareVar(LED_D5, BYTE, SINGLE, READWRITE, 43.6.1.4.1.17095.1.3.1)
+$DynamicVar(LED_D5, 5)
+
+microchip.control.ledD6
+$DeclareVar(LED_D6, BYTE, SINGLE, READWRITE, 43.6.1.4.1.17095.1.3.2)
+$DynamicVar(LED_D6, 6)
+
+microchip.control.pushButton
+$DeclareVar(PUSH_BUTTON, BYTE, SINGLE, READONLY, 43.6.1.4.1.17095.1.3.3)
+$DynamicVar(PUSH_BUTTON, 7)
+
+microchip.control.analogPot0
+$DeclareVar(ANALOG_POT0, WORD, SINGLE, READONLY, 43.6.1.4.1.17095.1.3.4)
+$DynamicVar(ANALOG_POT0, 8)
+
+microchip.control.lcdDisplay
+$DeclareVar(LCD_DISPLAY, ASCII_STRING, SINGLE, READWRITE, 43.6.1.4.1.17095.1.3.6)
+$DynamicVar(LCD_DISPLAY, 10)
+
+
+****************************************************************************
+*    snmpFrameworkMIBObjects
+****************************************************************************
+$DeclareVar(ENGINE_ID, ASCII_STRING, SINGLE, READONLY, 43.6.1.6.3.10.2.1.1)
+$DynamicVar(ENGINE_ID, 249)
+
+$DeclareVar(ENGINE_BOOT, DWORD, SINGLE, READONLY, 43.6.1.6.3.10.2.1.2)
+$DynamicVar(ENGINE_BOOT, 248)
+
+$DeclareVar(ENGINE_TIME, DWORD, SINGLE, READONLY, 43.6.1.6.3.10.2.1.3)
+$DynamicVar(ENGINE_TIME, 247)
+
+$DeclareVar(ENGINE_MAX_MSG, WORD, SINGLE, READONLY, 43.6.1.6.3.10.2.1.4)
+$DynamicVar(ENGINE_MAX_MSG, 246) 
+
+
+****************************************************************************
+*    END OF SNMP FRAMEWORK MIB
+****************************************************************************
+
+    
+****************************************************************************
+*    SNMP-USER-BASED-SM-MIB 
+****************************************************************************
+User configured USM table where USM_INDEX_ID is used as index
+
+
+$DeclareVar(USM_INDEX_ID, BYTE, SEQUENCE, READONLY, 43.6.1.4.1.17095.1.4.1.1.1)
+$DynamicVar(USM_INDEX_ID, 11)
+$SequenceVar(USM_INDEX_ID, USM_INDEX_ID)
+
+$DeclareVar(USER_SECURITY_NAME, ASCII_STRING, SEQUENCE, READWRITE, 43.6.1.4.1.17095.1.4.1.1.2)
+$DynamicVar(USER_SECURITY_NAME, 12)
+$SequenceVar(USER_SECURITY_NAME, USM_INDEX_ID)
+
+$DeclareVar(USM_AUTH_PROT, BYTE, SEQUENCE, READWRITE, 43.6.1.4.1.17095.1.4.1.1.3)
+$DynamicVar(USM_AUTH_PROT, 13)
+$SequenceVar(USM_AUTH_PROT, USM_INDEX_ID)
+
+$DeclareVar(USM_AUTH_KEY, ASCII_STRING, SEQUENCE, READWRITE, 43.6.1.4.1.17095.1.4.1.1.4)
+$DynamicVar(USM_AUTH_KEY, 14)
+$SequenceVar(USM_AUTH_KEY, USM_INDEX_ID)
+
+$DeclareVar(USM_PRIV_PROT, BYTE, SEQUENCE, READWRITE, 43.6.1.4.1.17095.1.4.1.1.5)
+$DynamicVar(USM_PRIV_PROT, 15)
+$SequenceVar(USM_PRIV_PROT, USM_INDEX_ID)
+
+$DeclareVar(USM_PRIV_KEY, ASCII_STRING, SEQUENCE, READWRITE, 43.6.1.4.1.17095.1.4.1.1.6)
+$DynamicVar(USM_PRIV_KEY, 16)
+$SequenceVar(USM_PRIV_KEY, USM_INDEX_ID)
+
+****************************************************************************
+*    SNMP-TARGET-MIB 
+****************************************************************************
+User configured USM table where SNMP_TARGET_INDEX_ID is used as index
+
+
+$DeclareVar(SNMP_TARGET_INDEX_ID, BYTE, SEQUENCE, READONLY, 43.6.1.4.1.17095.1.5.1.1.1)
+$DynamicVar(SNMP_TARGET_INDEX_ID, 17)
+$SequenceVar(SNMP_TARGET_INDEX_ID,SNMP_TARGET_INDEX_ID)
+
+$DeclareVar(SNMP_TARGET_MP_MODEL, BYTE, SEQUENCE, READWRITE, 43.6.1.4.1.17095.1.5.1.1.2)
+$DynamicVar(SNMP_TARGET_MP_MODEL, 18)
+$SequenceVar(SNMP_TARGET_MP_MODEL, SNMP_TARGET_INDEX_ID)
+
+$DeclareVar(SNMP_TARGET_SECURITY_MODEL, BYTE, SEQUENCE, READWRITE, 43.6.1.4.1.17095.1.5.1.1.3)
+$DynamicVar(SNMP_TARGET_SECURITY_MODEL, 19)
+$SequenceVar(SNMP_TARGET_SECURITY_MODEL, SNMP_TARGET_INDEX_ID)
+
+$DeclareVar(SNMP_TARGET_SECURITY_NAME, ASCII_STRING, SEQUENCE, READWRITE, 43.6.1.4.1.17095.1.5.1.1.4)
+$DynamicVar(SNMP_TARGET_SECURITY_NAME, 20)
+$SequenceVar(SNMP_TARGET_SECURITY_NAME, SNMP_TARGET_INDEX_ID)
+
+$DeclareVar(SNMP_TARGET_SECURITY_LEVEL, BYTE, SEQUENCE, READWRITE, 43.6.1.4.1.17095.1.5.1.1.5)
+$DynamicVar(SNMP_TARGET_SECURITY_LEVEL, 21)
+$SequenceVar(SNMP_TARGET_SECURITY_LEVEL, SNMP_TARGET_INDEX_ID)
+
+
+****************************************************************************
+*    END OF USM MIB
+****************************************************************************
+****************************************************************************
+*    SNMP-DEMO-TRAP 
+****************************************************************************
+
+$DeclareVar(SNMP_DEMO_TRAP, BYTE, SINGLE, READONLY, 43.6.1.4.1.17095.1.0.1)
+$DynamicVar(SNMP_DEMO_TRAP, 500)
+
+****************************************************************************
+*    END OF DEMO TRAP MIB
+****************************************************************************
+
+****************************************************************************
+*    END OF MICROCHIP - Demo MIB
+****************************************************************************

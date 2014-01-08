@@ -1,0 +1,2 @@
+﻿driverStr:	S1D13522	//
+descriptionStr:	E-Paper Demo	//

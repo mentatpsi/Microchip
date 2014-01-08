@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weblink">www.microchip.com/usb</string>
+    
+    <string name="app_name">USB Device Demo</string>
+    <string name="app_title">USB Device Demo</string>
+ 
+    <string name="no_device_attached">No device attached</string>
+    <string name="device_attached">device attached</string>
+    <string name="attach_device">Please attach a device that is able to run with this demo.  This demo is designed to work with the following demos provided in the Microchip Application Libraries USB framework (www.microchip.com/usb):\r\n   LibUSB Demo\r\n   WinUSB Demo\r\n   MCHPUSB Demo\r\n   Custom HID Demo</string>
+ 
+    <string name="toggle_leds_button">Toggle LEDs</string>
+    <string name="toggle_leds_description">Press the button below to toggle the LEDs on the attached board.</string>
+    
+    <string name="button_status_description">The box below indicates the push button status of the attached board.</string>
+    <string name="button_pressed">Button pressed</string>
+    <string name="button_not_pressed">Button not pressed</string>
+    <string name="button_send">Send</string>
+    
+    <string name="baud_rate">Baud Rate:</string>
+    
+    <string name="pot_status_description">The bar below indicates the percentage of rotation of the potentiometer.</string>
+    
+</resources>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="mComm Configuration" projectFiles="true">
+        <itemPath>../mComm_config.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="mComm Includes" projectFiles="true">
+        <itemPath>../mComm.h</itemPath>
+        <itemPath>../mComm_optionsForConfig.h</itemPath>
+        <itemPath>../mComm_processConfiguration.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="mTouch Configuration"
+                     displayName="mTouch Configuration"
+                     projectFiles="true">
+        <itemPath>../mTouch_config.h</itemPath>
+        <itemPath>../mTouch_config_cvdAdvanced.h</itemPath>
+        <itemPath>../mTouch_config_slider.h</itemPath>
+        <itemPath>../mTouch_config_modes.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="mTouch Hardware Profiles"
+                     displayName="mTouch Hardware Profiles"
+                     projectFiles="true">
+        <itemPath>../Alternative Configurations/mTouch_hardwareProfile_16F193x.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="mTouch Includes"
+                     displayName="mTouch Includes"
+                     projectFiles="true">
+        <itemPath>../mTouch.h</itemPath>
+        <itemPath>../mTouch_eeprom.h</itemPath>
+        <itemPath>../mTouch_optionsForConfig.h</itemPath>
+        <itemPath>../mTouch_processConfiguration.h</itemPath>
+        <itemPath>../mTouch_slider.h</itemPath>
+        <itemPath>../mTouch_proximity.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="mTouch Macro Libraries"
+                     displayName="mTouch Macro Libraries"
+                     projectFiles="true">
+        <itemPath>../mTouchCVD_macroLibrary_PIC16F.h</itemPath>
+        <itemPath>../mTouchCVD_macroLibrary_PIC16F1.h</itemPath>
+        <itemPath>../mTouchCVD_macroLibrary_PIC18F.h</itemPath>
+        <itemPath>../mTouch_macroLibrary_common.h</itemPath>
+      </logicalFolder>
+      <itemPath>../generic_processorConfigBits.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LibraryFiles"
+                   displayName="Library Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ObjectFiles"
+                   displayName="Object Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="mComm Source" projectFiles="true">
+        <itemPath>../mComm.c</itemPath>
+        <itemPath>../mComm_opcodes.c</itemPath>
+        <itemPath>../mComm_custom.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="mTouch Source"
+                     displayName="mTouch Source"
+                     projectFiles="true">
+        <itemPath>../mTouch.c</itemPath>
+        <itemPath>../mTouch_Slider.c</itemPath>
+        <itemPath>../mTouch_eeprom.c</itemPath>
+        <itemPath>../mTouch_proximity.c</itemPath>
+        <itemPath>../mTouch_acquisition.c</itemPath>
+        <itemPath>../mTouch_acquisition_HCVD.c</itemPath>
+      </logicalFolder>
+      <itemPath>../main.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="default" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC16F1513</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>Simulator</platformTool>
+        <languageToolchain>XC8</languageToolchain>
+        <languageToolchainVersion>1.12</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <item path="../main.c" ex="false" overriding="false">
+        <HI-TECH-COMP>
+          <property key="define-macros" value=""/>
+          <property key="extra-include-directories" value=""/>
+          <property key="identifier-length" value="31"/>
+          <property key="operation-mode" value="pro"/>
+          <property key="optimization-assembler" value="true"/>
+          <property key="optimization-assembler-files" value="false"/>
+          <property key="optimization-debug" value="false"/>
+          <property key="optimization-global" value="true"/>
+          <property key="optimization-level" value="-9"/>
+          <property key="optimization-set" value="default"/>
+          <property key="optimization-speed" value="true"/>
+          <property key="preprocess-assembler" value="false"/>
+          <property key="undefine-macros" value=""/>
+          <property key="verbose" value="false"/>
+          <property key="warning-level" value="9"/>
+          <property key="what-to-do" value="ignore"/>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+          <property key="additional-options-callgraph" value="std"/>
+          <property key="additional-options-checksum" value=""/>
+          <property key="additional-options-code-offset" value=""/>
+          <property key="additional-options-command-line" value=""/>
+          <property key="additional-options-errata" value=""/>
+          <property key="additional-options-extend-address" value="false"/>
+          <property key="additional-options-trace-type" value=""/>
+          <property key="backup-reset-condition-flags" value="false"/>
+          <property key="calibrate-oscillator" value="true"/>
+          <property key="calibrate-oscillator-value" value=""/>
+          <property key="checksum-verification" value="false"/>
+          <property key="clear-bss" value="true"/>
+          <property key="code-model-external" value="wordwrite"/>
+          <property key="code-model-instruction-set" value="mips32r2"/>
+          <property key="code-model-pointer-size" value="16"/>
+          <property key="code-model-rom" value=""/>
+          <property key="create-html-files" value="false"/>
+          <property key="data-model-memory" value="large"/>
+          <property key="data-model-ram" value=""/>
+          <property key="data-model-size-of-double" value="24"/>
+          <property key="data-model-size-of-float" value="24"/>
+          <property key="data-model-strict" value="false"/>
+          <property key="display-class-usage" value="false"/>
+          <property key="display-hex-usage" value="false"/>
+          <property key="display-overall-usage" value="true"/>
+          <property key="display-psect-usage" value="false"/>
+          <property key="fill-flash-options-addr" value=""/>
+          <property key="fill-flash-options-const" value=""/>
+          <property key="fill-flash-options-enable" value="0"/>
+          <property key="fill-flash-options-inc-const" value=""/>
+          <property key="fill-flash-options-increment" value=""/>
+          <property key="format-hex-file-for-download" value="false"/>
+          <property key="initialize-cp0" value="false"/>
+          <property key="initialize-data" value="true"/>
+          <property key="initialize-gprs" value="false"/>
+          <property key="initialize-heap" value="false"/>
+          <property key="initialize-stack" value="false"/>
+          <property key="keep-generated-startup.as" value="false"/>
+          <property key="link-in-c-library" value="true"/>
+          <property key="link-in-peripheral-library" value="false"/>
+          <property key="linker-interrupts-disable-usage" value="false"/>
+          <property key="linker-interrupts-number-of-vectors" value="single"/>
+          <property key="linker-interrupts-table-location" value="pfm"/>
+          <property key="linker-interrupts-vector-type" value="ram"/>
+          <property key="managed-stack" value="true"/>
+          <property key="nmi-handler" value="false"/>
+          <property key="optimal-performance" value="false"/>
+          <property key="program-the-device-with-default-config-words" value="false"/>
+          <property key="soft-reset-handler" value="false"/>
+          <property key="test-ram-on-startup" value="true"/>
+          <property key="unused-interrupt-vectors" value="-vec_reset,-vec_func"/>
+          <property key="warn-on-stack-overflow" value="true"/>
+        </HI-TECH-LINK>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <HI-TECH-COMP>
+        <property key="define-macros" value=""/>
+        <property key="extra-include-directories" value=""/>
+        <property key="identifier-length" value="31"/>
+        <property key="operation-mode" value="pro"/>
+        <property key="optimization-assembler" value="true"/>
+        <property key="optimization-assembler-files" value="false"/>
+        <property key="optimization-debug" value="false"/>
+        <property key="optimization-global" value="true"/>
+        <property key="optimization-level" value="9"/>
+        <property key="optimization-set" value="default"/>
+        <property key="optimization-speed" value="false"/>
+        <property key="preprocess-assembler" value="false"/>
+        <property key="undefine-macros" value=""/>
+        <property key="verbose" value="false"/>
+        <property key="warning-level" value="0"/>
+        <property key="what-to-do" value="ignore"/>
+      </HI-TECH-COMP>
+      <HI-TECH-LINK>
+        <property key="additional-options-callgraph" value="std"/>
+        <property key="additional-options-checksum" value=""/>
+        <property key="additional-options-code-offset" value=""/>
+        <property key="additional-options-command-line" value=""/>
+        <property key="additional-options-errata" value=""/>
+        <property key="additional-options-extend-address" value="false"/>
+        <property key="additional-options-trace-type" value=""/>
+        <property key="backup-reset-condition-flags" value="false"/>
+        <property key="calibrate-oscillator" value="true"/>
+        <property key="calibrate-oscillator-value" value=""/>
+        <property key="checksum-verification" value="false"/>
+        <property key="clear-bss" value="true"/>
+        <property key="code-model-external" value="wordwrite"/>
+        <property key="code-model-instruction-set" value="mips32r2"/>
+        <property key="code-model-pointer-size" value="16"/>
+        <property key="code-model-rom" value=""/>
+        <property key="create-html-files" value="false"/>
+        <property key="data-model-memory" value="large"/>
+        <property key="data-model-ram" value=""/>
+        <property key="data-model-size-of-double" value="24"/>
+        <property key="data-model-size-of-float" value="24"/>
+        <property key="data-model-strict" value="false"/>
+        <property key="display-class-usage" value="false"/>
+        <property key="display-hex-usage" value="false"/>
+        <property key="display-overall-usage" value="true"/>
+        <property key="display-psect-usage" value="false"/>
+        <property key="fill-flash-options-addr" value=""/>
+        <property key="fill-flash-options-const" value=""/>
+        <property key="fill-flash-options-enable" value="0"/>
+        <property key="fill-flash-options-inc-const" value=""/>
+        <property key="fill-flash-options-increment" value=""/>
+        <property key="format-hex-file-for-download" value="false"/>
+        <property key="initialize-cp0" value="false"/>
+        <property key="initialize-data" value="true"/>
+        <property key="initialize-gprs" value="false"/>
+        <property key="initialize-heap" value="false"/>
+        <property key="initialize-stack" value="false"/>
+        <property key="keep-generated-startup.as" value="false"/>
+        <property key="link-in-c-library" value="true"/>
+        <property key="link-in-peripheral-library" value="false"/>
+        <property key="linker-interrupts-disable-usage" value="false"/>
+        <property key="linker-interrupts-number-of-vectors" value="single"/>
+        <property key="linker-interrupts-table-location" value="pfm"/>
+        <property key="linker-interrupts-vector-type" value="ram"/>
+        <property key="managed-stack" value="false"/>
+        <property key="nmi-handler" value="false"/>
+        <property key="optimal-performance" value="false"/>
+        <property key="program-the-device-with-default-config-words" value="false"/>
+        <property key="soft-reset-handler" value="false"/>
+        <property key="test-ram-on-startup" value="false"/>
+        <property key="unused-interrupt-vectors" value="-vec_reset,-vec_func"/>
+        <property key="warn-on-stack-overflow" value="false"/>
+      </HI-TECH-LINK>
+      <Simulator>
+      </Simulator>
+      <XC8-config-global>
+      </XC8-config-global>
+    </conf>
+  </confs>
+</configurationDescriptor>

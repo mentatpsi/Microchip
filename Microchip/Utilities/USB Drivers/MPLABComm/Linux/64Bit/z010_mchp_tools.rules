@@ -1,0 +1,21 @@
+# PRJ 2010.01.26 Add reference to "usb" for Ubuntu.
+# PRJ 2010.01.22 Attempt to further simplify rules files requirements.
+# PRJ 2009.08.18 Rules file simplified.
+# PRJ 2009.07.15 Rules file created.
+
+ENV{hotplugscript}="/etc/.mplab_ide/mchplinusbdevice"
+
+ACTION!="add", GOTO="check_remove"
+SUBSYSTEM=="usb_device", GOTO="check_add"
+SUBSYSTEM!="usb", GOTO="rules_end"
+
+LABEL="check_add"
+
+SYSFS{idVendor}=="04d8", MODE="666", RUN+="%E{hotplugscript} add"
+GOTO="rules_end"
+
+LABEL="check_remove"
+
+ACTION=="remove", RUN+="%E{hotplugscript} remove %E{PRODUCT}"
+
+LABEL="rules_end"

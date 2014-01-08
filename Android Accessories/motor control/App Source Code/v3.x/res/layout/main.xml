@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+   
+    
+    <!-- Title bar for LED controls -->
+    
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background='@color/title_bar'
+    >
+		<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/led_header"
+	    android:id="@+id/text_view"
+	    />
+    </LinearLayout>
+    
+    <!-- LED control buttons -->
+    
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+
+		<view
+		class="com.microchip.android.BasicAccessoryDemo_API12.LEDControl"
+		android:id="@+id/led_7"
+		android:layout_height="wrap_content" 
+		android:src="@drawable/led_off"
+		android:background="@null" 
+		android:layout_width="wrap_content"	
+		/>
+		<view
+		class="com.microchip.android.BasicAccessoryDemo_API12.LEDControl"
+		android:id="@+id/led_6"
+		android:layout_height="wrap_content" 
+		android:src="@drawable/led_off"
+		android:background="@null" 
+		android:layout_width="wrap_content"	
+		/>
+		<view
+		class="com.microchip.android.BasicAccessoryDemo_API12.LEDControl"
+		android:id="@+id/led_5"
+		android:layout_height="wrap_content" 
+		android:src="@drawable/led_off"
+		android:background="@null" 
+		android:layout_width="wrap_content"	
+		/>
+		<view
+		class="com.microchip.android.BasicAccessoryDemo_API12.LEDControl"
+		android:id="@+id/led_4"
+		android:layout_height="wrap_content" 
+		android:src="@drawable/led_off"
+		android:background="@null" 
+		android:layout_width="wrap_content"	
+		/>
+		<view
+		class="com.microchip.android.BasicAccessoryDemo_API12.LEDControl"
+		android:id="@+id/led_3"
+		android:layout_height="wrap_content" 
+		android:src="@drawable/led_off"
+		android:background="@null" 
+		android:layout_width="wrap_content"	
+		/>
+		<view
+		class="com.microchip.android.BasicAccessoryDemo_API12.LEDControl"
+		android:id="@+id/led_2"
+		android:layout_height="wrap_content" 
+		android:src="@drawable/led_off"
+		android:background="@null" 
+		android:layout_width="wrap_content"	
+		/>
+		<view
+		class="com.microchip.android.BasicAccessoryDemo_API12.LEDControl"
+		android:id="@+id/led_1"
+		android:layout_height="wrap_content" 
+		android:src="@drawable/led_off"
+		android:background="@null" 
+		android:layout_width="wrap_content"	
+		/>
+		<view
+		class="com.microchip.android.BasicAccessoryDemo_API12.LEDControl"
+		android:id="@+id/led_0"
+		android:layout_height="wrap_content" 
+		android:src="@drawable/led_off"
+		android:background="@null" 
+		android:layout_width="wrap_content"	
+		/>
+
+	</LinearLayout>
+
+
+	<!-- Title bar for push buttons -->
+	
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background='@color/title_bar'
+    >
+		<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/button_header"
+	    android:id="@+id/text_view"
+	    />
+    </LinearLayout>
+ 
+ 	<!-- Creation of Button 1 -->
+    
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@color/sub_title"
+	    >
+		    <TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/button_1"
+		    android:paddingRight="8sp"
+		    />
+    	</LinearLayout>
+    	
+   		<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >
+		    <TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/not_pressed"
+		    android:id="@+id/button1"
+		    />
+		</LinearLayout>
+    </LinearLayout>
+    
+	<!-- Creation of Button 2 -->
+    
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@color/sub_title"
+	    >
+		    <TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/button_2"
+		    android:paddingRight="8sp"
+		    />
+    	</LinearLayout>
+    	
+   		<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >
+		    <TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/not_pressed"
+		    android:id="@+id/button2"
+		    />
+		</LinearLayout>
+    </LinearLayout>
+    
+    <!-- Creation of Button 3 -->
+    
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@color/sub_title"
+	    >
+		    <TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/button_3"
+		    android:paddingRight="8sp"
+		    />
+    	</LinearLayout>
+    	
+   		<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >
+		    <TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/not_pressed"
+		    android:id="@+id/button3"
+		    />
+		</LinearLayout>
+    </LinearLayout>
+    
+    <!-- Creation of Button 4 -->
+    
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@color/sub_title"
+	    >
+		    <TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/button_4"
+		    android:paddingRight="8sp"
+		    />
+    	</LinearLayout>
+    	
+   		<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >
+		    <TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/not_pressed"
+		    android:id="@+id/button4"
+		    />
+		</LinearLayout>
+    </LinearLayout>
+    
+    <!-- Title bar for potentiometer -->
+	
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background='@color/title_bar'
+    >
+		<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/pot_header"
+	    android:id="@+id/text_view"
+	    />
+    </LinearLayout>
+    
+    <!-- Creating progress bar for potentiometer -->
+    <ProgressBar
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/progress_bar"
+	android:progress="0"
+	android:max="100"
+	style="?android:attr/progressBarStyleHorizontal"
+    />
+    
+    <!-- Microchip Logo and link.  MUST BE LAST!!  This item fills the remaining of the vertical space -->
+    
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal|bottom"
+    >
+        
+	    <ImageView
+	    android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:maxWidth="200px"
+	  	android:adjustViewBounds="true"
+	    android:src="@drawable/microchip_logo_horizontal"
+	    />
+	    <TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/weblink"
+	    android:gravity="center"
+	    />
+    </LinearLayout>
+</LinearLayout>

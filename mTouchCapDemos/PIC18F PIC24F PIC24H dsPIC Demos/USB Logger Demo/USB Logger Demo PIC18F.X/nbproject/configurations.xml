@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="mTouch" displayName="mTouch" projectFiles="true">
+        <itemPath>../../../../Microchip/Include/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouch.h</itemPath>
+        <itemPath>../../../../Microchip/Include/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouchAcquisitionMCU8.h</itemPath>
+        <itemPath>../../../../Microchip/Include/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouchDebug.h</itemPath>
+        <itemPath>../../../../Microchip/Include/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouchSensor.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="USB" displayName="USB" projectFiles="true">
+        <itemPath>../../../../Microchip/Include/USB/usb.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_ch9.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_common.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_device.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_function_cdc.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_hal.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_hal_pic18.h</itemPath>
+        <itemPath>../../../../Microchip/USB/usb_device_local.h</itemPath>
+        <itemPath>../usb_config.h</itemPath>
+        <itemPath>../usb_log.h</itemPath>
+      </logicalFolder>
+      <itemPath>../../../../Microchip/Include/Compiler.h</itemPath>
+      <itemPath>../../../../Microchip/Include/GenericTypeDefs.h</itemPath>
+      <itemPath>../../Configurations/PIC18F_mTouch_Eval_Board_USB/system.h</itemPath>
+      <itemPath>../mTouchConfig.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="mTouch" displayName="mTouch" projectFiles="true">
+        <itemPath>../../../../Microchip/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouchAcquistion.c</itemPath>
+        <itemPath>../../../../Microchip/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouchSensor.c</itemPath>
+        <itemPath>../../../../Microchip/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouchDebug.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="USB" displayName="USB" projectFiles="true">
+        <itemPath>../usb_descriptors.c</itemPath>
+        <itemPath>../usb_log.c</itemPath>
+        <itemPath>../../../../Microchip/USB/usb_device.c</itemPath>
+        <itemPath>../../../../Microchip/USB/CDC Device Driver/usb_function_cdc.c</itemPath>
+      </logicalFolder>
+      <itemPath>../../Configurations/PIC18F_mTouch_Eval_Board_USB/system.c</itemPath>
+      <itemPath>../USB Logger Demo Main.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="OtherFiles" displayName="Other Files" projectFiles="false">
+      <itemPath>../ReadMe.txt</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="default" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC18F46J50</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>PICkit3PlatformTool</platformTool>
+        <languageToolchain>C18</languageToolchain>
+        <languageToolchainVersion>3.40</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <C18>
+        <property key="code-model" value="mS"/>
+        <property key="data-model" value="Oa-"/>
+        <property key="default-char-unsigned" value="false"/>
+        <property key="enable-all-optimizations" value="true"/>
+        <property key="enable-int-promotion" value="false"/>
+        <property key="enable-multi-bank-stack-model" value="false"/>
+        <property key="enable-ob" value="true"/>
+        <property key="enable-od" value="true"/>
+        <property key="enable-om" value="true"/>
+        <property key="enable-on" value="true"/>
+        <property key="enable-op" value="true"/>
+        <property key="enable-opa" value="true"/>
+        <property key="enable-or" value="true"/>
+        <property key="enable-os" value="true"/>
+        <property key="enable-ot" value="true"/>
+        <property key="enable-ou" value="true"/>
+        <property key="enable-ow" value="true"/>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include;../../Configurations/PIC18F_mTouch_Eval_Board_USB;../../../../Microchip/Include/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library;../../../../Microchip/Include/USB;../../../../Microchip/USB;"/>
+        <property key="optimization-master" value="Custom"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="procedural-abstraction-passes" value="0"/>
+        <property key="storage-class" value="sca"/>
+        <property key="verbose" value="false"/>
+        <property key="warning-level" value="2"/>
+      </C18>
+      <C18-AS>
+        <property key="cross.reference.file" value=""/>
+        <property key="default.radix" value="HEX"/>
+        <property key="enable.case.sensitivity" value="true"/>
+        <property key="hex.output.format" value="INHX32"/>
+        <property key="preprocessor.macros" value=""/>
+        <property key="warning.level" value="0"/>
+      </C18-AS>
+      <C18-LD>
+        <property key="cod-file" value="true"/>
+        <property key="extra-lib-directories" value="..;"/>
+        <property key="hex-output-format" value="INHX32"/>
+        <property key="map-file" value="&quot;$(BINDIR_)$(TARGETBASE).map&quot;"/>
+      </C18-LD>
+      <C18LanguageToolchain>
+        <property key="extended-mode" value="false"/>
+        <property key="extended-mode-mcc18" value="false"/>
+        <property key="extended-mode-mpasm" value="false"/>
+        <property key="extended-mode-mplink" value="false"/>
+        <property key="stack-analysis" value="false"/>
+        <property key="stack-analysis-mcc18" value="false"/>
+        <property key="stack-analysis-mplink" value="false"/>
+      </C18LanguageToolchain>
+      <PICkit3PlatformTool>
+        <property key="tracecontrol.disablemacros" value="true"/>
+        <property key="tracecontrol.medium" value="0"/>
+        <property key="tracecontrol.select" value="0"/>
+      </PICkit3PlatformTool>
+    </conf>
+  </confs>
+</configurationDescriptor>

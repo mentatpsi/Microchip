@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dynamic CDC Demo", "Dynamic CDC Demo\Dynamic CDC Demo.vcproj", "{7CBEC17E-D7E0-4243-9844-F6DA931F2AA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CBEC17E-D7E0-4243-9844-F6DA931F2AA8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7CBEC17E-D7E0-4243-9844-F6DA931F2AA8}.Debug|Win32.Build.0 = Debug|Win32
+		{7CBEC17E-D7E0-4243-9844-F6DA931F2AA8}.Release|Win32.ActiveCfg = Release|Win32
+		{7CBEC17E-D7E0-4243-9844-F6DA931F2AA8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">基本配件展示</string>
+    
+    <string name="led_header">發光二極體控制</string>    
+    <string name="button_header">按鍵狀態</string>
+    <string name="pot_header">可變電阻</string>
+    
+    <string name="button_1">按鍵 1:</string>
+    <string name="button_2">按鍵 2:</string>
+    <string name="button_3">按鍵 3:</string>
+    <string name="button_4">按鍵 4:</string> 
+    
+    <string name="not_pressed">未按</string>
+    <string name="pressed">已按</string> 
+    
+    <string name="not_connected">设备未连接。</string>
+    <string name="connected">设备已连接。</string>
+    
+    <string name="error_default">發生未知之錯誤，請聯繫 androidsupport@microchip.com 如此我們可以確認問題並設法解決</string>
+    <string name="error_missing_open_accessory_framework">您使用之Android OS版本缺少 com.android.future.usb，這是執行此展示必要之程式庫，您執行之OS需要包含這些程式庫，請聯繫androidsupport@microchip.com，如此我們能作業來修正這些裝置的問題</string>
+</resources>

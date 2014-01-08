@@ -1,0 +1,8 @@
+EXPORTS
+MPUSBClose=_MPUSBClose
+MPUSBGetDLLVersion=_MPUSBGetDLLVersion
+MPUSBGetDeviceCount=_MPUSBGetDeviceCount
+MPUSBOpen=_MPUSBOpen
+MPUSBRead=_MPUSBRead
+MPUSBReadInt=_MPUSBReadInt
+MPUSBWrite=_MPUSBWrite

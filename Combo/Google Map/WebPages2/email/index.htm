@@ -1,0 +1,50 @@
+~inc:header.inc~
+<div id="content">
+
+<h1>Send E-Mail</h1>
+
+<div class="result ok" style="display:~status_ok~">
+Your message has been sent.
+</div>
+<div class="result fail" style="display:~status_fail~">
+ERROR: Your message could not be sent.<br />
+Check your SMTP server settings and try again.
+</div>
+
+<p>By combining the SMTP client into an HTTP2 POST callback, a form 
+can be developed that sends an e-mail to an administrator.  For more
+details on the SMTP Client module, please see the TCPIP Stack User's
+Guide.</p>
+
+<p>Enter the appropriate settings in the fields below:
+<br />(Your SMTP server may not require a user name or password.)</p>
+
+<form method="post" action="/email/index.htm" onsubmit="btn=document.getElementById('btnSubmit'); btn.value='(please wait)'; btn.disabled = true;">
+<fieldset>
+<div><label>SMTP Server:</label>
+<input type="text" name="server" style="width:165px"/>
+&nbsp;<b>Port:</b>&nbsp;
+<input type="text" name="port" value="25" style="width:25px;"/></div>
+<div style="display:~smtps_en~"><input type="checkbox" name="ssl" value="1" class="sm"/> Use SSL (usually port 465)</div>
+<div><label>User Name:</label>
+<input type="text" name="user" /></div>
+<div><label>Password:</label>
+<input type="password" name="pass" /></div>
+<div>&nbsp;</div>
+
+<div><label>To:</label>
+<input type="text" name="to" /></div>
+<div><label>Message:</label>
+<textarea name="msg" rows="6">This message was sent by the Microchip TCP/IP Stack.  See the attached file for current system status information.  The attached CSV file will open in any spreadsheet program.</textarea>
+</div>
+<div><input id="btnSubmit" type="submit" class="sm" value="Send Message"/></div>
+</fieldset>
+</form>
+</div>
+
+<script type="text/javascript">
+<!--
+document.getElementById('hello').innerHTML = "~hellomsg~";
+-->
+</script>
+~inc:footer.inc~

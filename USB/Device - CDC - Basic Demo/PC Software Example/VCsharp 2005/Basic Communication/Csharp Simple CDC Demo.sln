@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C# Express 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csharp Simple CDC Demo", "Csharp Simple CDC Demo\Csharp Simple CDC Demo.csproj", "{883E2E4B-3F57-401D-B64E-1B7CD498B98C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{883E2E4B-3F57-401D-B64E-1B7CD498B98C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{883E2E4B-3F57-401D-B64E-1B7CD498B98C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{883E2E4B-3F57-401D-B64E-1B7CD498B98C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{883E2E4B-3F57-401D-B64E-1B7CD498B98C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

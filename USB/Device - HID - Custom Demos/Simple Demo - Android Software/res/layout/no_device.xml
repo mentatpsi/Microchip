@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">   
+    
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/no_device_attached"
+	    android:gravity="left"
+	    android:background="@color/device_not_attached"
+	   	/>
+   	
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"                 
+		android:layout_height="wrap_content"                             
+		android:padding="10px" >    
+		
+	    <ImageView
+	    	android:id="@+id/x"
+		  	android:adjustViewBounds="true"
+		  	android:layout_width="wrap_content"
+	  		android:layout_height="wrap_content"
+		  	android:src="@drawable/x"
+		  	android:layout_alignParentRight="true"
+		  	/>
+		<!--    	-->
+		  	
+		<TextView  
+		    android:text="@string/attach_device"
+		    android:layout_width="wrap_content"             
+			android:layout_height="wrap_content"  
+			android:layout_toLeftOf="@id/x"            
+		    />
+	</RelativeLayout>
+    
+    <!-- Microchip Logo and link.  MUST BE LAST!!  This item fills the remaining of the vertical space -->
+    
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:gravity="center_horizontal|bottom" android:layout_height="match_parent" android:weightSum="1">
+        
+	    <ImageView
+		    android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:maxWidth="200px"
+		  	android:adjustViewBounds="true"
+		    android:src="@drawable/microchip_logo_horizontal"
+	    	/>
+	    <TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/weblink"
+		    android:gravity="center"
+	    	/>
+    </LinearLayout>
+</LinearLayout>

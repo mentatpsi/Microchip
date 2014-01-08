@@ -1,0 +1,51 @@
+About this configuration:
+
+ -  Debugging communications enabled. Configuration values may be edited at run time
+    using the mTouch GUI or by implementing the mComm protocol. Data can be viewed in
+    real-time by using the mTouch GUI.
+        
+    * EEPROM is being used to store configuration values.
+    * mComm UART two-way communications enabled
+        See: mComm_config.h
+        
+        
+ -  Number of Sensors   :: 4
+        See: mTouch_config.h
+ 
+ -  Sliders             :: 1
+        4-Channel
+        See: mTouch_config_slider.h
+ 
+ -  Sensors             :: 
+ 
+            #define MTOUCH_SENSOR0              AN0         -- used
+            #define MTOUCH_SENSOR1              AN1         -- used
+            #define MTOUCH_SENSOR2              AN2         -- used
+            #define MTOUCH_SENSOR3              AN3         -- used
+            #define MTOUCH_SENSOR4              AN4
+            #define MTOUCH_SENSOR5              AN5
+            #define MTOUCH_SENSOR6              AN6
+            #define MTOUCH_SENSOR7              AN7
+            #define MTOUCH_SENSOR8              AN8 
+            #define MTOUCH_SENSOR9              AN9
+            #define MTOUCH_SENSOR10             AN10    
+            #define MTOUCH_SENSOR11             AN11    
+            #define MTOUCH_SENSOR12             AN12    
+            #define MTOUCH_SENSOR13             AN13    
+ 
+ -  Output LEDs         :: 
+ 
+            #define LED0  LATC2
+            #define LED1  LATC1
+            #define LED2  LATC0
+            #define LED3  LATA7
+            #define LED4  LATA6
+            #define LED5  LATA4
+            #define LED6  LATD7
+            #define LED7  LATD6
+            #define LED8  LATD5
+            #define LED9  LATD4
+            #define LED10 LATD3
+            #define LED11 LATD2
+            #define LED12 LATD1
+            #define LED13 LATD0

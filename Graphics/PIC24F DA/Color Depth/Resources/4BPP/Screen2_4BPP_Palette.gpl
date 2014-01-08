@@ -1,0 +1,20 @@
+GIMP Palette
+Name: Screen2_4BPP_Palette
+Columns: 16
+#
+  3   3   3	Index 0
+ 23  23  23	Index 1
+ 40  40  40	Index 2
+ 55  55  55	Index 3
+ 71  71  71	Index 4
+ 88  88  88	Index 5
+102 102 102	Index 6
+117 117 117	Index 7
+133 133 133	Index 8
+149 149 149	Index 9
+169 169 169	Index 10
+191 191 191	Index 11
+200 200 200	Index 12
+212 212 212	Index 13
+229 229 229	Index 14
+255 255 255	Index 15

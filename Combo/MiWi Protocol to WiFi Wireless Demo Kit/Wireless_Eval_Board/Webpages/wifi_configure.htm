@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Microchip MiWi Protocol to WiFi Gateway Demo</title>
+	<link href="css/mchp.css" rel="stylesheet" type="text/css" />
+	<script src="javascript/mchp.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="container">
+    <div id="logo_banner"><img src="images/mchp.gif" alt="Microchip" /></div>
+    <div id="title"><div class="text">MiWi Protocol to WiFi Gateway Demo Application</div></div>
+    <div id="main_content">
+        <div id="menu">
+            <a href="/index.htm">Welcome!</a>
+            <a href="/control.htm">Lighting Control</a>
+            <a href="/facility.htm">Room Setup</a>
+            <a href="/miwi_configure.htm">Lighting Configuration</a>
+            <a href="/wifi_configure.htm">WiFi Configuration</a>
+        </div>
+        
+        <div id="content">
+            <form method="post" name="neversend" action="">
+               <table id="scanTable" cellpadding="2" border="0">
+                <tbody>
+                    <tr>
+                        <td colspan="4">
+                            <input id="rescan" type="button" style="width:18em" 
+                              value="Display Scan Results" onclick="scanWiFiNetwork();" />
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">
+                            <input id="__other__" type="button" style="width:18em"
+                              value="Other Network..." onclick="userSelectNetwork();" />
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            </form>
+            
+            <form method="post" name="kickoff" action="">
+                <input type="hidden" id="wlan" name="wlan" />
+                <input type="hidden" id="ssid" name="ssid" />
+                <input type="hidden" id="sec" name="sec" />
+                <input type="hidden" id="key" name="key" />
+            </form>
+        </div>
+	</div>
+	<div id="footer">Copyright &copy; 2013 Microchip Technology, Inc.</div>
+</div>
+</body>
+</html>

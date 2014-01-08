@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Graphics_Resource_Converter>
+<Configuration>
+<major>3</major>
+<minor>11</minor>
+<compiler>C30</compiler>
+<format>CArray</format>
+<graphics_module>true</graphics_module>
+<graphics_model>16 bpp</graphics_model>
+</Configuration>
+<Font_Files>
+<Font_File_Resource>
+<label>DroidSansMono_11</label>
+<path>../../../../Microchip/Graphics/Fonts/Droid_Sans/DroidSansMono.ttf</path>
+<name>Droid Sans Mono</name>
+<size>11</size>
+<height>15</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>126</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>DroidSansMono_22</label>
+<path>../../../../Microchip/Graphics/Fonts/Droid_Sans/DroidSansMono.ttf</path>
+<name>Droid Sans Mono</name>
+<size>22</size>
+<height>30</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>126</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>DroidSans_18</label>
+<path>../../../../Microchip/Graphics/Fonts/Droid_Sans/DroidSans.ttf</path>
+<name>Droid Sans</name>
+<size>18</size>
+<height>22</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>126</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>DroidSans_Bold_14</label>
+<path>../../../../Microchip/Graphics/Fonts/Droid_Sans/DroidSans-Bold.ttf</path>
+<name>Droid Sans</name>
+<size>14</size>
+<height>17</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>126</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>DroidSansMono_36</label>
+<path>../../../../Microchip/Graphics/Fonts/Droid_Sans/DroidSansMono.ttf</path>
+<name>Droid Sans Mono</name>
+<size>36</size>
+<height>48</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>43</first_character>
+<last_character>57</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+</Font_Files>
+<Palette>
+<Palette_Resource>
+<label>RemoteControlPalette</label>
+<path>Images/RemoteControlPalette.gpl</path>
+</Palette_Resource>
+</Palette>
+</Graphics_Resource_Converter>

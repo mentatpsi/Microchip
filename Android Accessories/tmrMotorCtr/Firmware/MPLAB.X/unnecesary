@@ -1,0 +1,37 @@
+void SetDutyCycle_PWM(unsigned short DutyCycle) {
+    //OC7R                                = DutyCycle - 1;
+    //OC7RS				= DutyCycle;
+
+
+    OC1R                                = DutyCycle - 1;
+
+    OC1RS				= DutyCycle;
+
+    OC1CON2 = 0x001F;   /* Sync with This OC module                               */
+    OC1CON1 = 0x1C08;   /* Clock sourc Fcyc, trigger mode 1, Mode 0 (disable OC1) */
+
+    /* enable the PWM */
+    OC1CON1 = OC1CON1 | 0x0006;   /* Mode 6, Edge-aligned PWM Mode */
+
+    /* Make pin RP31(RF13) OC1 (PWM output) */
+    //RPOR15bits.RP31R = 18;    //Change for output
+
+    //RPOR1bits.RP3R = 18;
+}
+
+void SetDutyCycle_PWM1(unsigned short DutyCycle) {
+    OC1R = DutyCycle;
+    OC1RS = DutyCycle - 1;  /*  with 488Hz frquency we have 15bits resolution   */
+
+    OC1CON2 = 0x001F;   /* Sync with This OC module                               */
+    OC1CON1 = 0x1C08;   /* Clock sourc Fcyc, trigger mode 1, Mode 0 (disable OC1) */
+
+    /* enable the PWM */
+    OC1CON1 = OC1CON1 | 0x0006;   /* Mode 6, Edge-aligned PWM Mode */
+    OC1CON2 = 0x001F;   /* Sync with This OC module                               */
+    OC1CON1 = 0x1C08;   /* Clock sourc Fcyc, trigger mode 1, Mode 0 (disable OC1) */
+
+    /* enable the PWM */
+    OC1CON1 = OC1CON1 | 0x0006;   /* Mode 6, Edge-aligned PWM Mode */
+
+}

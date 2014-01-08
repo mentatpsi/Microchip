@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+   
+    
+    <!-- Error Message -->
+    
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background='@color/button_pressed'
+    >
+		<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/error_default"
+	    android:id="@+id/error_message"
+	    />
+    </LinearLayout>
+    
+        <!-- Microchip Logo and link.  MUST BE LAST!!  This item fills the remaining of the vertical space -->
+    
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal|bottom"
+    >
+        
+	    <ImageView
+	    android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:maxWidth="200px"
+	  	android:adjustViewBounds="true"
+	    android:src="@drawable/microchip_logo_horizontal"
+	    />
+	    <TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/weblink"
+	    android:gravity="center"
+	    />
+    </LinearLayout>
+</LinearLayout>

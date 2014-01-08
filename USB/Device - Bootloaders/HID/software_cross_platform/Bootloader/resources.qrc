@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/MainWindow">
+        <file>img/abort.png</file>
+        <file>img/open.png</file>
+        <file>img/writetqfp.png</file>
+        <file>img/erasetqfp.png</file>
+        <file>img/verify.png</file>
+        <file>img/stop.png</file>
+        <file>img/BlankCheck.png</file>
+        <file>img/Reset.png</file>
+        <file>img/help.png</file>
+        <file>img/Microchip_logo.Ico</file>
+    </qresource>
+</RCC>

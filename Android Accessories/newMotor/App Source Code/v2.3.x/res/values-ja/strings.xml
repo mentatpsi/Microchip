@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Basic Accessory Demo</string>
+	
+	<string name="led_header">LED制御</string>
+	<string name="button_header">プッシュボタン状態</string>
+	<string name="pot_header">ポテンショメーター</string>
+	
+	<string name="button_1">ボタン 1:</string>
+	<string name="button_2">ボタン 2:</string>
+	<string name="button_3">ボタン 3:</string>
+	<string name="button_4">ボタン 4:</string>
+		
+	<string name="error_default">不明なエラーが発生しました。問題を特定および解決するにはandroidsupport@microchip.comまでご連絡ください。</string>
+	<string name="error_missing_open_accessory_framework">デモの実行に必要なcom.android.future.usbライブラリーはこのAndroid OSに含まれていません。対応するためにandroidsupport@microchip.comまでご連絡ください。</string>
+</resources>

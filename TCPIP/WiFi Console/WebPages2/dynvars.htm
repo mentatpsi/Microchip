@@ -1,0 +1,55 @@
+~inc:header.inc~
+<div id="content">
+
+<h1>Dynamic Variables</h1>
+<p>One of the most basic needs is to provide status information back to the user of 
+your web application.  The HTTP server provides for this using <i>dynamic 
+variable substitution callbacks</i>.  These commands in your HTML code will
+alert the server to execute a callback function at that point.</p>
+<p>To insert a dynamic variable, place the name of the variable inside of the tilde
+(<code>~~</code>) character, like this: <code>~~myVariable~~</code>.  When that 
+sequence is found, the server will call the function <code>HTTPPrint_myVariable()</code>.</p>
+
+<p>For example, here's the build date of the HEX file programmed in your part:</p>
+
+<div class="examplebox code">~builddate~</div>
+
+<p>You can also pass parameters to dynamic variables by placing numeric values inside 
+of parenthesis after the variable name.  <code>~~led(2)~~</code> will print the value
+of the second LED.  The numeric values are passed as WORD values to your callback function.
+You can pass as many parameters as you wish to these functions, and if your C code has 
+constants defined, those will be parsed as well.</p>
+
+<p>As an example, here is a binary representation which LEDs are on and off on the board:</p>
+
+<div class="examplebox code" style="letter-spacing: 10px">
+~led(7)~ ~led(6)~ ~led(5)~ ~led(4)~ ~led(3)~ ~led(2)~ ~led(1)~ ?
+</div>
+
+<p class="exercise"><b>Exercise:</b> Try to add the last (LSB) LED to the output above.</p>
+
+<p>For short outputs (less than 16 bytes) you need only to call the appropriate 
+<code>TCPPut</code> function and return.  For longer outputs the output state must be 
+managed through successive calls, which prevents the limited buffer space from being 
+overrun.</p>
+<p>As an example, here is the current LCD display (which uses 32 bytes):</p>
+
+<div class="examplebox code">~lcdtext~</div>
+
+<p>You can also use dynamic variables to include files.  This is useful to save 
+storage space for your pages, since a portion of most pages (header, menu, footer) 
+do not change.  By placing <code>~~inc&#058;filename.inc~~</code> in your HTML code, 
+the file <code>filename.inc</code> will be read and inserted at this location.</p>
+<p class="exercise"><b>Exercise:</b> Look at code for this page and find how 
+<code>header.inc</code> and <code>footer.inc</code> are used.  These files provide 
+a template for the pages to include the same menu, layout, and design elements.</p>
+<p><small>(At this time, dynamic variables are non-recursive, so variables located inside
+files<br /> included in this manner are not parsed.)</small></p>
+</div>
+
+<script type="text/javascript">
+<!--
+document.getElementById('hello').innerHTML = "~hellomsg~";
+-->
+</script>
+~inc:footer.inc~

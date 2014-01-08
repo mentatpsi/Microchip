@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>WiFi-G Demo Board</title>
+	<link href="css/mchp.css" rel="stylesheet" type="text/css" />
+	<script src="javascript/mchp.js" type="text/javascript"></script>
+</head>
+
+<body onload="newAJAXCommand('status.xml');">
+<div id="container">
+<div id="logo_banner"><img src="images/mchp.gif" alt="Microchip" /></div>
+<div id="title"><div class="text">WiFi-G Demo Application</div></div>
+<div id="main_content">
+    <div id="menu">
+        <a href="/index.htm">Welcome!</a>
+        <a href="/mrf24wg0ma.htm">MRF24WG0MA</a>
+        <a href="/configure.htm">Configure Network</a>
+    </div>
+    
+<div id="content">
+<p align=right>Version: <b>~Demoversion~</b></p>
+<div id="status">
+	<div id="loading" style="display:none">Error:<br />Connection to demo board was lost.</div>
+	<div id="display">
+		<span style="float:right;font-size:9px;font-weight:normal;padding-top:8px;text-indent:0px">(Click LED to Toggle)</span>
+		<p>LEDs:<br /><span class="leds"><font size="6">
+		<a id="led0" onclick="newAJAXCommand('leds.cgi?led=0');">&bull;</a>
+		<a id="led1" onclick="newAJAXCommand('leds.cgi?led=1');">&bull;</a>
+		<a id="led2" onclick="newAJAXCommand('leds.cgi?led=2');">&bull;</a>
+		</font></span></p>
+		<p>Button Status:<br />
+		<span id="btn0">?</span></p>
+	</div>
+</div>
+
+<h2>Welcome!</h2>
+<p></p>You are currently connected to:</p>
+<ul>
+<li>SSID name: <b>~ssid~</b></li>
+<li>Security type (None, WEP, WPA, WPA2, WPA-AUTO, WPS): <b>~curPrivacy~</b></li>
+<li>WLAN type: <b>~wlan~</b></li>
+<li>IP Address: <b>~ipaddr~</b></li>
+<li>RF module FW version: <b>~fwver~</b></li>
+</ul>
+
+<p>On the right you'll see the current status of the demo board.  For a quick
+example, click the LEDs to toggle the lights on the board.  Press the push
+button and you'll see the Button Status update immediately.  This examples uses AJAX
+techniques to provide real-time feedback.</p>
+
+<p>There are three menu items on the left hand side.  The first is the current page you see,
+which shows the status of the LEDs and push button.</p>
+
+<p>The second menu item (MRF24WG0MA), will display a page with information about the 802.11b/g RF Transceiver Module being used for this demo.</p>
+
+<p>The third menu item (Configure Network), will display a page that will allow you to scan
+for nearby networks, see them, and then connect to another network.  After the attempt is made
+to connect to the new network, you will have to transition your wireless PC, laptop, or handheld
+wireless device to this new network in order to see that the device has indeed changed networks.</p>
+ 
+<h2>Browser-based Device Configuration</h2>
+
+<p>This showcases how to configure and program an embedded Wi-Fi device that does not
+have a natural keyboard and screen.  By using the internal webserver that accompanies
+the Microchip TCP/IP stack, end-users can use their browser as a conduit for programming
+the device with the correct network parameters.</p>
+
+<p></p>For a wireless network, an end-user would need to have knowledge of at least the following information:</p>
+<ul>
+<li>SSID name</li>
+<li>Security type (None, WEP, WPA, WPA2, WPA-AUTO, WPS)</li>
+<li>Security key</li>
+</ul>
+
+<p>As pioneered by most modern operating systems, the application also has the ability to scan for 
+all networks in the vicinity of the device, and display them to the user.  The user will
+also be given additional information about the network such as whether security is enabled
+or how far away the other network is.  Users are also given the opportunity to enter all the
+network information manually, which is required when trying to connect to a network with a 
+hidden SSID.</p>
+
+
+</div> <!--content-->
+</div> <!--main_content-->
+<script type="text/javascript">
+<!--
+setTimeout("newAJAXCommand('status.xml', updateStatus, true)",500);
+//-->
+</script>
+<div id="footer">Copyright &copy; 2013 Microchip Technology, Inc.</div>
+</div> <!--container-->
+</body>
+</html>

@@ -1,0 +1,292 @@
+Enhanced mTouch Capacitive Touch Eval. Kit: PIC32MX_mTouchCap_DirectKeyDemo
+============================================================================
+
+What This Demo Does
+-------------------
+This demo supports the 8-key (4x2) daughter card.  It is called a "Direct"
+key demo because each key has its own dedicated channel to the ADC. The other
+approach is to design a matrix of keys, as seen in the MatrixKey demo, where
+each button in a row and column has a row capacitor and a column capacitor.
+
+Asserting a button with your finger will light up the associated LED on the
+PIC32 Cap Touch Evaluation Board.  There is also a UART interface that can
+be used with a PICKit Serial Analyzer and a Windows GUI (provided) to show
+button signals and button status.
+
+
+Required Development Resources:
+-------------------------------
+a. Enhanced mTouch Capacitive Touch Evaluation Kit (DM183026-2)
+   (PIC32 Cap Touch Eval Board, Button Daughter Card, PICKit Serial Analyzer)
+b. A debugging/programming development tool
+    - PICkit 3 In-Circuit Programmer/Debugger (PG164130), or
+    - MPLAB ICD 3 In-Circuit Debugger (DV164035), or
+    - MPLAB REAL ICE In-Circuit Emulator (DV244005) 
+      and the RJ-11 to ICSP Adapter (AC164110)
+c. MPLAB IDE V8.63 or better and  C32 Compiler V2.02
+ OR
+c. MPLAB.X V 1.20 and XC32 Compiler V1.00
+
+
+Optional Development Resources:
+-------------------------------
+a. PICKit Serial Analyzer (PKSA) (DV164122)
+   (If not using the Enhanced mTouch Capacitive Touch Evaluation Kit)
+b. Button daughter card adapter
+   (Provides 100K pull-ups to reference pin to support differential CVD.
+    Instructions on how to make are provided below.)
+
+
+Compiling and Downloading the Demo:
+-----------------------------------
+1. Extract the contents of the .ZIP file to someplace convenient on your hard
+   drive.  The folder's MPLAB project is self-contained, and can be moved to
+   any location after extraction, as long as the directory names inside the 
+   project are not changed or the contents moved.
+
+2. Load the demo code into MPLAB by double clicking the appropriate
+   dot mcp project file:
+   
+        PIC32CapTouchEvalBoard_DirectKeyDemo.mcp
+
+   depending on the evaluation board daughter card used.
+
+2. Connect the REAL ICE debugger to J1 on the evaluation board's left edge.
+   .
+3. Power up the board by connecting a USB port on your computer to the mini-B
+   port on the evaluation board's left edge.
+   
+4. Choose the REAL ICE debugger tool in MPLAB IDE by selecting
+   Debugger>Select Tool and then click on 6 REAL ICE.
+   
+   The REAL ICE tab of the output window should display something like this:
+   
+        MPLAB REAL ICE detected
+        Connecting to MPLAB REAL ICE...
+        Running self test...
+        Self test completed
+        Firmware Suite Version...... 01.26.43
+        Firmware type......................PIC32MX
+        MPLAB REAL ICE Connected.
+        Target Detected
+        Device ID Revision = 04300053
+
+5. Modify the project to use single or differential CVD measurements.
+    In Header Files/mTouchConfig.h is a set of defines for CVD measurement
+    techniques:
+    
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~    Timer Call Back  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+//#define TIMERCALLBACKFUNC TimerCallbackFunc1 // single or differential
+//#define TIMERCALLBACKFUNC TimerCallbackFunc2 // single or diff. with pull-ups
+  #define TIMERCALLBACKFUNC TimerCallbackFunc3 // differential only wo pull-ups
+//#define TIMERCALLBACKFUNC TimerCallbackFunc4 // Using CTMU
+
+    Define the TIMERCALLBACKFUNC associated with the desired technique.
+    Add the corresponding source file from the directory mTouchCapLib to the
+    project and remove the original callback function.
+
+6. Build the project by selecting Project>Build All.
+
+7. Download your code into the evaluation board microcontroller by
+   selecting Debugger>Programming>Program All Memories.
+   
+8. Run the demo code by selecting Debugger>Run.
+   (The LEDs on the top side of the board should all light up, starting with
+    the right (LED 1) and ending with the left-most (LED 16).  Then the LEDs
+    should turn off in the reverse order.)
+
+
+Loading PICKit Serial Analyzer Firmware
+---------------------------------------
+Out of the box the PICKit Serial Analyzer (PKSA) does not support the serial
+data stream provided by the demo. Firmware must be loaded using the application
+found in the directory
+
+    mTouchCapDemos\Utilities\mTouch GUI\Pickit Serial Loader
+
+Launch the executable PickitLoaderAuto.exe to load the firmware.  Follow the
+instructions shown in the dialog window to reset the PKSA and then to load
+the Windows device driver after the PKSA is programmed.
+
+
+Running the Demo:
+-----------------
+This demo displays the button or slider status on the row of LEDs.
+Additionally, the UART interface to the PKSA can display button signals and
+decoded status using a Profilab executable found in a subdirectory of the 
+project.
+
+1. After the PICKit Serial Analyzer (PKSA) drivers have been installed, 
+   connect it to the evaluation board:
+   
+        J2 RF4 <---> PKSA Pin 1 (Tx) (optional)
+        J2 RF5 <---> PKSA Pin 6 (Rx)
+           GND <---> PKSA Pin 3 (GND)
+           
+   Connect the PKSA to your computer using a USB cable.  Depress the PKSA push
+   button until all three LEDs light.  Then release the button.  If the UART 
+   interface on the evaluation board is operating the red "Busy" LED should
+   light, showing that there is UART traffic between the demo application and
+   the PKSA.
+
+   The UART interface runs at 115.200 kbaud, no parity, 8 bits, no stop bit.
+   Typically the PKSA driver provides com port 9, but you may need to check
+   which com port is available using Windows Device Manager.
+   
+2. Monitor button signals and decode status using a hyperterminal application
+   or the Profilab executable provided.  (On Windows 7 you can use a free 
+   hyperterminal alternative such as RealTerm.)  
+   
+   The Profilab mTouch GUI executable is located in the project subfolder
+   
+       mTouchCapDemos\Utilities\mTouch GUI\Executable
+        
+   After the executable is launched, you will notice 7 icons on the upper right
+   side of the GUI window.  The are, from left to right:
+   
+      Load Settings (F3) (Folder Icon)
+      Save Settings (F2) (Diskette Icon)
+      Print Front Panel (F5) (Printer Icon)
+      Copy Front Panel to Clipboard (F4) (Clipboard Icon)
+      Configuration: Application (Red Screwdriver Icon)
+      Configuration: Hardware (F6) (Red Screwdriver Icon)
+      Configuration: Front Panel (F7) (Hammer/Wrench Icon)
+
+    Hit F6 and verify the serial interface is using the correct com port on
+    your PC.  If it is you should be seeing activity on the GUI.  Try to 
+    assert buttons or a slider value and verify the correct activity shows up
+    on the GUI.  The plots will show the measured voltage (in adjusted ADC
+    counts) for each of the capacitors on the daughter card.  The GUI will
+    also show you the decoded button or slider status.  You can use these
+    signals to tune the settings in mTouchConfig.h to improve sensitivity and 
+    noise immunity.
+
+3.  IF THE GUI DOESN'T WORK
+
+    If nothing is happening on the GUI:
+    
+    3.1 Verify that the red "Busy" LED on the PICKit Serial Analyzer is lit.
+        If it isn't reset the PICKit Serial Analyzer by pressint its button
+        until all LEDs are lit.  You should now see activity on the GUI.
+        
+    3.2 Verify that the GUI is using the correct com port by checking the
+        Windows Device Manager under "Ports (COM & LPT)"
+        
+    3.3 If the GUI still doesn't work, check that there is activity on the
+        com port using a hyperterminal.  If there is no activity you need 
+        to reboot your PC and start over. (Sorry, that's the best we can do.)
+
+
+NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE
+
+  Microchip has provide the Profilab mTouch GUI as an aid to development.
+
+  We have found Profilab to be a useful tool, costing less than 100 Euros.
+
+  If the GUI executable is helpful, your welcome.  
+
+  But Microchip cannot provide additional support for it, other than giving
+  out the Profilab project and a compiled executable. If it doesn't work
+  you're on your own. (Sorry.)
+
+  If the GUI still doesn't work you can still capture com port traffic 
+  with a hyperterminal application and plot the results using Excel or 
+  Open Office's Calc.
+
+NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE
+
+
+Setting Up Differential CVD Measurements using External Pull-Up Resistors
+-------------------------------------------------------------------------
+
+You will need to pull up each button signal from the daughter card with a
+100 KOhm resitor to Vdd.  Best performance is achieved by connecting all the
+pull-up resitors (one for each button capacitor) to application's reference
+pin rather than Vdd directly.  The reference pin will provide the correct 
+voltage when needed.
+
+You can identify which pin on the right side of the board is used for reference
+by looking in the mTouchConfig.h file for
+
+    #define REF_CHANNEL              4  // Use AN4/RB4 as reference channel
+
+for the DirectKey and MatrixKey demos. Or,
+
+    #define REF_CHANNEL             15 // Use AN15/RB15 as reference channel
+    
+for the 4 channel slider demo.
+
+Attach the "top" side of all the pull-up resistors to this pin.
+
+The Powerpoint briefing, 
+
+    "Additional Information for PIC32 CVD and CTMU Demos.pdf", 
+    
+has pictures of a pull-up adaptor.
+
+
+A Note on Charge/Discharge Cycles
+---------------------------------
+
+The ADC on PIC32 devices has a much higher bandwidth than those on 16 bit and 8
+bit devices from Microchip.  Consequently the sample and hold (SAH) capacitor
+in the ADC is much smaller.  Thus is is necessary to use multiple ADC charge or
+discharge cycles to achieve the same performance.  The number of cycles is
+defined in mTouchConfig.h by:
+
+        /*
+          Charge/discharge cycles for Rev 1 and Rev 2
+
+          Multiple cycles needed because ADC's sample and hold (SAH)
+          capacitor is much smaller than typical button capacitor.
+
+         */
+        // Also used for Rev 3, Vpositive
+        #define CHARGE_DISCHARGE_CYCLE_1
+        #define CHARGE_DISCHARGE_CYCLE_2
+        #define CHARGE_DISCHARGE_CYCLE_3
+        #define CHARGE_DISCHARGE_CYCLE_4
+
+        //Button charge cycles for Rev 3, Vnegative
+        #define BUTTON_CHARGE_CYCLE_1
+        #define BUTTON_CHARGE_CYCLE_2
+        #define BUTTON_CHARGE_CYCLE_3
+        //#define BUTTON_CHARGE_CYCLE_4
+
+        //Button discharge cycles for Rev 3, Vnegative
+        #define BUTTON_DISCHARGE_CYCLE_1
+        #define BUTTON_DISCHARGE_CYCLE_2
+        #define BUTTON_DISCHARGE_CYCLE_3
+        #define BUTTON_DISCHARGE_CYCLE_4
+
+For some button capacitor designs only three cycles are needed to drive the
+voltage of an unasserted button to Vdd/2.  For other buttons you may need to 
+add additional cycles by modifying the timer call back routine found in the
+file TimerCallbackFunc1.c, TimerCallbackFunc2.c, or TimerCallbackFunc3.c. 
+
+
+Checking For Correct Button 'Scope Signals
+------------------------------------------
+
+You never really know if the application is working to peak performance without
+examining the signals at each button capacitor.  For that you will need a good
+active single-ended 'scope probe, such as a Tektronix 6245, with a probe 
+capacitance less than 1 pF.  Put channel one on the button capacitor signal and
+channel two on the reference channel. (Use a regular probe on channel two.)
+
+The Powerpoint briefing, 
+
+    "Additional Information for PIC32 CVD and CTMU Demos.pdf", 
+
+has examples of button signals, both unasserted and asserted, for all cap
+touch measurement techniques.
+
+References:
+-----------
+  PICKit Serial Analyzer User's Guide - DS51647C
+  AN1298, Capacitive Touch Using Only an ADC ("CVD") - DS01298A
+  mTouch Advanced Capacitve Evaluation Kits User's Guide - DS41385C
+  Profilab-Expert Software: 
+                       http://www.abacom-online.de/uk/html/profilab-expert.html

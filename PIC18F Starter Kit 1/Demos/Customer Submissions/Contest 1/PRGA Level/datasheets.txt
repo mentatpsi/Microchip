@@ -1,0 +1,7 @@
+The datasheet for the BMA150 accelerometer can be found at:
+
+http://www.bosch-sensortec.com
+
+The datasheet for the Sino Wealth SH1101A OLED driver can be found at:
+
+http://www.sinowealth.com

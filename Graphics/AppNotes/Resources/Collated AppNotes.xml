@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Graphics_Resource_Converter>
+<Configuration>
+<major>3</major>
+<minor>2</minor>
+<compiler>C30</compiler>
+<format>CArray</format>
+<graphics_module>false</graphics_module>
+<graphics_model>16 bpp</graphics_model>
+</Configuration>
+<Bitmaps>
+<Bitmap_Resource>
+<label>MCHPFolderFile_8bpp_72x72</label>
+<path>MCHPFolderFile_8bpp_72x72.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>MCHPFolderEmpty_8bpp_72x72</label>
+<path>MCHPFolderEmpty_8bpp_72x72.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>Back_4bpp_16x16</label>
+<path>Back_4bpp_16x16.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+</Bitmaps>
+<Fonts>
+<Font_Files>
+<Font_File_Resource>
+<label>Gentium_16</label>
+<path>../../../Microchip/Graphics/Fonts/gentium/Gentium.ttf</path>
+<name>Gentium</name>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<comment_file>../../../Microchip/Graphics/Fonts/gentium/GentiumLicense.txt</comment_file>
+<size>15</size>
+<height>18</height>
+<first_character>32</first_character>
+<last_character>126</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+</Font_Files>
+</Fonts>
+</Graphics_Resource_Converter>

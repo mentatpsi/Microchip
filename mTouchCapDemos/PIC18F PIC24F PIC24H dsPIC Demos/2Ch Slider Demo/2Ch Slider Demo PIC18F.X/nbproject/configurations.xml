@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="mTouch" displayName="mTouch" projectFiles="true">
+        <itemPath>../../../../Microchip/Include/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouch.h</itemPath>
+        <itemPath>../../../../Microchip/Include/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouch2ChSlider.h</itemPath>
+        <itemPath>../../../../Microchip/Include/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouchAcquisitionMCU8.h</itemPath>
+        <itemPath>../../../../Microchip/Include/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouchControl.h</itemPath>
+        <itemPath>../../../../Microchip/Include/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouchDebug.h</itemPath>
+        <itemPath>../../../../Microchip/Include/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouchSensor.h</itemPath>
+      </logicalFolder>
+      <itemPath>../../../../Microchip/Include/Compiler.h</itemPath>
+      <itemPath>../../../../Microchip/Include/GenericTypeDefs.h</itemPath>
+      <itemPath>../../Configurations/PIC18F_mTouch_Eval_Board/system.h</itemPath>
+      <itemPath>../mTouchConfig.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="mTouch" displayName="mTouch" projectFiles="true">
+        <itemPath>../../../../Microchip/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouch2ChSlider.c</itemPath>
+        <itemPath>../../../../Microchip/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouchAcquistion.c</itemPath>
+        <itemPath>../../../../Microchip/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouchControl.c</itemPath>
+        <itemPath>../../../../Microchip/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouchSensor.c</itemPath>
+        <itemPath>../../../../Microchip/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library/mTouchDebug.c</itemPath>
+      </logicalFolder>
+      <itemPath>../../Configurations/PIC18F_mTouch_Eval_Board/system.c</itemPath>
+      <itemPath>../2Ch Slider Demo Main.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="OtherFiles" displayName="Other Files" projectFiles="false">
+      <itemPath>../ReadMe.txt</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="default" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC18F46J50</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>PICkit3PlatformTool</platformTool>
+        <languageToolchain>XC8</languageToolchain>
+        <languageToolchainVersion>1.01</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <HI-TECH-COMP>
+        <property key="define-macros" value=""/>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include;../../Configurations/PIC18F_mTouch_Eval_Board;../../../../Microchip/Include/mTouchCap/PIC18F PIC24F PIC24H dsPIC Library"/>
+        <property key="identifier-length" value="255"/>
+        <property key="operation-mode" value="std"/>
+        <property key="opt-xc8-compiler-strict_ansi" value="false"/>
+        <property key="optimization-assembler" value="true"/>
+        <property key="optimization-assembler-files" value="false"/>
+        <property key="optimization-debug" value="false"/>
+        <property key="optimization-global" value="true"/>
+        <property key="optimization-level" value="9"/>
+        <property key="optimization-set" value="default"/>
+        <property key="optimization-speed" value="false"/>
+        <property key="preprocess-assembler" value="true"/>
+        <property key="undefine-macros" value=""/>
+        <property key="verbose" value="false"/>
+        <property key="warning-level" value="0"/>
+        <property key="what-to-do" value="request"/>
+      </HI-TECH-COMP>
+      <HI-TECH-LINK>
+        <property key="additional-options-checksum" value=""/>
+        <property key="additional-options-code-offset" value=""/>
+        <property key="additional-options-errata" value=""/>
+        <property key="additional-options-extend-address" value="false"/>
+        <property key="additional-options-trace-type" value=""/>
+        <property key="backup-reset-condition-flags" value="false"/>
+        <property key="calibrate-oscillator" value="true"/>
+        <property key="calibrate-oscillator-value" value=""/>
+        <property key="clear-bss" value="true"/>
+        <property key="code-model-external" value="wordwrite"/>
+        <property key="code-model-rom" value=""/>
+        <property key="create-html-files" value="false"/>
+        <property key="data-model-ram" value=""/>
+        <property key="data-model-size-of-double" value="24"/>
+        <property key="data-model-size-of-float" value="24"/>
+        <property key="display-class-usage" value="false"/>
+        <property key="display-hex-usage" value="false"/>
+        <property key="display-overall-usage" value="false"/>
+        <property key="display-psect-usage" value="false"/>
+        <property key="fill-flash-options-addr" value=""/>
+        <property key="fill-flash-options-const" value=""/>
+        <property key="fill-flash-options-how" value="0"/>
+        <property key="fill-flash-options-inc-const" value=""/>
+        <property key="fill-flash-options-increment" value=""/>
+        <property key="fill-flash-options-seq" value=""/>
+        <property key="fill-flash-options-what" value="0"/>
+        <property key="format-hex-file-for-download" value="false"/>
+        <property key="initialize-data" value="true"/>
+        <property key="keep-generated-startup.as" value="false"/>
+        <property key="link-in-c-library" value="true"/>
+        <property key="link-in-peripheral-library" value="false"/>
+        <property key="managed-stack" value="false"/>
+        <property key="opt-xc8-linker-file" value="false"/>
+        <property key="opt-xc8-linker-link_startup" value="false"/>
+        <property key="opt-xc8-linker-serial" value=""/>
+        <property key="program-the-device-with-default-config-words" value="false"/>
+      </HI-TECH-LINK>
+      <PICkit3PlatformTool>
+        <property key="tracecontrol.disablemacros" value="true"/>
+        <property key="tracecontrol.medium" value="0"/>
+        <property key="tracecontrol.select" value="0"/>
+      </PICkit3PlatformTool>
+      <XC8-config-global>
+      </XC8-config-global>
+    </conf>
+  </confs>
+</configurationDescriptor>

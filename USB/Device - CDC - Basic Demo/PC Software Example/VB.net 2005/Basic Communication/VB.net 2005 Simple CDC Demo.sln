@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Basic Express 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VB.net 2005 Simple CDC Demo", "VB.net 2005 Simple CDC Demo\VB.net 2005 Simple CDC Demo.vbproj", "{2FA76D9D-2EC2-43FC-A4D7-D7A72BCA0A9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FA76D9D-2EC2-43FC-A4D7-D7A72BCA0A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FA76D9D-2EC2-43FC-A4D7-D7A72BCA0A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FA76D9D-2EC2-43FC-A4D7-D7A72BCA0A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FA76D9D-2EC2-43FC-A4D7-D7A72BCA0A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

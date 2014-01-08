@@ -1,0 +1,469 @@
+<html xml:lang="en">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=Generator content="Microsoft Word 12 (filtered)">
+<title>WiFi-G Demo Board</title>
+<link rel=Stylesheet type="text/css" media=all href="css/mchp.css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:24.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:7.5pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-style:italic;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+p.examplebox, li.examplebox, div.examplebox
+	{mso-style-name:examplebox;
+	margin-top:7.5pt;
+	margin-right:30.0pt;
+	margin-bottom:7.5pt;
+	margin-left:30.0pt;
+	text-align:center;
+	background:#DDDDDD;
+	border:none;
+	padding:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.code, li.code, div.code
+	{mso-style-name:code;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;}
+p.exercise, li.exercise, div.exercise
+	{mso-style-name:exercise;
+	margin-right:0in;
+	margin-left:7.5pt;
+	background:#FFEE99;
+	border:none;
+	padding:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.error, li.error, div.error
+	{mso-style-name:error;
+	margin-right:0in;
+	margin-left:7.5pt;
+	background:#FFDDDD;
+	border:none;
+	padding:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.result, li.result, div.result
+	{mso-style-name:result;
+	margin-top:7.5pt;
+	margin-right:30.0pt;
+	margin-bottom:7.5pt;
+	margin-left:30.0pt;
+	text-align:center;
+	background:#EEEEEE;
+	border:none;
+	padding:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+p.ok, li.ok, div.ok
+	{mso-style-name:ok;
+	margin-right:0in;
+	margin-left:0in;
+	background:#EEFFEE;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.fail, li.fail, div.fail
+	{mso-style-name:fail;
+	margin-right:0in;
+	margin-left:0in;
+	background:#FFEEEE;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.unk, li.unk, div.unk
+	{mso-style-name:unk;
+	margin-right:0in;
+	margin-left:0in;
+	background:#FFFFDD;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.text, li.text, div.text
+	{mso-style-name:text;
+	margin-right:0in;
+	margin-left:0in;
+	text-align:right;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.leds, li.leds, div.leds
+	{mso-style-name:leds;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:-7.5pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+p.text1, li.text1, div.text1
+	{mso-style-name:text1;
+	margin-right:0in;
+	margin-left:0in;
+	text-align:right;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.leds1, li.leds1, div.leds1
+	{mso-style-name:leds1;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:-7.5pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+<script  src="javascript/mchp.js" type="text/javascript">
+</script>
+</head>
+
+<body bgcolor="#5B5B5B" lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<div style='border:solid white 6.0pt;padding:0in 0in 0in 0in' id=container>
+
+<div id="logo_banner">
+
+<p class=MsoNormal style='background:white'><span style='font-family:"Verdana","sans-serif"'><img
+width=152 height=42 src="images/mchp.gif" alt=Microchip></span></p>
+
+</div>
+
+<div style='margin-bottom:11.25pt' id=title>
+
+<p class=MsoNormal align=right style='text-align:right;background:#CC0000'><b><span
+lang=EN style='font-family:"Verdana","sans-serif";color:white'>WiFi-G Demo
+Application</span></b></p>
+
+</div>
+
+<div id="main_content">
+
+<div id=menu>
+
+<p class=MsoNormal style='background:white'><span lang=EN style='font-family:
+"Verdana","sans-serif"'><a href="/index.htm"><b><span style='color:white;
+background:#CC0000;text-decoration:none'>Welcome!</span></b></a> <a
+href="/mrf24wg0ma.htm"><b><span style='color:white;background:#CC0000;
+text-decoration:none'>MRF24WG0MA</span></b></a> <a href="/configure.htm"><b><span
+style='color:white;background:#CC0000;text-decoration:none'>Configure Network</span></b></a>
+</span></p>
+
+</div>
+
+<div id=content>
+
+<p style='background:white'><b><span lang=EN style='font-size:16.0pt;
+font-family:"Verdana","sans-serif";color:blue'>IEEE 802.11 &#8211; Wi-Fi<sup>&reg;</sup></span></b></p>
+
+<p style='background:white'><b><span lang=EN style='font-size:7.0pt;font-family:
+"Arial","sans-serif"'><br>
+</span></b><b><span lang=EN style='font-size:13.0pt;font-family:"Arial","sans-serif"'>Overview</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0>
+ <tr>
+  <td width=773 valign=top style='width:579.75pt;padding:0in 0in 0in 0in'>
+  <p><span style='font-size:10.0pt;font-family:"Arial","sans-serif";color:black'>Microchip
+  has added 802.11 wireless communications to its lineup of wireless technologies
+  for the embedded market. Microchip has a Wi-Fi PICtail development board that
+  adds 802.11 capabilities to Microchip&#8217;s development platforms for the
+  PIC18, PIC24, PIC32, and dsPIC family of microcontrollers. The PICtail
+  development board contains the MRF24WG0MA FCC and Wi-Fi certified module.<br>
+  <br>
+  The Wi</span><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+  color:black'>&#8208;</span><span style='font-size:10.0pt;font-family:"Arial","sans-serif";
+  color:black'>Fi PICtail allows designers to quickly create a direct
+  connection to the Internet by seamlessly connecting to standard 802.11b/g
+  access points. In managing the connection, the MRF24WG0MA module controls the
+  MAC and baseband layers and is connected to the host MCU via an SPI port. The
+  8/16 or 32-bit Microchip MCU that resides on the microchip development board
+  controls the TCP/IP networking stack and runs the system application.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='background:white'><span lang=EN style='font-size:14.0pt;font-family:
+"Arial","sans-serif"'><br>
+</span><b><span lang=EN style='font-size:13.0pt;font-family:"Arial","sans-serif"'>Hardware
+Solutions</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0>
+ <tr>
+  <td width=447 valign=top style='width:335.25pt;padding:0in 0in 0in 0in'>
+  <p><b><span style='font-size:10.0pt;font-family:"Tahoma","sans-serif"'>Wi-Fi
+  Modules</span></b><b><span style='font-family:"Verdana","sans-serif"'> </span></b><span
+  style='font-size:10.0pt;font-family:"Tahoma","sans-serif"'><br>
+  FCC and ETSI certified Wi-Fi modules</span></p>
+  <p><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif";
+  color:blue'><!-- TRANSIT - HYPERLINK --><!-- .http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en559196. --><a
+  href="http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en559196"
+  target="_top"><span style='color:#CC0000;text-decoration:none'>MRF24WG0MA</span></a></span></b><b><span
+  style='font-size:10.0pt;font-family:"Tahoma","sans-serif";color:blue'> </span></b><span
+  style='font-size:10.0pt;font-family:"Tahoma","sans-serif";color:blue'>built-in
+  PCB antenna</span></p>
+  <p><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif";
+  color:blue'><!-- TRANSIT - HYPERLINK --><!-- .http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en559199. --><a
+  href="http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en559199"
+  target="_top"><span style='color:#CC0000;text-decoration:none'>MRF24WG0MB</span></a></span></b><b><span
+  style='font-size:10.0pt;font-family:"Tahoma","sans-serif";color:blue'> </span></b><span
+  style='font-size:10.0pt;font-family:"Tahoma","sans-serif";color:blue'>supports
+  external antennas</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=773 valign=top style='width:579.75pt;padding:0in 0in 0in 0in'>
+  <p><span style='font-family:"Verdana","sans-serif"'>&nbsp;</span></p>
+  <p><b><u><span style='font-size:11.0pt;font-family:"Arial","sans-serif";
+  color:black'>Features:</span></u></b></p>
+  <div style='margin-left:.25in'>
+  <ul type=disc>
+   <li class=MsoNormal><span style='font-family:"Verdana","sans-serif"'>IEEE 802.11b/g
+       compliant wireless solution compatible with b/g/n routers</span></li>
+   <li class=MsoNormal><span style='font-family:"Verdana","sans-serif"'>Compatible
+       with PIC18, PIC24, PIC32 and dsPIC microcontrollers</span></li>
+   <li class=MsoNormal><span style='font-family:"Verdana","sans-serif"'>Supports
+       Infrastructure (client), Adhoc, SoftAP, WiFi-Direct (group client) networks</span></li>
+   <li class=MsoNormal><span style='font-family:"Verdana","sans-serif"'>MRF24WG0MA
+       small footprint module integrated antenna, MAC, Baseband, RF and power
+       amplifier</span></li>
+   <li class=MsoNormal><span style='font-family:"Verdana","sans-serif"'>MRF24WG0MA/B
+       module is FCC, IC, Wi-Fi certified, and ROHS, CE and ETSI compliant,
+       providing considerable cost savings and quick time-to-market</span></li>
+   <li class=MsoNormal><span style='font-family:"Verdana","sans-serif"'>License
+       Free TCP/IP stack supporting standard suite of Internet Services</span></li>
+   <li class=MsoNormal><span style='font-family:"Verdana","sans-serif"'>Provides
+       Full IP service functions such as web server, email, FTP, ICMP/DHCP 
+       server/clients, etc. </span></li>
+   <li class=MsoNormal><span style='font-family:"Verdana","sans-serif"'>Built-in
+       EZConfig application to facilitate network provisioning without a keyboard
+       or display</span></li>
+   <li class=MsoNormal><span style='font-family:"Verdana","sans-serif"'>Built-in
+       ZeroConf (Bonjour, Avahi) application to simplify human interaction</span></li>
+   <li class=MsoNormal><span style='font-family:"Verdana","sans-serif"'>Supports
+       WEP, WPA and WPA2 security protocols on module</span></li>
+   <li class=MsoNormal><span style='font-family:"Verdana","sans-serif"'>Supports
+       WPS-PBC and WPS-PIN connection methods</span></li>
+   <li class=MsoNormal><span style='font-family:"Verdana","sans-serif"'>Solutions
+       as simple as a single PIC plus WiFi module with power and passives.</span></li>
+  </ul>
+  </div>
+  </td>
+ </tr>
+</table>
+
+<p style='background:white'><span lang=EN style='font-size:10.0pt;font-family:
+"Arial","sans-serif"'><br>
+</span><b><span lang=EN style='font-size:13.0pt;font-family:"Arial","sans-serif"'>Software
+Solutions</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0>
+ <tr>
+  <td width=773 valign=top style='width:579.75pt;padding:0in 0in 0in 0in'>
+  <p><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>TCPIP
+  stack which supports Wi-Fi can be downloaded from<b> <span style='color:blue'><!-- TRANSIT - HYPERLINK --><!-- .http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2680&dDocName=en547784. --><a
+  href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=2680&amp;dDocName=en547784"
+  target="_top"><span style='color:#CC0000;text-decoration:none'>Microchip
+  Applications Library</span></a></span>. </b>The stack includes example
+  applications such as Wi-Fi demos with EZConfig and ZeroConf functions. You
+  can also find pre-compiled hex files in the WiFi folders for all supported
+  development tools. </span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='background:white'><span lang=EN style='font-size:10.0pt;font-family:
+"Arial","sans-serif"'><br>
+</span><b><span lang=EN style='font-size:13.0pt;font-family:"Arial","sans-serif"'>802.11
+Development Tools</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0>
+ <tr>
+  <td width=220 style='width:165.0pt;padding:0in 0in 0in 0in'></td>
+  <td width=552 style='width:5.75in;padding:0in 0in 0in 0in'></td>
+ </tr>
+ <tr>
+  <td width=773 colspan=2 valign=top style='width:579.75pt;padding:0in 0in 0in 0in'>
+  <p><span style='font-size:10.0pt;font-family:"Arial","sans-serif";color:black'>MRF24WG0MA
+  WiFi Pictail / Pictail Plus provides 802.11 connectivity using PIC
+  microcontrollers on Microchip&#8217;s development boards. </span></p>
+  <p><!-- TRANSIT - HYPERLINK --><!-- .http://www.microchipdirect.com/ProductSearch.aspx?Keywords=AC164149. --><b><u><span
+  style='font-size:11.0pt;font-family:"Arial","sans-serif"'>Supported
+  Development Tools:</span></u></b></p>
+  <p><span style='font-size:4.0pt;color:white'>&#8230;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=220 valign=top style='width:165.0pt;background:#EEFFDD;padding:
+  0in 0in 0in 0in'>
+  <p><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>8-bit
+  Platform</span></b></p>
+  </td>
+  <td width=552 valign=top style='width:5.75in;background:#EEFFDD;padding:0in 0in 0in 0in'>
+  <div style='margin-left:.5in'>
+  <p><span style='font-size:10.0pt;font-family:"Arial","sans-serif";color:blue'><!-- TRANSIT - HYPERLINK --><!-- http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en028217. --><a
+  href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en028217"
+  target="_top"><span style='color:#CC0000;text-decoration:none'>PICDEM .net2</span></a></span><span
+  style='font-size:10.0pt;font-family:"Arial","sans-serif"'> </span><b><span
+  style='font-family:"Arial","sans-serif"'>+</span></b><span style='font-size:
+  10.0pt;font-family:"Arial","sans-serif"'> <span style='color:blue'><!-- TRANSIT - HYPERLINK --><!-- .http://www.microchipdirect.com/ProductSearch.aspx?Keywords=AC164149. --><a
+  href="http://www.microchipdirect.com/ProductSearch.aspx?Keywords=AC164149"
+  target="_top"><span style='color:#CC0000;text-decoration:none'>AC164149
+  Pictail / Pictail Plus</span></a></span></span></p>
+  </div>
+  <p><span style='font-size:10.0pt;font-family:"Arial","sans-serif";color:white'>..</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=220 valign=top style='width:165.0pt;background:#FFE7E7;padding:
+  0in 0in 0in 0in'>
+  <p><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>16-bit
+  Platform</span></b></p>
+  </td>
+  <td width=552 valign=top style='width:5.75in;background:#FFE7E7;padding:0in 0in 0in 0in'>
+  <div style='margin-left:.5in'>
+  <p><span style='font-size:10.0pt;font-family:"Arial","sans-serif";color:blue'><!-- TRANSIT - HYPERLINK --><!--  .http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en024858.  --><a
+  href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en024858"
+  target="_top"><span style='color:#CC0000;text-decoration:none'>Explorer 16</span></a></span><span
+  style='font-size:10.0pt;font-family:"Arial","sans-serif"'> </span><b><span
+  style='font-family:"Arial","sans-serif"'>+</span></b><span style='font-size:
+  10.0pt;font-family:"Arial","sans-serif"'> <span style='color:blue'><!-- TRANSIT - HYPERLINK --><!-- .http://www.microchipdirect.com/ProductSearch.aspx?Keywords=AC164149. --><a
+  href="http://www.microchipdirect.com/ProductSearch.aspx?Keywords=AC164149"
+  target="_top"><span style='color:#CC0000;text-decoration:none'>AC164149
+  Pictail / Pictail Plus</span></a></span></span></p>
+  </div>
+  <p><span style='font-size:10.0pt;font-family:"Arial","sans-serif";color:white'>..</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=220 valign=top style='width:165.0pt;background:#E5F2FF;padding:
+  0in 0in 0in 0in'>
+  <p><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>32-bit
+  Platform</span></b></p>
+  </td>
+  <td width=552 valign=top style='width:5.75in;background:#E5F2FF;padding:0in 0in 0in 0in'>
+  <div style='margin-left:.5in'>
+  <p><span style='font-size:10.0pt;font-family:"Arial","sans-serif";color:blue'><!-- TRANSIT - HYPERLINK --><!-- http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2615&dDocName=en532453&redirects=PIC32_starter_kit. --><a
+  href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2615&dDocName=en532453&redirects=PIC32_starter_kit"
+  target="_top"><span style='color:#CC0000;text-decoration:none'>PIC32 Starter
+  Kit</span></a></span><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>
+  </span><b><span style='font-family:"Arial","sans-serif"'>+</span></b><span
+  style='font-size:10.0pt;font-family:"Arial","sans-serif"'> <span
+  style='color:blue'><!-- TRANSIT - HYPERLINK --><!-- .http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2615&dDocName=en535444. --><a
+  href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=2615&dDocName=en535444"
+  target="_top"><span style='color:#CC0000;text-decoration:none'>I/O Expansion
+  Board</span></a></span> </span><b><span style='font-family:"Arial","sans-serif"'>+</span></b><span
+  style='font-size:10.0pt;font-family:"Arial","sans-serif"'> <span
+  style='color:blue'><!-- TRANSIT - HYPERLINK --><!-- .http://www.microchipdirect.com/ProductSearch.aspx?Keywords=AC164136-4. --><a
+  href="http://www.microchipdirect.com/ProductSearch.aspx?Keywords=AC164149"
+  target="_top"><span style='color:#CC0000;text-decoration:none'>AC164149
+  Pictail / Pictail Plus</span></a></span></span></p>
+  <p><u><span style='font-size:10.0pt;font-family:"Arial","sans-serif";
+  color:blue'><!-- TRANSIT - HYPERLINK --><!-- .http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en024858. --><a
+  href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en024858"
+  target="_top"><span style='color:#CC0000;text-decoration:none'>Explorer 16</span></a></span></u><span
+  style='font-size:10.0pt;font-family:"Arial","sans-serif"'> </span><b><span
+  style='font-family:"Arial","sans-serif"'>+</span></b><span style='font-size:
+  10.0pt;font-family:"Arial","sans-serif"'> <u><span style='color:blue'><!-- TRANSIT - HYPERLINK --><!-- .http://www.microchipdirect.com/ProductSearch.aspx?Keywords=AC164149. --><a
+  href="http://www.microchipdirect.com/ProductSearch.aspx?Keywords=AC164149"
+  target="_top"><span style='color:#CC0000;text-decoration:none'>AC164149
+  Pictail / Pictail Plus</span></a></span></u></span></p>
+  </div>
+  </td>
+ </tr>
+</table>
+
+
+<!--content--></div>
+
+<!--main_content--></div>
+
+<div style='border:none;border-top:dotted #666666 1.0pt;padding:8.0pt 0in 0in 0in;
+margin-left:37.5pt;margin-top:7.5pt;margin-right:37.5pt' id=footer>
+
+<p class=MsoNormal align=center style='text-align:center;background:white'><span
+lang=EN style='font-size:9.5pt;font-family:"Verdana","sans-serif";color:#666666'>Copyright
+&copy; 2013 Microchip Technology, Inc.</span></p>
+
+</div>
+
+</div>
+
+</div>
+
+<!--container-->
+</body>
+
+</html>

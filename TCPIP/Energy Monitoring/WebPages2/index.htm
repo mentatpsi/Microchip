@@ -1,0 +1,31 @@
+~inc:header.inc~
+<div id="content">
+<h1>Energy Monitoring PICtail<br />Data Output</h1>
+
+This demo will display power being drawn by the device connected to the Energy Monitoring PICtail.
+<br /><br />
+<table>
+<tr><td>Energy Consumed:       </td><td><span id="cPower" style="font-weight:normal">?</span></td> <td> kW*h</td></tr>
+<tr><td>Active Power: </td><td><span id="iPower" style="font-weight:normal">?</span></td> <td> W</td></tr>
+<tr><td>Apparent Power: </td><td><span id="aPower" style="font-weight:normal">?</span></td> <td> V*A</td></tr>
+<tr><td>Reactive Power: </td><td><span id="rPower" style="font-weight:normal">?</span></td> <td> var</td></tr>
+<tr><td>RMS Voltage: </td><td><span id="volts" style="font-weight:normal">?</span></td> <td> V</td></tr>
+<tr><td>RMS Current: </td><td><span id="amps" style="font-weight:normal">?</span></td> <td> A</td></tr>
+</table>
+
+</div>
+
+<script type="text/javascript">
+// Parses the xmlResponse from vars.xml and updates the status box
+function updateStatus(xmlData) {
+	document.getElementById('iPower').innerHTML = getXMLValue(xmlData, 'iPower');
+	document.getElementById('cPower').innerHTML = getXMLValue(xmlData, 'cPower');
+	document.getElementById('aPower').innerHTML = getXMLValue(xmlData, 'aPower');
+	document.getElementById('rPower').innerHTML = getXMLValue(xmlData, 'rPower');
+	document.getElementById('volts').innerHTML = getXMLValue(xmlData, 'volts');
+	document.getElementById('amps').innerHTML = getXMLValue(xmlData, 'amps');
+}
+setTimeout("newAJAXCommand('vars.xml', updateStatus, true)",500);
+</script>
+
+~inc:footer.inc~

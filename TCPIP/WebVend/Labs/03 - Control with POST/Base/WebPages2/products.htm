@@ -1,0 +1,66 @@
+~inc:header.inc~
+<p align="center" style="margin-top: 0">
+<a href="index.htm">Status</a> &nbsp;|&nbsp;
+<a href="lights.htm">Lights</a> &nbsp;|&nbsp;
+<b>Products</b>
+</p>
+
+<div id="location">Machine ~hostname~ :: ~machineDesc~</div>
+
+<form method="post" action="products.htm">
+
+<fieldset>
+<legend><b>Manage Products</b></legend>
+
+<table align="center" cellpadding="2">
+<tr>
+<td><b>Display Name</b></td><td><b>Price</b></td>
+</tr>
+
+<tr>
+<td><input type="text" name="name[0]" value="~name(0)~" maxlength="9" size="15" /> &nbsp; &nbsp; </td>
+<td><input type="text" name="price[0]" value="~price(0)~" maxlength="5" size="8" /></td>
+</tr>
+
+<tr>
+<td><input type="text" name="name[1]" value="~name(1)~" maxlength="9" size="15" /> &nbsp; &nbsp; </td>
+<td><input type="text" name="price[1]" value="~price(1)~" maxlength="5" size="8" /></td>
+</tr>
+
+<tr>
+<td><input type="text" name="name[2]" value="~name(2)~" maxlength="9" size="15" /> &nbsp; &nbsp; </td>
+<td><input type="text" name="price[2]" value="~price(2)~" maxlength="5" size="8" /></td>
+</tr>
+
+<tr>
+<td><input type="text" name="name[3]" value="~name(3)~" maxlength="9" size="15" /> &nbsp; &nbsp; </td>
+<td><input type="text" name="price[3]" value="~price(3)~" maxlength="54" size="8" /></td>
+</tr>
+
+<tr>
+<td><input type="text" name="name[4]" value="~name(4)~" maxlength="9" size="15" /> &nbsp; &nbsp; </td>
+<td><input type="text" name="price[4]" value="~price(4)~" maxlength="5" size="8" /></td>
+</tr>
+
+<tr>
+<td><input type="text" name="name[5]" value="~name(5)~" maxlength="9" size="15" /> &nbsp; &nbsp; </td>
+<td><input type="text" name="price[5]" value="~price(5)~" maxlength="5" size="8" /></td>
+</tr>
+
+<tr>
+<td><input type="text" name="name[6]" value="~name(6)~" maxlength="9" size="15" /> &nbsp; &nbsp; </td>
+<td><input type="text" name="price[6]" value="~price(6)~" maxlength="5" size="8" /></td>
+</tr>
+
+<tr>
+<td colspan="2" align="center"><input type="submit" value="Save" /></td>
+</tr>
+
+</table>
+
+</fieldset>
+</form>
+
+<span id="version">~version~</span>
+<span id="builddate">~builddate~</span>
+~inc:footer.inc~

@@ -1,0 +1,4 @@
++inc:header.inc
++version
++builddate
++inc:footer.inc

@@ -1,0 +1,45 @@
+~inc:header.inc~
+<div id="content">
+
+<h1>Dynamic DNS</h1>
+<div class="result ok" style="display:~status_ok~">
+Your settings have been saved.
+</div>
+
+<div class="result ~ddns_status~">
+~ddns_status_msg~
+</div>
+
+<p>The Dynamic DNS module allows the stack to update the board's global IP 
+address to various Dynamic DNS services.  This feature, along with proper
+port forwarding in place at the router, can enable global access to a 
+device behind a NAT router or firewall.</p>
+
+<p>Enter the settings in the fields below:</p>
+
+<form method="post" action="/dyndns/index.htm">
+<fieldset>
+<div><label>DDNS Service:</label>
+<select name="service">
+<option value="0" ~ddns_service(0)~>DynDNS (www.dyndns.com)</option>
+<option value="1" ~ddns_service(1)~>No-IP (www.no-ip.com)</option>
+<option value="2" ~ddns_service(2)~>DNS-O-Matic (www.dnsomatic.com)</option>
+</select>
+</div>
+<div><label>User Name:</label>
+<input type="text" name="user" maxlength="40" value="~ddns_user~"/></div>
+<div><label>Password:</label>
+<input type="password" name="pass" maxlength="24" value="~ddns_pass~"/></div>
+<div><label>Host:</label>
+<input type="text" name="host" maxlength="48" value="~ddns_host~" /></div>
+<div><input type="submit" class="sm" value="Set DDNS Configuration"/></div>
+</fieldset>
+</form>
+</div>
+
+<script type="text/javascript">
+<!--
+document.getElementById('hello').innerHTML = "~hellomsg~";
+-->
+</script>
+~inc:footer.inc~

@@ -1,0 +1,55 @@
+~inc:header.inc~
+<div id="content">
+
+<h1>Board Configuration</h1>
+<p>This page allows the configuration of the board's network settings.</p>
+<div class="result fail" style="display:~status_fail~">
+ERROR: A field was unparsable or too much data was POSTed.  Try again.
+</div>
+<p class="error">
+<b>CAUTION:</b> Incorrect settings may cause the board to lose network 
+connectivity.  Recovery options will be provided on the next page.</p>
+<p>Enter the new settings for the board below:</p>
+
+<form method="post" action="/protect/config.htm" name="config">
+<fieldset>
+<div><label>MAC Address:</label>
+<input type="text" name="mac" value="~config_mac~" /></div>
+<div><label>Host Name:</label>
+<input type="text" name="host" value="~config_hostname~" /></div>
+<div>&nbsp;</div>
+
+<div>
+<input type="checkbox" class="sm" name="dhcp" value="1" onclick="configIPBoxes()" ~config_dhcpchecked~ /> Enable DHCP</div>
+<div><label>IP Address:</label>
+<td><input type="text" name="ip" value="~config_ip~" /></div>
+<div><label>Gateway:</label>
+<td><input type="text" name="gw" value="~config_gw~" /></div>
+<div><label>Subnet Mask:</label>
+<td><input type="text" name="sub" value="~config_subnet~" /></div>
+<div><label>Primary DNS:</label>
+<td><input type="text" name="dns1" value="~config_dns1~" /></div>
+<div><label>Secondary DNS:</label>
+<input type="text" name="dns2" value="~config_dns2~" /></div>
+<div><input type="submit" class="sm" value="Save Config" /></div>
+</fieldset>
+</form>
+</div>
+
+<script language="javascript">
+<!--
+function configIPBoxes() {
+	e = document.forms.config;
+	st = e.dhcp.checked;
+	e.ip.disabled = st;
+	e.gw.disabled = st;
+	e.sub.disabled = st;
+	e.dns1.disabled = st;
+	e.dns2.disabled = st;
+}
+
+configIPBoxes();
+document.getElementById('hello').innerHTML = "~hellomsg~";
+//-->
+</script>
+~inc:footer.inc~

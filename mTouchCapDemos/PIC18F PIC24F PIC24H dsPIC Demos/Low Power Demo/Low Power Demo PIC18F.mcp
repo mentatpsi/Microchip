@@ -1,0 +1,115 @@
+[HEADER]
+magic_cookie={66E99B07-E706-4689-9E80-9B2582898A13}
+file_version=1.0
+device=PIC18F46J50
+[PATH_INFO]
+BuildDirPolicy=BuildDirIsProjectDir
+dir_src=
+dir_bin=
+dir_tmp=Objects
+dir_sin=
+dir_inc=.;..\..\..\Microchip\Include;..\Configurations\PIC18F_mTouch_Eval_Board;..\..\..\Microchip\Include\mTouchCap\PIC18F PIC24F PIC24H dsPIC Library
+dir_lib=
+dir_lkr=
+[CAT_FILTERS]
+filter_src=*.asm;*.c
+filter_inc=*.h;*.inc
+filter_obj=*.o
+filter_lib=*.lib
+filter_lkr=*.lkr
+[CAT_SUBFOLDERS]
+subfolder_src=mTouch
+subfolder_inc=mTouch
+subfolder_obj=
+subfolder_lib=
+subfolder_lkr=
+[FILE_SUBFOLDERS]
+file_000=.
+file_001=mTouch
+file_002=mTouch
+file_003=mTouch
+file_004=.
+file_005=mTouch
+file_006=mTouch
+file_007=mTouch
+file_008=mTouch
+file_009=.
+file_010=.
+file_011=.
+file_012=.
+file_013=.
+[GENERATED_FILES]
+file_000=no
+file_001=no
+file_002=no
+file_003=no
+file_004=no
+file_005=no
+file_006=no
+file_007=no
+file_008=no
+file_009=no
+file_010=no
+file_011=no
+file_012=no
+file_013=no
+[OTHER_FILES]
+file_000=no
+file_001=no
+file_002=no
+file_003=no
+file_004=no
+file_005=no
+file_006=no
+file_007=no
+file_008=no
+file_009=no
+file_010=no
+file_011=no
+file_012=no
+file_013=yes
+[FILE_INFO]
+file_000=..\Configurations\PIC18F_mTouch_Eval_Board\system.c
+file_001=..\..\..\Microchip\mTouchCap\PIC18F PIC24F PIC24H dsPIC Library\mTouchAcquistion.c
+file_002=..\..\..\Microchip\mTouchCap\PIC18F PIC24F PIC24H dsPIC Library\mTouchSensor.c
+file_003=..\..\..\Microchip\mTouchCap\PIC18F PIC24F PIC24H dsPIC Library\mTouchDebug.c
+file_004=Low Power Demo Main.c
+file_005=..\..\..\Microchip\Include\mTouchCap\PIC18F PIC24F PIC24H dsPIC Library\mTouch.h
+file_006=..\..\..\Microchip\Include\mTouchCap\PIC18F PIC24F PIC24H dsPIC Library\mTouchAcquisitionMCU8.h
+file_007=..\..\..\Microchip\Include\mTouchCap\PIC18F PIC24F PIC24H dsPIC Library\mTouchDebug.h
+file_008=..\..\..\Microchip\Include\mTouchCap\PIC18F PIC24F PIC24H dsPIC Library\mTouchSensor.h
+file_009=..\..\..\Microchip\Include\Compiler.h
+file_010=..\..\..\Microchip\Include\GenericTypeDefs.h
+file_011=..\Configurations\PIC18F_mTouch_Eval_Board\system.h
+file_012=mTouchConfig.h
+file_013=ReadMe.txt
+[SUITE_INFO]
+suite_guid={38171385-97B2-4EC5-BF2C-C2C027BA5B04}
+suite_state=
+[TOOL_SETTINGS]
+TS{F42384DA-C7ED-4A02-880F-0F5E88735CE2}=C6=255 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=1 121=0 122=0 123=0 124=0 125=0 11F=95 C9=22 FE=31 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F5= F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=0 10B=0 10C=0 10E=0 10F=1 110=0 118=0 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=0 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TS{F42384DA-C7ED-4A02-880F-0F5E88735CE2}000=
+TS{F42384DA-C7ED-4A02-880F-0F5E88735CE2}000_alt=yes
+TS{F42384DA-C7ED-4A02-880F-0F5E88735CE2}001=
+TS{F42384DA-C7ED-4A02-880F-0F5E88735CE2}001_alt=yes
+TS{F42384DA-C7ED-4A02-880F-0F5E88735CE2}002=
+TS{F42384DA-C7ED-4A02-880F-0F5E88735CE2}002_alt=yes
+TS{F42384DA-C7ED-4A02-880F-0F5E88735CE2}003=
+TS{F42384DA-C7ED-4A02-880F-0F5E88735CE2}003_alt=yes
+TS{F42384DA-C7ED-4A02-880F-0F5E88735CE2}004=
+TS{F42384DA-C7ED-4A02-880F-0F5E88735CE2}004_alt=yes
+[ACTIVE_FILE_SETTINGS]
+TS{F42384DA-C7ED-4A02-880F-0F5E88735CE2}000_active=yes
+TS{F42384DA-C7ED-4A02-880F-0F5E88735CE2}001_active=yes
+TS{F42384DA-C7ED-4A02-880F-0F5E88735CE2}002_active=yes
+TS{F42384DA-C7ED-4A02-880F-0F5E88735CE2}003_active=yes
+TS{F42384DA-C7ED-4A02-880F-0F5E88735CE2}004_active=yes
+[INSTRUMENTED_TRACE]
+enable=0
+transport=0
+format=0
+[CUSTOM_BUILD]
+Pre-Build=
+Pre-BuildEnabled=1
+Post-Build=
+Post-BuildEnabled=1

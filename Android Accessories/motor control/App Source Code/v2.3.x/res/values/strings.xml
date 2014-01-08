@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Basic Accessory Demo</string>
+    
+    <string name="led_header">LED Controls</string>
+    <string name="button_header">Push Button Status</string>
+    <string name="pot_header">Potentiometer</string>
+    
+    <string name="button_1">Button 1:</string>
+    <string name="button_2">Button 2:</string>
+    <string name="button_3">Button 3:</string>
+    <string name="button_4">Button 4:</string>
+    
+    <string name="not_pressed">Not pressed.</string>
+    <string name="pressed">Pressed.</string>
+    
+    <string name="weblink">www.microchip.com/android</string>
+    
+    <string name="error_default">An unknown error has occurred.  Please contact androidsupport@microchip.com so that we can determine the source of the issue and attempt to fix it.</string>
+    <string name="error_missing_open_accessory_framework">The Android OS version that you are running is missing the com.android.future.usb library that is required to run this demo.  The OS version that you are running should contain these libraries.  Please contact androidsupport@microchip.com so that we can work to correct this issue for this device. </string>
+    <string name="error_firmware_protocol">The firmware version on the attached device requires a protocol that is not supported by this version of the application.  Please check the Android Marketplace to see if there is an update available for this application.  If you are using the source version, please check www.microchip.com/mal for the latest application source code.</string>
+</resources>

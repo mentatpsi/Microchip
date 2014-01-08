@@ -1,0 +1,3 @@
+When adding a VID/PID string to the “%DESCRIPTION%=DriverInstall” and “%DESCRIPTION%=DriverInstall64” sections in the mchpusb.inf file, remove one or more of the pre-existing VID/PID strings from the list.  There is a limit to the maximum number of VID/PID strings that can be supported simultaneously.  If the list contains too many entries, the following error message will occur when installing the driver under Vista:
+
+"The Data Area Passed to a System Call Is Too Small"

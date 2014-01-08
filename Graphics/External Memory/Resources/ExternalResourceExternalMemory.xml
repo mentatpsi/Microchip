@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Graphics_Resource_Converter>
+<Configuration>
+<major>3</major>
+<minor>7</minor>
+<compiler>C30</compiler>
+<format>HEX</format>
+<graphics_module>false</graphics_module>
+<graphics_model>16 bpp</graphics_model>
+</Configuration>
+<Bitmaps>
+<Bitmap_Resource>
+<label>externalbitmap</label>
+<path>externalbitmap.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+</Bitmaps>
+<Font_Files>
+<Font_File_Resource>
+<label>externalfont</label>
+<path>../../../Microchip/Graphics/Fonts/Droid_Sans/DroidSans.ttf</path>
+<name>Droid Sans</name>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<comment_file>../../../Microchip/Graphics/Fonts/Droid_Sans/LICENSE.txt</comment_file>
+<size>20</size>
+<height>24</height>
+<first_character>32</first_character>
+<last_character>126</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+</Font_Files>
+</Graphics_Resource_Converter>

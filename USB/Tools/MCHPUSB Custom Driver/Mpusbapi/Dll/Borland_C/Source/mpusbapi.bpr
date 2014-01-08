@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="mpusbapi.dll"/>
+    <OBJFILES value="_mpusbapi.obj"/>
+    <RESFILES value="mpusbapi.res"/>
+    <DEFFILE value="Exports.def"/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="rtl.lib"/>
+    <SPARELIBS value="rtl.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi bcbsmp.bpi dclocx.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT;_NO_VCL"/>
+    <MAINSOURCE value="mpusbapi.bpf"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl;C:\WINDDK\7600.16385.0\inc;C:\WINDDK\7600.16385.0\inc\ddk;C:\WINDDK\7600.16385.0\inc\api;&quot;E:\WinUSB_Mpusbapi\MPUSBAPI.DLL 5.0.0.0\Borland_C6_SourceCode&quot;"/>
+    <LIBPATH value="$(BCB)\Lib\Debug;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;C:\MPUSBAPI\dll;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-WD -O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a1 -b- -k- -vi -tWD -tWM- 
+      -c"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpd -GD -s -Gn -Gi -M"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0d32.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cw32.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="mpusbapi.res" FORMNAME="" UNITNAME="mpusbapi.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpusbapi.bpf" FORMNAME="" UNITNAME="mpusbapi" CONTAINERID="BPF" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_mpusbapi.cpp" FORMNAME="" UNITNAME="_mpusbapi" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Exports.def" FORMNAME="" UNITNAME="Exports.def" CONTAINERID="DefTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=6
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=1
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=Microchip Technology Inc.
+FileDescription=MPUSBAPI Library
+FileVersion=6.0.0.0
+InternalName=mpusbapi.dll
+LegalCopyright=Copyright (C) 2010
+LegalTrademarks=
+OriginalFilename=mpusbapi.dll
+ProductName=MPUSBAPI
+ProductVersion=6.0.0.0
+Comments=WinUSB or Mchpusb based version
+
+[HistoryLists\hlIncludePath]
+Count=6
+Item0=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;C:\WINDDK\7600.16385.0\inc;C:\WINDDK\7600.16385.0\inc\ddk;C:\WINDDK\7600.16385.0\inc\api;E:\WinUSB_Mpusbapi\MPUSBAPI.DLL 5.0.0.0\Borland_C6_SourceCode
+Item1=C:\Program Files\Borland\CBuilder6\Projects;C:\MPUSBAPI\dll;$(BCB)\include;$(BCB)\include\vcl;C:\WINDDK\6001.18001\inc;C:\WINDDK\6001.18001\inc\ddk;C:\WINDDK\6001.18001\inc\api;E:\WinUSB_Mpusbapi\MPUSBAPI.DLL 5.0.0.0\Borland_C6_SourceCode
+Item2=C:\Program Files\Borland\CBuilder6\Projects;C:\MPUSBAPI\dll;$(BCB)\include;$(BCB)\include\vcl;C:\WINDDK\6001.18001\inc;C:\WINDDK\6001.18001\inc\ddk;C:\WINDDK\6001.18001\inc\api
+Item3=C:\Program Files\Borland\CBuilder6\Projects;C:\MPUSBAPI\dll;$(BCB)\include;$(BCB)\include\vcl;C:\WINDDK\6001.18001\inc;C:\WINDDK\6001.18001\inc\ddk
+Item4=C:\Program Files\Borland\CBuilder6\Projects;C:\MPUSBAPI\dll;$(BCB)\include;$(BCB)\include\vcl;C:\WINDDK\6001.18001\inc
+Item5=C:\Program Files\Borland\CBuilder6\Projects;C:\MPUSBAPI\dll;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=1
+Item0=$(BCB)\Lib\Debug;C:\Program Files\Borland\CBuilder6\Projects;C:\MPUSBAPI\dll;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=C:\Microchip Solutions\USB Device - MCHPUSB - Generic Driver Demo\PC Software\Visual C++ 2005 Express\Code\Debug\
+Item1=C:\Microchip Solutions\USB Device - MCHPUSB - Generic Driver Demo\PC Software\Visual C++ 2005 Express\Code\Debug
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=C:\App Libs v2010-10\Microchip Solutions\USB Tools\WinUSB Based MPUSBAPI\MPUSBAPI.DLL 5.0.0.1\Borland_C6_SourceCode\PDFSUSB.exe
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+
+[Linker]
+LibPrefix=
+LibSuffix=
+LibVersion=
+  </IDEOPTIONS>
+</PROJECT>

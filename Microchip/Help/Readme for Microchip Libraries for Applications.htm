@@ -1,0 +1,2127 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 12 (filtered)">
+<title>Readme for Microchip Application Libraries</title>
+<style>
+<!--
+<<<<<<< .mine
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+=======
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+>>>>>>> .r30046
+p.msolistparagraphCxSpFirst, li.msolistparagraphCxSpFirst, div.msolistparagraphCxSpFirst
+	{mso-style-name:msolistparagraphCxSpFirst;
+	mso-style-unhide:no;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.MSONORMALCXSPMIDDLE
+	{<<<<<<< .mine
+	font-family:"Times New Roman","serif";}
+li.MSONORMALCXSPMIDDLE
+	{<<<<<<< .mine
+	font-family:"Times New Roman","serif";}
+div.MSONORMALCXSPMIDDLE
+	{<<<<<<< .mine
+	font-family:"Times New Roman","serif";}
+=======
+	font-family:"Times New Roman","serif";
+>>>>>>> .r30046
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Arial","sans-serif";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	font-style:italic;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:24.0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:48.0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:84.0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:96.0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+p.msolistparagraphCxSpMiddle, li.msolistparagraphCxSpMiddle, div.msolistparagraphCxSpMiddle
+	{mso-style-name:msolistparagraphCxSpMiddle;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.msolistparagraphCxSpLast, li.msolistparagraphCxSpLast, div.msolistparagraphCxSpLast
+	{mso-style-name:msolistparagraphCxSpLast;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.msolistparagraph0, li.msolistparagraph0, div.msolistparagraph0
+	{mso-style-name:msolistparagraph;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+p.msonormalcxspmiddle, li.msonormalcxspmiddle, div.msonormalcxspmiddle
+	{mso-style-name:msonormalcxspmiddle;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>Release
+Notes for Microchip Libraries for Applications v2013-06-15</span></b></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Microchip
+Technology Inc. 2013</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>June, 2013</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>Table of
+Contents</span></b></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc329261084">1.&nbsp;
+What is Microchip Libraries for Applications?</a></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc329261085">2.&nbsp; Installing/Uninstalling</a></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc329261086">3.&nbsp;
+What’s new/changed</a></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc329261087">4.&nbsp;
+Customer Support</a></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc329261088">Appendix A:
+List of all PIC demo projects and folder paths</a></span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1 style='margin-right:.9pt'><a name="_Toc329261084"></a><a
+name="_Toc315952982"></a><a name="_Toc310425461"></a><a name="_Toc294259778"></a><a
+name="_Toc295985460"></a>1.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;
+</span>What is Microchip Libraries for Applications?</h1>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>Microchip
+Libraries for Applications (MLA) is a collection of Microchip firmware
+libraries and demo projects. Not all firmware libraries and demo projects from
+Microchip are distributed in this package; rather, this package includes a few
+specific libraries that tend to be used together.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>By
+distributing libraries that are used often together, Microchip can provide
+example projects that integrate the use of multiple libraries.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>Some
+example projects that use multiple libraries are:</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>Graphics
+MultiApp Demo</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>PIC18F
+Starter Kit 1</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>PIC24F
+Starter Kit 1</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>PIC24H
+Starter Kit 1</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>TCPIP
+MDD Demo App</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>USB
+Host – Printer – Print Screen Demo</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>USB
+Host – Printer – Simple Full Sheet Demo</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span lang=FR style='font-family:
+"Arial","sans-serif"'>USB Host – Printer – Simple POS Demo</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span lang=FR style='font-family:
+"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>MLA
+is currently being distributed mainly in the source code form to provide the
+maximum flexibility for end designers to customize firmware to fit his/her
+applications.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<h1><a name="_Toc329261085"></a><a name="_Toc315952983"></a><a
+name="_Toc310425462"></a><a name="_Toc294259779"></a><a name="_Toc295985461"></a>2.<span
+style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp; </span>Installing/Uninstalling</h1>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>To
+obtain the latest version of the MLA, you can download it from the Microchip
+web site at <a href="http://www.microchip.com/MLA">www.microchip.com/MLA</a>.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;text-autospace:none'><span
+style='font-family:"Arial","sans-serif"'>Once the installation package is
+downloaded, first unzip (if zipped) the downloaded zip file and run the
+installer.</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;text-autospace:none'><span
+style='font-family:"Arial","sans-serif"'>If installing over an existing MLA
+folder location, files that will be overwritten are back-up to the folder named
+‘rollbackBackupDirectory’.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>One
+or more third party libraries maybe required to run PC programs, this includes
+but not be limited to Java Runtime Environment (JRE), Qt framework, and/or .NET
+framework.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>For
+Java programs (.jar extension), the jar files must be associated with the JRE
+in order to run.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>No
+MPLAB 8 projects are supported in the Mac and Linux distributions, even though
+you may see MPLAB 8 projects in the install. OS specific executables are
+installed in all distributions.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>Some
+users may need to install multiple instances of the distribution; this can be
+done simply by selecting a different installation path and shortcut menu
+folder.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>When
+upgrading from a previous version, it is recommended that users install the
+newer installation to a different installation path, and then consult each
+individual library release notes for changes that may impact application
+project. This method is safer than just overwriting the previous installation.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>MLA
+can be uninstalled by either running the uninstaller or simply delete the root
+installed folder. Either ways, users should make sure to back-up any modified
+files.</span></p>
+
+<h1><a name="_Toc329261086"></a><a name="_Toc315952984"></a><a
+name="_Toc310425463"></a><a name="_Toc294259780"></a><a name="_Toc295985462"></a><a
+name="_3.__What’s"></a>3.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;
+</span>What’s new/changed</h1>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>This
+release includes support for MPLAB® XC16 and XC32 compilers. The minimum MPLAB®
+IDE versions required are 8.85 and X v1.20. There is a known issue with XC16
+v1.00 that requires the workaround of defining -fno-ivopts option in the
+project compiler build setting. This disables the loop invariant optimizer.
+Other versions of XC16 will/do not require this workaround.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>MPLAB
+X projects utilize the Build Configuration feature extensively. For each demo,
+it can run on many different hardware setups, select the appropriate build
+configuration setting for the supported hardware.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif";
+background:yellow'>An important notice for the next major MLA release is, MPLAB
+8 projects will no longer be distributed. Users can still use MPLAB 8 with the
+source code provided, but there will be no readymade 8 projects. Only MPLAB X
+projects will be available. Again, this is a planned migration in the next
+major release.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>For
+a full list of changes in this release, read each individual library’s release
+notes after installation.&nbsp; This section provides only a summary of key
+changes:</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><b><span style='font-family:
+"Arial","sans-serif"'>Key Summary:</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=791
+ style='width:593.55pt;border-collapse:collapse'>
+ <tr>
+  <td width=122 rowspan=2 style='width:91.6pt;border:solid windowtext 1.0pt;
+  background:#CCFFFF;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>Library</span></b></p>
+  </td>
+  <td width=73 rowspan=2 style='width:54.7pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#CCFFCC;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>Current</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>Version</span></b></p>
+  </td>
+  <td width=81 rowspan=2 style='width:61.05pt;border:solid windowtext 1.0pt;
+  border-left:none;background:silver;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>Previous</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>Version</span></b></p>
+  </td>
+  <td width=515 colspan=6 style='width:386.2pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#FFFF99;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>PIC Family Supported</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=83 style='width:62.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#FFFF99;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>PIC16F</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>(8-bit)</span></b></p>
+  </td>
+  <td width=84 valign=top style='width:63.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#FFFF99;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>PIC18F</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>(8-bit)</span></b></p>
+  </td>
+  <td width=84 valign=top style='width:63.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#FFFF99;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>PIC24F</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>(16-bit)</span></b></p>
+  </td>
+  <td width=84 valign=top style='width:63.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#FFFF99;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>PIC24H</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>(16-bit)</span></b></p>
+  </td>
+  <td width=84 valign=top style='width:63.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#FFFF99;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>dsPIC</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>(16-bit)</span></b></p>
+  </td>
+  <td width=96 valign=top style='width:1.0in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#FFFF99;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>PIC32</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Arial","sans-serif"'>(32-bit)</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=122 style='width:91.6pt;border:solid windowtext 1.0pt;border-top:
+  none;background:#CCFFFF;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'><a href="#_3.1_MCHPFSUSB_Framework">MCHPFSUSB
+  Framework</a></span></p>
+  </td>
+  <td width=73 style='width:54.7pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#CCFFCC;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>2.9j</span></p>
+  </td>
+  <td width=81 style='width:61.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:silver;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>2.9i</span></p>
+  </td>
+  <td width=83 style='width:62.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x&nbsp;</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>X</span></p>
+  </td>
+  <td width=96 style='width:1.0in;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=122 style='width:91.6pt;border:solid windowtext 1.0pt;border-top:
+  none;background:#CCFFFF;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'><a href="#_3.2_Graphics_Library">Graphics
+  Library</a></span></p>
+  </td>
+  <td width=73 style='width:54.7pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#CCFFCC;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>3.06.04</span></p>
+  </td>
+  <td width=81 style='width:61.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:silver;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>3.06.04</span></p>
+  </td>
+  <td width=83 style='width:62.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>X</span></p>
+  </td>
+  <td width=96 style='width:1.0in;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=122 style='width:91.6pt;border:solid windowtext 1.0pt;border-top:
+  none;background:#CCFFFF;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'><a href="#_3.3_MDD_Library">Memory
+  Disk Drive (MDD)</a></span></p>
+  </td>
+  <td width=73 style='width:54.7pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#CCFFCC;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>1.4.4</span></p>
+  </td>
+  <td width=81 style='width:61.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:silver;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>1.4.4</span></p>
+  </td>
+  <td width=83 style='width:62.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>X</span></p>
+  </td>
+  <td width=96 style='width:1.0in;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=122 style='width:91.6pt;border:solid windowtext 1.0pt;border-top:
+  none;background:#CCFFFF;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'><a href="#_3.4_TCP/IP_Stack">TCP/IP
+  Stack</a></span></p>
+  </td>
+  <td width=73 style='width:54.7pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#CCFFCC;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>5.42.08</span></p>
+  </td>
+  <td width=81 style='width:61.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:silver;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>5.42.06</span></p>
+  </td>
+  <td width=83 style='width:62.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>X</span></p>
+  </td>
+  <td width=96 style='width:1.0in;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=122 style='width:91.6pt;border:solid windowtext 1.0pt;border-top:
+  none;background:#CCFFFF;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'><a href="#_3.5_mTouchCap_Library">mTouchCap
+  Library</a></span></p>
+  </td>
+  <td width=73 style='width:54.7pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#CCFFCC;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>1.43</span></p>
+  </td>
+  <td width=81 style='width:61.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:silver;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>1.43</span></p>
+  </td>
+  <td width=83 style='width:62.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x&nbsp;</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>&nbsp;X</span></p>
+  </td>
+  <td width=96 style='width:1.0in;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=122 style='width:91.6pt;border:solid windowtext 1.0pt;border-top:
+  none;background:#CCFFFF;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'><a href="#_3.6_Smart_Card">Smart
+  Card Library</a></span></p>
+  </td>
+  <td width=73 style='width:54.7pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#CCFFCC;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>1.03</span></p>
+  </td>
+  <td width=81 style='width:61.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:silver;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>1.03</span></p>
+  </td>
+  <td width=83 style='width:62.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>X</span></p>
+  </td>
+  <td width=96 style='width:1.0in;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=122 style='width:91.6pt;border:solid windowtext 1.0pt;border-top:
+  none;background:#CCFFFF;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'><a href="#_3.7_MiWi™_DE">MiWi™ DE</a></span></p>
+  </td>
+  <td width=73 style='width:54.7pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#CCFFCC;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>4.2.6</span></p>
+  </td>
+  <td width=81 style='width:61.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:silver;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>4.2.6</span></p>
+  </td>
+  <td width=83 style='width:62.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>X</span></p>
+  </td>
+  <td width=96 style='width:1.0in;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=122 style='width:91.6pt;border:solid windowtext 1.0pt;border-top:
+  none;background:#CCFFFF;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'><a href="#Android">Accessory
+  Framework for Android™</a></span></p>
+  </td>
+  <td width=73 style='width:54.7pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#CCFFCC;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>1.02.01</span></p>
+  </td>
+  <td width=81 style='width:61.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:silver;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>1.02.01</span></p>
+  </td>
+  <td width=83 style='width:62.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=84 style='width:63.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>X</span></p>
+  </td>
+  <td width=96 style='width:1.0in;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial","sans-serif"'>x</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<h2><a name="_3.1_MCHPFSUSB_Framework"></a>3.1 MCHPFSUSB Framework</h2>
+
+<ul type=disc>
+ <li class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Device </span></li>
+ <ul type=circle>
+  <li class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Updated
+      HID bootloader for PIC18 devices. Added software entry point at 0x001C and
+      robustness features to allow re-entry into bootloader in the event of
+      interrupted erase/program/verify sequence. </span></li>
+ </ul>
+ <li class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Other </span></li>
+ <ul type=circle>
+  <li class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Added
+      &quot;Obtaining a WHQL Certified USB Driver Package&quot; document to the
+      \Microchip\Help folder, along with a reseller rights request form
+      necessary for doing Microsoft Driver Update Acceptable (DUA) submissions
+      to allow re-certification of drivers. </span></li>
+ </ul>
+</ul>
+
+<p class=MsoListParagraph style='margin-left:1.5in'><span style='font-size:
+9.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>For more information
+about the specific changes in this revision, please refer to the Revision
+History section of the MCHPFSUSB Library Help file available in the library
+download.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<h2><a name="_3.2_Graphics_Library"></a>3.2 Graphics Library</h2>
+
+<p class=MsoNormal style='text-autospace:none'>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>No
+     changes.</span></li>
+</ul>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>For more information
+about the specific changes in this revision, please refer to the detailed
+release notes in the Graphics Library Help file available in the library
+download.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<h2 style='margin-left:20.25pt;text-indent:-20.25pt'><a name="_3.3_MDD_Library"></a>3.3MDD
+Library</h2>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-autospace:none'>No changes.</li>
+</ul>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>For
+more information about the specific changes in this revision, please refer to
+the detailed release notes in the MDD Library Help file available in the
+library download.</span></p>
+
+<h2><a name="_3.4_TCP/IP_Stack"></a>3.4 TCP/IP Stack</h2>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>Clarify
+     item#4 in v5.42.04 Oct 2012 release. Change is applicable to MRF24WB/G
+     only. (MRF24WB/G) SSL client with RSA 2048bits is enabled by default.
+     Applies only for PIC24/32. Not supported for PIC18.</span></li>
+ <li class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>(MRF24WB)
+     Resolve firmware 0x120C host scan bug : Host scan asserts when it is
+     conducted after WPA-PSK fails due to key mismatch. </span></li>
+ <li class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>(MRF24WB)
+     Resolve reset problem bug. Modified WF_SetCE_N and WF_SetRST_N to first
+     set the level, than configure pin as output.</span></li>
+ <li class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>(MRF24W)
+     Resolve WiFi Console demo IPERF issue bug fix : Enlarge generic tcp rx/tx
+     buffer size.</span></li>
+ <li class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>(MRF24W)
+     Resolve EasyConfig bug fix for retry count when DISABLE_MODULE_FW_CONNECT_MANAGER_IN_INFRASTRUCTURE
+     is enabled.</span></li>
+ <li class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>(MRF24W)
+     Resolve handling of max length SSID of AP.</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.5in'>&nbsp;&nbsp;</p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>For more
+information about the specific changes in this revision, please refer to the detailed
+release notes in the TCPIP Stack Help file available in the library download.</span></p>
+
+<h2><a name="_3.5_mTouchCap_Library"></a>3.5 mTouchCap Library<a
+name="_3.6_Smart_Card"></a>:</h2>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-autospace:none'><span style='font-family:"Arial","sans-serif"'>No
+     changes</span></li>
+</ul>
+
+<h2 style='margin-left:20.25pt;text-indent:-20.25pt'>3.6 Smart Card Library</h2>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>No
+changes</span></p>
+
+<h2><a name="_3.7_MiWi™_DE"></a>3.7 MiWi™ DE</h2>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><span style='font-family:"Arial","sans-serif"'>No changes</span></li>
+</ul>
+
+<h2 style='margin-left:20.25pt;text-indent:-20.25pt'>3.8Accessory Framework for
+Android™</h2>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><a name="_Toc310425464"></a><a name="_Toc294259781"></a><a
+     name="_Toc295985463"></a><span style='font-family:"Arial","sans-serif"'>No
+     changes</span></li>
+</ul>
+
+<h1 style='margin-left:.5in;text-indent:-.5in'><a name="_Toc329261087"></a><a
+name="_Toc315952985"></a><a name="_Toc310425465"></a><a name="_Toc295985464"></a><a
+name="_Toc234048529"></a><a name="_Toc294259782"></a>4.<span style='font-size:
+7.0pt;font-family:"Times New Roman","serif"'>&nbsp; </span>Customer Support</h1>
+
+<h2><a name="_Toc175736817">The Microchip Web Site</a></h2>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Microchip
+provides online support via our web site at <a href="http://www.microchip.com/">http://www.microchip.com</a>.
+This web site is used as a means to make files and information easily available
+to customers. Accessible by using your favorite Internet browser, the web site
+contains the following information:</span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Product
+     Support - Data sheets and errata, application notes and sample programs,
+     design resources, user's guides and hardware support documents, latest
+     software releases and archived software</span></li>
+ <li class=MsoNormal><span style='font-family:"Arial","sans-serif"'>General
+     Technical Support - Frequently Asked Questions (FAQs), technical support
+     requests (<a href="http://support.microchip.com/">http://support.microchip.com</a>),
+     online discussion groups/forums (<a href="http://forum.microchip.com/">http://forum.microchip.com</a>),
+     Microchip consultant program member listing</span></li>
+ <li class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Business of
+     Microchip - Product selector and ordering guides, latest Microchip press
+     releases, listing of seminars and events, listings of Microchip sales
+     offices, distributors and factory representatives</span></li>
+</ul>
+
+<h2><a name="_Toc175736818">Development Systems Customer Change Notification
+Service</a></h2>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Microchip's
+customer notification service helps keep customers current on Microchip
+products. Subscribers will receive e-mail notification whenever there are
+changes, updates, revisions or errata related to a specified product family or
+development tool of interest.</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>To register,
+access the Microchip web site at www.microchip.com, click on Customer Change
+Notification and follow the registration instructions.</span></p>
+
+<h2><a name="_Toc175736819">Additional Support</a></h2>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Users of
+Microchip products can receive assistance through several channels:</span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Distributor
+     or Representative</span></li>
+ <li class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Local Sales
+     Office</span></li>
+ <li class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Field
+     Application Engineer (FAE)</span></li>
+ <li class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Technical
+     Support</span></li>
+</ul>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Customers
+should contact their distributor, representative or field application engineer
+(FAE) for support. Local sales offices are also available to help customers. A
+listing of sales offices and locations is available on our website.</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Technical
+support is available through the web site at: <a
+href="http://support.microchip.com/">http://support.microchip.com</a></span><a
+name="_Toc163987715"></a><a name="License_Agreements"></a></p>
+
+<h2><a name="_Toc175736820">Training</a></h2>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Regional
+     Training Centers: <a href="http://www.microchip.com/rtc">http://www.microchip.com/rtc</a></span></li>
+ <li class=MsoNormal><span style='font-family:"Arial","sans-serif"'>MASTERs
+     Conference: <a href="http://www.microchip.com/masters">http://www.microchip.com/masters</a></span></li>
+ <li class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Webseminars:
+     <a href="http://techtrain.microchip.com/webseminars/QuickList.aspx">http://techtrain.microchip.com/webseminars/QuickList.aspx</a></span></li>
+</ul>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<h1><a name="_Toc310425466"></a><a name="_Toc329261088"></a><a
+name="_Toc315952986"></a>Appendix A: List of all PIC demo projects and folder
+paths</h1>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=834
+ style='width:625.4pt;margin-left:4.55pt;border-collapse:collapse'>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Android
+  Accessories\Basic Communication Demo - OpenAccessory Framework</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Android
+  Accessories\Web Bootloader Demo - OpenAccessory Framework</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Combo\Google
+  Map</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Combo\MiWi
+  Protocol to WiFi Wireless Demo Kit\MiWiDemoBoard</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Combo\MiWi
+  Protocol to WiFi Wireless Demo Kit\WirelessEvalBoard</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Combo\Remote
+  Control</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Graphics\AppNotes</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Graphics\E-paper
+  Epson</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Graphics\External
+  Memory</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Graphics\Image
+  Decoder</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Graphics\Multi-App</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Graphics\Object
+  Layer</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Graphics\Object
+  Layer Palette</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Graphics\PIC24F
+  DA\Color Depth</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Graphics\PIC24F
+  DA\Elevator</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Graphics\PIC24F
+  DA\RCCGPU-IPU</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Graphics\PIC32
+  LCC</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Graphics\Primitive
+  Layer</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Graphics\S1D13517</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Graphics\SSD1926</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>MDD
+  File System-SD Card</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>MiWi
+  DE Demo\8-bit Wireless Development Kit - 2.4 GHz IEEE 802.15.4\8-bit WDK Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>MiWi
+  DE Demo\8-bit Wireless Development Kit - 2.4 GHz IEEE 802.15.4\Tutorial3 -
+  RFD Device</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>MiWi
+  DE Demo\8-bit Wireless Development Kit - 2.4 GHz IEEE 802.15.4\Tutorial4 -
+  Chat Window Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>MiWi
+  DE Demo\8-bit Wireless Development Kit - 2.4 GHz IEEE 802.15.4\Tutorial5 -
+  Ping Pong Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>MiWi
+  DE Demo\Basic Demos\Feature Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>MiWi
+  DE Demo\Basic Demos\Simple Example</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>MiWi
+  DE Demo\MiWi Demo Kit</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>MiWi
+  DE Demo\MiWi PRO Test Interface</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.65pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>02-02091-R2 CSM-CVD Eval Board</span><span style='font-size:
+  10.0pt;font-family:"Arial","sans-serif"'>\</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>2-Ch Slider</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>02-02091-R2 CSM-CVD Eval Board</span><span style='font-size:
+  10.0pt;font-family:"Arial","sans-serif"'>\4</span><span style='font-size:
+  9.0pt;font-family:"Verdana","sans-serif";color:black'>-Ch Slider</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>02-02091-R2 CSM-CVD Eval Board</span><span style='font-size:
+  10.0pt;font-family:"Arial","sans-serif"'>\</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>8 Buttons</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>02-02091-R2 CSM-CVD Eval Board</span><span style='font-size:
+  10.0pt;font-family:"Arial","sans-serif"'>\</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>12-Key Matrix</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>02-02091-R2 CSM-CVD Eval Board</span><span style='font-size:
+  10.0pt;font-family:"Arial","sans-serif"'>\</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>Metal-Over-Capacitive
+  Daughter Board (AC183026)</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>02-02091-R3 CVD Eval Board</span><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>\</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>2-Ch Slider</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>02-02091-R3 CVD Eval Board</span><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>\4</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>-Ch Slider</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>02-02091-R3 CVD Eval Board</span><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>\</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>8 Buttons</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>02-02091-R3 CVD Eval Board</span><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>\</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>12-Key Matrix</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=top style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>02-02091-R3 CVD Eval Board</span><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>\</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>Metal-Over-Capacitive
+  Daughter Board (AC183026)</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>02-02091-RA CSM Eval Board</span><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>\</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>2-Ch Slider</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>02-02091-RA CSM Eval Board</span><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>\4</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>-Ch Slider</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>02-02091-RA CSM Eval Board</span><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>\</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>8 Buttons</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>02-02091-RA CSM Eval Board</span><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>\</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>12-Key Matrix</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=top style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>02-02091-RA CSM Eval Board</span><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>\</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>Metal-Over-Capacitive
+  Daughter Board (AC183026)</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>233-04-1008 Rev F CSM Eval Board</span><span style='font-size:
+  10.0pt;font-family:"Arial","sans-serif"'>\</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>2-Ch Slider</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>233-04-1008 Rev F CSM Eval Board</span><span style='font-size:
+  10.0pt;font-family:"Arial","sans-serif"'>\4</span><span style='font-size:
+  9.0pt;font-family:"Verdana","sans-serif";color:black'>-Ch Slider</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>233-04-1008 Rev F CSM Eval Board</span><span style='font-size:
+  10.0pt;font-family:"Arial","sans-serif"'>\</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>8 Buttons</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>233-04-1008 Rev F CSM Eval Board</span><span style='font-size:
+  10.0pt;font-family:"Arial","sans-serif"'>\</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>12-Key Matrix</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\</span><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  color:black'>233-04-1008 Rev F CSM Eval Board</span><span style='font-size:
+  10.0pt;font-family:"Arial","sans-serif"'>\</span><span style='font-size:9.0pt;
+  font-family:"Verdana","sans-serif";color:black'>Metal-Over-Capacitive
+  Daughter Board (AC183026)</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\PIC12F615 - 1 sensor with UART</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\PIC12F615 - 2 sensors with Toggle</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC12F
+  PIC16F CVD Demos\PIC16F1527 - 30 sensors</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC18F
+  PIC24F PIC24H dsPIC Demos\2Ch Slider Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC18F
+  PIC24F PIC24H dsPIC Demos\4Ch Slider Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC18F
+  PIC24F PIC24H dsPIC Demos\Basic Button Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC18F
+  PIC24F PIC24H dsPIC Demos\Button Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC18F
+  PIC24F PIC24H dsPIC Demos\Combo Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC18F
+  PIC24F PIC24H dsPIC Demos\CVD Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC18F
+  PIC24F PIC24H dsPIC Demos\DA210 Graphics Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC18F
+  PIC24F PIC24H dsPIC Demos\Gesture Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC18F
+  PIC24F PIC24H dsPIC Demos\Low Power Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC18F
+  PIC24F PIC24H dsPIC Demos\Matrix Button Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC18F
+  PIC24F PIC24H dsPIC Demos\Proximity Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC18F
+  PIC24F PIC24H dsPIC Demos\Sensor Optimization Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC18F
+  PIC24F PIC24H dsPIC Demos\USB Logger Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC18F
+  PIC24F PIC24H dsPIC Demos\User Configurable Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC32MX_Demos\mTouchCap_2Ch_SliderDemo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC32MX_Demos\mTouchCap_4Ch_SliderDemo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC32MX_Demos\mTouchCap_DirectKeyDemo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>mTouchCapDemos\PIC32MX_Demos\mTouchCap_MatrixKeyDemo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>PIC18F
+  Starter Kit 1</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>PIC24F
+  Starter Kit 1</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>PIC24H
+  Starter Kit 1\External_Sensor_Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>PIC24H
+  Starter Kit 1\MPLAB_Starter_Kit_for_PIC24H_Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Smart
+  Card Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>TCPIP\Demo
+  App</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>TCPIP\Demo
+  App MDD</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>TCPIP\Energy
+  Monitoring</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>TCPIP\Internet
+  Bootloader</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>TCPIP\WebVend</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>TCPIP\WiFi
+  Console</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>TCPIP\WiFi
+  EZConfig</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>TCPIP\WiFiGDemo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - Audio - Microphone</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - Audio - MIDI</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - Audio - Speaker</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - Bootloaders</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - CCID - Smart Card Reader</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - CDC - Basic Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - CDC - Serial Emulator</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - Composite - HID + MSD</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - Composite - MSD + CDC</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - Composite - WinUSB + MSD</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - HID - Custom Demos</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - HID - Digitizers</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - HID - Joystick</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - HID - Keyboard</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - HID - Mouse</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - HID - Uninterruptible Power Supply</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - LibUSB - Generic Driver Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - Mass Storage - Internal Flash</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - Mass Storage - SD Card data logger</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - Mass Storage - SD Card reader</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - MCHPUSB - Generic Driver Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - PHDC - Blood Pressure Monitor</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - PHDC - Glucose Meter</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - PHDC - Pulse Oximeter</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - PHDC - Thermometer</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - PHDC - Weighing Scale</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - WinUSB - Generic Driver Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Device
+  - WinUSB - High Bandwidth Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Dual
+  Role - MSD host + HID device</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Host
+  - Audio - MIDI</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Host
+  - Bootloaders</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Host
+  - CDC - Serial Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Host
+  - Charger - Simple Charger</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Host
+  - Composite - HID + MSD</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Host
+  - Composite - MSD + CDC</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Host
+  - HID - Keyboard</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Host
+  - HID - Mouse</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Host
+  - Mass Storage - Simple Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Host
+  - Mass Storage - Thumb Drive Data Logger</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Host
+  - MCHPUSB - Generic Driver Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Host
+  - Printer - Print Screen Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Host
+  - Printer - Simple Full Sheet Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Host
+  - Printer - Simple POS Demo</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\Low
+  Pin Count Development Board</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=834 nowrap valign=bottom style='width:625.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>USB\OTG
+  - MCHPUSB - Generic Driver Demo</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Trademarks:</b></p>
+
+<p class=MsoNormal><i><span style='font-size:8.0pt;color:black'>The Microchip name
+and logo, the Microchip logo, MPLAB, and PIC are registered trademarks of
+Microchip Technology Incorporated in the U.S.A. and other countries.</span></i></p>
+
+<p class=MsoNormal><i><span style='font-size:8.0pt;color:black'>Android is a
+trademark of Google Inc&nbsp;</span></i></p>
+
+</div>
+
+</body>
+
+</html>

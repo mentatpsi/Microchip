@@ -1,0 +1,43 @@
+~inc:header.inc~
+<div id="content">
+
+<h1>Reboot In Progress...</h1>
+
+<p>Your settings were successfully saved, and the board is now rebooting 
+to configure itself with the new settings.</p>
+
+<p align="center"><b>Your board is now located at: 
+<a href="http://~rebootaddr~/">http://~rebootaddr~/</a></b></p>
+
+<h6></h6>
+
+<h3>Reconnection Instructions</h3>
+
+<ol>
+<li style="margin-bottom:10px"><b>Did you change the hostname, IP or MAC address?</b><br />
+	It is necessary to clear the address caches in your web browser and OS.
+	From the command prompt in Windows, enter "nbtstat&nbsp;-R" to clear the hostname cache, 
+	close your current web browser, open a new web browser, and then try to access the web address above.</li>
+<li style="margin-bottom:10px"><b>Did you try the IP address?</b><br />
+	Try accessing the board directly at the IP address shown on the LCD screen.
+	(ex: enter "http://192.168.5.23/" into your browser).  If this fails, then 
+	the IP address you set is not reachable.  Try the step below.</li>
+<li><b>Still not working?</b><br />
+	You can restore compile-time settings by clearing the board's EEPROM. Hold
+	BTN0 (right most button on PICDEM.net<sup>TM</sup> 2 and Explorer 16) and press MCLR. 
+	Continue holding BTN0 until the LEDs flash.  Release BTN0 and press MCLR again. 
+	This procedure restores the configuration settings in <code>TCPIPConfig.h</code>. 
+	You'll be able to access the board as you did when first connecting.  See the 
+	Microchip TCP/IP Stack Help distributed with the stack for instructions.
+	(If you are using an MPLAB ICD 3 or MPLAB REAL ICE<sup>TM</sup> in debug mode, 
+	MCLR will not work and you'll need to reset the board via the MPLAB IDE.)</li>
+</ol>
+</div>
+
+<script language="javascript">
+<!--
+function rebootDummy(x){}
+setTimeout("newAJAXCommand('/protect/reboot.cgi',rebootDummy,false);",500);
+//-->
+</script>
+~inc:footer.inc~

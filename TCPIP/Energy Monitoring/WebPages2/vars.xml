@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+ <response>
+ 	<cPower>~cumulativePower~</cPower>
+ 	<iPower>~instPower~</iPower>
+ 	<aPower>~apparentPower~</aPower>
+ 	<rPower>~reactivePower~</rPower>
+ 	<volts>~volts~</volts>
+ 	<amps>~amps~</amps>
+ </response>

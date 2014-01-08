@@ -1,0 +1,86 @@
+[HEADER]
+magic_cookie={66E99B07-E706-4689-9E80-9B2582898A13}
+file_version=1.0
+device=PIC32MX460F512L
+[PATH_INFO]
+BuildDirPolicy=BuildDirIsSourceDir
+dir_src=
+dir_bin=
+dir_tmp=..\..\MDD File System-SD Card\Object - MDD File System-SD Card
+dir_sin=
+dir_inc=.;.\PIC32;..\Include;..\Include\MDD File System;..\..\Microchip\Include;..\..\Microchip\Include\MDD File System;..\..\MDD File System-SD Card;..\..\MDD File System-SD Card\PIC32
+dir_lib=
+dir_lkr=
+[CAT_FILTERS]
+filter_src=*.s;*.c
+filter_inc=*.h;*.inc
+filter_obj=*.o
+filter_lib=*.a
+filter_lkr=*.ld
+[CAT_SUBFOLDERS]
+subfolder_src=PIC32
+subfolder_inc=PIC32
+subfolder_obj=
+subfolder_lib=
+subfolder_lkr=
+[FILE_SUBFOLDERS]
+file_000=.
+file_001=.
+file_002=PIC32
+file_003=.
+file_004=.
+file_005=.
+file_006=.
+file_007=.
+file_008=.
+file_009=PIC32
+[GENERATED_FILES]
+file_000=no
+file_001=no
+file_002=no
+file_003=no
+file_004=no
+file_005=no
+file_006=no
+file_007=no
+file_008=no
+file_009=no
+[OTHER_FILES]
+file_000=no
+file_001=no
+file_002=no
+file_003=no
+file_004=no
+file_005=no
+file_006=no
+file_007=no
+file_008=no
+file_009=no
+[FILE_INFO]
+file_000=..\Microchip\MDD File System\SD-SPI.c
+file_001=..\Microchip\MDD File System\FSIO.c
+file_002=PIC32\Demonstration3.c
+file_003=..\Microchip\Include\GenericTypeDefs.h
+file_004=..\Microchip\Include\MDD File System\SD-SPI.h
+file_005=..\Microchip\Include\MDD File System\FSDefs.h
+file_006=..\Microchip\Include\MDD File System\FSIO.h
+file_007=..\Microchip\Include\Compiler.h
+file_008=HardwareProfile.h
+file_009=PIC32\FSconfig.h
+[SUITE_INFO]
+suite_guid={62D235D8-2DB2-49CD-AF24-5489A6015337}
+suite_state=
+[TOOL_SETTINGS]
+TS{6F324298-6323-4781-8C43-43FA5E6F3646}=-gdwarf-2
+TS{1F324EFA-C0BA-4A8F-A85A-B21644939CAD}=-g
+TS{29D3B6CC-DCAB-4659-8011-FFF75BB7F8D7}=-o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)" -Map="$(BINDIR_)$(TARGETBASE).map"
+TS{AD4C3FBD-B6BB-4F50-AB4E-35BF132D4D60}=
+[INSTRUMENTED_TRACE]
+enable=0
+transport=0
+format=0
+[CUSTOM_BUILD]
+Pre-Build=
+Pre-BuildEnabled=1
+Post-Build=
+Post-BuildEnabled=1

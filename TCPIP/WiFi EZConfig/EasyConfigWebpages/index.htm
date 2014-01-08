@@ -1,0 +1,65 @@
+~inc:header.inc~
+<div id="content">
+
+<div id="status">
+	<div id="loading" style="display:none">Error:<br />Connection to demo board was lost.</div>
+	<div id="display">
+		<span style="float:right;font-size:9px;font-weight:normal;padding-top:8px;text-indent:0px">(click to toggle)</span>
+		<p>LEDs:<br /><span class="leds">
+		<a id="led7" onclick="newAJAXCommand('leds.cgi?led=7');">&bull;</a>
+		<a id="led6" onclick="newAJAXCommand('leds.cgi?led=6');">&bull;</a>
+		<a id="led5" onclick="newAJAXCommand('leds.cgi?led=5');">&bull;</a>
+		<a id="led4" onclick="newAJAXCommand('leds.cgi?led=4');">&bull;</a>
+		<a id="led3" onclick="newAJAXCommand('leds.cgi?led=3');">&bull;</a>
+		<a id="led2" onclick="newAJAXCommand('leds.cgi?led=2');">&bull;</a>
+		<a id="led1" onclick="newAJAXCommand('leds.cgi?led=1');">&bull;</a>
+		<a id="led0">&bull;</a>
+		</span></p>
+		<p>Buttons:<br />
+		<span id="btn3">?</span> &nbsp;
+		<span id="btn2">?</span> &nbsp;
+		<span id="btn1">?</span> &nbsp;
+		<span id="btn0">?</span></p>
+		<p>Potentiometer: <span id="pot0" style="font-weight:normal">?</span></p>
+	</div>
+</div>
+
+<h2>Browser-based Device Configuration</h2>
+
+<p>This demonstration application showcases how to configure and program an embedded
+Wi-Fi device that does not have a natural keyboard and screen.  By using the internal webserver
+that accompanies the Microchip TCP/IP stack, end-users can use their browser as a conduit
+for programming the device with the correct network parameters.</p>
+
+<p></p>For a wireless network, an end-user would need to have knowledge of at least the following information:</p>
+<ul>
+<li>SSID name</li>
+<li>Security type (WEP, WPA, WPA2)</li>
+<li>Security key</li>
+</ul>
+
+<p>As pioneered by most modern operating systems, EasyConfig also has the ability to scan for 
+all networks in the vicinity of the device, and display them to the user.  The user will
+also be given additional information about the network such as whether security is enabled
+or how far away the other network is.  Users are also given the opportunity to enter all the
+network information manually, which is required when trying to connect to a network with a 
+hidden SSID.</p>
+
+<p>There are two menu items on the left hand side.  The first is the current page you see,
+which shows similar information to the standard TCP/IP Microchip Demo App (status of the LEDs,
+buttons, and potentiometer).</p>
+
+<p>The second menu item (Configure Network), will display a page that will allow you to scan
+for nearby networks, see them, and then connect to another network.  After the attempt is made
+to connect to the new network, you will have to transition your wireless PC,laptop, or handheld
+wireless device to this new network in order to see that the device has indeed changed networks.</p>  
+
+</div>
+
+<script type="text/javascript">
+<!--
+setTimeout("newAJAXCommand('status.xml', updateStatus, true)",500);
+//-->
+</script>
+
+~inc:footer.inc~

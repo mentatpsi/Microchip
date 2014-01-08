@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Graphics_Resource_Converter>
+<Configuration>
+<major>3</major>
+<minor>0</minor>
+<compiler>C32</compiler>
+<format>CArray</format>
+<graphics_module>false</graphics_module>
+</Configuration>
+<Bitmaps>
+<Bitmap_Resource>
+<label>redLeftArrow</label>
+<path>redLeftArrow.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>redRightArrow</label>
+<path>redRightArrow.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+</Bitmaps>
+</Graphics_Resource_Converter>

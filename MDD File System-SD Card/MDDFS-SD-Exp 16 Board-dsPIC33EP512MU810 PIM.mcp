@@ -1,0 +1,87 @@
+[HEADER]
+magic_cookie={66E99B07-E706-4689-9E80-9B2582898A13}
+file_version=1.0
+device=dsPIC33EP512MU810
+[PATH_INFO]
+BuildDirPolicy=BuildDirIsSourceDir
+dir_src=
+dir_bin=
+dir_tmp=..\..\MDD File System-SD Card\Object - MDD File System-SD Card
+dir_sin=
+dir_inc=.\dsPIC33E_PIC24E;..\Include;..\Include\MDD File System;..\..\Microchip\Include;..\..\Microchip\Include\MDD File System;..\..\Microchip\Include\MDD File System;..\..\MDD File System-SD Card;..\..\MDD File System-SD Card\dsPIC33E_PIC24E
+dir_lib=
+dir_lkr=
+[CAT_FILTERS]
+filter_src=*.s;*.c
+filter_inc=*.h;*.inc
+filter_obj=*.o
+filter_lib=*.a
+filter_lkr=*.gld
+[CAT_SUBFOLDERS]
+subfolder_src=dsPIC33E_PIC24E
+subfolder_inc=dsPIC33E_PIC24E
+subfolder_obj=
+subfolder_lib=
+subfolder_lkr=
+[FILE_SUBFOLDERS]
+file_000=.
+file_001=.
+file_002=dsPIC33E_PIC24E
+file_003=.
+file_004=.
+file_005=.
+file_006=.
+file_007=.
+file_008=dsPIC33E_PIC24E
+file_009=.
+[GENERATED_FILES]
+file_000=no
+file_001=no
+file_002=no
+file_003=no
+file_004=no
+file_005=no
+file_006=no
+file_007=no
+file_008=no
+file_009=no
+[OTHER_FILES]
+file_000=no
+file_001=no
+file_002=no
+file_003=no
+file_004=no
+file_005=no
+file_006=no
+file_007=no
+file_008=no
+file_009=no
+[FILE_INFO]
+file_000=..\Microchip\MDD File System\SD-SPI.c
+file_001=..\Microchip\MDD File System\FSIO.c
+file_002=dsPIC33E_PIC24E\Demonstration1.c
+file_003=..\Microchip\Include\GenericTypeDefs.h
+file_004=..\Microchip\Include\MDD File System\SD-SPI.h
+file_005=..\Microchip\Include\MDD File System\FSDefs.h
+file_006=..\Microchip\Include\MDD File System\FSIO.h
+file_007=..\Microchip\Include\Compiler.h
+file_008=dsPIC33E_PIC24E\FSconfig.h
+file_009=HardwareProfile.h
+[SUITE_INFO]
+suite_guid={9BCCB495-CD65-480A-BA76-63D8E78B117F}
+suite_state=
+[TOOL_SETTINGS]
+TS{8493B2ED-D539-4951-86C9-24D5331F0393}=-g
+TS{F9CE474D-6A6C-401D-A11E-BEE01B244D79}=-g -Wall -fno-ivopts -mlarge-code -mlarge-data
+TS{F9CE474D-6A6C-401D-A11E-BEE01B244D79}_alt=yes
+TS{21A8AA9B-E75C-40B6-B3AE-9CBC16FF2EF9}=-o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)" -Map="$(BINDIR_)$(TARGETBASE).map" --report-mem
+TS{45B3B6E0-6DAF-4E40-8D20-CFB1B620134D}=
+[INSTRUMENTED_TRACE]
+enable=0
+transport=0
+format=0
+[CUSTOM_BUILD]
+Pre-Build=
+Pre-BuildEnabled=1
+Post-Build=
+Post-BuildEnabled=1

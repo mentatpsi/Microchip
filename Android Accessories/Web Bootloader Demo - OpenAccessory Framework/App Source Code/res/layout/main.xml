@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Attached device information:"
+    android:id="@+id/title"
+    android:background="#FF555555"
+    />
+        
+	<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="No device attached"
+    android:id="@+id/model"
+    />
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text=""
+    android:id="@+id/description"
+    android:visibility="gone"
+    />		
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text=""
+    android:id="@+id/version"
+    android:visibility="gone"
+    />	
+    
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="New Version Available:"
+    android:id="@+id/new_title"
+    android:background="#FF555555"
+    android:visibility="gone"
+    />
+    
+    <Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Upgrade to new version"
+    android:onClick="onClickUpgrade"
+    android:visibility="gone"
+    android:id="@+id/update_button"
+    />
+    
+</LinearLayout>

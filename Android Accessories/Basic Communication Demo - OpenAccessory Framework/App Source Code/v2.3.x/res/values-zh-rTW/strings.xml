@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">基础附件演示</string>
+    
+    <string name="led_header">LED控制</string>
+    <string name="button_header">机械按键状态</string>
+    <string name="pot_header">电位器</string>
+    
+    <string name="button_1">按键1:</string>
+    <string name="button_2">按键2:</string>
+    <string name="button_3">按键3:</string>
+    <string name="button_4">按键4:</string>
+    
+    <string name="not_pressed">未按下</string>
+    <string name="pressed">按下</string>
+    
+    <string name="not_connected">裝置未連接</string>
+    <string name="connected">裝置已連接</string>
+    
+    <string name="error_default">出现未知错误。请联络androidsupport@microchip.com以便我们发现并解决该问题。</string>
+    <string name="error_missing_open_accessory_framework">您使用的Android操作系统版本缺少此演示样例所必需的com.android.future.usb库。您使用的操作系统版本应包含这些库。请联络androidsupport@microchip.com以便我们提供对此设备的支持。 </string>
+</resources>

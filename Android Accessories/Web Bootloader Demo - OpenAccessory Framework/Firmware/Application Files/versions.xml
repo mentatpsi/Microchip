@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<devices>
+    <device>
+        <model>Blinky Lights Demo</model>
+        <description>Accessory Development Starter Kit (PIC24F) for Android(tm)</description>
+        <versions>
+            <version>
+                <major>9</major>
+                <minor>9</minor>
+                <dot>9</dot>
+                <url>http://ww1.microchip.com/downloads/en/SoftwareLibrary/adk_start_kit_v9_9_9.mbn</url>
+            </version>
+        </versions>
+    </device>
+    <device>
+        <model>Blinky Lights Demo</model>
+        <description>PIC24F Starter Kit 1</description>
+        <versions>
+            <version>
+                <major>9</major>
+                <minor>9</minor>
+                <dot>9</dot>
+                <url>http://ww1.microchip.com/downloads/en/SoftwareLibrary/24_start_kit_v9_9_9.mbn</url>
+            </version>
+        </versions>
+    </device>
+    <device>
+        <model>Blinky Lights Demo</model>
+        <description>PIC24FJ64GB004 PIM</description>
+        <versions>
+            <version>
+                <major>9</major>
+                <minor>9</minor>
+                <dot>9</dot>
+                <url>http://ww1.microchip.com/downloads/en/SoftwareLibrary/gb0_pim_v9_9_9.mbn</url>
+            </version>
+        </versions>
+    </device>
+    <device>
+        <model>Blinky Lights Demo</model>
+        <description>PIC24FJ256GB110 PIM</description>
+        <versions>
+            <version>
+                <major>9</major>
+                <minor>9</minor>
+                <dot>9</dot>
+                <url>http://ww1.microchip.com/downloads/en/SoftwareLibrary/gb1_pim_v9_9_9.mbn</url>
+            </version>
+        </versions>
+    </device>
+    <device>
+        <model>Blinky Lights Demo</model>
+        <description>PIC24FJ256GB210 PIM</description>
+        <versions>
+            <version>
+                <major>9</major>
+                <minor>9</minor>
+                <dot>9</dot>
+                <url>http://ww1.microchip.com/downloads/en/SoftwareLibrary/gb2_pim_v9_9_9.mbn</url>
+            </version>
+        </versions>
+    </device>
+    <device>
+        <model>Blinky Lights Demo</model>
+        <description>PIC24FJ64GB502 Microstick</description>
+        <versions>
+            <version>
+                <major>9</major>
+                <minor>9</minor>
+                <dot>9</dot>
+                <url>http://ww1.microchip.com/downloads/en/SoftwareLibrary/gb5_microstick_v9_9_9.mbn</url>
+            </version>
+        </versions>
+    </device>
+    <device>
+        <model>Blinky Lights Demo</model>
+        <description>PIC24FJ256DA210 Development Board</description>
+        <versions>
+            <version>
+                <major>9</major>
+                <minor>9</minor>
+                <dot>9</dot>
+                <url>http://ww1.microchip.com/downloads/en/SoftwareLibrary/da2_pim_v9_9_9.mbn</url>
+            </version>
+        </versions>
+    </device>
+    <device>
+        <model>Blinky Lights Demo</model>
+        <description>PIC32 Ethernet Starter Kit</description>
+        <versions>
+            <version>
+                <major>9</major>
+                <minor>9</minor>
+                <dot>9</dot>
+                <url>http://ww1.microchip.com/downloads/en/SoftwareLibrary/32_eth_start_kit_v9_9_9.mbn</url>
+            </version>
+        </versions>
+    </device>
+    <device>
+        <model>Blinky Lights Demo</model>
+        <description>PIC32 USB Starter Kit</description>
+        <versions>
+            <version>
+                <major>9</major>
+                <minor>9</minor>
+                <dot>9</dot>
+                <url>http://ww1.microchip.com/downloads/en/SoftwareLibrary/32_usb_start_kit_v9_9_9.mbn</url>
+            </version>
+        </versions>
+    </device>
+    <device>
+        <model>Blinky Lights Demo</model>
+        <description>PIC32 USB Starter Kit II</description>
+        <versions>
+            <version>
+                <major>9</major>
+                <minor>9</minor>
+                <dot>9</dot>
+                <url>http://ww1.microchip.com/downloads/en/SoftwareLibrary/32_usb_start_kit_II_v9_9_9.mbn</url>
+            </version>
+        </versions>
+    </device>
+    <device>
+        <model>Blinky Lights Demo</model>
+        <description>PIC32MX460F512L PIM</description>
+        <versions>
+            <version>
+                <major>9</major>
+                <minor>9</minor>
+                <dot>9</dot>
+                <url>http://ww1.microchip.com/downloads/en/SoftwareLibrary/MX460_PIM_v9_9_9.mbn</url>
+            </version>
+        </versions>
+    </device>
+    <device>
+        <model>Blinky Lights Demo</model>
+        <description>PIC32MX795F512L PIM</description>
+        <versions>
+            <version>
+                <major>9</major>
+                <minor>9</minor>
+                <dot>9</dot>
+                <url>http://ww1.microchip.com/downloads/en/SoftwareLibrary/MX795_PIM_v9_9_9.mbn</url>
+            </version>
+        </versions>
+    </device>
+</devices>

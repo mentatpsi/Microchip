@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+ <response>
+  	<scan>~scan~</scan>
+	<ver>~fwver~</ver>
+	<count>~bssCount~</count>
+	<ssid>~ssid~</ssid>
+	
+	<bss>
+		<valid>~valid~</valid>
+		<name>~name~</name>
+		<privacy>~privacy~</privacy>
+		<wlan>~wlan~</wlan>
+		<strength>~strength~</strength>
+	</bss>
+
+	<led0>~led(0)~</led0>
+	<led1>~led(1)~</led1>
+	<led2>~led(2)~</led2>
+	<btn0>~btn(0)~</btn0>
+ </response>

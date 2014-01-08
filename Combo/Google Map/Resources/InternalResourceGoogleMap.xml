@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Graphics_Resource_Converter>
+<Configuration>
+<major>3</major>
+<minor>11</minor>
+<compiler>C30</compiler>
+<format>CArray</format>
+<graphics_module>false</graphics_module>
+<graphics_model>16 bpp</graphics_model>
+</Configuration>
+<Font_Files>
+<Font_File_Resource>
+<label>GOLSmallFont</label>
+<path>../../../Microchip/Graphics/Fonts/gentium/Gentium.ttf</path>
+<name>Gentium</name>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<comment_file>../../../Microchip/Graphics/Fonts/gentium/Gentium_OFL.txt</comment_file>
+<size>14</size>
+<height>17</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>126</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+</Font_Files>
+</Graphics_Resource_Converter>

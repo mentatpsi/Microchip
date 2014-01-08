@@ -1,0 +1,113 @@
+~inc:header.inc~
+<div id="content">
+
+<div id="status">
+	<div id="loading" style="display:none">Error:<br />Connection to demo board was lost.</div>
+	<div id="display">
+		<span style="float:right;font-size:9px;font-weight:normal;padding-top:8px;text-indent:0px">(click to toggle)</span>
+		<p>LEDs:<br /><span class="leds">
+		<a id="led7" onclick="newAJAXCommand('leds.cgi?led=7');">&bull;</a>
+		<a id="led6" onclick="newAJAXCommand('leds.cgi?led=6');">&bull;</a>
+		<a id="led5" onclick="newAJAXCommand('leds.cgi?led=5');">&bull;</a>
+		<a id="led4" onclick="newAJAXCommand('leds.cgi?led=4');">&bull;</a>
+		<a id="led3" onclick="newAJAXCommand('leds.cgi?led=3');">&bull;</a>
+		<a id="led2" onclick="newAJAXCommand('leds.cgi?led=2');">&bull;</a>
+		<a id="led1" onclick="newAJAXCommand('leds.cgi?led=1');">&bull;</a>
+		<a id="led0">&bull;</a>
+		</span></p>
+		<p>Buttons:<br />
+		<span id="btn3">?</span> &nbsp;
+		<span id="btn2">?</span> &nbsp;
+		<span id="btn1">?</span> &nbsp;
+		<span id="btn0">?</span></p>
+		<p>Potentiometer: <span id="pot0" style="font-weight:normal">?</span></p>
+	</div>
+</div>
+
+<h1>Welcome!</h1>
+
+<table style="padding-left: 10px;">
+<tr><td><b>Stack Version:</b></td><td>&nbsp;</td><td>~version~</td></tr>
+<tr><td><b>Build Date:</b></td><td>&nbsp;</td><td>~builddate~</td></tr>
+</table>
+
+<p>This site demonstrates the power, flexibility, and scalability of an 8, 16, or 32-bit embedded
+web server.  Everything you see is powered by a Microchip PIC microcontroller
+running the Microchip TCP/IP Stack.</p>
+
+<p>On the right you'll see the current status of the demo board.  For a quick
+example, click the LEDs to toggle the lights on the board.  Press the push
+buttons (except MCLR!) or turn the potentiometer and you'll see the status
+update immediately.  This examples uses AJAX techniques to provide real-time
+feedback.</p>
+
+<p>This site is provided as a tutorial for the various features of the HTTP
+web server, including:</p>
+
+<ul>
+<li><b>Dynamic Variable Substitution</b> - display real-time data</li>
+<li><b>Form Processing</b> - handle input from the client</li>
+<li><b>Authentication</b> - require a user name and password</li>
+<li><b>Cookies</b> - store session state information for richer applications</li>
+<li><b>File Uploads</b> - parse files for configuration settings and more</li>
+</ul>
+
+<p>Several example applications are also provided for updating configuration
+parameters, sending e-mails, and controlling the Dynamic DNS client.  Thanks to
+built-in GZIP compression support, all these tutorials and examples fit in the
+32kB on-board EEPROM!</p>
+
+<p>There is also an ICMP client example running on
+the demo board.  Pressing the rightmost button will cause the board to
+send an ICMP Echo Request (a ping) to a Microchip web server.  If the
+ping was received and echoed successfully, the response time will be
+displayed on the LCD.  An error message will be displayed when attempting
+to use this demo if the board isn't able to connect to the Internet.</p>
+
+<p>For more information on the Microchip TCP/IP Stack, please refer to
+the TCP/IP Stack API installed with the stack.  This manual can be
+launched from your Windows Start menu.</p>
+
+</div>
+
+<script type="text/javascript">
+<!--
+// Parses the xmlResponse from status.xml and updates the status box
+function updateStatus(xmlData) {
+	var mainstat = document.getElementById('display').style.display;
+	var loadstat = document.getElementById('loading').style.display;
+
+	// Check if a timeout occurred
+	if(!xmlData)
+	{
+		mainstat = 'none';
+		loadstat = 'inline';
+		return;
+	}
+
+	// Make sure we're displaying the status display
+	mainstat = 'inline';
+	loadstat = 'none';
+
+	// Loop over all the LEDs
+	for(i = 0; i < 8; i++)
+		document.getElementById('led' + i).style.color = (getXMLValue(xmlData, 'led' + i) == '1') ? '#090' : '#ddd';
+
+	// Loop over all the buttons
+	for(i = 0; i < 4; i++)
+		document.getElementById('btn' + i).innerHTML = (getXMLValue(xmlData, 'btn' + i) == 'up') ? '&Lambda;' : 'V';
+
+	// Update the POT value
+	document.getElementById('pot0').innerHTML = getXMLValue(xmlData, 'pot0');
+}
+setTimeout("newAJAXCommand('status.xml', updateStatus, true)",500);
+//-->
+</script>
+
+<script type="text/javascript">
+<!--
+document.getElementById('hello').innerHTML = "~hellomsg~";
+//-->
+</script>
+
+~inc:footer.inc~

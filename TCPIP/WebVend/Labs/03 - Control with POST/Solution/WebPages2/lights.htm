@@ -1,0 +1,35 @@
+~inc:header.inc~
+<p align="center" style="margin-top: 0">
+<a href="index.htm">Status</a> &nbsp;|&nbsp;
+<b>Lights</b> &nbsp;|&nbsp;
+<a href="products.htm">Products</a>
+</p>
+
+<div id="location">Machine ~hostname~ :: ~machineDesc~</div>
+
+<form method="get" action="lights.htm">
+
+<style>
+input{padding:0;margin-left:1.5em;border:0}
+input.btn {border:1px solid #000;padding-left:10px;padding-right:10px;}
+</style>
+
+<fieldset>
+<legend><b>Control Lights</b></legend>
+
+<p align="center"><b>Lights:</b> 
+
+<!-- These two fields create the On/Off radio selectors -->
+<input type="radio" name="lights" value="on" ~lights_chk(1)~ /> On
+<input type="radio" name="lights" value="off" ~lights_chk(0)~ /> Off
+
+<!-- This is the form submission button -->
+<input type="submit" class="btn" value="Set"/>
+</p>
+
+</fieldset>
+</form>
+
+<span id="version">~version~</span>
+<span id="builddate">~builddate~</span>
+~inc:footer.inc~

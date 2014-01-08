@@ -1,0 +1,46 @@
+// File: 18f86j65i_e.lkr
+// Internet Bootloader linker script for the PIC18F86J65 processor
+
+LIBPATH .
+
+//FILES c018i_e.o
+FILES clib_e.lib
+FILES p18f86j65_e.lib
+
+//CODEPAGE   NAME=vectors    START=0x0            END=0x29           PROTECTED
+//CODEPAGE   NAME=page       START=0x2A           END=0x17FF7
+CODEPAGE   NAME=config     START=0x17FF8        END=0x17FFD        PROTECTED
+CODEPAGE   NAME=bootjmprom START=0x15BC0		END=0x15BFF        PROTECTED
+CODEPAGE   NAME=bootldrrom START=0x15C00        END=0x17BFF
+CODEPAGE   NAME=devid      START=0x3FFFFE       END=0x3FFFFF       PROTECTED
+
+DATABANK   NAME=gpre       START=0x0            END=0x5F
+DATABANK   NAME=bigmem       START=0x60           END=0x2FF			PROTECTED
+//DATABANK   NAME=gpr0       START=0x60           END=0xFF
+//DATABANK   NAME=gpr1       START=0x100          END=0x1FF
+//DATABANK   NAME=gpr2       START=0x200          END=0x2FF
+DATABANK   NAME=kilomem      START=0x300          END=0x6FF			PROTECTED
+//DATABANK   NAME=gpr3       START=0x300          END=0x3FF
+//DATABANK   NAME=gpr4       START=0x400          END=0x4FF
+//DATABANK   NAME=gpr5       START=0x500          END=0x5FF
+//DATABANK   NAME=gpr6       START=0x600          END=0x6FF
+DATABANK   NAME=gpr7       START=0x700          END=0x7FF
+DATABANK   NAME=gpr8       START=0x800          END=0x8FF
+DATABANK   NAME=gpr9       START=0x900          END=0x9FF
+DATABANK   NAME=gpr10      START=0xA00          END=0xAFF
+DATABANK   NAME=gpr11      START=0xB00          END=0xBFF
+DATABANK   NAME=gpr12      START=0xC00          END=0xCFF
+DATABANK   NAME=gpr13      START=0xD00          END=0xDF3
+DATABANK   NAME=dbgspr     START=0xDF4          END=0xDFF          PROTECTED
+DATABANK   NAME=gpr14      START=0xE00          END=0xE7F
+DATABANK   NAME=sfr14      START=0xE80          END=0xEFF          PROTECTED
+DATABANK   NAME=gpr15      START=0xF00          END=0xF5F
+ACCESSBANK NAME=accesssfr  START=0xF60          END=0xFFF          PROTECTED
+
+SECTION    NAME=CONFIG     ROM=config
+SECTION    NAME=BOOTMEM    RAM=bigmem
+SECTION    NAME=SAVEMEM    RAM=kilomem
+SECTION    NAME=BOOTROM    ROM=bootldrrom
+SECTION    NAME=BOOTJUMPROM ROM=bootjmprom
+
+STACK SIZE=0x100 RAM=gpr12

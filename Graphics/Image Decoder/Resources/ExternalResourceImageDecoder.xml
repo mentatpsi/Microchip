@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Graphics_Resource_Converter>
+<Configuration>
+<major>3</major>
+<minor>7</minor>
+<compiler>C30</compiler>
+<format>HEX</format>
+<graphics_module>false</graphics_module>
+<graphics_model>16 bpp</graphics_model>
+</Configuration>
+<JPEGs>
+<JPEG_Resource>
+<label>Scene01</label>
+<path>Scene01.jpg</path>
+</JPEG_Resource>
+<JPEG_Resource>
+<label>Scene02</label>
+<path>Scene02.jpg</path>
+</JPEG_Resource>
+</JPEGs>
+</Graphics_Resource_Converter>

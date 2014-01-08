@@ -1,0 +1,70 @@
+// File: rm18f13k50_g.lkr
+// Linker script for the PIC18F13K50 processor, with some modifications to allow
+// the output .hex file to be programmable with the HID USB bootloader.  This linker
+// file is intended to be used with "application" projects (not the bootloader firmware
+// project itself).
+
+#DEFINE _CODEEND _DEBUGCODESTART - 1
+#DEFINE _CEND _CODEEND + _DEBUGCODELEN
+#DEFINE _DATAEND _DEBUGDATASTART - 1
+#DEFINE _DEND _DATAEND + _DEBUGDATALEN
+
+LIBPATH .
+
+#IFDEF _CRUNTIME
+  #IFDEF _EXTENDEDMODE
+    FILES c018i_e.o
+    FILES clib_e.lib
+    FILES p18f13k50_e.lib
+
+  #ELSE
+    FILES c018i.o
+    FILES clib.lib
+    FILES p18f13k50.lib
+  #FI
+
+#FI
+
+CODEPAGE   NAME=bootloader START=0x0               END=0xFFF          PROTECTED
+CODEPAGE   NAME=bootloadvectors  START=0x1000      END=0x101D	      PROTECTED
+#IFDEF _DEBUGCODESTART
+  CODEPAGE   NAME=page       START=0x101E            END=_CODEEND
+  CODEPAGE   NAME=debug      START=_DEBUGCODESTART   END=_CEND        PROTECTED
+#ELSE
+  CODEPAGE   NAME=page       START=0x101E            END=0x1FFF
+#FI
+
+CODEPAGE   NAME=idlocs     START=0x200000          END=0x200007       PROTECTED
+CODEPAGE   NAME=config     START=0x300000          END=0x30000D       PROTECTED
+CODEPAGE   NAME=devid      START=0x3FFFFE          END=0x3FFFFF       PROTECTED
+CODEPAGE   NAME=eedata     START=0xF00000          END=0xF000FF       PROTECTED
+
+#IFDEF _EXTENDEDMODE
+  DATABANK   NAME=gpre       START=0x0               END=0x5F
+#ELSE
+  ACCESSBANK NAME=accessram  START=0x0               END=0x5F
+#FI
+
+
+#IFDEF _DEBUGDATASTART
+  DATABANK   NAME=gpr0       START=0x60              END=_DATAEND
+  DATABANK   NAME=dbgspr     START=_DEBUGDATASTART   END=_DEND           PROTECTED
+#ELSE //no debug
+  DATABANK   NAME=gpr0       START=0x60              END=0xFF
+#FI
+
+DATABANK   NAME=usb2       START=0x200             END=0x2FF
+DATABANK   NAME=sfr15      START=0xF53             END=0xF5F          PROTECTED
+ACCESSBANK NAME=accesssfr  START=0xF60             END=0xFFF          PROTECTED
+
+#IFDEF _CRUNTIME
+  SECTION    NAME=CONFIG     ROM=config
+  #IFDEF _DEBUGDATASTART
+    STACK SIZE=0x50 RAM=gpr0
+  #ELSE
+    STACK SIZE=0x50 RAM=gpr0
+  #FI
+#FI
+
+SECTION    NAME=usbram2     RAM=usb2
+SECTION    NAME=USB_VARS   RAM=usb2

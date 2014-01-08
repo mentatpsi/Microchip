@@ -1,0 +1,708 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 12 (filtered)">
+<title>Getting Started: Running the “Google Map” demo</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Arial","sans-serif";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:24.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-link:"Document Map Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	background:navy;
+	font-size:10.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.DocumentMapChar
+	{mso-style-name:"Document Map Char";
+	mso-style-link:"Document Map";
+	font-family:"Tahoma","sans-serif";}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-link:"Plain Text";
+	font-family:"Courier New";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+p.element10, li.element10, div.element10
+	{mso-style-name:element10;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.msolistparagraphcxspfirst, li.msolistparagraphcxspfirst, div.msolistparagraphcxspfirst
+	{mso-style-name:msolistparagraphcxspfirst;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 65.95pt 1.0in 65.95pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=MsoPlainText align=center style='text-align:center'><a
+name="_Toc194573682"><b><u><span style='font-size:16.0pt;font-family:"Arial","sans-serif"'>Getting
+Started: Running the “Google Map” demo</span></u></b></a><span
+style='font-size:16.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<h2><span class=MsoHyperlink><a href="#_Toc276381632">Required Hardware<span
+style='color:windowtext;display:none'>. 1</span></a></span></h2>
+
+<h2><span class=MsoHyperlink><a href="#configuring_the_software">Configuring
+the Software</a><span style='display:none'>. 1</span></span></h2>
+
+<h2><span class=MsoHyperlink><a href="#_Toc276381633">Configuring the Hardware<span
+style='color:windowtext;display:none'>. 1</span></a></span></h2>
+
+<h2><a href="Getting%20Started%20-%20Calibrating%20the%20Touch%20Screen.htm">Calibrating
+the Touch Screen</a><a name="_Toc275264589"></a><a name="_Toc276094130"></a></h2>
+
+<h2><a href="Getting%20Started%20-%20Demo%20Compatibility%20Matrix.htm">Demo
+Compatibility Matrix</a><a name="_Toc276093923"></a></h2>
+
+<p class=MsoPlainText><b><i><span style='font-size:14.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></i></b></p>
+
+<p class=MsoPlainText><span class=Heading2Char><span style='font-size:14.0pt'>Running
+the Demo</span></span><span style='font-family:"Arial","sans-serif"'>:</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>This
+is the implementation of the basic Google Maps™</span> <span style='font-family:
+"Arial","sans-serif"'>functionality in a PIC device.&nbsp; The user can enter
+an address or select from a pre-selected addresses to display a static
+map.&nbsp; For details on how static maps are handles refer to: <a
+href="http://code.google.com/apis/maps/documentation/staticmaps/">http://code.google.com/apis/maps/documentation/staticmaps/</a>&nbsp;
+for details.</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>The
+demo has a main menu where the user can zoom in or zoom out (using the +, -
+buttons or the slider) of the displayed map. User can select the view mode and
+enter new or predefined address using the four buttons:</span></p>
+
+<p class=MsoPlainText style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>1.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>MAP – selects the map view </span></p>
+
+<p class=MsoPlainText style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>2.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>SATELLITE – selects the satellite view</span></p>
+
+<p class=MsoPlainText style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>3.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>TERRAIN– selects the terrain view</span></p>
+
+<p class=MsoPlainText style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>4.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>ADDR – enters the address selection
+menu. This menu allows the user to enter a new address using the qwerty keyboard
+on the screen or select from the predefined addresses using the PRESET button.
+As soon as the user hits the DONE button, the map is retrieved and displayed.</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>This demo
+does not implement scrolling on the map since scrolling is not implemented in the
+static map API of Google.</span><b><i><span style='font-size:14.0pt;font-family:
+"Arial","sans-serif"'>&nbsp;</span></i></b></p>
+
+<h2><a name="_Toc276381632">Required Hardware</a></h2>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>The demo
+can only be run on the following hardware platforms:</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=770
+ style='width:577.35pt;border-collapse:collapse'>
+ <tr>
+  <td width=257 style='width:193.1pt;border:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
+  </td>
+  <td width=210 style='width:157.5pt;border-top:solid black 1.0pt;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#365F91;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif";color:white'>Ethernet
+  Board</span></b></p>
+  </td>
+  <td width=150 style='width:112.5pt;border:solid black 1.0pt;border-left:none;
+  background:#365F91;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif";color:white'>3.2&#8243;
+  QVGA Truly TFT Display Board (<a
+  href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=1406&amp;dDocName=en548292">AC164127-4</a>)</span></b></p>
+  </td>
+  <td width=152 style='width:114.25pt;border-top:solid black 1.0pt;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#365F91;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif";color:white'>4.3&#8243;
+  WQVGA Powertip TFT Display Board (<a
+  href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=1406&amp;dDocName=en548293">AC164127-6</a>)</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=257 style='width:193.1pt;border:solid black 1.0pt;border-top:none;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM240312">PIC24FJ256DA210
+  Development Board</a> (DM240312) </span></p>
+  </td>
+  <td width=210 style='width:157.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=AC164123">Ethernet
+  PICtail Plus Daughter Board</a> (AC164123)</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>&nbsp;</span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'><img border=0
+  width=105 height=105 src="images/AC164123.jpg"></span></p>
+  </td>
+  <td width=150 style='width:112.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>(see note 2)</span></p>
+  </td>
+  <td width=152 style='width:114.25pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>(see note 2)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=257 style='width:193.1pt;border:solid black 1.0pt;border-top:none;
+  background:#C6D9F1;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM240312">PIC24FJ256DA210
+  Development Board</a> (DM240312) </span></p>
+  </td>
+  <td width=210 style='width:157.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#C6D9F1;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=AC164132">Fast
+  100Mbps Ethernet PICtail Plus Daughter Board</a> (AC164132)</span></p>
+  <p class=MsoNormal>&nbsp;</p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'><img
+  border=0 width=121 height=96
+  src="images/Fast%20100Mbps%20Ethernet%20PICtail%20Plus%20Daughter%20Board%202.jpg"></span></p>
+  <p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
+  </td>
+  <td width=150 style='width:112.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #C6D9F1;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>(see notes 1, 2)</span></p>
+  </td>
+  <td width=152 style='width:114.25pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#C6D9F1;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>(see notes 1, 2)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=257 style='width:193.1pt;border:solid black 1.0pt;border-top:none;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM320005">Multimedia
+  Expansion Board</a> (DM320005)</span></p>
+  </td>
+  <td width=210 style='width:157.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM320004">PIC32
+  Ethernet Starter Kit</a> (DM320004)</span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>&nbsp;</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'><img border=0
+  width=75 height=61 src="images/PIC32ETHERNETSK.jpg"></span></p>
+  <p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
+  </td>
+  <td width=150 style='width:112.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>(see note 3)</span></p>
+  </td>
+  <td width=152 style='width:114.25pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10007;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=770 colspan=4 valign=top style='width:577.35pt;border-top:none;
+  border-left:solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:
+  solid windowtext 1.0pt;background:white;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Note:</span></p>
+  <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+  8.0pt;font-family:"Verdana","sans-serif"'>1.</span><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'>Set Fast 100Mbps Ethernet PICtail Plus
+  Daughter Board jumpers:</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt;font-family:"Verdana","sans-serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP2 –
+  set to closed (ISENSE)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt;font-family:"Verdana","sans-serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP3,
+  JP7, JP8, JP9, JP10, JP11 – don’t care</span></p>
+  <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+  8.0pt;font-family:"Verdana","sans-serif"'>2.</span><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'>Set PIC24FJ256DA210 Development Board
+  jumpers:</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt;font-family:"Verdana","sans-serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP8 – closed
+  (PMBE1 must be enabled)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP9 – set to 1-2
+  (use Y- signal)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP10 – set to 1-2
+  (use X+ signal)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP11 – set to 2-3 (Enable
+  PMA17 to SRAM, demo requires 512 Kbytes of SRAM)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.0in'><span style='font-size:
+  8.0pt;font-family:"Verdana","sans-serif"'>-</span><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:
+  8.0pt;font-family:"Verdana","sans-serif"'>JP12, JP13, JP14, JP15 – don’t care</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP16 – don’t care
+  (or set to default USART_TX-TX)</span></p>
+  <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>-</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>JP17 – don’t care
+  (or set to default USART_RX-RX)</span></p>
+  <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+  8.0pt;font-family:"Verdana","sans-serif"'>3.</span><span style='font-size:
+  7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'>The Multimedia Expansion Board uses the
+  same display used in the 3.2” QVGA Truly TFT display board (AC164127-4). </span></p>
+  <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+  8.0pt;font-family:"Arial Unicode MS","sans-serif"'>4.</span><span
+  style='font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>The demo is not
+  limited to the selected display boards used here. Other display boards can be
+  used with the appropriate hardware profiles.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoPlainText>&nbsp;<span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=486
+ style='width:364.5pt;margin-left:-.4pt;border-collapse:collapse'>
+ <tr style='height:12.75pt'>
+  <td width=486 nowrap colspan=4 valign=bottom style='width:364.5pt;border:
+  solid windowtext 1.0pt;background:white;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Legend:</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=42 nowrap valign=bottom style='width:31.5pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  </td>
+  <td width=180 nowrap style='width:135.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Supported
+  out of the box</span></p>
+  </td>
+  <td width=42 valign=bottom style='width:31.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in;height:12.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#9746;</span></p>
+  </td>
+  <td width=222 style='width:166.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in;height:12.75pt'>
+  <p class=MsoNormal style='margin-left:.1in'><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>Hardware compatible, will need firmware
+  modification</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=42 nowrap valign=bottom style='width:31.5pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#9745;</span></p>
+  </td>
+  <td width=180 nowrap style='width:135.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Supported,
+  see limitations</span></p>
+  </td>
+  <td width=42 valign=bottom style='width:31.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in;height:12.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10007;</span></p>
+  </td>
+  <td width=222 style='width:166.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in;height:12.75pt'>
+  <p class=MsoNormal style='margin-left:.1in'><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>Not supported, hardware not compatible</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<h2><a name="_Toc276381633"></a><a name="configuring_the_software"></a>Configuring
+the Software </h2>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>The
+demo can be run using the WQVGA or QVGA display when using the </span><a
+href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM240312"><span
+style='font-family:"Arial","sans-serif"'>PIC24FJ256DA210 Development Board</span></a><span
+style='font-family:"Arial","sans-serif"'> (DM240312) or the </span><a
+href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM320005"><span
+style='font-family:"Arial","sans-serif"'>Multimedia Expansion Board</span></a><span
+style='font-family:"Arial","sans-serif"'> (DM320005). This is set in the project
+HardwareProfile.h file by adding the corresponding Graphics hardware profile. </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial","sans-serif"'>For QVGA display
+use:</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in'><span style='font-family:"Arial","sans-serif"'>#include
+&quot;Configs/HWP_DA210_BRD_16PMP_QVGAv1.h”</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial","sans-serif"'>For WQVGA display use:</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in'><span style='font-family:"Arial","sans-serif"'>#include
+&quot;Configs/HWP_DA210_BRD_16PMP_WQVGAv1.h”</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial","sans-serif"'>For the
+Multi-Media Expansion Board use:</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in'><span style='font-family:"Arial","sans-serif"'>#include
+&quot;Configs/HWP_MEB_PIC32_ETH_SK_16PMP.h&quot;  </span></p>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.25in'><span style='font-family:"Arial","sans-serif"'>The
+hardware profile file name refers to the combination of Development Boards that
+are used to run the demo. Refer to the abbreviations summary (</span><a
+href="../../../Help/Abbreviations.htm"><span style='font-family:"Arial","sans-serif"'>link</span></a><span
+style='font-family:"Arial","sans-serif"'>) for details. </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in;text-indent:.5in'><span
+style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<h2>Configuring the Hardware</h2>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>Running
+the demo on different supported boards will require additional settings on the
+hardware. </span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>1.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'><a
+href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM240312">PIC24FJ256DA210
+Development Board</a> (DM240312) + </span><span style='font-family:"Tahoma","sans-serif"'><a
+href="http://www.microchipdirect.com/productsearch.aspx?Keywords=AC164132">Fast
+100Mbps Ethernet PICtail Plus Daughter Board</a> (AC164132) </span></p>
+
+<p class=MsoPlainText style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>a.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Set the jumpers on both boards. Refer
+to the notes section of the table above.</span></p>
+
+<p class=MsoPlainText style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>b.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Connect the PICtail Board (J2) to the
+PICtail Plus (J8) connector of the development board with the pin1 of both
+boards aligned (tip: look for the triangle on both boards and align them). </span></p>
+
+<p class=MsoPlainText style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>c.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Connect the ethernet cable to the RJ45
+ethernet jack of the Fast 100 Mbps Ethernet PICtail Plus Daughter Board.</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in;page-break-after:avoid'>&nbsp;</p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>2.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'><a
+href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM240312">PIC24FJ256DA210
+Development Board</a> (DM240312) + </span><span style='font-family:"Tahoma","sans-serif"'><a
+href="http://www.microchipdirect.com/productsearch.aspx?Keywords=AC164123">Ethernet
+PICtail Plus Daughter Board</a> (AC164123) </span></p>
+
+<p class=MsoPlainText style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>a.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Set the jumpers on the development
+board. Refer to the notes section of the table above.</span></p>
+
+<p class=MsoPlainText style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>b.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Connect the PICtail Board to the
+PICtail Plus (J8) connector of the development board with the pins(1-30) of the
+development board connected to the PICtail Plus board. </span></p>
+
+<p class=MsoPlainText style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>c.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>Connect the ethernet cable to the RJ45
+ethernet jack of the Ethernet PICtail Plus Daughter Board.</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Arial","sans-serif"'>3.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'><a
+href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM320004">PIC32
+Ethernet Starter Kit</a> (DM320004) on the <a
+href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM320005">Multimedia
+Expansion Board</a> (DM320005) – There are no special settings when using this
+boards. Refer to <a
+href="Getting%20Started%20-%20Configuring%20the%20Hardware%20Common.htm">Configuring
+the Hardware</a> (Configuration 3: Multimedia Expansion Board) for details on
+how to set up the hardware. Just connect the Ethernet cable to the RJ45 Ethernet
+jack of the PIC32 Ethernet Starter Kit.</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>Refer to <a
+href="Getting%20Started%20-%20Configuring%20the%20Hardware%20Common.htm">Configuring
+the Hardware</a> (Configuration 1: PIC24FJ256DA210 Development Board) for
+details of the default settings of the board.</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span><a
+name="_Toc276381635"></a><a name="running_the_demo"></a></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal><a name="_Toc195786411"></a><a name="_Toc195786561"></a><a
+name="_Toc195786501"></a><b>Trademarks:</b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif";color:black'>The Microchip name and logo, the
+Microchip logo, MPLAB, and PIC are registered trademarks of Microchip
+Technology Incorporated in the U.S.A. and other countries.</span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif";color:black'>PICDEM and PICTail are trademarks
+of Microchip Technology Incorporated in the U.S.A. and other countries.</span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif";color:black'>SD is a trademark of the SD
+Association in the U.S.A and other countries</span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif";color:black'>Microsoft, Windows, Excel, and
+Windows Vista are either registered trademarks or trademarks of Microsoft
+Corporation in the United States and/or other countries.</span></i></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+~inc:header.inc~
+<div id="content">
+
+<h1>Authentication</h1>
+
+<p>Many applications need to restrict access to authorized users.  The HTTP 
+server supports Basic HTTP Authentication to provide this functionality.</p>
+
+<p>Two functions are involved with authentication, both of which store a
+return value in <code>curHTTP.isAuthorized</code>.  The MSB of this value
+indicates whether or not access is allowed.  The first callback, 
+<code>HTTPNeedsAuth</code>, determines if the requested page requires
+valid credentials to proceed.  Return a value of <code>0x80</code> or greater 
+to allow access unconditionally.  Return <code>0x79</code> or lower to require 
+authorization.</p>
+
+The second, <code>HTTPVerifyAuth</code> determines if the supplied credentials 
+are acceptable for the requested page.  Your application should return a value 
+greater than <code>0x80</code> to permit access, or a value less than 
+<code>0x79</code> to reject the password supplied.</p>
+
+<p>As an example, access this restricted page:</p>
+
+<div class="examplebox">
+<b>User Name:</b> admin &nbsp; &nbsp; &nbsp; <b>Password:</b> microchip<br />
+<a href="/protect">Access Restricted Page</a>
+</div>
+
+</div>
+
+<script type="text/javascript">
+<!--
+document.getElementById('hello').innerHTML = "~hellomsg~";
+-->
+</script>
+~inc:footer.inc~

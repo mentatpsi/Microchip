@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weblink">www.microchip.com/usb</string>
+    
+    <string name="app_name">USB Device Demo</string>
+    <string name="app_title">USB Device Demo</string>
+ 
+    <string name="no_device_attached">Nessun dispositivo collegato</string>
+    <string name="device_attached">Dispositivo collegato</string>
+    <string name="attach_device">Si prega di collegare un dispositivo in grado di eseguire questa demo. Questa dimostrazione è stata sviluppata per funzionare con i seguenti esempi, forniti all\'interno del Microchip Application Libraries USB framework (www.microchip.com/usb):\r\n   LibUSB Demo\r\n   WinUSB Demo\r\n   MCHPUSB Demo\r\n   Custom HID Demo</string>  
+        
+    <string name="toggle_leds_button">Inverti stato LED</string>
+    <string name="toggle_leds_description">Premere il seguente tasto per invertire lo stato dei LED del dispositivo collegato.</string>
+    
+    <string name="button_status_description">Il seguente riquadro indica lo stato del pulsante che si trova sul dispositivo collegato.</string>
+    <string name="button_pressed">Bottone premuto</string>
+    <string name="button_not_pressed">Bottone non premuto</string>
+
+    <string name="pot_status_description">La barra seguente indica la percentuale di rotazione del potenziometro.</string>
+ 
+</resources>

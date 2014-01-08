@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Graphics_Resource_Converter>
+<Configuration>
+<major>3</major>
+<minor>3</minor>
+<compiler>C30</compiler>
+<format>HEX</format>
+<graphics_module>false</graphics_module>
+<graphics_model>16 bpp</graphics_model>
+</Configuration>
+<Bitmaps>
+<Bitmap_Resource>
+<label>House</label>
+<path>House.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+</Bitmaps>
+</Graphics_Resource_Converter>

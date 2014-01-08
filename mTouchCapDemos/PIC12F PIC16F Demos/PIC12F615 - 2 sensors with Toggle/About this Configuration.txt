@@ -1,0 +1,9 @@
+About this configuration:
+
+ -  No communications.
+    
+ -  Number of Sensors   ::  2
+ 
+ -  Sensors             ::  GP0 and GP1
+ 
+ -  Output LEDs         ::  GP2 and GP3

@@ -1,0 +1,58 @@
+~inc:header.inc~
+<div id="content">
+
+<h1>Cookies</h1>
+
+<p>Cookies are small text strings that are stored in the browser.  These strings 
+are set by the server, and returned as parameters for all future requests until 
+the session ends.  They can be used to store session state information, and are 
+valid until the browser is closed.</p>
+
+<div class="examplebox">
+<table align="center">
+<tr><td><b>Name:</b></td><td>~cookiename~</td></tr>
+<tr><td><b>Favorite:</b></td><td>not implemented</td></tr>
+</table>
+</div>
+
+<p>There are numerous uses for cookies.  In this example, the user's name is 
+stored as a cookie.  All future page loads will show this name in the top left 
+corner, as well as in the box above.</p>
+
+<form action="cookies.htm" method="get">
+<div class="examplebox">
+<table align="center">
+<tr><td><b>First Name:</b></td><td><input type="text" name="name" size="20" maxlength="16" /></td></tr>
+<tr><td><b>Favorite:</b></td><td>
+<select name="fav">
+<option value="PIC18">PIC18</option>
+<option value="PIC24">PIC24</option>
+<option value="dsPIC">dsPIC</option>
+<option value="PIC32">PIC32</option>
+</select>
+</td></tr>
+<tr><td></td><td><input type="submit" value="Set Cookies" /></td></tr>
+</table>
+</div>
+</form>
+
+<p>Cookies are set by storing null-terminated name/value pairs in <code>curHTTP.data</code> 
+and indicating how many cookies are to be set in <code>curHTTP.hasArgs</code>.  They 
+can be set in either <code>HTTPExecuteGet</code> or <code>HTTPExecutePost</code>.</p>
+
+<p>Cookies are retrieved in the same manner as GET form arguments.  They are stored 
+in <code>curHTTP.data</code> and can be located using the <code>HTTPGetArg</code> 
+functions.  Since they are stored in the same array as GET arguments, the total 
+length of cookies and variable arguments cannot exceed the 80 byte buffer limit.</p>
+
+<p class="exercise"><b>Exercise:</b> Set a second cookie named <code>fav</code> with the 
+value of the <code>favorite</code> field and have it displayed in the gray box above.</p>
+
+</div>
+
+<script type="text/javascript">
+<!--
+document.getElementById('hello').innerHTML = "~hellomsg~";
+-->
+</script>
+~inc:footer.inc~

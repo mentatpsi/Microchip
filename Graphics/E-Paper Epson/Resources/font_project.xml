@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Graphics_Resource_Converter>
+<Configuration>
+<major>3</major>
+<minor>19</minor>
+<compiler>C30</compiler>
+<format>CArray</format>
+<graphics_module>false</graphics_module>
+<bitmap_padding_type>padding</bitmap_padding_type>
+<graphics_model>16 bpp</graphics_model>
+</Configuration>
+<Font_Files>
+<Font_File_Resource>
+<label>DroidSans_32</label>
+<path>../../../Microchip/Graphics/Fonts/Droid_Sans/DroidSans.ttf</path>
+<name>Droid Sans</name>
+<size>32</size>
+<height>38</height>
+<anti_aliasing>2 bits per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>115</last_character>
+<font_filter>droid_sans_filter.txt</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>DroidSans_22</label>
+<path>../../../Microchip/Graphics/Fonts/Droid_Sans/DroidSans.ttf</path>
+<name>Droid Sans</name>
+<size>22</size>
+<height>27</height>
+<anti_aliasing>2 bits per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>115</last_character>
+<font_filter>droid_sans_filter.txt</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>DroidSans_16</label>
+<path>../../../Microchip/Graphics/Fonts/Droid_Sans/DroidSans.ttf</path>
+<name>Droid Sans</name>
+<size>16</size>
+<height>19</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>115</last_character>
+<font_filter>droid_sans_filter.txt</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>DroidSans_10</label>
+<path>../../../Microchip/Graphics/Fonts/Droid_Sans/DroidSans.ttf</path>
+<name>Droid Sans</name>
+<size>10</size>
+<height>13</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>115</last_character>
+<font_filter>droid_sans_filter.txt</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>DroidSans_8</label>
+<path>../../../Microchip/Graphics/Fonts/Droid_Sans/DroidSans.ttf</path>
+<name>Droid Sans</name>
+<size>8</size>
+<height>10</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>115</last_character>
+<font_filter>droid_sans_filter.txt</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>DroidSans_36</label>
+<path>../../../Microchip/Graphics/Fonts/Droid_Sans/DroidSans.ttf</path>
+<name>Droid Sans</name>
+<size>36</size>
+<height>43</height>
+<anti_aliasing>2 bits per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>115</last_character>
+<font_filter>droid_sans_filter.txt</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>DroidSans_12</label>
+<path>../../../Microchip/Graphics/Fonts/Droid_Sans/DroidSans.ttf</path>
+<name>Droid Sans</name>
+<size>12</size>
+<height>15</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>126</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>fireflysung_22</label>
+<path>../../../Microchip/Graphics/Fonts/firefly/fireflysung.ttf</path>
+<name>AR PL New Sung</name>
+<size>22</size>
+<height>25</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>33</first_character>
+<last_character>30028</last_character>
+<font_filter>fireflysung_font_filter.txt</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>UnBatang_0613_22</label>
+<path>../../../Microchip/Graphics/Fonts/unbatang/UnBatang_0613.ttf</path>
+<name>UnBatang</name>
+<size>22</size>
+<height>28</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>54616</last_character>
+<font_filter>unbatang_font_filter.txt</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>DroidSans_24</label>
+<path>../../../Microchip/Graphics/Fonts/Droid_Sans/DroidSans.ttf</path>
+<name>Droid Sans</name>
+<size>24</size>
+<height>29</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>126</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>Arimo_Regular_Bold_36</label>
+<path>../../../Microchip/Graphics/Fonts/arimo/Arimo-Regular.ttf</path>
+<name>Arimo</name>
+<size>36</size>
+<height>43</height>
+<bold>true</bold>
+<anti_aliasing>2 bits per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>114</last_character>
+<font_filter>intro_filter.txt</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>DroidSans_24_AA</label>
+<path>../../../Microchip/Graphics/Fonts/Droid_Sans/DroidSans.ttf</path>
+<name>Droid Sans</name>
+<size>24</size>
+<height>29</height>
+<anti_aliasing>2 bits per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>126</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+</Font_Files>
+</Graphics_Resource_Converter>

@@ -1,0 +1,71 @@
+[HEADER]
+magic_cookie={66E99B07-E706-4689-9E80-9B2582898A13}
+file_version=1.0
+device=dsPIC33FJ128MC710
+[PATH_INFO]
+BuildDirPolicy=BuildDirIsProjectDir
+dir_src=
+dir_bin=
+dir_tmp=
+dir_sin=
+dir_inc=.;../../Include;../../../Include;../../Microchip/Include;../../Smart Card Demo/Firmware
+dir_lib=C:/Program Files/Microchip/MPLAB C30/lib
+dir_lkr=
+[CAT_FILTERS]
+filter_src=*.s;*.c
+filter_inc=*.h;*.inc
+filter_obj=*.o
+filter_lib=*.a
+filter_lkr=*.gld
+[CAT_SUBFOLDERS]
+subfolder_src=Smart Card
+subfolder_inc=Smart Card
+subfolder_obj=
+subfolder_lib=
+subfolder_lkr=
+[FILE_SUBFOLDERS]
+file_000=.
+file_001=Smart Card
+file_002=Smart Card
+file_003=Smart Card
+file_004=.
+file_005=Smart Card
+[GENERATED_FILES]
+file_000=no
+file_001=no
+file_002=no
+file_003=no
+file_004=no
+file_005=no
+[OTHER_FILES]
+file_000=no
+file_001=no
+file_002=no
+file_003=no
+file_004=no
+file_005=no
+[FILE_INFO]
+file_000=main.c
+file_001=..\..\Microchip\Smart Card\SClib.c
+file_002=..\..\Microchip\Smart Card\SCdspic33f.c
+file_003=..\..\Microchip\Include\Smart Card\SClib.h
+file_004=sc_config.h
+file_005=..\..\Microchip\Include\Smart Card\SCdspic33f.h
+[SUITE_INFO]
+suite_guid={9BCCB495-CD65-480A-BA76-63D8E78B117F}
+suite_state=
+[TOOL_SETTINGS]
+TS{8493B2ED-D539-4951-86C9-24D5331F0393}=-g
+TS{F9CE474D-6A6C-401D-A11E-BEE01B244D79}=-g -Wall -fno-ivopts
+TS{F9CE474D-6A6C-401D-A11E-BEE01B244D79}_alt=yes
+TS{21A8AA9B-E75C-40B6-B3AE-9CBC16FF2EF9}=-o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)" -Map="$(BINDIR_)$(TARGETBASE).map" --report-mem
+TS{45B3B6E0-6DAF-4E40-8D20-CFB1B620134D}=
+[INSTRUMENTED_TRACE]
+enable=0
+transport=0
+format=0
+[CUSTOM_BUILD]
+Pre-Build=
+Pre-BuildEnabled=1
+Post-Build=
+Post-BuildEnabled=1

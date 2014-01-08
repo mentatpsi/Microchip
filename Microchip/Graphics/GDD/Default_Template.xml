@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gfx_lib_info version="3.00">
+	<COPY_FILES_FOLDER>
+		.\Microchip\Graphics\GDD\Default_Template
+	</COPY_FILES_FOLDER>
+	<COPY_REFERENCE_FILES>
+		<list>HardwareProfile.h</list>
+		<list>GraphicsConfig.h</list>
+		<list>Main.c</list>
+		<list>Main.h</list>
+	</COPY_REFERENCE_FILES>
+	<GRAPHICS_REFERENCE_FILES>
+		<BoardSupportPackage>
+			<list>Board Support Package\TouchScreen.c</list>
+			<list>Board Support Package\TouchScreen.h</list>
+			<list>Board Support Package\TouchScreenAR1020.c</list>
+			<list>Board Support Package\TouchScreenAR1020.h</list>
+			<list>Board Support Package\TouchScreenResistive.c</list>
+			<list>Board Support Package\TouchScreenResistive.h</list>
+			<list>Board Support Package\Beep.c</list>
+			<list>Board Support Package\Beep.h</list>
+			<list>Board Support Package\SST25VF016.c</list>
+			<list>Board Support Package\SST25VF016.h</list>
+			<list>Board Support Package\cpld.c</list>
+			<list>Board Support Package\cpld.h</list>
+			<list>Board Support Package\drv_spi.c</list>
+			<list>Board Support Package\drv_spi.h</list>
+			<list>Board Support Package\SST39LF400.c</list>
+			<list>Board Support Package\SST39LF400.h</list>
+			<list>Board Support Package\SST39VF040.c</list>
+			<list>Board Support Package\SST39VF040.h</list>
+			<list>Board Support Package\MCHP25LC256.c</list>
+			<list>Board Support Package\MCHP25LC256.h</list>
+		</BoardSupportPackage>
+		<Drivers>
+			<list>Microchip\Graphics\Drivers\gfxepmp.c</list>
+			<list>Microchip\Graphics\Drivers\mchpGfxDrv.c</list>
+			<list>Microchip\Graphics\Drivers\mchpGfxLCC.c</list>
+			<list>Microchip\Graphics\Drivers\TCON_Custom.c</list>
+			<list>Microchip\Graphics\Drivers\TCON_HX8238.c</list>
+			<list>Microchip\Graphics\Drivers\TCON_HX8257.c</list>
+			<list>Microchip\Graphics\Drivers\TCON_SSD1289.c</list>
+			<list>Microchip\Graphics\Drivers\drvTFT001.c</list>
+			<list>Microchip\Graphics\Drivers\drvTFT002.c</list>
+			<list>Microchip\Graphics\Drivers\HIT1270.c</list>
+			<list>Microchip\Graphics\Drivers\HX8347.c</list>
+			<list>Microchip\Graphics\Drivers\S1D13517.c</list>
+			<list>Microchip\Graphics\Drivers\SH1101A_SSD1303.c</list>
+			<list>Microchip\Graphics\Drivers\SSD1339.c</list>
+			<list>Microchip\Graphics\Drivers\SSD1926.c</list>
+			<list>Microchip\Graphics\Drivers\ST7529.c</list>
+			<list>Microchip\Graphics\Drivers\UC1610.c</list>
+			<list>Microchip\Include\Graphics\DisplayDriver.h</list>
+			<list>Microchip\Include\Graphics\DisplayDriverInterface.h</list>
+			<list>Microchip\Include\Graphics\gfxcolors.h</list>
+			<list>Microchip\Include\Graphics\gfxpmp.h</list>
+			<list>Microchip\Include\Graphics\gfxtcon.h</list>
+			<list>Microchip\Include\Graphics\gfxepmp.h</list>
+			<list>Microchip\Include\Graphics\HIT1270.h</list>
+			<list>Microchip\Include\Graphics\HX8347.h</list>
+			<list>Microchip\Include\Graphics\mchpGfxDrv.h</list>
+			<list>Microchip\Include\Graphics\mchpGfxLCC.h</list>
+			<list>Microchip\Include\Graphics\S1D13517.h.h</list>
+			<list>Microchip\Include\Graphics\SH1101A_SSD1303.h</list>
+			<list>Microchip\Include\Graphics\SSD1339.h</list>
+			<list>Microchip\Include\Graphics\SSD1926.h</list>
+			<list>Microchip\Include\Graphics\ST7529.h</list>
+			<list>Microchip\Include\Graphics\UC1610.h</list>
+			<list>Microchip\Include\Graphics\drvTFT001.h</list>
+			<list>Microchip\Include\Graphics\drvTFT002.h</list>
+		</Drivers>
+		<Graphics>
+			<list>Microchip\Graphics\GOL.c</list>
+			<list>Microchip\Graphics\GOLFontDefault.c</list>
+			<list>Microchip\Graphics\GOLSchemeDefault.c</list>
+			<list>Microchip\Graphics\Palette.c</list>
+			<list>Microchip\Graphics\Primitive.c</list>
+			<list>Microchip\Include\Graphics\GOL.h</list>
+			<list>Microchip\Include\Graphics\Graphics.h</list>
+			<list>Microchip\Include\Graphics\Palette.h</list>
+			<list>Microchip\Include\Graphics\Primitive.h</list>
+			<list>Microchip\Include\Graphics\ScanCodes.h</list>
+		</Graphics>
+		<Common>
+			<list>Microchip\Common\TimeDelay.c</list>
+			<list>Microchip\Include\TimeDelay.h</list>
+			<list>Microchip\Include\GenericTypeDefs.h</list>
+		</Common>
+	</GRAPHICS_REFERENCE_FILES>
+	<INCLUDE_PATHS>
+		<list>.</list>
+		<list>..\Microchip\Include</list>
+		<list>..\Board Support Package</list>
+	</INCLUDE_PATHS>
+</gfx_lib_info>
+

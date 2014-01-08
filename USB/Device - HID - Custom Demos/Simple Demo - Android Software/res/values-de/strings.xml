@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weblink">www.microchip.com/usb</string>
+    
+    <string name="app_name">USB Device Demo</string>
+    <string name="app_title">USB Device Demo</string>
+ 
+    <string name="no_device_attached">Geraet nicht verbunden</string>
+    <string name="device_attached">Geraet verbunden</string>
+    <string name="attach_device">Bitte verbinden Sie ein Geraet welches fuer das Demo bestimmt ist. Nehmen Sie dafuer eines der folgenden Demos des USB Frameworks aus der Microchip Application Library(www.microchip.com/usb):\r\n   LibUSB Demo\r\n   WinUSB Demo\r\n   MCHPUSB Demo\r\n   Custom HID Demo</string>
+ 
+    <string name="toggle_leds_button">LEDs umschalten</string>
+    <string name="toggle_leds_description">Um die LEDs umzuschalten, druecken Sie den Button</string>
+    
+    <string name="button_status_description">Das untenstehende Dialogfenster gibt den Status der Push Button am angesteckten Geraet an.</string>
+    <string name="button_pressed">Button gedrueckt</string>
+    <string name="button_not_pressed">Button nicht gedrueckt</string>
+    
+    <string name="pot_status_description">Der untenstehende Balken gibt den Wert des Potentiometers in Prozent an.</string>
+</resources>

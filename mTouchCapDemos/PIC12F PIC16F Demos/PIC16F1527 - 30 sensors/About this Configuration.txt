@@ -1,0 +1,14 @@
+About this configuration:
+
+ -  Communications disabled!
+        See: mComm_config.h
+        
+        
+ -  Number of Sensors   :: 30
+        See: mTouch_config.h
+
+ -  Sensors             :: 
+ 
+ -  Output LEDs         :: LATC0 is chosen for all output LEDs. For a 'real' application, the outputs would be unique.
+ 
+    

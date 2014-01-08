@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Graphics_Resource_Converter>
+<Configuration>
+<major>3</major>
+<minor>7</minor>
+<compiler>C30</compiler>
+<format>EDS_EPMP</format>
+<graphics_module>true</graphics_module>
+<graphics_model>16 bpp</graphics_model>
+</Configuration>
+<Bitmaps>
+<Bitmap_Resource>
+<label>arrowDownComposite</label>
+<path>arrowDownComposite.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>arrowUpComposite</label>
+<path>arrowUpComposite.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>Background480x272</label>
+<path>Background480x272.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+</Bitmaps>
+<Font_Files>
+<Font_File_Resource>
+<label>DroidSans_Bold_150</label>
+<path>../../../../Microchip/Graphics/Fonts/Droid_Sans/DroidSans-Bold.ttf</path>
+<name>Droid Sans</name>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<comment_file>../../../../Microchip/Graphics/Fonts/Droid_Sans/LICENSE.txt</comment_file>
+<size>150</size>
+<height>176</height>
+<first_character>48</first_character>
+<last_character>57</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+<Font_File_Resource>
+<label>fireflysung_40</label>
+<path>../../../../Microchip/Graphics/Fonts/firefly/fireflysung.ttf</path>
+<name>AR PL New Sung</name>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<comment_file>../../../../Microchip/Graphics/Fonts/firefly/FireflysungLicense.txt</comment_file>
+<size>40</size>
+<height>44</height>
+<first_character>32</first_character>
+<last_character>38376</last_character>
+<font_filter>elevatorFontFilter.txt</font_filter>
+</Font_File_Resource>
+</Font_Files>
+</Graphics_Resource_Converter>

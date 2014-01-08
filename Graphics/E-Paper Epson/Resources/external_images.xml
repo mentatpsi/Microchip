@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Graphics_Resource_Converter>
+<Configuration>
+<major>3</major>
+<minor>19</minor>
+<compiler>C30</compiler>
+<format>HEX</format>
+<graphics_module>false</graphics_module>
+<bitmap_padding_type>no padding</bitmap_padding_type>
+<graphics_model>16 bpp</graphics_model>
+</Configuration>
+<Bitmaps>
+<Bitmap_Resource>
+<label>mchp_epson_logo_4bpp</label>
+<path>mchp_epson_logo_4bpp.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>boy_on_hill</label>
+<path>boy on hill.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>MachuPichu</label>
+<path>MachuPichu.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>parots</label>
+<path>parots.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>epson_qr</label>
+<path>epson_qr.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>mchp_graphics_qr</label>
+<path>mchp_graphics_qr.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>mouse_cursor_icon_270</label>
+<path>mouse-cursor-icon-270.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+</Bitmaps>
+</Graphics_Resource_Converter>

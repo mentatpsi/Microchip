@@ -1,0 +1,864 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 12 (filtered)">
+<title>Getting Started: Running the E-Paper Epson Demo</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Arial","sans-serif";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:24.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-link:"Document Map Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	background:navy;
+	font-size:10.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.DocumentMapChar
+	{mso-style-name:"Document Map Char";
+	mso-style-link:"Document Map";
+	font-family:"Tahoma","sans-serif";}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-link:"Plain Text";
+	font-family:"Courier New";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+p.msolistparagraph0, li.msolistparagraph0, div.msolistparagraph0
+	{mso-style-name:msolistparagraph;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.msolistparagraphCxSpFirst, li.msolistparagraphCxSpFirst, div.msolistparagraphCxSpFirst
+	{mso-style-name:msolistparagraphCxSpFirst;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.msolistparagraphCxSpMiddle, li.msolistparagraphCxSpMiddle, div.msolistparagraphCxSpMiddle
+	{mso-style-name:msolistparagraphCxSpMiddle;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.msolistparagraphCxSpLast, li.msolistparagraphCxSpLast, div.msolistparagraphCxSpLast
+	{mso-style-name:msolistparagraphCxSpLast;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.element10, li.element10, div.element10
+	{mso-style-name:element10;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 65.95pt 1.0in 65.95pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=MsoPlainText align=center style='text-align:center'><a
+name="_Toc194573682"><b><u><span style='font-size:16.0pt;font-family:"Arial","sans-serif"'>Getting
+Started: Running the “E-Paper Epson Demo”</span></u></b></a></p>
+
+<p class=MsoPlainText><span style='font-size:16.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<h2><a href="#required_hardware">Required Hardware</a><a name="_Toc276094095"></a></h2>
+
+<h2><a href="#configuring_the_software">Configuring the Software</a></h2>
+
+<h2><a href="#required_hardware">Configuring the Hardware</a><a
+name="_Toc276094096"></a></h2>
+
+<h2><a href="Getting%20Started%20-%20Demo%20Compatibility%20Matrix.htm">Demo
+Compatibility Matrix</a></h2>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><a name="_Toc276094098"></a><a name="running_the_demo"></a><span
+class=Heading2Char><span style='font-size:14.0pt'>Running the Demo</span></span><span
+style='font-family:"Arial","sans-serif"'>:</span></p>
+
+<h2 style='margin-left:.5in'><span style='font-size:10.0pt;font-weight:normal;
+font-style:normal'>This demo project is created to run on supported Microchip
+and Epson demo boards and development hardware. First program the PIC with the
+demo firmware, precompiled hex files are available in the &quot;Precompiled
+Hex” sub-directory found in the demo directory.</span></h2>
+
+<h2 style='margin-left:.5in'><span style='font-size:10.0pt;font-weight:normal;
+font-style:normal'>For proper demo execution, the </span><span
+style='font-size:10.0pt;font-style:normal'>ExternalResource-E-Paper.hex</span><span
+style='font-size:10.0pt;font-weight:normal;font-style:normal'> file in
+&quot;Resources” folder must also be programmed into external flash SPI memory
+installed on the PICtail board. The PIC firmware should automatically prompts
+for this file if no valid external memory data was found.</span></h2>
+
+<h2 style='margin-left:.5in'><span style='font-size:10.0pt;font-weight:normal;
+font-style:normal'>All programming are initiated through the PC utility -
+memory_programmer.jar. You can find this utility in the following Microchip
+Application Libraries path:</span></h2>
+
+<h2 style='margin-left:.5in'><span style='font-size:10.0pt;font-weight:normal;
+font-style:normal'>.&lt;install_dir&gt;\Microchip\Graphics\bin\memory_programmer</span></h2>
+
+<h2 style='margin-left:.5in'><span style='font-size:10.0pt;font-weight:normal;
+font-style:normal'>Refer to the memory_programmer help file for details on the
+programmer utility operation.</span></h2>
+
+<h2 style='margin-left:.5in'><span style='font-size:10.0pt;font-weight:normal;
+font-style:normal'>&nbsp;</span></h2>
+
+<h2 style='margin-left:.5in'><span style='font-size:10.0pt;font-weight:normal;
+font-style:normal'>After reset, the demo will cycle through all of its screens
+with no user interaction.&nbsp; Pressing one of the three buttons on the
+PICtail board will stop this.&nbsp; The left and right buttons on the PICtail
+board can be used to manually switch the demo screens.</span></h2>
+
+<h2 style='margin-left:.75in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:Symbol;font-weight:normal;font-style:normal'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-size:10.0pt;font-weight:normal;font-style:normal'>Title Screen –
+This screen tells the user a little about the demo itself.&nbsp; It shows the
+Epson and Microchip logo along with the controller name S1D13522. After two
+seconds, the auto demo will start if any one of the three buttons are not
+pressed</span></h2>
+
+<h2 style='margin-left:.75in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:Symbol;font-weight:normal;font-style:normal'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-size:10.0pt;font-weight:normal;font-style:normal'>Fonts – This
+screen displays six strings of the same type of font at different sizes.&nbsp;
+The first three (the largest ones) use anti-aliasing.</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>&nbsp;S1 – Switch to the EKG screen</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>&nbsp;S2 – does nothing</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>&nbsp;S3 – Switch to Foreign Fonts screen</span></h2>
+
+<h2 style='margin-left:.75in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:Symbol;font-weight:normal;font-style:normal'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-size:10.0pt;font-weight:normal;font-style:normal'>Foreign Fonts –
+This screen displays the phrase “Hello World” in different languages</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>&nbsp;S1 – switch to Fonts screen </span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S2 - does nothing </span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S3 – switch to the Picture screen</span></h2>
+
+<h2 style='margin-left:.75in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:Symbol;font-weight:normal;font-style:normal'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-size:10.0pt;font-weight:normal;font-style:normal'>Picture –
+Displays a picture.&nbsp; The picture is rendered using the same routine call, PutImage,
+as any other graphics images.</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S1 – switch to Foreign Fonts screen</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S2 – change the picture, there are three
+total</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S3 – switch to Widgets screen</span></h2>
+
+<h2 style='margin-left:.75in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:Symbol;font-weight:normal;font-style:normal'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-size:10.0pt;font-weight:normal;font-style:normal'>Widgets –
+Displays GOL, Graphics Object Layer, widgets.</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S1 – switch to Picture Screen</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S2 – does nothing</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S3 – switch to Chart screen</span></h2>
+
+<h2 style='margin-left:.75in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:Symbol;font-weight:normal;font-style:normal'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-size:10.0pt;font-weight:normal;font-style:normal'>Chart – Displays
+the chart widget as a bar graph.</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S1 – switch to Widgets screen</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S2 – does nothing</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S3 – switch to QR screen</span></h2>
+
+<h2 style='margin-left:.75in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:Symbol;font-weight:normal;font-style:normal'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-size:10.0pt;font-weight:normal;font-style:normal'>QR – This screen
+displays QR codes which can be decoded. The first, smaller, QR code is
+www.epson.com &nbsp;The second, larger, QR code is www.microchip.com/graphics</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S1 – switch to Chart screen</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S2 – changes the QR code</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S3 – switch to the EKG screen</span></h2>
+
+<h2 style='margin-left:.75in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:Symbol;font-weight:normal;font-style:normal'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-size:10.0pt;font-weight:normal;font-style:normal'>EKG – Shows a
+fast update of the E Ink display</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S1 – switch to the QR screen</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S2 – does nothing</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S3 – switch to the PIP screen</span></h2>
+
+<h2 style='margin-left:.75in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:Symbol;font-weight:normal;font-style:normal'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-size:10.0pt;font-weight:normal;font-style:normal'>PIP – Shows the
+S1D13522 hardware picture-in-picture and cursor overlay capabilities. The key highlight
+here is, when the overlay layers are removed, the background image is retained
+and does not need to be redrawn.</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S1 – switch to the EKG screen (when PIP
+and cursor are not displayed)</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S2 – Follow on screen instruction (once
+PIP screen is shown, must choose 'Exit' to be able to use S1/S3 to navigate to
+other demo screens)</span></h2>
+
+<h2 style='margin-left:1.25in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:"Courier New";font-weight:normal;font-style:normal'>o</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";font-weight:normal;
+font-style:normal'>&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+font-weight:normal;font-style:normal'>S3 – switch to the Font screen (when PIP
+and cursor are not displayed)</span></h2>
+
+<h2>Converting Images for Display on the Epson S1D13522 Controller</h2>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>The
+Epson S1D13522 controller is used for displaying graphical data on E Ink
+display panels. An application using this controller can display bitmap images.
+These Bitmap images can be in 4 and 1 bit per pixel formats.&nbsp; The
+controller does not use the palette from the bitmap image, as it has an
+internal fixed palette. To maximize image clarity, the bitmap image should be
+converted to the fixed palette grayscale. This can be done by using a program
+like GNU Image Manipulation Program (<a href="http://www.gimp.org">www.gimp.org</a>).&nbsp;
+The Microchip Graphics Resource Converter (GRC) is then used to convert the
+bitmap images into PIC internal flash or external memory resources.&nbsp; The
+conversion of bitmap images does require for a non-default option in the
+Graphics Resource Converter to be selected.</span></p>
+
+<h2>GIMP: Converting Bitmaps to Fixed Grayscale Palette</h2>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>Please
+refer to the Graphics Library Help file, which is located at
+&lt;install_dir&gt;/Microchip/Help, section Miscellaneous Topics &gt;
+Converting Images to Use a Common Palette in GIMP for detailed information on
+this topic. The palette files used are located in <b>&lt;install_dir&gt;/Microchip/Graphics/palettes.
+</b>Where<b> install_dir </b>is the location of the Microchip Application
+Libraries installation.</span></p>
+
+<h2>Converting Images using Graphics Resource Converter</h2>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>When
+converting bitmap images using the Graphics Resource Converter (GRC), the ‘no
+line padding’ option must be enabled to insure proper pixel alignment when
+using with the S1D13522 driver/controller.&nbsp;The S1D13522 driver expects
+images not to have any horizontal line padding. The default of the GRC is to
+provide horizontal line padding on byte boundaries.</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>To
+enable the ‘no horizontal line padding’:</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;&nbsp;&nbsp;
+Under the settings dialog box, select the “No Line Padding” in the “Bitmap
+Image Options” group box.</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:.5in;page-break-after:avoid'><img
+border=0 width=217 height=167 src="images/GRCBitmapImageOptions.jpg"></p>
+
+<p class=MsoNormal style='text-indent:.5in'>&nbsp;</p>
+
+<p class=MsoPlainText>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:.5in;page-break-after:avoid'><img
+border=0 width=424 height=326 src="images/GRCResourceSetting.jpg"></p>
+
+<p class=MsoNormal style='text-indent:.5in'>&nbsp;</p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>Having
+this option checked is a requirement for using images with the S1D13522. In the
+GraphicsConfig header file, the macro, USE_BITMAP_NO_PADDING_LINE, this will
+allow the compile time check produced by the GRC to pass.</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'>&nbsp;</p>
+
+<h2><a name="configuring_the_software"></a>Configuring the Software </h2>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>The
+demo can be run using the E-Paper PICTail and the Explorer 16 Development board
+This is set in the project HardwareProfile.h file by adding the corresponding
+Graphics hardware profile. </span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>For 16-bit PMP interface:</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in'><span style='font-family:"Arial","sans-serif"'>#include
+&quot;Configs/HWP_EPD_EX16_16PMP_QVGAv1.h”</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>For 8-bit PMP interface:</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in'><span style='font-family:"Arial","sans-serif"'>#include
+&quot;Configs/HWP_EPD_EX16_8PMP_QVGAv1.h”</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Arial","sans-serif"'>For SPI interface:</span></p>
+
+<p class=MsoPlainText style='margin-left:.75in'><span style='font-family:"Arial","sans-serif"'>#include
+&quot;Configs/HWP_EPD_EX16_SPI_QVGAv1.h”</span></p>
+
+<p class=MsoPlainText style='margin-left:.25in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:.25in;text-indent:.25in'><span
+style='font-family:"Arial","sans-serif"'>The hardware profile file name refers
+to the combination of Development Boards that are used to run the demo. Refer
+to the abbreviations summary (<a href="../../../Help/Abbreviations.htm">link</a>)
+for details. </span></p>
+
+<p class=MsoNormal style='margin-left:.5in'>&nbsp;</p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>The
+table below shows the hardware set up for the selected Development Boards attached
+to different Display Boards:</span></p>
+
+<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal><a name="required_hardware"></a><span class=Heading2Char><span
+style='font-size:14.0pt'>Required Hardware/Configuring the Hardware</span></span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=809
+ style='width:485.6pt;border-collapse:collapse'>
+ <tr>
+  <td width=322 style='width:192.9pt;border:solid black 1.0pt;border-right:
+  solid windowtext 1.0pt;background:#365F91;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif";color:white'>Selected
+  Development Boards</span></b></p>
+  </td>
+  <td width=293 style='width:175.7pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
+  background:#365F91;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif";color:white'>Graphics
+  PICtail Board</span></b></p>
+  </td>
+  <td width=195 style='width:117.0pt;border-top:solid black 1.0pt;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#365F91;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif";color:white'>3&#8243;
+  PDI EPD panel</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif";color:white'>(Pervasive
+  Display P/N EQ030AT012)</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=322 style='width:192.9pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoPlainText>&nbsp;</p>
+  <p class=MsoNormal><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=DM240001"><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Explorer 16</span></a><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'> (DM240001) </span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>+
+  </span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=MA240011"><span
+  lang=DE style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC24FJ128GA010
+  Plug-In-Module (PIM)</span></a><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>
+  </span><span lang=DE style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>(MA240011)</span></p>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoPlainText><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=MA240021"><span
+  lang=DE style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC24FJ256GB210
+  Plug-In-Module (PIM)</span></a><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>
+  </span><span lang=DE style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>(MA240021)
+  (see note 2)</span></p>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>OR</span></p>
+  <p class=MsoPlainText><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'><a
+  href="http://www.microchipdirect.com/productsearch.aspx?Keywords=MA320003"><span
+  lang=DE>PIC32MX CAN-USB Plug-In-Module (PIM)</span></a></span><span lang=DE
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'> (MA320003)</span></p>
+  </td>
+  <td width=293 style='width:175.7pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>E-paper
+  Display PICtail™ Plus Board with Epson Controller (Epson P/N S5U13522C100S00)</span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>&nbsp;</span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>(see
+  note 1)</span></p>
+  </td>
+  <td width=195 style='width:117.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=809 colspan=3 style='width:485.6pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Note
+  1: </span></p>
+  <p class=MsoNormal style='margin-left:.5in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>E-paper Display
+  PICtail Plus Board jumper settings:</span></p>
+  <p class=MsoNormal style='margin-left:.5in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>DIP Switch (SW1)
+  is for selecting the host interface mode.</span></p>
+  <p class=MsoNormal style='margin-left:.5in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>For 16-bit
+  parallel host interfaces (default) </span></p>
+  <p class=MsoNormal style='margin-left:1.0in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>SW1-1 = on, </span></p>
+  <p class=MsoNormal style='margin-left:1.0in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>SW1-2 = on, </span></p>
+  <p class=MsoNormal style='margin-left:1.0in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>SW1-3 = don’t
+  care, </span></p>
+  <p class=MsoNormal style='margin-left:1.0in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>SW1-4 = off, </span></p>
+  <p class=MsoNormal style='margin-left:1.0in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>SW1-5 = off</span></p>
+  <p class=MsoNormal style='margin-left:.5in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>For 8-bit parallel
+  host interfaces </span></p>
+  <p class=MsoNormal style='margin-left:1.0in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>SW1-1 = off, </span></p>
+  <p class=MsoNormal style='margin-left:1.0in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>SW1-2 = on, </span></p>
+  <p class=MsoNormal style='margin-left:1.0in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>SW1-3 = don’t
+  care, </span></p>
+  <p class=MsoNormal style='margin-left:.5in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>For serial – SPI1
+  host interfaces </span></p>
+  <p class=MsoNormal style='margin-left:1.0in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>SW1-1 = off, </span></p>
+  <p class=MsoNormal style='margin-left:1.0in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>SW1-2 = off, </span></p>
+  <p class=MsoNormal style='margin-left:1.0in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>SW1-3 = on, </span></p>
+  <p class=MsoNormal style='margin-left:1.0in;text-autospace:none'>&nbsp;</p>
+  <p class=MsoNormal style='margin-left:.5in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>DIP Switch (SW2)
+  is for SPI chip select and channel selection of the 64-Megabit flash memory.</span></p>
+  <p class=MsoNormal style='margin-left:.5in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>For SPI channel 2
+  and ALT_FLASH_CS (default) </span></p>
+  <p class=MsoNormal style='margin-left:1.0in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>SW2-1 = off, </span></p>
+  <p class=MsoNormal style='margin-left:1.0in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>SW2-2 = off, </span></p>
+  <p class=MsoNormal style='margin-left:1.0in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>SW2-3 = off, </span></p>
+  <p class=MsoNormal style='margin-left:1.0in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>SW2-4 = on</span></p>
+  <p class=MsoNormal style='margin-left:.5in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Jumper (J3) is for
+  production calibration.</span></p>
+  <p class=MsoNormal style='margin-left:.5in'><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'>For normal operation (default) </span></p>
+  <p class=MsoNormal style='margin-left:1.0in'><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'>J3 pins 1-2 jumped</span></p>
+  <p class=MsoNormal style='margin-left:.5in'><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'>For detailed jumpe settings information, refer
+  to the PICtail info sheet that comes with the E-paper Display PICtail Plus
+  Board. </span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>Note
+  2: </span></p>
+  <p class=MsoNormal style='margin-left:.5in;text-autospace:none'><span
+  style='font-size:8.0pt;font-family:"Verdana","sans-serif"'>PIC24FJ256GB210
+  PIM jumper settings:</span></p>
+  <p class=MsoNormal style='margin-left:1.0in'><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'>16-bit parallel interface mode - JP1,
+  JP2, JP3 'P', JP4 - open</span></p>
+  <p class=MsoNormal style='margin-left:1.0in'><span style='font-size:8.0pt;
+  font-family:"Verdana","sans-serif"'>8-bit parallel or serial host interface
+  mode - JP1, JP2, JP3 'U', JP4 - close</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoPlainText>&nbsp;<span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=608
+ style='width:364.5pt;margin-left:-.4pt;border-collapse:collapse'>
+ <tr style='height:12.75pt'>
+  <td width=608 nowrap colspan=4 valign=bottom style='width:364.5pt;border:
+  solid windowtext 1.0pt;background:white;padding:0in 5.4pt 0in 5.4pt;
+  height:12.75pt'>
+  <p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Legend:</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=53 nowrap valign=bottom style='width:31.5pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10003;</span></p>
+  </td>
+  <td width=225 nowrap style='width:135.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Supported
+  out of the box</span></p>
+  </td>
+  <td width=53 valign=bottom style='width:31.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in;height:12.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#9746;</span></p>
+  </td>
+  <td width=278 style='width:166.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in;height:12.75pt'>
+  <p class=MsoNormal style='margin-left:.1in'><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>Hardware compatible, will need firmware
+  modification</span></p>
+  </td>
+ </tr>
+ <tr style='height:12.75pt'>
+  <td width=53 nowrap valign=bottom style='width:31.5pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#9745;</span></p>
+  </td>
+  <td width=225 nowrap style='width:135.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Supported,
+  see limitations</span></p>
+  </td>
+  <td width=53 valign=bottom style='width:31.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in;height:12.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Arial Unicode MS","sans-serif"'>&#10007;</span></p>
+  </td>
+  <td width=278 style='width:166.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 0in 0in 0in;height:12.75pt'>
+  <p class=MsoNormal style='margin-left:.1in'><span style='font-size:10.0pt;
+  font-family:"Arial","sans-serif"'>Not supported, hardware not compatible</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal><b>Trademarks:</b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif";color:black'>The Microchip name and logo, the
+Microchip logo, MPLAB, and PIC are registered trademarks of Microchip
+Technology Incorporated in the U.S.A. and other countries.</span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif";color:black'>PICDEM and PICTail are trademarks
+of Microchip Technology Incorporated in the U.S.A. and other countries.</span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif";color:black'>SD is a trademark of the SD Association
+in the U.S.A and other countries</span></i></p>
+
+<p class=MsoNormal style='margin-left:.5in'><i><span style='font-size:10.0pt;
+font-family:"Arial","sans-serif";color:black'>Microsoft, Windows, Excel, and
+Windows Vista are either registered trademarks or trademarks of Microsoft
+Corporation in the United States and/or other countries.</span></i></p>
+
+</div>
+
+</body>
+
+</html>

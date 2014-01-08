@@ -1,0 +1,13 @@
+INPUT(
+./windows\Settings.o
+./windows\MainWindow.o
+./windows\main.o
+./windows\DeviceData.o
+./windows\Device.o
+./windows\Comm.o
+./windows\ImportExportHex.o
+./windows\moc_Settings.o
+./windows\moc_MainWindow.o
+./windows\moc_Comm.o
+./windows\qrc_resources.o
+);

@@ -1,0 +1,1637 @@
+MPLINK 4.35, Linker
+Linker Map File - Created Wed May 11 16:16:29 2011
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+       .code__user_putc.o       code   0x000006    program   0x000002
+               highVector       code   0x000008    program   0x000006
+      .romdata_security.o    romdata   0x00000e    program   0x000008
+           .code___init.o       code   0x000016    program   0x000002
+               lowhVector       code   0x000018    program   0x000006
+                   .cinit    romdata   0x00001e    program   0x000026
+             .code_MiWi.o       code   0x000044    program   0x004c44
+          .code_MRF89XA.o       code   0x004c88    program   0x0011b2
+         .code_vfprintf.o       code   0x005e3a    program   0x000816
+         .code_security.o       code   0x006650    program   0x000556
+             .stringtable    romdata   0x006ba6    program   0x00053d
+           .idata_P2P.o_i    romdata   0x0070e3    program   0x000000
+           .romdata_P2P.o    romdata   0x0070e3    program   0x000000
+.romdata_HardwareProfile.o    romdata   0x0070e3    program   0x000000
+       .idata_MiWiPRO.o_i    romdata   0x0070e3    program   0x000000
+       .romdata_MiWiPRO.o    romdata   0x0070e3    program   0x000000
+           .idata_crc.o_i    romdata   0x0070e3    program   0x000000
+           .romdata_crc.o    romdata   0x0070e3    program   0x000000
+      .idata_security.o_i    romdata   0x0070e3    program   0x000000
+.idata_HardwareProfile.o_i    romdata   0x0070e3    program   0x000000
+      .idata_MRF24J40.o_i    romdata   0x0070e3    program   0x000000
+      .romdata_MRF24J40.o    romdata   0x0070e3    program   0x000000
+       .idata_MRF49XA.o_i    romdata   0x0070e3    program   0x000000
+       .romdata_MRF49XA.o    romdata   0x0070e3    program   0x000000
+        .idata___init.o_i    romdata   0x0070e3    program   0x000000
+        .romdata___init.o    romdata   0x0070e3    program   0x000000
+       .idata_sprintf.o_i    romdata   0x0070e3    program   0x000000
+       .romdata_sprintf.o    romdata   0x0070e3    program   0x000000
+      .idata_vfprintf.o_i    romdata   0x0070e3    program   0x000000
+          .idata_putc.o_i    romdata   0x0070e3    program   0x000000
+          .romdata_putc.o    romdata   0x0070e3    program   0x000000
+    .idata__user_putc.o_i    romdata   0x0070e3    program   0x000000
+    .romdata__user_putc.o    romdata   0x0070e3    program   0x000000
+       .romdata_c018i_e.o    romdata   0x0070e3    program   0x000000
+       .idata_c018i_e.o_i    romdata   0x0070e3    program   0x000000
+    .romdata_SymbolTime.o    romdata   0x0070e3    program   0x000000
+        .romdata_EEPROM.o    romdata   0x0070e3    program   0x000000
+        .idata_EEPROM.o_i    romdata   0x0070e3    program   0x000000
+    .idata_SymbolTime.o_i    romdata   0x0070e3    program   0x000000
+   .idata_LCDBlocking.o_i    romdata   0x0070e3    program   0x000000
+     .idata_TimeDelay.o_i    romdata   0x0070e3    program   0x000000
+     .romdata_TimeDelay.o    romdata   0x0070e3    program   0x000000
+       .idata_Console.o_i    romdata   0x0070e3    program   0x000000
+   .romdata_LCDBlocking.o    romdata   0x0070e3    program   0x000000
+          .romdata_MSPI.o    romdata   0x0070e3    program   0x000000
+           .idata_NVM.o_i    romdata   0x0070e3    program   0x000000
+          .idata_MSPI.o_i    romdata   0x0070e3    program   0x000000
+           .romdata_NVM.o    romdata   0x0070e3    program   0x000000
+          .code_MRF49XA.o       code   0x0070e4    program   0x000000
+         .code_MRF24J40.o       code   0x0070e4    program   0x000000
+              .code_crc.o       code   0x0070e4    program   0x000000
+          .code_c018i_e.o       code   0x0070e4    program   0x000000
+          .code_MiWiPRO.o       code   0x0070e4    program   0x000000
+.code_SimpleExampleNode1.o       code   0x0070e4    program   0x0004a8
+              .code_P2P.o       code   0x0070e4    program   0x000000
+           .code_EEPROM.o       code   0x0070e4    program   0x000000
+      .code_LCDBlocking.o       code   0x00758c    program   0x000360
+              .code_NVM.o       code   0x0078ec    program   0x00029e
+  .code_HardwareProfile.o       code   0x007b8a    program   0x0001f8
+                     PROG       code   0x007d82    program   0x0001a2
+        .code_TimeDelay.o       code   0x007f24    program   0x00017a
+          .code_Console.o       code   0x00809e    program   0x000156
+.romdata_SimpleExampleNode1.o    romdata   0x0081f4    program   0x0000a0
+               _cinit_scn       code   0x008294    program   0x00009e
+                   STRING       code   0x008332    program   0x00009a
+       .code_SymbolTime.o       code   0x0083cc    program   0x000086
+       .romdata_MRF89XA.o    romdata   0x008452    program   0x000080
+          .code_sprintf.o       code   0x0084d2    program   0x000072
+             .code_putc.o       code   0x008544    program   0x000066
+          .romdata_MiWi.o    romdata   0x0085aa    program   0x00003c
+             .code_MSPI.o       code   0x0085e6    program   0x000034
+                    CTYPE       code   0x00861a    program   0x000024
+                    .code       code   0x00863e    program   0x000020
+                    STDIO       code   0x00865e    program   0x00001c
+             _startup_scn       code   0x00867a    program   0x00001a
+      .romdata_vfprintf.o    romdata   0x008694    program   0x000011
+       .romdata_Console.o    romdata   0x0086a5    program   0x000010
+.idata_SimpleExampleNode1.o_i    romdata   0x0086b5    program   0x000002
+          .idata_MiWi.o_i    romdata   0x0086b7    program   0x000009
+       .idata_MRF89XA.o_i    romdata   0x0086c0    program   0x000002
+.config_1fff8_HardwareProfile.o    romdata   0x01fff8    program   0x000001
+.config_1fffa_HardwareProfile.o    romdata   0x01fffa    program   0x000001
+.config_1fffb_HardwareProfile.o    romdata   0x01fffb    program   0x000001
+               TRX_BUFFER      udata   0x000000       data   0x00005b
+ .udata_HardwareProfile.o      udata   0x00005b       data   0x000005
+            .udata_MiWi.o      udata   0x000060       data   0x0000a0
+            MAC_RX_BUFFER      udata   0x000100       data   0x000084
+            BIGvariables1      udata   0x000184       data   0x000064
+             .udata_NVM.o      udata   0x0001e8       data   0x000016
+      .udata_SymbolTime.o      udata   0x0001fe       data   0x000002
+         .udata_MRF89XA.o      udata   0x000200       data   0x000033
+     .udata_LCDBlocking.o      udata   0x000233       data   0x000021
+                 .tmpdata      udata   0x000254       data   0x00000e
+         .udata_c018i_e.o      udata   0x000262       data   0x00000a
+            .idata_MiWi.o      idata   0x00026c       data   0x000009
+                MATH_DATA      udata   0x000275       data   0x000004
+              HighISR_tmp      udata   0x000279       data   0x000004
+        .udata_security.o      udata   0x00027d       data   0x000004
+.idata_SimpleExampleNode1.o      idata   0x000281       data   0x000002
+         .idata_MRF89XA.o      idata   0x000283       data   0x000002
+      .idata__user_putc.o      idata   0x000285       data   0x000000
+        .idata_security.o      idata   0x000285       data   0x000000
+        .udata_MRF24J40.o      udata   0x000285       data   0x000000
+        .idata_MRF24J40.o      idata   0x000285       data   0x000000
+         .udata_MRF49XA.o      udata   0x000285       data   0x000000
+      .udata__user_putc.o      udata   0x000285       data   0x000000
+            .idata_putc.o      idata   0x000285       data   0x000000
+            .udata_putc.o      udata   0x000285       data   0x000000
+         .idata_MRF49XA.o      idata   0x000285       data   0x000000
+        .idata_vfprintf.o      idata   0x000285       data   0x000000
+        .udata_vfprintf.o      udata   0x000285       data   0x000000
+         .idata_sprintf.o      idata   0x000285       data   0x000000
+         .udata_sprintf.o      udata   0x000285       data   0x000000
+          .udata___init.o      udata   0x000285       data   0x000000
+          .idata___init.o      idata   0x000285       data   0x000000
+         .idata_c018i_e.o      idata   0x000285       data   0x000000
+ .idata_HardwareProfile.o      idata   0x000285       data   0x000000
+.udata_SimpleExampleNode1.o      udata   0x000285       data   0x000000
+       .udata_TimeDelay.o      udata   0x000285       data   0x000000
+       .idata_TimeDelay.o      idata   0x000285       data   0x000000
+      .idata_SymbolTime.o      idata   0x000285       data   0x000000
+     .idata_LCDBlocking.o      idata   0x000285       data   0x000000
+             .idata_NVM.o      idata   0x000285       data   0x000000
+            .udata_MSPI.o      udata   0x000285       data   0x000000
+            .idata_MSPI.o      idata   0x000285       data   0x000000
+         .udata_Console.o      udata   0x000285       data   0x000000
+         .idata_Console.o      idata   0x000285       data   0x000000
+          .udata_EEPROM.o      udata   0x000285       data   0x000000
+          .idata_EEPROM.o      idata   0x000285       data   0x000000
+             .udata_P2P.o      udata   0x000285       data   0x000000
+             .idata_P2P.o      idata   0x000285       data   0x000000
+         .udata_MiWiPRO.o      udata   0x000285       data   0x000000
+         .idata_MiWiPRO.o      idata   0x000285       data   0x000000
+             .udata_crc.o      udata   0x000285       data   0x000000
+             .idata_crc.o      idata   0x000285       data   0x000000
+                   .stack      udata   0x000e00       data   0x000100
+            MAC_TX_BUFFER      udata   0x000f00       data   0x000040
+              SFR_BANKED0      udata   0x000f5a       data   0x000006
+            SFR_UNBANKED0      udata   0x000f60       data   0x0000a0
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x0070e2      
+                            0x0070e4    0x0086c1      
+                            0x01fff8    0x01fff8      
+                            0x01fffa    0x01fffb      
+            34500 out of 131072 program addresses used, program memory utilization is 26%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+    AddNodeToNetworkTable   0x00329e    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                BoardInit   0x007b8a    program     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+          BroadcastJitter   0x000048    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+            ButtonPressed   0x007c94    program     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+                  CBC_MAC   0x006910    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\security.c
+                  CCM_Dec   0x006aaa    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\security.c
+                  CCM_Enc   0x0069c4    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\security.c
+                      CTR   0x006844    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\security.c
+           CharacterArray   0x0086a5    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\Console.c
+               ConsoleGet   0x008100    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\Console.c
+              ConsoleInit   0x00809e    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\Console.c
+               ConsolePut   0x0080e6    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\Console.c
+      ConsolePutROMString   0x0080b0    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\Console.c
+                       DE   0x00825d    program     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+                Delay10us   0x007f24    program     extern C:\DevSource\App Libs v2011-06\Microchip\Common\TimeDelay.c
+                  DelayMs   0x007fe2    program     extern C:\DevSource\App Libs v2011-06\Microchip\Common\TimeDelay.c
+           DumpConnection   0x0024c6    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                  HighISR   0x0058b2    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+               HighVector   0x000008    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+              IGNORE_HERE   0x005996    program     static                          
+           InitConfigRegs   0x008492    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+          InitSymbolTimer   0x0083cc    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\SymbolTime.c
+               LCDDisplay   0x007c3e    program     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+                 LCDErase   0x0078be    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+                  LCDInit   0x0077a4    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+             LCDInitPortA   0x007594    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+             LCDInitPortB   0x0075dc    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+               LCDInitSPI   0x00758c    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+             LCDInitWrite   0x0076be    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+              LCDTRXCount   0x007be8    program     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+                LCDUpdate   0x007824    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+            LCDWritePortA   0x007626    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+            LCDWritePortB   0x007672    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+              LCD_d_write   0x007754    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+              LCD_i_write   0x007704    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+                LowVector   0x000018    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                 MacroNop   0x000044    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+    MiApp_BroadcastPacket   0x003f8e    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+     MiApp_ConnectionMode   0x00386a    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+     MiApp_DiscardMessage   0x003f84    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+MiApp_EstablishConnection   0x003aa6    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+   MiApp_MessageAvailable   0x003f72    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+       MiApp_ProtocolInit   0x003408    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+   MiApp_RemoveConnection   0x00479e    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+   MiApp_SearchConnection   0x0038be    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+         MiApp_SetChannel   0x003820    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+    MiApp_StartConnection   0x0046ac    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+     MiApp_UnicastAddress   0x004246    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+  MiApp_UnicastConnection   0x004006    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+      MiMAC_DiscardPacket   0x00588c    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+               MiMAC_Init   0x005026    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+     MiMAC_ReceivedPacket   0x005448    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+         MiMAC_SendPacket   0x00521e    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+      MiMAC_SetAltAddress   0x004f14    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+         MiMAC_SetChannel   0x004f2a    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+           MiMAC_SetPower   0x004fe4    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                     MiWi   0x0081f4    program     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+                MiWiTasks   0x00011e    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+             MiWi_TickGet   0x0083e2    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\SymbolTime.c
+                  NVMInit   0x007aa0    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+                  NVMRead   0x0078ec    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+                 NVMWrite   0x007968    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+                 NVMalloc   0x007a38    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+               OpenSocket   0x002c78    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                   PVALUE   0x008452    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                PrintChar   0x00810e    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\Console.c
+                 PrintDec   0x008162    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\Console.c
+                  RESTORE   0x007f16    program     static C:\MCC18\src\extended\math\div32u.asm
+                  RESTORE   0x007dc4    program     static C:\MCC18\src\extended\math\div08u.asm
+              RETQUOTIENT   0x007f06    program     static C:\MCC18\src\extended\math\div32u.asm
+              RETURN_HERE   0x005dc2    program     static                          
+             RegisterRead   0x004d00    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+              RegisterSet   0x004cb6    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+             RouteMessage   0x001e50    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                 SETUPSTK   0x007d82    program     static C:\MCC18\src\extended\math\div08u.asm
+                 SETUPSTK   0x007e80    program     static C:\MCC18\src\extended\math\div32u.asm
+                   SPIGet   0x00860e    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MSPI.c
+                   SPIPut   0x0085e6    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MSPI.c
+                   SVALUE   0x008472    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                 ScanTime   0x0085aa    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+     SearchForLongAddress   0x0031da    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+    SearchForShortAddress   0x003006    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               SendBeacon   0x0030aa    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+            SendMACPacket   0x002408    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                SetRFMode   0x00519e    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                 TxPacket   0x004d80    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+     UserInterruptHandler   0x007d80    program     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+                WriteFIFO   0x004d48    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+              _2jContinue   0x008352    program     static C:\MCC18\src\extended\stdclib\memset.asm
+                   _2jEnd   0x0083b6    program     static C:\MCC18\src\extended\stdclib\slenpgm.asm
+                   _3jEnd   0x00835c    program     static C:\MCC18\src\extended\stdclib\memset.asm
+       ___case_1_lbl00195   0x001224    program     static                          
+       ___case_3_lbl00131   0x000cba    program     static                          
+       ___case_7_lbl00193   0x001b34    program     static                          
+      ___default_lbl00194   0x001b72    program     static                          
+      ___default_lbl00196   0x001b76    program     static                          
+         ___else_lbl00004   0x007fa6    program     static                          
+         ___else_lbl00011   0x008062    program     static                          
+         ___else_lbl00114   0x005980    program     static                          
+         ___else_lbl00124   0x005a0a    program     static                          
+         ___else_lbl00128   0x005a70    program     static                          
+         ___else_lbl00153   0x005dbc    program     static                          
+          ___for_lbl00109   0x005970    program     static                          
+          ___for_lbl00110   0x005974    program     static                          
+          ___for_lbl00112   0x00594e    program     static                          
+          ___for_lbl00130   0x005b6e    program     static                          
+          ___for_lbl00131   0x005b72    program     static                          
+          ___for_lbl00133   0x005af4    program     static                          
+          ___for_lbl00135   0x005bc6    program     static                          
+          ___for_lbl00136   0x005bca    program     static                          
+          ___for_lbl00137   0x005b90    program     static                          
+          ___for_lbl00138   0x005c36    program     static                          
+          ___for_lbl00139   0x005c3a    program     static                          
+          ___for_lbl00140   0x005c00    program     static                          
+          ___for_lbl00142   0x005cfc    program     static                          
+          ___for_lbl00143   0x005d00    program     static                          
+          ___for_lbl00148   0x005c3c    program     static                          
+           ___if_lbl00003   0x007fda    program     static                          
+           ___if_lbl00005   0x007fda    program     static                          
+           ___if_lbl00010   0x008096    program     static                          
+           ___if_lbl00111   0x005970    program     static                          
+           ___if_lbl00113   0x005982    program     static                          
+           ___if_lbl00120   0x0059be    program     static                          
+           ___if_lbl00123   0x005a48    program     static                          
+           ___if_lbl00125   0x005a6a    program     static                          
+           ___if_lbl00126   0x005a7a    program     static                          
+           ___if_lbl00127   0x005a7a    program     static                          
+           ___if_lbl00129   0x005ab4    program     static                          
+           ___if_lbl00132   0x005b6e    program     static                          
+           ___if_lbl00134   0x005b72    program     static                          
+           ___if_lbl00141   0x005c3a    program     static                          
+           ___if_lbl00145   0x005cda    program     static                          
+           ___if_lbl00147   0x005cfc    program     static                          
+           ___if_lbl00149   0x005da0    program     static                          
+           ___if_lbl00150   0x005db6    program     static                          
+           ___if_lbl00151   0x005db8    program     static                          
+           ___if_lbl00152   0x005dc2    program     static                          
+           ___if_lbl00154   0x005dc6    program     static                          
+           ___if_lbl00155   0x005dde    program     static                          
+           ___if_lbl00156   0x005dde    program     static                          
+           ___if_lbl00157   0x005dde    program     static                          
+           ___if_lbl00198   0x001b82    program     static                          
+       ___return_lbl00000   0x007fda    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00000   0x000046    program     static                          
+       ___return_lbl00001   0x008692    program     static                          
+       ___return_lbl00002   0x008330    program     static                          
+       ___return_lbl00005   0x0076fc    program     static                          
+       ___return_lbl00006   0x00774c    program     static                          
+       ___return_lbl00007   0x008096    program     static                          
+       ___return_lbl00007   0x001e48    program     static                          
+       ___return_lbl00007   0x00779c    program     static                          
+       ___return_lbl00107   0x005de2    program     static                          
+       ___return_lbl00158   0x00000c    program     static                          
+       ___return_lbl00159   0x00001c    program     static                          
+   ___switchexit_lbl00012   0x001b78    program     static                          
+   ___switchexit_lbl00132   0x001b74    program     static                          
+        ___while_lbl00001   0x007fa6    program     static                          
+        ___while_lbl00002   0x007fda    program     static                          
+        ___while_lbl00008   0x008062    program     static                          
+        ___while_lbl00009   0x008096    program     static                          
+        ___while_lbl00118   0x0059a2    program     static                          
+        ___while_lbl00119   0x0059bc    program     static                          
+        ___while_lbl00121   0x0059c6    program     static                          
+        ___while_lbl00122   0x005dba    program     static                          
+               __config_0   0x01fff8    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+               __config_1   0x01fffa    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+               __config_2   0x01fffb    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+                 __div08u   0x007d9a    program     extern C:\MCC18\src\extended\math\div08u.asm
+                 __div32u   0x007e98    program     extern C:\MCC18\src\extended\math\div32u.asm
+                   __init   0x000016    program     extern C:\MCC18\src\extended\stdclib\__init.c
+                 __mod08u   0x007da0    program     extern C:\MCC18\src\extended\math\div08u.asm
+                 __mod32u   0x007e9e    program     extern C:\MCC18\src\extended\math\div32u.asm
+                  __mul32   0x007dde    program     extern C:\MCC18\src\extended\math\mul32.asm
+                   __pa_0   0x0064fc    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_1   0x00650a    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_10   0x006598    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_11   0x0065a8    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_12   0x0065b8    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_13   0x0065c6    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_14   0x0065e4    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_15   0x0065ee    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_16   0x0065f4    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_17   0x006604    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_18   0x006610    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_19   0x00661e    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_2   0x00651a    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_20   0x006628    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_21   0x006632    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_22   0x00663c    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_23   0x00664a    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_3   0x006526    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_4   0x00653a    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_5   0x00654c    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_6   0x00655c    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_7   0x00656e    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_8   0x00657a    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_9   0x00658c    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+               __string_0   0x006bb7    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+               __string_0   0x006f5e    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_0   0x0070cc    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_1   0x0070b7    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_1   0x006f26    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_1   0x006ba6    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+              __string_10   0x006e2c    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_10   0x006fe2    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+              __string_11   0x006e15    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_11   0x006fcb    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+              __string_12   0x006faa    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+              __string_12   0x006dd5    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_13   0x006fa1    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+              __string_13   0x006d97    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_14   0x006f99    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+              __string_14   0x006d55    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_15   0x006f8e    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+              __string_15   0x006d13    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_16   0x006f7e    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+              __string_16   0x006cd7    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_17   0x006cd2    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_18   0x006cba    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_19   0x006c90    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_2   0x006f0f    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_2   0x0070a2    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+              __string_20   0x006c70    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_21   0x006c51    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_22   0x006c34    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_23   0x006c2b    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_24   0x006c0f    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_25   0x006bf5    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_26   0x006bee    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_27   0x006beb    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_28   0x006bd8    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_29   0x006bc8    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_3   0x006ef4    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_3   0x007080    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_4   0x006ed9    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_4   0x007062    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_5   0x006ec1    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_5   0x007052    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_6   0x006e9f    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_6   0x007043    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_7   0x006e7f    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_7   0x007039    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_8   0x006e65    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_8   0x00702d    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_9   0x006e4b    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_9   0x006fe5    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+              __tmplbl_13   0x005922    program     static                          
+              __tmplbl_14   0x00591a    program     static                          
+              __tmplbl_15   0x005996    program     static                          
+              __tmplbl_16   0x00598c    program     static                          
+              __tmplbl_17   0x005988    program     static                          
+              __tmplbl_18   0x005992    program     static                          
+              __tmplbl_19   0x005c98    program     static                          
+              __tmplbl_20   0x005c5a    program     static                          
+              __tmplbl_21   0x005cf8    program     static                          
+              __tmplbl_22   0x005ce0    program     static                          
+            __zero_memory   0x00863e    program     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                _do_cinit   0x008294    program     extern C:\MCC18\src\extended\startup\c018i_e.c
+            _early08uexit   0x007da4    program     extern C:\MCC18\src\extended\math\div08u.asm
+            _early32uexit   0x007ea2    program     extern C:\MCC18\src\extended\math\div32u.asm
+                   _entry   0x000000    program     extern C:\MCC18\src\extended\startup\c018i_e.c
+                   _false   0x007ee6    program     static C:\MCC18\src\extended\math\div32u.asm
+                 _startup   0x00867a    program     extern C:\MCC18\src\extended\startup\c018i_e.c
+              _usart_putc   0x00865e    program     extern C:\MCC18\src\pmc_common\USART\_usartpc.asm
+               _user_putc   0x000006    program     extern C:\MCC18\src\extended\stdclib\_user_putc.c
+                compare_l   0x008654    program     static C:\MCC18\src\extended\proc\p18F87J11.asm
+                copy_loop   0x008306    program     static                          
+            copy_one_byte   0x00830c    program     static                          
+                divmod08u   0x007da6    program     static C:\MCC18\src\extended\math\div08u.asm
+                divmod32u   0x007ea4    program     static C:\MCC18\src\extended\math\div32u.asm
+                     done   0x008330    program     static                          
+             done_copying   0x00831a    program     static                          
+                   encode   0x006650    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\security.c
+                  endloop   0x007dbc    program     static C:\MCC18\src\extended\math\div08u.asm
+     findNextNetworkEntry   0x00247c    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+            getReceiverBW   0x004c88    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+            isSameAddress   0x0033bc    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                  isdigit   0x00861a    program     extern C:\MCC18\src\extended\stdclib\isdigit.asm
+                     jEnd   0x008380    program     static C:\MCC18\src\extended\stdclib\strlen.asm
+                     jEnd   0x0083b8    program     static C:\MCC18\src\extended\stdclib\slenpgm.asm
+                     jEnd   0x008364    program     static C:\MCC18\src\extended\stdclib\memset.asm
+                    jLoop   0x0083a0    program     static C:\MCC18\src\extended\stdclib\slenpgm.asm
+                    jLoop   0x008376    program     static C:\MCC18\src\extended\stdclib\strlen.asm
+                    jLoop   0x008346    program     static C:\MCC18\src\extended\stdclib\memset.asm
+                   jMatch   0x00863a    program     static C:\MCC18\src\extended\stdclib\isdigit.asm
+                 jNoMatch   0x00863c    program     static C:\MCC18\src\extended\stdclib\isdigit.asm
+                     loop   0x00866e    program     static C:\MCC18\src\pmc_common\USART\_usartpc.asm
+                     loop   0x007eb2    program     static C:\MCC18\src\extended\math\div32u.asm
+                     loop   0x007dae    program     static C:\MCC18\src\extended\math\div08u.asm
+                     loop   0x008688    program     static                          
+                   loop_h   0x00864c    program     static C:\MCC18\src\extended\proc\p18F87J11.asm
+                   loop_l   0x008656    program     static C:\MCC18\src\extended\proc\p18F87J11.asm
+                     main   0x0070e4    program     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+                   memset   0x008332    program     extern C:\MCC18\src\extended\stdclib\memset.asm
+            mySecurityKey   0x00000e    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\security.c
+                     putc   0x008544    program     extern C:\MCC18\src\extended\stdclib\putc.c
+                 s_digits   0x008694    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+            s_put_n_chars   0x005e3a    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  sprintf   0x0084d2    program     extern C:\MCC18\src\extended\stdclib\sprintf.c
+                   strlen   0x008366    program     extern C:\MCC18\src\extended\stdclib\strlen.asm
+                strlenpgm   0x008382    program     extern C:\MCC18\src\extended\stdclib\slenpgm.asm
+                     test   0x0082ae    program     static                          
+                 vfprintf   0x005e6c    program     extern C:\MCC18\src\extended\stdclib\vfprintf.c
+               zero_block   0x00864c    program     static C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ANCON0   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ANCON0bits   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ANCON1   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ANCON1bits   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  AckInfo   0x000209       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+      AcknowledgementAddr   0x0000a9       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+       AcknowledgementSeq   0x000273       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+    ActiveScanResultIndex   0x00006b       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+        ActiveScanResults   0x00006c       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+         AdditionalNodeID   0x000281       data     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+                  BAUDCON   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 BAUDCON1   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             BAUDCON1bits   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 BAUDCON2   0x000f7c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             BAUDCON2bits   0x000f7c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              BAUDCONbits   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+         BroadcastRecords   0x0000dc       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                  CCP1CON   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP1CONbits   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP2CON   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP2CONbits   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP3CON   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP3CONbits   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP4CON   0x000f73       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP4CONbits   0x000f73       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP5CON   0x000f70       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP5CONbits   0x000f70       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR1   0x000fbc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR1H   0x000fbd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR1L   0x000fbc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR2   0x000fb7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR2H   0x000fb8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR2L   0x000fb7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR3   0x000fb2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR3H   0x000fb3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR3L   0x000fb2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR4   0x000f74       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR4H   0x000f75       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR4L   0x000f74       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR5   0x000f71       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR5H   0x000f72       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR5L   0x000f71       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CM1CON   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CM1CON1   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CM1CON1bits   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               CM1CONbits   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CM2CON   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CM2CON1   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CM2CON1bits   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               CM2CONbits   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CMSTAT   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 CMSTATUS   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             CMSTATUSbits   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               CMSTATbits   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CVRCON   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               CVRCONbits   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ConnMode   0x000271       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+          ConnectionTable   0x000184       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                     DDRA   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRD   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRDbits   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRE   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDREbits   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRF   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRFbits   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRG   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRGbits   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRH   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRHbits   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRJ   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRJbits   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  ECCP1AS   0x000fbf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              ECCP1ASbits   0x000fbf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP1CON   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP1CONbits   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP1DEL   0x000fbe       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP1DELbits   0x000fbe       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  ECCP2AS   0x000fba       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              ECCP2ASbits   0x000fba       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP2CON   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP2CONbits   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP2DEL   0x000fb9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP2DELbits   0x000fb9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  ECCP3AS   0x000fb5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              ECCP3ASbits   0x000fb5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP3CON   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP3CONbits   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP3DEL   0x000fb4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP3DELbits   0x000fb4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     IPR3   0x000fa5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 IPR3bits   0x000fa5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+            IRQ1_Received   0x000283       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+     IncomingFrameCounter   0x000033       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                     LATA   0x000f89       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATF   0x000f8e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATFbits   0x000f8e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATG   0x000f8f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATGbits   0x000f8f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATH   0x000f90       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATHbits   0x000f90       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATJ   0x000f91       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATJbits   0x000f91       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  LCDText   0x000233       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+            MACInitParams   0x000200       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+              MACRxPacket   0x0000d4       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                   MACSeq   0x000204       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+              MACTxBuffer   0x000f00       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                   MEMCON   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               MEMCONbits   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      MTP   0x0000d1       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+          MiWiAckRequired   0x000274       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+         MiWiCapacityInfo   0x000060       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               MiWiSeqNum   0x0000ab       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+         MiWiStateMachine   0x0000a7       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                   ODCON1   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ODCON1bits   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ODCON2   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ODCON2bits   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ODCON3   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ODCON3bits   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+     OutgoingFrameCounter   0x000227       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                  PADCFG1   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PADCFG1bits   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                       PC   0x000ff9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIE3   0x000fa3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIE3bits   0x000fa3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIR3   0x000fa4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIR3bits   0x000fa4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMADDR   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMADDRH   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMADDRHbits   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMADDRL   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PMCON   0x000f64       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMCONH   0x000f65       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               PMCONHbits   0x000f65       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMCONL   0x000f64       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               PMCONLbits   0x000f64       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMDIN1   0x000f66       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDIN1H   0x000f67       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDIN1L   0x000f66       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMDIN2   0x000f5e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDIN2H   0x000f5f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDIN2L   0x000f5e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDOUT1   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMDOUT1H   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMDOUT1L   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDOUT2   0x000f60       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMDOUT2H   0x000f61       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMDOUT2L   0x000f60       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PMEH   0x000f5d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMEHbits   0x000f5d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PMEL   0x000f5c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMELbits   0x000f5c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PMEN   0x000f5c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMMODE   0x000f62       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMMODEH   0x000f63       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMMODEHbits   0x000f63       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMMODEL   0x000f62       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMMODELbits   0x000f62       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMSTAT   0x000f5a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMSTATH   0x000f5b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMSTATHbits   0x000f5b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMSTATL   0x000f5a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMSTATLbits   0x000f5a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTF   0x000f85       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTFbits   0x000f85       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTG   0x000f86       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTGbits   0x000f86       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTH   0x000f87       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTHbits   0x000f87       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTJ   0x000f88       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTJbits   0x000f88       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      PR4   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+   PUSH_BUTTON_press_time   0x00005c       data     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+      PUSH_BUTTON_pressed   0x00005b       data     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+                     RCON   0x000fd0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    RCREG   0x000faf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   RCREG1   0x000faf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   RCREG2   0x000faa       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    RCSTA   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   RCSTA1   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               RCSTA1bits   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   RCSTA2   0x000f9c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               RCSTA2bits   0x000f9c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                RCSTAbits   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  REFOCON   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              REFOCONbits   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  RF_Mode   0x000206       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                 RSSILock   0x000208       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                  RSSIVal   0x000207       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+        ReceivedBankIndex   0x000205       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+           RouterFailures   0x0000b4       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+             RoutingTable   0x0000ac       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                 RxPacket   0x000100       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                    SPBRG   0x000fb0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   SPBRG1   0x000fb0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   SPBRG2   0x000fab       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SPBRGH1   0x000f7f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SPBRGH2   0x000f7d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP1ADD   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP1BUF   0x000fc9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP1CON1   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP1CON1bits   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP1CON2   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP1CON2bits   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP1MSK   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP1STAT   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP1STATbits   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP2ADD   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP2BUF   0x000f6f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP2CON1   0x000f6c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP2CON1bits   0x000f6c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP2CON2   0x000f6b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP2CON2bits   0x000f6b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP2MSK   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              SSP2MSKbits   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP2STAT   0x000f6d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP2STATbits   0x000f6d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T3CON   0x000f79       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T3CONbits   0x000f79       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T4CON   0x000f76       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T4CONbits   0x000f76       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR3H   0x000f7b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR3L   0x000f7a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TMR4   0x000f78       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISF   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISFbits   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISG   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISGbits   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISH   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISHbits   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISJ   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISJbits   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TXREG   0x000fae       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TXREG1   0x000fae       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TXREG2   0x000fa9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TXSTA   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TXSTA1   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               TXSTA1bits   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TXSTA2   0x000fa8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               TXSTA2bits   0x000fa8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TXSTAbits   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 TxBuffer   0x000000       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                   TxData   0x0000a1       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                 TxMACSeq   0x000203       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                   WDTCON   0x000fc0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               WDTCONbits   0x000fc0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                __RETVAL0   0x000275       data     extern C:\MCC18\src\extended\math\cmath18.asm
+                __RETVAL1   0x000276       data     extern C:\MCC18\src\extended\math\cmath18.asm
+                __RETVAL2   0x000277       data     extern C:\MCC18\src\extended\math\cmath18.asm
+                __RETVAL3   0x000278       data     extern C:\MCC18\src\extended\math\cmath18.asm
+                  __tmp_0   0x000254       data     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __tmp_0   0x000254       data     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+                  __tmp_0   0x000254       data     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+                  __tmp_0   0x000254       data     static C:\DevSource\App Libs v2011-06\Microchip\Common\TimeDelay.c
+                  __tmp_0   0x000254       data     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+                  __tmp_0   0x000254       data     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                  __tmp_0   0x000254       data     static C:\DevSource\App Libs v2011-06\Microchip\Transceivers\security.c
+                  __tmp_0   0x000254       data     static C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                  __tmp_1   0x000279       data     static C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                curr_byte   0x000265       data     static C:\MCC18\src\extended\startup\c018i_e.c
+               curr_entry   0x000267       data     static C:\MCC18\src\extended\startup\c018i_e.c
+           currentChannel   0x000270       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                 data_ptr   0x000269       data     static C:\MCC18\src\extended\startup\c018i_e.c
+              defaultHops   0x000272       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                   hasAck   0x000284       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                      key   0x00022b       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+        knownCoordinators   0x0000bc       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                myChannel   0x000282       data     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+            myLongAddress   0x00026c       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                  myPANID   0x0000a4       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                 myParent   0x0000a6       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+           myShortAddress   0x0000a2       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+           nextEEPosition   0x0001fc       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+              nvmConnMode   0x0001ec       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+       nvmConnectionTable   0x0001ee       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+        nvmCurrentChannel   0x0001ea       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+             nvmDelayTick   0x0000fc       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+     nvmKnownCoordinators   0x0001f8       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+               nvmMyPANID   0x0001e8       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+              nvmMyParent   0x0001f4       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+        nvmMyShortAddress   0x0001f2       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+       nvmOutFrameCounter   0x0001f0       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+                  nvmRole   0x0001fa       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+          nvmRoutingTable   0x0001f6       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+           openSocketInfo   0x0000be       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                     prom   0x000262       data     static C:\MCC18\src\extended\startup\c018i_e.c
+                     role   0x0000bd       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                rxMessage   0x000061       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+          tempLongAddress   0x000098       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+           tempNodeStatus   0x0000a0       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                tempPANID   0x00009e       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+         tempShortAddress   0x00009c       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+          timerExtension1   0x0001fe       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\SymbolTime.c
+          timerExtension2   0x0001ff       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\SymbolTime.c
+                 tmpBlock   0x00027d       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\security.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern C:\MCC18\src\extended\startup\c018i_e.c
+       ___return_lbl00000   0x000004    program     static                          
+               _user_putc   0x000006    program     extern C:\MCC18\src\extended\stdclib\_user_putc.c
+               HighVector   0x000008    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+       ___return_lbl00158   0x00000c    program     static                          
+            mySecurityKey   0x00000e    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\security.c
+                   __init   0x000016    program     extern C:\MCC18\src\extended\stdclib\__init.c
+                LowVector   0x000018    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+       ___return_lbl00159   0x00001c    program     static                          
+                 MacroNop   0x000044    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+       ___return_lbl00000   0x000046    program     static                          
+          BroadcastJitter   0x000048    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                MiWiTasks   0x00011e    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+       ___case_3_lbl00131   0x000cba    program     static                          
+       ___case_1_lbl00195   0x001224    program     static                          
+       ___case_7_lbl00193   0x001b34    program     static                          
+      ___default_lbl00194   0x001b72    program     static                          
+   ___switchexit_lbl00132   0x001b74    program     static                          
+      ___default_lbl00196   0x001b76    program     static                          
+   ___switchexit_lbl00012   0x001b78    program     static                          
+           ___if_lbl00198   0x001b82    program     static                          
+       ___return_lbl00007   0x001e48    program     static                          
+             RouteMessage   0x001e50    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+            SendMACPacket   0x002408    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+     findNextNetworkEntry   0x00247c    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+           DumpConnection   0x0024c6    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               OpenSocket   0x002c78    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+    SearchForShortAddress   0x003006    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               SendBeacon   0x0030aa    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+     SearchForLongAddress   0x0031da    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+    AddNodeToNetworkTable   0x00329e    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+            isSameAddress   0x0033bc    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+       MiApp_ProtocolInit   0x003408    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+         MiApp_SetChannel   0x003820    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+     MiApp_ConnectionMode   0x00386a    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+   MiApp_SearchConnection   0x0038be    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+MiApp_EstablishConnection   0x003aa6    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+   MiApp_MessageAvailable   0x003f72    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+     MiApp_DiscardMessage   0x003f84    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+    MiApp_BroadcastPacket   0x003f8e    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+  MiApp_UnicastConnection   0x004006    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+     MiApp_UnicastAddress   0x004246    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+    MiApp_StartConnection   0x0046ac    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+   MiApp_RemoveConnection   0x00479e    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+            getReceiverBW   0x004c88    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+              RegisterSet   0x004cb6    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+             RegisterRead   0x004d00    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                WriteFIFO   0x004d48    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                 TxPacket   0x004d80    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+      MiMAC_SetAltAddress   0x004f14    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+         MiMAC_SetChannel   0x004f2a    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+           MiMAC_SetPower   0x004fe4    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+               MiMAC_Init   0x005026    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                SetRFMode   0x00519e    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+         MiMAC_SendPacket   0x00521e    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+     MiMAC_ReceivedPacket   0x005448    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+      MiMAC_DiscardPacket   0x00588c    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                  HighISR   0x0058b2    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+              __tmplbl_14   0x00591a    program     static                          
+              __tmplbl_13   0x005922    program     static                          
+          ___for_lbl00112   0x00594e    program     static                          
+          ___for_lbl00109   0x005970    program     static                          
+           ___if_lbl00111   0x005970    program     static                          
+          ___for_lbl00110   0x005974    program     static                          
+         ___else_lbl00114   0x005980    program     static                          
+           ___if_lbl00113   0x005982    program     static                          
+              __tmplbl_17   0x005988    program     static                          
+              __tmplbl_16   0x00598c    program     static                          
+              __tmplbl_18   0x005992    program     static                          
+              __tmplbl_15   0x005996    program     static                          
+              IGNORE_HERE   0x005996    program     static                          
+        ___while_lbl00118   0x0059a2    program     static                          
+        ___while_lbl00119   0x0059bc    program     static                          
+           ___if_lbl00120   0x0059be    program     static                          
+        ___while_lbl00121   0x0059c6    program     static                          
+         ___else_lbl00124   0x005a0a    program     static                          
+           ___if_lbl00123   0x005a48    program     static                          
+           ___if_lbl00125   0x005a6a    program     static                          
+         ___else_lbl00128   0x005a70    program     static                          
+           ___if_lbl00126   0x005a7a    program     static                          
+           ___if_lbl00127   0x005a7a    program     static                          
+           ___if_lbl00129   0x005ab4    program     static                          
+          ___for_lbl00133   0x005af4    program     static                          
+           ___if_lbl00132   0x005b6e    program     static                          
+          ___for_lbl00130   0x005b6e    program     static                          
+           ___if_lbl00134   0x005b72    program     static                          
+          ___for_lbl00131   0x005b72    program     static                          
+          ___for_lbl00137   0x005b90    program     static                          
+          ___for_lbl00135   0x005bc6    program     static                          
+          ___for_lbl00136   0x005bca    program     static                          
+          ___for_lbl00140   0x005c00    program     static                          
+          ___for_lbl00138   0x005c36    program     static                          
+          ___for_lbl00139   0x005c3a    program     static                          
+           ___if_lbl00141   0x005c3a    program     static                          
+          ___for_lbl00148   0x005c3c    program     static                          
+              __tmplbl_20   0x005c5a    program     static                          
+              __tmplbl_19   0x005c98    program     static                          
+           ___if_lbl00145   0x005cda    program     static                          
+              __tmplbl_22   0x005ce0    program     static                          
+              __tmplbl_21   0x005cf8    program     static                          
+           ___if_lbl00147   0x005cfc    program     static                          
+          ___for_lbl00142   0x005cfc    program     static                          
+          ___for_lbl00143   0x005d00    program     static                          
+           ___if_lbl00149   0x005da0    program     static                          
+           ___if_lbl00150   0x005db6    program     static                          
+           ___if_lbl00151   0x005db8    program     static                          
+        ___while_lbl00122   0x005dba    program     static                          
+         ___else_lbl00153   0x005dbc    program     static                          
+           ___if_lbl00152   0x005dc2    program     static                          
+              RETURN_HERE   0x005dc2    program     static                          
+           ___if_lbl00154   0x005dc6    program     static                          
+           ___if_lbl00157   0x005dde    program     static                          
+           ___if_lbl00156   0x005dde    program     static                          
+           ___if_lbl00155   0x005dde    program     static                          
+       ___return_lbl00107   0x005de2    program     static                          
+            s_put_n_chars   0x005e3a    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                 vfprintf   0x005e6c    program     extern C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_0   0x0064fc    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_1   0x00650a    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_2   0x00651a    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_3   0x006526    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_4   0x00653a    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_5   0x00654c    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_6   0x00655c    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_7   0x00656e    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_8   0x00657a    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   __pa_9   0x00658c    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_10   0x006598    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_11   0x0065a8    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_12   0x0065b8    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_13   0x0065c6    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_14   0x0065e4    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_15   0x0065ee    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_16   0x0065f4    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_17   0x006604    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_18   0x006610    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_19   0x00661e    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_20   0x006628    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_21   0x006632    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_22   0x00663c    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __pa_23   0x00664a    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                   encode   0x006650    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\security.c
+                      CTR   0x006844    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\security.c
+                  CBC_MAC   0x006910    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\security.c
+                  CCM_Enc   0x0069c4    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\security.c
+                  CCM_Dec   0x006aaa    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\security.c
+               __string_1   0x006ba6    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+               __string_0   0x006bb7    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+              __string_29   0x006bc8    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_28   0x006bd8    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_27   0x006beb    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_26   0x006bee    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_25   0x006bf5    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_24   0x006c0f    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_23   0x006c2b    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_22   0x006c34    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_21   0x006c51    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_20   0x006c70    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_19   0x006c90    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_18   0x006cba    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_17   0x006cd2    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_16   0x006cd7    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_15   0x006d13    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_14   0x006d55    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_13   0x006d97    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_12   0x006dd5    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_11   0x006e15    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_10   0x006e2c    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_9   0x006e4b    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_8   0x006e65    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_7   0x006e7f    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_6   0x006e9f    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_5   0x006ec1    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_4   0x006ed9    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_3   0x006ef4    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_2   0x006f0f    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_1   0x006f26    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               __string_0   0x006f5e    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+              __string_16   0x006f7e    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+              __string_15   0x006f8e    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+              __string_14   0x006f99    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+              __string_13   0x006fa1    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+              __string_12   0x006faa    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+              __string_11   0x006fcb    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+              __string_10   0x006fe2    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_9   0x006fe5    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_8   0x00702d    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_7   0x007039    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_6   0x007043    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_5   0x007052    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_4   0x007062    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_3   0x007080    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_2   0x0070a2    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_1   0x0070b7    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               __string_0   0x0070cc    program     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                     main   0x0070e4    program     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+               LCDInitSPI   0x00758c    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+             LCDInitPortA   0x007594    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+             LCDInitPortB   0x0075dc    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+            LCDWritePortA   0x007626    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+            LCDWritePortB   0x007672    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+             LCDInitWrite   0x0076be    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+       ___return_lbl00005   0x0076fc    program     static                          
+              LCD_i_write   0x007704    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+       ___return_lbl00006   0x00774c    program     static                          
+              LCD_d_write   0x007754    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+       ___return_lbl00007   0x00779c    program     static                          
+                  LCDInit   0x0077a4    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+                LCDUpdate   0x007824    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+                 LCDErase   0x0078be    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+                  NVMRead   0x0078ec    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+                 NVMWrite   0x007968    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+                 NVMalloc   0x007a38    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+                  NVMInit   0x007aa0    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+                BoardInit   0x007b8a    program     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+              LCDTRXCount   0x007be8    program     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+               LCDDisplay   0x007c3e    program     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+            ButtonPressed   0x007c94    program     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+     UserInterruptHandler   0x007d80    program     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+                 SETUPSTK   0x007d82    program     static C:\MCC18\src\extended\math\div08u.asm
+                 __div08u   0x007d9a    program     extern C:\MCC18\src\extended\math\div08u.asm
+                 __mod08u   0x007da0    program     extern C:\MCC18\src\extended\math\div08u.asm
+            _early08uexit   0x007da4    program     extern C:\MCC18\src\extended\math\div08u.asm
+                divmod08u   0x007da6    program     static C:\MCC18\src\extended\math\div08u.asm
+                     loop   0x007dae    program     static C:\MCC18\src\extended\math\div08u.asm
+                  endloop   0x007dbc    program     static C:\MCC18\src\extended\math\div08u.asm
+                  RESTORE   0x007dc4    program     static C:\MCC18\src\extended\math\div08u.asm
+                  __mul32   0x007dde    program     extern C:\MCC18\src\extended\math\mul32.asm
+                 SETUPSTK   0x007e80    program     static C:\MCC18\src\extended\math\div32u.asm
+                 __div32u   0x007e98    program     extern C:\MCC18\src\extended\math\div32u.asm
+                 __mod32u   0x007e9e    program     extern C:\MCC18\src\extended\math\div32u.asm
+            _early32uexit   0x007ea2    program     extern C:\MCC18\src\extended\math\div32u.asm
+                divmod32u   0x007ea4    program     static C:\MCC18\src\extended\math\div32u.asm
+                     loop   0x007eb2    program     static C:\MCC18\src\extended\math\div32u.asm
+                   _false   0x007ee6    program     static C:\MCC18\src\extended\math\div32u.asm
+              RETQUOTIENT   0x007f06    program     static C:\MCC18\src\extended\math\div32u.asm
+                  RESTORE   0x007f16    program     static C:\MCC18\src\extended\math\div32u.asm
+                Delay10us   0x007f24    program     extern C:\DevSource\App Libs v2011-06\Microchip\Common\TimeDelay.c
+        ___while_lbl00001   0x007fa6    program     static                          
+         ___else_lbl00004   0x007fa6    program     static                          
+       ___return_lbl00000   0x007fda    program     static                          
+        ___while_lbl00002   0x007fda    program     static                          
+           ___if_lbl00003   0x007fda    program     static                          
+           ___if_lbl00005   0x007fda    program     static                          
+                  DelayMs   0x007fe2    program     extern C:\DevSource\App Libs v2011-06\Microchip\Common\TimeDelay.c
+         ___else_lbl00011   0x008062    program     static                          
+        ___while_lbl00008   0x008062    program     static                          
+           ___if_lbl00010   0x008096    program     static                          
+       ___return_lbl00007   0x008096    program     static                          
+        ___while_lbl00009   0x008096    program     static                          
+              ConsoleInit   0x00809e    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\Console.c
+      ConsolePutROMString   0x0080b0    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\Console.c
+               ConsolePut   0x0080e6    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\Console.c
+               ConsoleGet   0x008100    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\Console.c
+                PrintChar   0x00810e    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\Console.c
+                 PrintDec   0x008162    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\Console.c
+                     MiWi   0x0081f4    program     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+                       DE   0x00825d    program     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+                _do_cinit   0x008294    program     extern C:\MCC18\src\extended\startup\c018i_e.c
+                     test   0x0082ae    program     static                          
+                copy_loop   0x008306    program     static                          
+            copy_one_byte   0x00830c    program     static                          
+             done_copying   0x00831a    program     static                          
+       ___return_lbl00002   0x008330    program     static                          
+                     done   0x008330    program     static                          
+                   memset   0x008332    program     extern C:\MCC18\src\extended\stdclib\memset.asm
+                    jLoop   0x008346    program     static C:\MCC18\src\extended\stdclib\memset.asm
+              _2jContinue   0x008352    program     static C:\MCC18\src\extended\stdclib\memset.asm
+                   _3jEnd   0x00835c    program     static C:\MCC18\src\extended\stdclib\memset.asm
+                     jEnd   0x008364    program     static C:\MCC18\src\extended\stdclib\memset.asm
+                   strlen   0x008366    program     extern C:\MCC18\src\extended\stdclib\strlen.asm
+                    jLoop   0x008376    program     static C:\MCC18\src\extended\stdclib\strlen.asm
+                     jEnd   0x008380    program     static C:\MCC18\src\extended\stdclib\strlen.asm
+                strlenpgm   0x008382    program     extern C:\MCC18\src\extended\stdclib\slenpgm.asm
+                    jLoop   0x0083a0    program     static C:\MCC18\src\extended\stdclib\slenpgm.asm
+                   _2jEnd   0x0083b6    program     static C:\MCC18\src\extended\stdclib\slenpgm.asm
+                     jEnd   0x0083b8    program     static C:\MCC18\src\extended\stdclib\slenpgm.asm
+          InitSymbolTimer   0x0083cc    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\SymbolTime.c
+             MiWi_TickGet   0x0083e2    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\SymbolTime.c
+                   PVALUE   0x008452    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                   SVALUE   0x008472    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+           InitConfigRegs   0x008492    program     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                  sprintf   0x0084d2    program     extern C:\MCC18\src\extended\stdclib\sprintf.c
+                     putc   0x008544    program     extern C:\MCC18\src\extended\stdclib\putc.c
+                 ScanTime   0x0085aa    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                   SPIPut   0x0085e6    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MSPI.c
+                   SPIGet   0x00860e    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MSPI.c
+                  isdigit   0x00861a    program     extern C:\MCC18\src\extended\stdclib\isdigit.asm
+                   jMatch   0x00863a    program     static C:\MCC18\src\extended\stdclib\isdigit.asm
+                 jNoMatch   0x00863c    program     static C:\MCC18\src\extended\stdclib\isdigit.asm
+            __zero_memory   0x00863e    program     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               zero_block   0x00864c    program     static C:\MCC18\src\extended\proc\p18F87J11.asm
+                   loop_h   0x00864c    program     static C:\MCC18\src\extended\proc\p18F87J11.asm
+                compare_l   0x008654    program     static C:\MCC18\src\extended\proc\p18F87J11.asm
+                   loop_l   0x008656    program     static C:\MCC18\src\extended\proc\p18F87J11.asm
+              _usart_putc   0x00865e    program     extern C:\MCC18\src\pmc_common\USART\_usartpc.asm
+                     loop   0x00866e    program     static C:\MCC18\src\pmc_common\USART\_usartpc.asm
+                 _startup   0x00867a    program     extern C:\MCC18\src\extended\startup\c018i_e.c
+                     loop   0x008688    program     static                          
+       ___return_lbl00001   0x008692    program     static                          
+                 s_digits   0x008694    program     static C:\MCC18\src\extended\stdclib\vfprintf.c
+           CharacterArray   0x0086a5    program     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\Console.c
+               __config_0   0x01fff8    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+               __config_1   0x01fffa    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+               __config_2   0x01fffb    program     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+                 TxBuffer   0x000000       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+     IncomingFrameCounter   0x000033       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+      PUSH_BUTTON_pressed   0x00005b       data     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+   PUSH_BUTTON_press_time   0x00005c       data     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+         MiWiCapacityInfo   0x000060       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                rxMessage   0x000061       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+    ActiveScanResultIndex   0x00006b       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+        ActiveScanResults   0x00006c       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+          tempLongAddress   0x000098       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+         tempShortAddress   0x00009c       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                tempPANID   0x00009e       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+           tempNodeStatus   0x0000a0       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                   TxData   0x0000a1       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+           myShortAddress   0x0000a2       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                  myPANID   0x0000a4       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                 myParent   0x0000a6       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+         MiWiStateMachine   0x0000a7       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+      AcknowledgementAddr   0x0000a9       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               MiWiSeqNum   0x0000ab       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+             RoutingTable   0x0000ac       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+           RouterFailures   0x0000b4       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+        knownCoordinators   0x0000bc       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                     role   0x0000bd       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+           openSocketInfo   0x0000be       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                      MTP   0x0000d1       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+              MACRxPacket   0x0000d4       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+         BroadcastRecords   0x0000dc       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+             nvmDelayTick   0x0000fc       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                 RxPacket   0x000100       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+          ConnectionTable   0x000184       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+               nvmMyPANID   0x0001e8       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+        nvmCurrentChannel   0x0001ea       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+              nvmConnMode   0x0001ec       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+       nvmConnectionTable   0x0001ee       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+       nvmOutFrameCounter   0x0001f0       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+        nvmMyShortAddress   0x0001f2       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+              nvmMyParent   0x0001f4       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+          nvmRoutingTable   0x0001f6       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+     nvmKnownCoordinators   0x0001f8       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+                  nvmRole   0x0001fa       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+           nextEEPosition   0x0001fc       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+          timerExtension1   0x0001fe       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\SymbolTime.c
+          timerExtension2   0x0001ff       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\SymbolTime.c
+            MACInitParams   0x000200       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                 TxMACSeq   0x000203       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                   MACSeq   0x000204       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+        ReceivedBankIndex   0x000205       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                  RF_Mode   0x000206       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                  RSSIVal   0x000207       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                 RSSILock   0x000208       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                  AckInfo   0x000209       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+     OutgoingFrameCounter   0x000227       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                      key   0x00022b       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                  LCDText   0x000233       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\LCDBlocking.c
+                  __tmp_0   0x000254       data     static C:\MCC18\src\extended\stdclib\vfprintf.c
+                  __tmp_0   0x000254       data     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\HardwareProfile.c
+                  __tmp_0   0x000254       data     static C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+                  __tmp_0   0x000254       data     static C:\DevSource\App Libs v2011-06\Microchip\Common\TimeDelay.c
+                  __tmp_0   0x000254       data     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\NVM.c
+                  __tmp_0   0x000254       data     static C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                  __tmp_0   0x000254       data     static C:\DevSource\App Libs v2011-06\Microchip\Transceivers\security.c
+                  __tmp_0   0x000254       data     static C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                     prom   0x000262       data     static C:\MCC18\src\extended\startup\c018i_e.c
+                curr_byte   0x000265       data     static C:\MCC18\src\extended\startup\c018i_e.c
+               curr_entry   0x000267       data     static C:\MCC18\src\extended\startup\c018i_e.c
+                 data_ptr   0x000269       data     static C:\MCC18\src\extended\startup\c018i_e.c
+            myLongAddress   0x00026c       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+           currentChannel   0x000270       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                 ConnMode   0x000271       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+              defaultHops   0x000272       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+       AcknowledgementSeq   0x000273       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+          MiWiAckRequired   0x000274       data     extern C:\DevSource\App Libs v2011-06\Microchip\WirelessProtocols\MiWi\MiWi.c
+                __RETVAL0   0x000275       data     extern C:\MCC18\src\extended\math\cmath18.asm
+                __RETVAL1   0x000276       data     extern C:\MCC18\src\extended\math\cmath18.asm
+                __RETVAL2   0x000277       data     extern C:\MCC18\src\extended\math\cmath18.asm
+                __RETVAL3   0x000278       data     extern C:\MCC18\src\extended\math\cmath18.asm
+                  __tmp_1   0x000279       data     static C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                 tmpBlock   0x00027d       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\security.c
+         AdditionalNodeID   0x000281       data     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+                myChannel   0x000282       data     extern C:\DevSource\App Libs v2011-06\MiWi DE Demo\Basic Demos\Simple Example\Node 1\SimpleExampleNode1.c
+            IRQ1_Received   0x000283       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                   hasAck   0x000284       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+              MACTxBuffer   0x000f00       data     extern C:\DevSource\App Libs v2011-06\Microchip\Transceivers\MRF89XA\MRF89XA.c
+                   PMSTAT   0x000f5a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMSTATL   0x000f5a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMSTATLbits   0x000f5a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMSTATH   0x000f5b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMSTATHbits   0x000f5b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PMEL   0x000f5c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMELbits   0x000f5c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PMEN   0x000f5c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMEHbits   0x000f5d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PMEH   0x000f5d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMDIN2   0x000f5e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDIN2L   0x000f5e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDIN2H   0x000f5f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDOUT2   0x000f60       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMDOUT2L   0x000f60       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMDOUT2H   0x000f61       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMMODELbits   0x000f62       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMMODEL   0x000f62       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMMODE   0x000f62       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMMODEHbits   0x000f63       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMMODEH   0x000f63       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PMCON   0x000f64       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMCONL   0x000f64       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               PMCONLbits   0x000f64       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMCONH   0x000f65       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               PMCONHbits   0x000f65       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDIN1L   0x000f66       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMDIN1   0x000f66       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDIN1H   0x000f67       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMDOUT1L   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDOUT1   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMADDRL   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMADDR   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMDOUT1H   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMADDRHbits   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMADDRH   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 CMSTATUS   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CMSTAT   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               CMSTATbits   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             CMSTATUSbits   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP2CON2   0x000f6b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP2CON2bits   0x000f6b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP2CON1   0x000f6c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP2CON1bits   0x000f6c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP2STAT   0x000f6d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP2STATbits   0x000f6d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP2ADD   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP2MSK   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              SSP2MSKbits   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP2BUF   0x000f6f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP5CONbits   0x000f70       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP5CON   0x000f70       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR5L   0x000f71       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR5   0x000f71       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR5H   0x000f72       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP4CONbits   0x000f73       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP4CON   0x000f73       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR4L   0x000f74       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR4   0x000f74       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR4H   0x000f75       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T4CONbits   0x000f76       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T4CON   0x000f76       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      PR4   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               CVRCONbits   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CVRCON   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TMR4   0x000f78       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T3CONbits   0x000f79       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T3CON   0x000f79       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR3L   0x000f7a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR3H   0x000f7b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 BAUDCON2   0x000f7c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             BAUDCON2bits   0x000f7c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SPBRGH2   0x000f7d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  BAUDCON   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 BAUDCON1   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             BAUDCON1bits   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              BAUDCONbits   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SPBRGH1   0x000f7f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTFbits   0x000f85       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTF   0x000f85       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTGbits   0x000f86       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTG   0x000f86       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTHbits   0x000f87       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTH   0x000f87       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTJ   0x000f88       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTJbits   0x000f88       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATA   0x000f89       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATF   0x000f8e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATFbits   0x000f8e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATGbits   0x000f8f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATG   0x000f8f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATH   0x000f90       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATHbits   0x000f90       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATJ   0x000f91       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATJbits   0x000f91       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRD   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRDbits   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRE   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDREbits   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISF   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISFbits   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRF   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRFbits   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISGbits   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRG   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRGbits   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISG   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISH   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISHbits   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRH   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRHbits   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISJbits   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISJ   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRJbits   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRJ   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   RCSTA2   0x000f9c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               RCSTA2bits   0x000f9c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIE3   0x000fa3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIE3bits   0x000fa3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIR3bits   0x000fa4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIR3   0x000fa4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     IPR3   0x000fa5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 IPR3bits   0x000fa5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TXSTA2   0x000fa8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               TXSTA2bits   0x000fa8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TXREG2   0x000fa9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   RCREG2   0x000faa       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   SPBRG2   0x000fab       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                RCSTAbits   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               RCSTA1bits   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   RCSTA1   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    RCSTA   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TXSTAbits   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               TXSTA1bits   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TXSTA   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TXSTA1   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TXREG   0x000fae       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TXREG1   0x000fae       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   RCREG1   0x000faf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    RCREG   0x000faf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   SPBRG1   0x000fb0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    SPBRG   0x000fb0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP3CON   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP3CONbits   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP3CONbits   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP3CON   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR3   0x000fb2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR3L   0x000fb2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR3H   0x000fb3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP3DEL   0x000fb4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP3DELbits   0x000fb4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              ECCP3ASbits   0x000fb5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  ECCP3AS   0x000fb5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP2CONbits   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP2CON   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP2CONbits   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP2CON   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR2   0x000fb7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR2L   0x000fb7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR2H   0x000fb8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP2DEL   0x000fb9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP2DELbits   0x000fb9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  ECCP2AS   0x000fba       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              ECCP2ASbits   0x000fba       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP1CONbits   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP1CON   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP1CON   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP1CONbits   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR1   0x000fbc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR1L   0x000fbc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR1H   0x000fbd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP1DELbits   0x000fbe       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP1DEL   0x000fbe       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  ECCP1AS   0x000fbf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              ECCP1ASbits   0x000fbf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               WDTCONbits   0x000fc0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   WDTCON   0x000fc0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ANCON0bits   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ANCON0   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ANCON1bits   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ANCON1   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP1CON2   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP1CON2bits   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP1CON1   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP1CON1bits   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP1STAT   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP1STATbits   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP1ADD   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP1MSK   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP1BUF   0x000fc9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   MEMCON   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               MEMCONbits   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PADCFG1bits   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PADCFG1   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ODCON3bits   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ODCON3   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ODCON2   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ODCON2bits   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ODCON1   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ODCON1bits   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CM2CON   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CM2CON1   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CM2CON1bits   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               CM2CONbits   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CM1CON1   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CM1CON   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CM1CON1bits   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               CM1CONbits   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              REFOCONbits   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  REFOCON   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                       PC   0x000ff9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+
+

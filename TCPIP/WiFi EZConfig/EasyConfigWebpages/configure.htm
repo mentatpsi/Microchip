@@ -1,0 +1,33 @@
+~inc:header.inc~
+<div id="content">
+
+<form method="post" name="neversend" action="">
+   <table id="scanTable" cellpadding="2" border="0">
+	<tbody>
+		<tr>
+			<td colspan="4">
+				<input id="rescan" type="button" style="width:18em" 
+				  value="Scan for Wireless Networks" onclick="rescanNetwork();"></input>
+			</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="4">
+				<input id="__other__" type="button" style="width:18em"
+				  value="Other Network..." onclick="userSelectNetwork();"></input>
+			</td>
+		</tr>
+	</tfoot>
+</table>
+</form>
+
+<form method="post" name="kickoff" action="">
+	<input type="hidden" id="wlan" name="wlan"></input>
+	<input type="hidden" id="ssid" name="ssid"></input>
+	<input type="hidden" id="sec" name="sec"></input>
+	<input type="hidden" id="key" name="key"></input>
+</form>
+</div>
+
+~inc:footer.inc~

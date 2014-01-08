@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="title_bar">#555555</color>
+	<color name="sub_title">@null</color>
+	
+	<color name="button_not_pressed">#770000</color>
+	<color name="button_pressed">#007700</color>
+	
+	<color name="device_not_attached">#770000</color>
+	<color name="device_attached">#007700</color>
+	
+	<color name="spacer">#555555</color>
+</resources>

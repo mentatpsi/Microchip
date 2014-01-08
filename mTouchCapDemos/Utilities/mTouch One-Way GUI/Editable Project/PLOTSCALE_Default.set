@@ -1,0 +1,23 @@
+[ProfiLab]
+InternalBtn=1
+OpenBtn=1
+SaveBtn=1
+HelpBtn=0
+ToolTitel=0
+ToolbarMode=0
+Skalierbar=0
+AutoSave=1
+HelpFile=
+ShowHint=1
+HintBtn=0
+PrintBtn=1
+CopyBtn=1
+IconFile=
+HWBtn=1
+Color=14215660
+FullScreen=0
+Window state=0
+Left=1945
+Top=70
+Width=978
+Height=803
